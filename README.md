@@ -16,3 +16,6 @@ go web server examples
 5. [webTemplates](./web/webTemplates/main.go)
 6. [webHtml](./web/webHtml/main.go)
     模板的用法
+
+## trie
+[Trie树智能提示](https://github.com/lbb4511/trie)
