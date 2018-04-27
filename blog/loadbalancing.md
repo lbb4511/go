@@ -1,6 +1,6 @@
 # 负载均衡
 
-![负载均衡](../../../img/2.png)
+![负载均衡](../img/loadbalancing-balancer.png)
 ###### 请求者向均衡服务发送请求
 ```
 type Request struct {

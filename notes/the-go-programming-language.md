@@ -1,7 +1,7 @@
 # 前言
 #### Go 语言起源
 
-![Golang发展历程](../../../img/go.png)
+![Golang发展历程](../img/gopl-evolution.png)
 
 #### Go语言项目
 - "软件的复杂性是乘法级相关的-----[Rob Pike](http://genius.cat-v.org/rob-pike/)"
@@ -184,7 +184,7 @@ _ "fmt" //只导入`
 `float32和float64`
 
 
-![好漂亮](../../../img/4.png)
+![好漂亮](../img/gopl-float.png)
 ```
 // Copyright © 2016 Alan A. A. Donovan & Brian W. Kernighan.
 // License: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -365,7 +365,7 @@ const (
 #### 数组
 #### Slice
 
-![](../../../img/5.png)
+![Slice](../img/gopl-slice.png)
 
 - Slice内存技巧
 
@@ -695,7 +695,7 @@ func main() {  
 ```
 interface在内存上实际由两个成员组成，如下图，tab指向虚表，data则指向实际引用的数据。虚表描绘了实际的类型信息及该接口所需要的方法集
 
-![Paste_Image.png](../../../img/7.png)
+![接口](../img/gopl-interface.png)
 
 观察itable的结构，首先是描述type信息的一些元数据，然后是满足Stringger接口的函数指针列表（注意，这里不是实际类型Binary的函数指针集哦）。因此我们如果通过接口进行函数调用，实际的操作其实就是s.tab->fun[0](s.data)。是不是和C++的虚表很像？接下来我们要看看golang的虚表和C++的虚表区别在哪里。
 先看C++，它为每种类型创建了一个方法集，而它的虚表实际上就是这个方法集本身或是它的一部分而已，当面临多继承时（或者叫实现多个接口时，这是很常见的），C++对象结构里就会存在多个虚表指针，每个虚表指针指向该方法集的不同部分，因此，C++方法集里面函数指针有严格的顺序。许多C++新手在面对多继承时就变得蛋疼菊紧了，因为它的这种设计方式，为了保证其虚表能够正常工作，C++引入了很多概念，什么虚继承啊，接口函数同名问题啊，同一个接口在不同的层次上被继承多次的问题啊等等……就是老手也很容易因疏忽而写出问题代码出来。
