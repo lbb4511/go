@@ -16,3 +16,6 @@ debug
 .glide/
 */*/web*
 basis/once/once
+
+_book
+node_modules
