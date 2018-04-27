@@ -1,0 +1,520 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>并发编程 · Go语言编程笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lbb">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="loadbalancing.html" />
+    
+    
+    <link rel="prev" href="goroutine.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../notes/">
+            
+                <a href="../notes/">
+            
+                    
+                    编码规范指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../notes/gocmd.html">
+            
+                <a href="../notes/gocmd.html">
+            
+                    
+                    Go命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../notes/installation.html">
+            
+                <a href="../notes/installation.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../notes/govendor.html">
+            
+                <a href="../notes/govendor.html">
+            
+                    
+                    Go外部依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../notes/the-go-programming-language.html">
+            
+                <a href="../notes/the-go-programming-language.html">
+            
+                    
+                    Go语言圣经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../notes/groupcache.html">
+            
+                <a href="../notes/groupcache.html">
+            
+                    
+                    GroupCache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../notes/synchronization.html">
+            
+                <a href="../notes/synchronization.html">
+            
+                    
+                    同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../notes/docker.html">
+            
+                <a href="../notes/docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../notes/gui.html">
+            
+                <a href="../notes/gui.html">
+            
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="goroutine.html">
+            
+                <a href="goroutine.html">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="concurrent-programming.html">
+            
+                <a href="concurrent-programming.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="loadbalancing.html">
+            
+                <a href="loadbalancing.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >并发编程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x5E76;&#x53D1;&#x7F16;&#x7A0B;"><b> </b>&#x5E76;&#x53D1;&#x7F16;&#x7A0B;</a></li></ul></div><a href="#&#x5E76;&#x53D1;&#x7F16;&#x7A0B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5E76;&#x53D1;&#x7F16;&#x7A0B;"><a name="&#x5E76;&#x53D1;&#x7F16;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x5E76;&#x53D1;&#x7F16;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x5E76;&#x53D1;&#x7F16;&#x7A0B;</h1>
+<h6 id="&#x4E00;&#x4E2A;go&#x4F8B;&#x7A0B;goroutines&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x548C;&#x5176;&#x5B83;go&#x4F8B;&#x7A0B;&#x5728;&#x540C;&#x4E00;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x91CC;&#x4F46;&#x5374;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x50CF;&#x662F;&#x5728;shell&#x91CC;&#x4F7F;&#x7528;--&#x6807;&#x8BB0;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x3002;"><a name="&#x4E00;&#x4E2A;go&#x4F8B;&#x7A0B;goroutines&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x548C;&#x5176;&#x5B83;go&#x4F8B;&#x7A0B;&#x5728;&#x540C;&#x4E00;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x91CC;&#x4F46;&#x5374;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x50CF;&#x662F;&#x5728;shell&#x91CC;&#x4F7F;&#x7528;--&#x6807;&#x8BB0;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x4E2A;go&#x4F8B;&#x7A0B;goroutines&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x548C;&#x5176;&#x5B83;go&#x4F8B;&#x7A0B;&#x5728;&#x540C;&#x4E00;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x91CC;&#x4F46;&#x5374;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x50CF;&#x662F;&#x5728;shell&#x91CC;&#x4F7F;&#x7528;--&#x6807;&#x8BB0;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x4E2A;Go&#x4F8B;&#x7A0B;(Goroutines)&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x548C;&#x5176;&#x5B83;Go&#x4F8B;&#x7A0B;&#x5728;&#x540C;&#x4E00;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x91CC;&#x4F46;&#x5374;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x50CF;&#x662F;&#x5728;shell&#x91CC;&#x4F7F;&#x7528; &amp; &#x6807;&#x8BB0;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x3002;</h6>
+<h3 id="goroutine-&#x7684;&#x5E76;&#x53D1;&#x5B89;&#x5168;&#x6027;"><a name="goroutine-&#x7684;&#x5E76;&#x53D1;&#x5B89;&#x5168;&#x6027;" class="anchor-navigation-ex-anchor" href="#goroutine-&#x7684;&#x5E76;&#x53D1;&#x5B89;&#x5168;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>Goroutine &#x7684;&#x5E76;&#x53D1;&#x5B89;&#x5168;&#x6027;</h3>
+<p>&#x65E0;&#x8BBA;&#x662F; Windows &#x8FD8;&#x662F; Linux&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x6765;&#x8BF4;&#x662F;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x7EBF;&#x7A0B;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x4E0D;&#x8FC7;&#xFF0C;Goroutine&#x4E0D;&#x662F;&#x7EBF;&#x7A0B;&#x3002;&#x5B83;&#x6709;&#x4E2A;&#x7279;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x4E00;&#x4E2A;Go&#x4F8B;&#x7A0B;&#x963B;&#x585E;&#x65F6;&#xFF0C;&#x6240;&#x5728;&#x7684;&#x7EBF;&#x7A0B;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x4F46;&#x5176;&#x5B83;Go&#x4F8B;&#x7A0B;&#x4E0D;&#x53D7;&#x5F71;&#x54CD;&#xFF0C;&#x591A;&#x4E2A;&#x4F8B;&#x7A0B;&#x53EF;&#x4EE5;&#x5728;&#x7CFB;&#x7EDF;&#x7EBF;&#x7A0B;&#x4E0A;&#x505A;&#x591A;&#x8DEF;&#x901A;&#x4FE1;&#x3002;&#x5806;&#x6808;&#x521D;&#x59CB;&#x5F88;&#x5C0F;&#xFF0C;&#x4F46;&#x968F;&#x7740;&#x9700;&#x6C42;&#x4F1A;&#x589E;&#x957F;&#x6216;&#x6536;&#x7F29;&#xFF0C;Go&#x4F8B;&#x7A0B;&#x4E0D;&#x662F;&#x4E0D;&#x8017;&#x8D44;&#x6E90;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x5F88;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x3002;</p>
+<h6 id="&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;&#x5E76;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x771F;&#x6B63;&#x7684;&#x5E76;&#x53D1;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x4F60;&#x7684;-main-&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x52A0;&#x4E0A;&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;"><a name="&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;&#x5E76;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x771F;&#x6B63;&#x7684;&#x5E76;&#x53D1;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x4F60;&#x7684;-main-&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x52A0;&#x4E0A;&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;&#x5E76;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x771F;&#x6B63;&#x7684;&#x5E76;&#x53D1;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x4F60;&#x7684;-main-&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x52A0;&#x4E0A;&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;&#x5E76;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x771F;&#x6B63;&#x7684;&#x5E76;&#x53D1;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x4F60;&#x7684; main &#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x52A0;&#x4E0A;&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</h6>
+<pre><code class="lang-golang"><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;runtime&quot;</span>
+...
+NCPU := runtime.NumCPU()
+runtime.GOMAXPROCS(NCPU)
+</code></pre>
+<h3 id="&#x5E76;&#x53D1;concurrency&#x4E0D;&#x662F;&#x5E76;&#x884C;parallelism"><a name="&#x5E76;&#x53D1;concurrency&#x4E0D;&#x662F;&#x5E76;&#x884C;parallelism" class="anchor-navigation-ex-anchor" href="#&#x5E76;&#x53D1;concurrency&#x4E0D;&#x662F;&#x5E76;&#x884C;parallelism"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E76;&#x53D1;(Concurrency)&#x4E0D;&#x662F;&#x5E76;&#x884C;(Parallelism)</h3>
+<p><em>--Rob Pike</em></p>
+<h6 id="go&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#xFF1A;"><a name="go&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#go&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>Go&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#xFF1A;</h6>
+<ul>
+<li>&#x5E76;&#x53D1;&#x6267;&#x884C;(goroutines)<ul>
+<li>&#x5E76;&#x53D1;&#x662F;&#x4E00;&#x79CD;&#x5C06;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x5206;&#x89E3;&#x6210;&#x5C0F;&#x7247;&#x6BB5;&#x72EC;&#x7ACB;&#x6267;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x65B9;&#x6CD5;&#xFF0C;&#x901A;&#x4FE1;&#x662F;&#x6307;&#x5404;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x95F4;&#x7684;&#x5408;&#x4F5C;&#x3002;<ul>
+<li><code>&#x5E76;&#x53D1;</code>&#x5C06;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x7EFC;&#x5408;&#x5230;&#x4E00;&#x8D77;&#x7684;&#x7F16;&#x7A0B;&#x6280;&#x672F;&#x3002;(&#x8FD9;&#x91CC;&#x662F;&#x6307;&#x901A;&#x5E38;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#xFF0C;&#x800C;&#x4E0D;&#x662F;Linux&#x8FDB;&#x7A0B;&#x3002;&#x5F88;&#x96BE;&#x5B9A;&#x4E49;&#x3002;)</li>
+<li><code>&#x5E76;&#x884C;</code>&#x540C;&#x65F6;&#x6267;&#x884C;(&#x901A;&#x5E38;&#x662F;&#x76F8;&#x5173;&#x7684;)&#x8BA1;&#x7B97;&#x4EFB;&#x52A1;&#x7684;&#x7F16;&#x7A0B;&#x6280;&#x672F;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5E76;&#x53D1;&#x662F;&#x6307;&#x540C;&#x65F6;<em>&#x5904;&#x7406;</em>&#x5F88;&#x591A;&#x4E8B;&#x60C5;&#xFF0C;&#x800C;&#x5E76;&#x884C;&#x662F;&#x6307;&#x540C;&#x65F6;<em>&#x80FD;&#x5B8C;&#x6210;</em>&#x5F88;&#x591A;&#x4E8B;&#x60C5;&#xFF0C;&#x4E24;&#x8005;&#x4E0D;&#x540C;&#xFF0C;&#x4F46;&#x76F8;&#x5173;&#xFF0C;&#x4E00;&#x4E2A;&#x91CD;&#x70B9;&#x662F;&#x7EC4;&#x5408;&#xFF0C;&#x4E00;&#x4E2A;&#x91CD;&#x70B9;&#x662F;&#x6267;&#x884C;&#x3002;</li>
+<li>&#x5E76;&#x53D1;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x8BA9;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x8BBE;&#x8BA1;&#x4E00;&#x79CD;&#x65B9;&#x6848;&#x5C06;&#x95EE;&#x9898;<em>(&#x975E;&#x5FC5;&#x987B;&#x7684;)</em>&#x5E76;&#x884C;&#x7684;&#x89E3;&#x51B3;&#x3002;</li>
+</ul>
+</li>
+<li>&#x540C;&#x6B65;&#x548C;&#x6D88;&#x606F;&#x4F20;&#x8F93;(channels)</li>
+<li>&#x591A;&#x8DEF;&#x5E76;&#x53D1;&#x63A7;&#x5236;(select)</li>
+</ul>
+<h3 id="&#x901A;&#x9053;-channels"><a name="&#x901A;&#x9053;-channels" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x9053;-channels"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x9053; Channels</h3>
+<h6 id="&#x901A;&#x9053;&#x662F;&#x7C7B;&#x578B;&#x5316;&#x7684;&#x503C;&#xFF0C;&#x80FD;&#x591F;&#x88AB;go&#x4F8B;&#x7A0B;&#x7528;&#x6765;&#x505A;&#x540C;&#x6B65;&#x6216;&#x4EA4;&#x4E92;&#x4FE1;&#x606F;&#x3002;"><a name="&#x901A;&#x9053;&#x662F;&#x7C7B;&#x578B;&#x5316;&#x7684;&#x503C;&#xFF0C;&#x80FD;&#x591F;&#x88AB;go&#x4F8B;&#x7A0B;&#x7528;&#x6765;&#x505A;&#x540C;&#x6B65;&#x6216;&#x4EA4;&#x4E92;&#x4FE1;&#x606F;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x9053;&#x662F;&#x7C7B;&#x578B;&#x5316;&#x7684;&#x503C;&#xFF0C;&#x80FD;&#x591F;&#x88AB;go&#x4F8B;&#x7A0B;&#x7528;&#x6765;&#x505A;&#x540C;&#x6B65;&#x6216;&#x4EA4;&#x4E92;&#x4FE1;&#x606F;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x9053;&#x662F;&#x7C7B;&#x578B;&#x5316;&#x7684;&#x503C;&#xFF0C;&#x80FD;&#x591F;&#x88AB;Go&#x4F8B;&#x7A0B;&#x7528;&#x6765;&#x505A;&#x540C;&#x6B65;&#x6216;&#x4EA4;&#x4E92;&#x4FE1;&#x606F;&#x3002;</h6>
+<pre><code class="lang-golang">timerChan := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> time.Time)
+<span class="hljs-keyword">go</span> <span class="hljs-keyword">func</span>() {
+    time.Sleep(deltaT)
+    timerChan &lt;- time.Now() <span class="hljs-comment">// send time on timerChan</span>
+}()
+<span class="hljs-comment">// Do something else; when ready, receive.</span>
+<span class="hljs-comment">// Receive will block until timerChan delivers.</span>
+<span class="hljs-comment">// Value sent is other goroutine&apos;s completion time.</span>
+completedAt := &lt;-timerChan
+</code></pre>
+<h3 id="select"><a name="select" class="anchor-navigation-ex-anchor" href="#select"><i class="fa fa-link" aria-hidden="true"></i></a>Select</h3>
+<h6 id="&#x8FD9;select&#x8BED;&#x53E5;&#x5F88;&#x50CF;switch&#xFF0C;&#x4F46;&#x5B83;&#x7684;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x57FA;&#x4E8E;&#x901A;&#x4FE1;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x57FA;&#x4E8E;&#x503C;&#x7684;&#x7B49;&#x91CF;&#x5339;&#x914D;&#x3002;"><a name="&#x8FD9;select&#x8BED;&#x53E5;&#x5F88;&#x50CF;switch&#xFF0C;&#x4F46;&#x5B83;&#x7684;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x57FA;&#x4E8E;&#x901A;&#x4FE1;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x57FA;&#x4E8E;&#x503C;&#x7684;&#x7B49;&#x91CF;&#x5339;&#x914D;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x8FD9;select&#x8BED;&#x53E5;&#x5F88;&#x50CF;switch&#xFF0C;&#x4F46;&#x5B83;&#x7684;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x57FA;&#x4E8E;&#x901A;&#x4FE1;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x57FA;&#x4E8E;&#x503C;&#x7684;&#x7B49;&#x91CF;&#x5339;&#x914D;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD9;select&#x8BED;&#x53E5;&#x5F88;&#x50CF;switch&#xFF0C;&#x4F46;&#x5B83;&#x7684;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x662F;&#x57FA;&#x4E8E;&#x901A;&#x4FE1;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x57FA;&#x4E8E;&#x503C;&#x7684;&#x7B49;&#x91CF;&#x5339;&#x914D;&#x3002;</h6>
+<pre><code class="lang-golang"><span class="hljs-keyword">select</span> {
+<span class="hljs-keyword">case</span> v := &lt;-ch1:
+    fmt.Println(<span class="hljs-string">&quot;channel 1 sends&quot;</span>, v)
+<span class="hljs-keyword">case</span> v := &lt;-ch2:
+    fmt.Println(<span class="hljs-string">&quot;channel 2 sends&quot;</span>, v)
+<span class="hljs-keyword">default</span>: <span class="hljs-comment">// optional</span>
+    fmt.Println(<span class="hljs-string">&quot;neither channel was ready&quot;</span>)
+}
+</code></pre>
+<h3 id="&#x95ED;&#x5305;"><a name="&#x95ED;&#x5305;" class="anchor-navigation-ex-anchor" href="#&#x95ED;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95ED;&#x5305;</h3>
+<h6 id="&#x5B83;&#x8BA9;&#x4E00;&#x4E9B;&#x5E76;&#x53D1;&#x8FD0;&#x7B97;&#x66F4;&#x5BB9;&#x6613;&#x8868;&#x8FBE;&#xFF1A;"><a name="&#x5B83;&#x8BA9;&#x4E00;&#x4E9B;&#x5E76;&#x53D1;&#x8FD0;&#x7B97;&#x66F4;&#x5BB9;&#x6613;&#x8868;&#x8FBE;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5B83;&#x8BA9;&#x4E00;&#x4E9B;&#x5E76;&#x53D1;&#x8FD0;&#x7B97;&#x66F4;&#x5BB9;&#x6613;&#x8868;&#x8FBE;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B83;&#x8BA9;&#x4E00;&#x4E9B;&#x5E76;&#x53D1;&#x8FD0;&#x7B97;&#x66F4;&#x5BB9;&#x6613;&#x8868;&#x8FBE;&#xFF1A;</h6>
+<pre><code class="lang-golang"><span class="hljs-keyword">func</span> Compose(f, g <span class="hljs-keyword">func</span>(x float) float)
+                  <span class="hljs-keyword">func</span>(x float) float {
+     <span class="hljs-keyword">return</span> <span class="hljs-keyword">func</span>(x float) float {
+        <span class="hljs-keyword">return</span> f(g(x))
+    }
+}
+<span class="hljs-built_in">print</span>(Compose(sin, cos)(<span class="hljs-number">0.5</span>))
+</code></pre>
+<h3 id="demo"><a name="demo" class="anchor-navigation-ex-anchor" href="#demo"><i class="fa fa-link" aria-hidden="true"></i></a>Demo</h3>
+<pre><code class="lang-golang"><span class="hljs-comment">// &#x4F7F;&#x7528;&#x95ED;&#x5305;&#x5C01;&#x88C5;&#x4E00;&#x4E2A;&#x540E;&#x53F0;&#x64CD;&#x4F5C;&#xFF1A;</span>
+<span class="hljs-keyword">go</span> <span class="hljs-keyword">func</span>() { <span class="hljs-comment">// &#x4ECE;&#x8F93;&#x5165;&#x901A;&#x9053;&#x62F7;&#x8D1D;&#x6570;&#x636E;&#x5230;&#x8F93;&#x51FA;&#x901A;&#x9053;</span>
+    <span class="hljs-keyword">for</span> val := <span class="hljs-keyword">range</span> input {
+        output &lt;- val
+    }
+}()<span class="hljs-comment">//&#x8FD9;&#x4E2A;for range&#x64CD;&#x4F5C;&#x4F1A;&#x4E00;&#x76F4;&#x6267;&#x884C;&#x5230;&#x5904;&#x7406;&#x6389;&#x901A;&#x9053;&#x5185;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x503C;&#x3002;</span>
+
+<span class="hljs-comment">// &#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;</span>
+<span class="hljs-keyword">type</span> Work <span class="hljs-keyword">struct</span> {
+    x, y, z <span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-comment">// &#x4E00;&#x4E2A;worker&#x7684;&#x4EFB;&#x52A1;&#xFF1A;</span>
+<span class="hljs-keyword">func</span> worker(in &lt;-<span class="hljs-keyword">chan</span> *Work, out <span class="hljs-keyword">chan</span>&lt;- *Work) {
+   <span class="hljs-keyword">for</span> w := <span class="hljs-keyword">range</span> in {
+      w.z = w.x * w.y
+      Sleep(w.z)
+      out &lt;- w
+   }
+}<span class="hljs-comment">//&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x5F53;&#x4E00;&#x4E2A;worker&#x963B;&#x585E;&#x65F6;&#x5176;&#x4ED6;worker&#x4ECD;&#x80FD;&#x8FD0;&#x884C;&#x3002;</span>
+
+<span class="hljs-comment">// runner:</span>
+<span class="hljs-keyword">func</span> Run() {
+   in, out := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> *Work), <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> *Work)
+   <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; NumWorkers; i++ {
+       <span class="hljs-keyword">go</span> worker(in, out)
+   }
+   <span class="hljs-keyword">go</span> sendLotsOfWork(in)
+   receiveLotsOfResults(out)
+} <span class="hljs-comment">// &#x5F88;&#x7B80;&#x5355;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5E76;&#x53D1;&#x673A;&#x5236;&#xFF0C;&#x4F60;&#x4ECD;&#x7136;&#x5F88;&#x96BE;&#x8FD9;&#x4E48;&#x7B80;&#x5355;&#x7684;&#x89E3;&#x51B3;&#x3002;</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7684;&#x4F8B;&#x5B50;&#x5177;&#x6709;&#x5F88;&#x660E;&#x663E;&#x7684;&#x5E76;&#x884C;&#x548C;&#x53EF;&#x6269;&#x5C55;&#x6027;&#xFF0C;Worker&#x6570;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x5DE8;&#x5927;&#x3002;Go&#x8BED;&#x8A00;&#x7684;&#x8FD9;&#x79CD;&#x5E76;&#x53D1;&#x7279;&#x5F81;&#x80FD;&#x7684;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;&#x5B89;&#x5168;&#x7684;&#x3001;&#x597D;&#x7528;&#x7684;&#x3001;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x3001;&#x5E76;&#x884C;&#x7684;&#x8F6F;&#x4EF6;&#x53D8;&#x5F97;&#x5F88;&#x5BB9;&#x6613;&#x3002;
+&#x5E76;&#x53D1;&#x7B80;&#x5316;&#x4E86;&#x540C;&#x6B65;&#xFF0C;&#x6CA1;&#x6709;&#x660E;&#x663E;&#x7684;&#x9700;&#x8981;&#x540C;&#x6B65;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x7A0B;&#x5E8F;&#x7684;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x9690;&#x542B;&#x7684;&#x5B9E;&#x73B0;&#x4E86;&#x540C;&#x6B65;&#x3002;</p>
+<h3 id="demo&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x5E93;"><a name="demo&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#demo&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>Demo(&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x5E93;)</h3>
+<pre><code class="lang-golang"><span class="hljs-keyword">func</span> Query(conns []Conn, query <span class="hljs-keyword">string</span>) Result {
+    ch := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> Result, <span class="hljs-built_in">len</span>(conns))  <span class="hljs-comment">// buffered</span>
+    <span class="hljs-keyword">for</span> _, conn := <span class="hljs-keyword">range</span> conns {
+        <span class="hljs-keyword">go</span> <span class="hljs-keyword">func</span>(c Conn) {
+            ch &lt;- c.DoQuery(query):
+        }(conn)
+    }
+    <span class="hljs-keyword">return</span> &lt;-ch
+}
+</code></pre>
+<p>&#x5E76;&#x53D1;&#x548C;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;&#x8BA9;&#x8FD9;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x5F88;&#x5C0F;&#x5F88;&#x5BB9;&#x6613;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<ul>
+<li><a href="http://ifeve.com/go-concurrent-waitgroup/" target="_blank">GO&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x5B9E;&#x6218;</a></li>
+<li><a href="https://studygolang.com/articles/1506" target="_blank">Go&#x8BED;&#x8A00;&#x5E76;&#x53D1;&#x4E4B;&#x7F8E;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="goroutine.html" class="navigation navigation-prev " aria-label="Previous page: 进程、线程和协程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="loadbalancing.html" class="navigation navigation-next " aria-label="Next page: 负载均衡">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"并发编程","level":"1.3.2","depth":2,"next":{"title":"负载均衡","level":"1.3.3","depth":2,"path":"blog/loadbalancing.md","ref":"blog/loadbalancing.md","articles":[]},"previous":{"title":"进程、线程和协程","level":"1.3.1","depth":2,"path":"blog/goroutine.md","ref":"blog/goroutine.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","anchor-navigation-ex","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":true},"search-plus":{},"expandable-chapters-small":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lbb","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"探索学习发现Go语言"},"file":{"path":"blog/concurrent-programming.md","mtime":"2018-04-27T07:21:29.682Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-27T07:22:49.675Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

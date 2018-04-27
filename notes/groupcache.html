@@ -1,0 +1,428 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GroupCache · Go语言编程笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lbb">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="synchronization.html" />
+    
+    
+    <link rel="prev" href="the-go-programming-language.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    编码规范指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gocmd.html">
+            
+                <a href="gocmd.html">
+            
+                    
+                    Go命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="govendor.html">
+            
+                <a href="govendor.html">
+            
+                    
+                    Go外部依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="the-go-programming-language.html">
+            
+                <a href="the-go-programming-language.html">
+            
+                    
+                    Go语言圣经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="groupcache.html">
+            
+                <a href="groupcache.html">
+            
+                    
+                    GroupCache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="synchronization.html">
+            
+                <a href="synchronization.html">
+            
+                    
+                    同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="gui.html">
+            
+                <a href="gui.html">
+            
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../blog/">
+            
+                <a href="../blog/">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../blog/goroutine.html">
+            
+                <a href="../blog/goroutine.html">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../blog/concurrent-programming.html">
+            
+                <a href="../blog/concurrent-programming.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../blog/loadbalancing.html">
+            
+                <a href="../blog/loadbalancing.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >GroupCache</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#groupcache"><b> </b>GroupCache</a></li></ul></div><a href="#groupcache" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="groupcache"><a name="groupcache" class="anchor-navigation-ex-anchor" href="#groupcache"><i class="fa fa-link" aria-hidden="true"></i></a> GroupCache</h1>
+<p><a href="https://github.com/golang/groupcache" target="_blank">groupcache </a> &#x662F;  <a href="http://bradfitz.com/" target="_blank">Brad Fitzpatrick </a> &#x6700;&#x65B0;&#x7684;&#x4F5C;&#x54C1;&#xFF0C;&#x76EE;&#x6807;&#x5728;&#x4E8E;&#x53D6;&#x4EE3;&#x4E00;&#x90E8;&#x5206;memcached&#x7684;&#x529F;&#x80FD;&#x3002;&#x4EE5;&#x5B98;&#x65B9;&#x7684;&#x8BF4;&#x660E;&#x662F;&#xFF1A;groupcache is a caching and cache-filling library, intended as a replacement for memcached in many cases. </p>
+<h6 id="&#x53E6;&#x5916;&#x4E00;&#x7BC7;&#x4ECB;&#x7ECD;&#x6587;&#x662F;&#x300C;playing-with-groupcache&#x300D;&#x3002;&#x8DDF;memcached-&#x5DEE;&#x5F02;&#x6700;&#x5927;&#x7684;&#x5730;&#x65B9;&#x5728;&#x4E8E;&#x300C;&#x6CA1;&#x6709;&#x66F4;&#x6539;&#x4E0E;&#x5220;&#x9664;&#x7684;&#x529F;&#x80FD;&#x300D;&#xFF0C;&#x4E00;&#x65E6;&#x5199;&#x8FDB;&#x53BB;&#x540E;&#x5C31;&#x4E0D;&#x4F1A;&#x53D8;&#x52A8;&#x3002;&#x5728;&#x653E;&#x5F03;updatedelete-&#x7684;&#x7279;&#x6027;&#x540E;&#xFF0C;&#x6362;&#x6765;&#x7684;&#x662F;&#xFF1A;"><a name="&#x53E6;&#x5916;&#x4E00;&#x7BC7;&#x4ECB;&#x7ECD;&#x6587;&#x662F;&#x300C;playing-with-groupcache&#x300D;&#x3002;&#x8DDF;memcached-&#x5DEE;&#x5F02;&#x6700;&#x5927;&#x7684;&#x5730;&#x65B9;&#x5728;&#x4E8E;&#x300C;&#x6CA1;&#x6709;&#x66F4;&#x6539;&#x4E0E;&#x5220;&#x9664;&#x7684;&#x529F;&#x80FD;&#x300D;&#xFF0C;&#x4E00;&#x65E6;&#x5199;&#x8FDB;&#x53BB;&#x540E;&#x5C31;&#x4E0D;&#x4F1A;&#x53D8;&#x52A8;&#x3002;&#x5728;&#x653E;&#x5F03;updatedelete-&#x7684;&#x7279;&#x6027;&#x540E;&#xFF0C;&#x6362;&#x6765;&#x7684;&#x662F;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x53E6;&#x5916;&#x4E00;&#x7BC7;&#x4ECB;&#x7ECD;&#x6587;&#x662F;&#x300C;playing-with-groupcache&#x300D;&#x3002;&#x8DDF;memcached-&#x5DEE;&#x5F02;&#x6700;&#x5927;&#x7684;&#x5730;&#x65B9;&#x5728;&#x4E8E;&#x300C;&#x6CA1;&#x6709;&#x66F4;&#x6539;&#x4E0E;&#x5220;&#x9664;&#x7684;&#x529F;&#x80FD;&#x300D;&#xFF0C;&#x4E00;&#x65E6;&#x5199;&#x8FDB;&#x53BB;&#x540E;&#x5C31;&#x4E0D;&#x4F1A;&#x53D8;&#x52A8;&#x3002;&#x5728;&#x653E;&#x5F03;updatedelete-&#x7684;&#x7279;&#x6027;&#x540E;&#xFF0C;&#x6362;&#x6765;&#x7684;&#x662F;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53E6;&#x5916;&#x4E00;&#x7BC7;&#x4ECB;&#x7ECD;&#x6587;&#x662F;&#x300C;<a href="http://www.capotej.com/blog/2013/07/28/playing-with-groupcache/" target="_blank">Playing With Groupcache</a>&#x300D;&#x3002;&#x8DDF;memcached &#x5DEE;&#x5F02;&#x6700;&#x5927;&#x7684;&#x5730;&#x65B9;&#x5728;&#x4E8E;&#x300C;&#x6CA1;&#x6709;&#x66F4;&#x6539;&#x4E0E;&#x5220;&#x9664;&#x7684;&#x529F;&#x80FD;&#x300D;&#xFF0C;&#x4E00;&#x65E6;&#x5199;&#x8FDB;&#x53BB;&#x540E;&#x5C31;&#x4E0D;&#x4F1A;&#x53D8;&#x52A8;&#x3002;&#x5728;&#x653E;&#x5F03;update/delete &#x7684;&#x7279;&#x6027;&#x540E;&#xFF0C;&#x6362;&#x6765;&#x7684;&#x662F;&#xFF1A;</h6>
+<ul>
+<li>Cluster &#x7684;&#x80FD;&#x529B;&#x3002;</li>
+<li>&#x5904;&#x7406;&#x70ED;&#x70B9;&#x7684;&#x80FD;&#x529B;&#x3002; </li>
+</ul>
+<p>&#x4EE5;&#x5F80;&#x5728;memcached server &#x4E4B;&#x95F4;&#x662F;&#x6CA1;&#x6709;&#x4EA4;&#x96C6;&#x7684;&#xFF0C;&#x5728;groupcache &#x5219;&#x662F;cluster &#x8D77;&#x6765;&#x3002;&#x53E6;&#x5916;&#x4EE5;&#x524D;&#x5728;memcached &#x4F1A;&#x56E0;&#x4E3A;&#x540C;&#x65F6;&#x5B58;&#x53D6;&#x540C;&#x4E00;&#x4E2A;key &#x800C;&#x9020;&#x6210;single CPU overloading &#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5728;groupcache &#x5219;&#x900F;&#x8FC7;auto-mirror &#x673A;&#x5236;&#x89E3;&#x51B3;&#x3002;&#x53C2;&#x8003;&#xFF1A;<a href="http://blog.csdn.net/songbohr/article/details/16349989" target="_blank">Go &#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x7F13;&#x5B58;&#x53CA;&#x7F13;&#x5B58;&#x8FC7;&#x6EE4;&#x5E93;&#xFF1A;groupcache</a> &#x3002;&#x5176;&#x4E2D;groupcache&#x4E0E;memcached&#x6700;&#x5927;&#x7684;&#x533A;&#x522B;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x542F;&#x52A8;&#x989D;&#x5916;&#x7684;&#x670D;&#x52A1;&#x3002;groupcache&#x4F5C;&#x4E3A;lib&#x5E93;&#x7F13;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5355;&#x72EC;&#x5F00;&#x542F;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x51CF;&#x5C11;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x989D;&#x5916;&#x7EF4;&#x62A4;&#x7684;&#x4EE3;&#x4EF7;&#x3002;groupcache&#x4E5F;&#x5E38;&#x88AB;&#x63A8;&#x8350;&#x4E3A;&#x9002;&#x5408;Golang&#x521D;&#x5B66;&#x8005;&#x5206;&#x6790;&#x7684;&#x4EE3;&#x7801;&#x6BB5;&#xFF0C;&#x8FD9;&#x51E0;&#x5929;&#x6211;&#x4E5F;&#x62BD;&#x7A7A;&#x5206;&#x6790;&#x4E86;&#x4E00;&#x4E0B;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x7ED3;&#x5408;Play With Groupcach&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x4E86;GroupCache&#xFF0C;&#x5B9E;&#x73B0;&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="../../../img/6.png" alt=""></p>
+<p>&#x8BE5;&#x8F6F;&#x4EF6;&#x7ED3;&#x6784;&#x56FE;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x79CD;&#x53EA;&#x8BFB;&#x578B;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x5B9E;&#x73B0;&#x3002;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x4E09;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5176;&#x4E2D;DB Server&#x662F;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4E3B;&#x8981;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x5B9E;&#x9645;&#x7684;&#x573A;&#x666F;&#x4E2D;&#x53EF;&#x4EE5;&#x662F;NoSql&#x6570;&#x636E;&#x5E93;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x3002;&#x53EF;&#x5BF9;&#x8BE5;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x63D2;&#x5165;&#x3001;&#x65B0;&#x589E;&#x6570;&#x636E;&#x3002;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5206;&#x4E3A;&#x524D;&#x7AEF;&#x548C;GroupCache Server&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5C06;Cache Server&#x5305;&#x542B;&#x5728;&#x4E86;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5176;&#x4E2D;&#x524D;&#x7AEF;&#x662F;&#x63D0;&#x4F9B;&#x64CD;&#x4F5C;&#x7684;&#x76F8;&#x5173;&#x63A5;&#x53E3;&#xFF0C;&#x800C;&#x540E;&#x7AEF;&#x90E8;&#x5206;&#x901A;&#x5E38;&#x4F5C;&#x4E3A;&#x4E1A;&#x52A1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x7F13;&#x5B58;&#x6570;&#x636E;&#x53EF;&#x76F4;&#x63A5;&#x88AB;&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528;&#x3002;Cli&#x90E8;&#x5206;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x4E8E;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x91CF;&#x548C;groupcache server&#x4EA4;&#x4E92;&#x3002;&#x8FD9;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x53EF;&#x53C2;&#x8003;<a href="https://github.com/capotej/groupcache-db-experiment" target="_blank">groupcache-db-experiment </a> &#x3002;</p>
+<h6 id="&#x57FA;&#x672C;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x6240;&#x793A;"><a name="&#x57FA;&#x672C;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x6240;&#x793A;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x6240;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x6240;&#x793A;:</h6>
+<ul>
+<li>&#x9996;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;GroupCache&#x7684;HTTPool, peers&#x3002;</li>
+<li>&#x521B;&#x5EFA;Group&#x5BF9;&#x8C61;&#xFF0C; &#x8BBE;&#x7F6E;&#x8BE5;Group Cache&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x6570;&#x636E;&#x5B9E;&#x9645;&#x83B7;&#x53D6;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x4E2D;&#x7684; groupcache.GetterFunc&#x5BF9;&#x5E94;&#x7740;&#x5B9E;&#x9645;&#x4ECE;&#x6E90;&#x5934;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x83B7;&#x53D6;&#x3001;&#x4ECE;&#x6587;&#x4EF6;&#x4E2D;&#x83B7;&#x53D6;&#x7B49;&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x3002;groupcache.GetterFunc&#x5B9E;&#x9645;&#x4E0A;&#x662F;groupcache.Getter&#x7684;&#x63A5;&#x53E3;&#x5B9E;&#x4F8B;&#x3002; </li>
+<li>&#x8BBE;&#x7F6E;&#x5BF9;&#x7AEF;GroupCache&#x7684;&#x5730;&#x5740;&#x4FE1;&#x606F;&#x3002;peers.Set(url1, url2, ...) </li>
+<li>&#x542F;&#x52A8;GroupCache&#x7684;Http&#x670D;&#x52A1;&#x3002;&#x5728;http.ListenAndServe(&quot;xxxx&quot;, http.HandlerFunc(peers.ServeHTTP))  </li>
+<li>&#x8981;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x7684;Group&#x5BF9;&#x8C61;&#x6765;&#x83B7;&#x53D6;&#x5373;&#x53EF;&#x3002;group.Get(xxx)&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="the-go-programming-language.html" class="navigation navigation-prev " aria-label="Previous page: Go语言圣经">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="synchronization.html" class="navigation navigation-next " aria-label="Next page: 同步">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GroupCache","level":"1.2.5","depth":2,"next":{"title":"同步","level":"1.2.6","depth":2,"path":"notes/synchronization.md","ref":"notes/synchronization.md","articles":[]},"previous":{"title":"Go语言圣经","level":"1.2.4","depth":2,"path":"notes/the-go-programming-language.md","ref":"notes/the-go-programming-language.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","anchor-navigation-ex","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":true},"search-plus":{},"expandable-chapters-small":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lbb","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"探索学习发现Go语言"},"file":{"path":"notes/groupcache.md","mtime":"2018-04-27T06:50:12.821Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-27T07:22:49.675Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

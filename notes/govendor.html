@@ -1,0 +1,527 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Go外部依赖管理 · Go语言编程笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lbb">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="the-go-programming-language.html" />
+    
+    
+    <link rel="prev" href="installation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    编码规范指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gocmd.html">
+            
+                <a href="gocmd.html">
+            
+                    
+                    Go命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="govendor.html">
+            
+                <a href="govendor.html">
+            
+                    
+                    Go外部依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="the-go-programming-language.html">
+            
+                <a href="the-go-programming-language.html">
+            
+                    
+                    Go语言圣经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="groupcache.html">
+            
+                <a href="groupcache.html">
+            
+                    
+                    GroupCache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="synchronization.html">
+            
+                <a href="synchronization.html">
+            
+                    
+                    同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="gui.html">
+            
+                <a href="gui.html">
+            
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../blog/">
+            
+                <a href="../blog/">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../blog/goroutine.html">
+            
+                <a href="../blog/goroutine.html">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../blog/concurrent-programming.html">
+            
+                <a href="../blog/concurrent-programming.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../blog/loadbalancing.html">
+            
+                <a href="../blog/loadbalancing.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Go外部依赖管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#go-&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;"><b> </b>Go &#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;</a></li></ul></div><a href="#go-&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="go-&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;"><a name="go-&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#go-&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a> Go &#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;</h1>
+<p>&#x957F;&#x671F;&#x4EE5;&#x6765;&#xFF0C;golang &#x5BF9;&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x90FD;&#x6CA1;&#x6709;&#x5F88;&#x597D;&#x7684;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;&#xFF0C;&#x53EA;&#x80FD;&#x4ECE; $GOPATH &#x4E0B;&#x67E5;&#x627E;&#x4F9D;&#x8D56;&#x3002;&#x8FD9;&#x5C31;&#x9020;&#x6210;&#x4E0D;&#x540C;&#x7528;&#x6237;&#x5728;&#x5B89;&#x88C5;&#x540C;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x9002;&#x5408;&#x53EF;&#x80FD;&#x4ECE;&#x5916;&#x90E8;&#x83B7;&#x53D6;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x4F9D;&#x8D56;&#x5E93;&#x7248;&#x672C;&#xFF0C;&#x540C;&#x65F6;&#x5F53;&#x65E0;&#x6CD5;&#x8054;&#x7F51;&#x65F6;&#xFF0C;&#x65E0;&#x6CD5;&#x7F16;&#x8BD1;&#x4F9D;&#x8D56;&#x7F3A;&#x5931;&#x7684;&#x9879;&#x76EE;&#x3002;</p>
+<p>&#x81EA; 1.5 &#x7248;&#x672C;&#x5F00;&#x59CB;&#x5F15;&#x5165; govendor &#x5DE5;&#x5177;&#xFF0C;&#x8BE5;&#x5DE5;&#x5177;&#x5C06;&#x9879;&#x76EE;&#x4F9D;&#x8D56;&#x7684;&#x5916;&#x90E8;&#x5305;&#x653E;&#x5230;&#x9879;&#x76EE;&#x4E0B;&#x7684; vendor &#x76EE;&#x5F55;&#x4E0B;&#xFF08;&#x5BF9;&#x6BD4; nodejs &#x7684; node_modules &#x76EE;&#x5F55;&#xFF09;&#xFF0C;&#x5E76;&#x901A;&#x8FC7; vendor.json &#x6587;&#x4EF6;&#x6765;&#x8BB0;&#x5F55;&#x4F9D;&#x8D56;&#x5305;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x7A33;&#x5B9A;&#x7684;&#x4F9D;&#x8D56;&#x3002;</p>
+<h6 id="&#x5BF9;&#x4E8E;-govendor-&#x6765;&#x8BF4;&#xFF0C;&#x4E3B;&#x8981;&#x5B58;&#x5728;&#x4E09;&#x79CD;&#x4F4D;&#x7F6E;&#x7684;&#x5305;&#xFF1A;"><a name="&#x5BF9;&#x4E8E;-govendor-&#x6765;&#x8BF4;&#xFF0C;&#x4E3B;&#x8981;&#x5B58;&#x5728;&#x4E09;&#x79CD;&#x4F4D;&#x7F6E;&#x7684;&#x5305;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x4E8E;-govendor-&#x6765;&#x8BF4;&#xFF0C;&#x4E3B;&#x8981;&#x5B58;&#x5728;&#x4E09;&#x79CD;&#x4F4D;&#x7F6E;&#x7684;&#x5305;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BF9;&#x4E8E; govendor &#x6765;&#x8BF4;&#xFF0C;&#x4E3B;&#x8981;&#x5B58;&#x5728;&#x4E09;&#x79CD;&#x4F4D;&#x7F6E;&#x7684;&#x5305;&#xFF1A;</h6>
+<ul>
+<li>&#x9879;&#x76EE;&#x81EA;&#x8EAB;&#x7684;&#x5305;&#x7EC4;&#x7EC7;&#x4E3A;&#x672C;&#x5730;&#xFF08;local&#xFF09;&#x5305;&#xFF1B;</li>
+<li>&#x4F20;&#x7EDF;&#x7684;&#x5B58;&#x653E;&#x5728; $GOPATH &#x4E0B;&#x7684;&#x4F9D;&#x8D56;&#x5305;&#x4E3A;&#x5916;&#x90E8;&#xFF08;external&#xFF09;&#x4F9D;&#x8D56;&#x5305;&#xFF1B;</li>
+<li>&#x88AB; govendor &#x7BA1;&#x7406;&#x7684;&#x653E;&#x5728; vendor &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x4F9D;&#x8D56;&#x5305;&#x5219;&#x4E3A; vendor &#x5305;&#x3002;</li>
+</ul>
+<h6 id="&#x5177;&#x4F53;&#x6765;&#x770B;&#xFF0C;&#x8FD9;&#x4E9B;&#x5305;&#x53EF;&#x80FD;&#x7684;&#x7C7B;&#x578B;&#x5982;&#x4E0B;&#xFF1A;"><a name="&#x5177;&#x4F53;&#x6765;&#x770B;&#xFF0C;&#x8FD9;&#x4E9B;&#x5305;&#x53EF;&#x80FD;&#x7684;&#x7C7B;&#x578B;&#x5982;&#x4E0B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5177;&#x4F53;&#x6765;&#x770B;&#xFF0C;&#x8FD9;&#x4E9B;&#x5305;&#x53EF;&#x80FD;&#x7684;&#x7C7B;&#x578B;&#x5982;&#x4E0B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5177;&#x4F53;&#x6765;&#x770B;&#xFF0C;&#x8FD9;&#x4E9B;&#x5305;&#x53EF;&#x80FD;&#x7684;&#x7C7B;&#x578B;&#x5982;&#x4E0B;&#xFF1A;</h6>
+<table>
+<thead>
+<tr>
+<th>&#x72B6;&#x6001;</th>
+<th>&#x7F29;&#x5199;&#x72B6;&#x6001;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+local</td>
+<td>l</td>
+<td>&#x672C;&#x5730;&#x5305;&#xFF0C;&#x5373;&#x9879;&#x76EE;&#x81EA;&#x8EAB;&#x7684;&#x5305;&#x7EC4;&#x7EC7;</td>
+</tr>
+<tr>
+<td>+external</td>
+<td>e</td>
+<td>&#x5916;&#x90E8;&#x5305;&#xFF0C;&#x5373;&#x88AB; $GOPATH &#x7BA1;&#x7406;&#xFF0C;&#x4F46;&#x4E0D;&#x5728; vendor &#x76EE;&#x5F55;&#x4E0B;</td>
+</tr>
+<tr>
+<td>+vendor</td>
+<td>v</td>
+<td>&#x5DF2;&#x88AB; govendor &#x7BA1;&#x7406;&#xFF0C;&#x5373;&#x5728; vendor &#x76EE;&#x5F55;&#x4E0B;</td>
+</tr>
+<tr>
+<td>+std</td>
+<td>s</td>
+<td>&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x7684;&#x5305;</td>
+</tr>
+<tr>
+<td>+unused</td>
+<td>u</td>
+<td>&#x672A;&#x4F7F;&#x7528;&#x7684;&#x5305;&#xFF0C;&#x5373;&#x5305;&#x5728; vendor &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x4F46;&#x9879;&#x76EE;&#x5E76;&#x6CA1;&#x6709;&#x7528;&#x5230;</td>
+</tr>
+<tr>
+<td>+missing</td>
+<td>m</td>
+<td>&#x4EE3;&#x7801;&#x5F15;&#x7528;&#x4E86;&#x4F9D;&#x8D56;&#x5305;&#xFF0C;&#x4F46;&#x8BE5;&#x5305;&#x5E76;&#x6CA1;&#x6709;&#x627E;&#x5230;</td>
+</tr>
+<tr>
+<td>+program</td>
+<td>p</td>
+<td>&#x4E3B;&#x7A0B;&#x5E8F;&#x5305;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x53EF;&#x4EE5;&#x7F16;&#x8BD1;&#x4E3A;&#x6267;&#x884C;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>+outside</td>
+<td></td>
+<td>&#x5916;&#x90E8;&#x5305;&#x548C;&#x7F3A;&#x5931;&#x7684;&#x5305;</td>
+</tr>
+<tr>
+<td>+all</td>
+<td></td>
+<td>&#x6240;&#x6709;&#x7684;&#x5305;</td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x5E38;&#x89C1;&#x7684;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;-govendor-command&#x3002;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x5305;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x8FC7;&#x6EE4;&#x4EC5;&#x5BF9;&#x6307;&#x5B9A;&#x5305;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;"><a name="&#x5E38;&#x89C1;&#x7684;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;-govendor-command&#x3002;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x5305;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x8FC7;&#x6EE4;&#x4EC5;&#x5BF9;&#x6307;&#x5B9A;&#x5305;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x7684;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;-govendor-command&#x3002;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x5305;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x8FC7;&#x6EE4;&#x4EC5;&#x5BF9;&#x6307;&#x5B9A;&#x5305;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x89C1;&#x7684;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A; govendor COMMAND&#x3002;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x5305;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x8FC7;&#x6EE4;&#x4EC5;&#x5BF9;&#x6307;&#x5B9A;&#x5305;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</h6>
+<table>
+<thead>
+<tr>
+<th>&#x547D;&#x4EE4;</th>
+<th>&#x529F;&#x80FD;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>init</td>
+<td>&#x521D;&#x59CB;&#x5316; vendor &#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>list</td>
+<td>&#x5217;&#x51FA;&#x6240;&#x6709;&#x7684;&#x4F9D;&#x8D56;&#x5305;</td>
+</tr>
+<tr>
+<td>add</td>
+<td>&#x6DFB;&#x52A0;&#x5305;&#x5230; vendor &#x76EE;&#x5F55;&#xFF0C;&#x5982; govendor add +external &#x6DFB;&#x52A0;&#x6240;&#x6709;&#x5916;&#x90E8;&#x5305;</td>
+</tr>
+<tr>
+<td>add PKG_PATH</td>
+<td>&#x6DFB;&#x52A0;&#x6307;&#x5B9A;&#x7684;&#x4F9D;&#x8D56;&#x5305;&#x5230; vendor &#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>update</td>
+<td>&#x4ECE; $GOPATH &#x66F4;&#x65B0;&#x4F9D;&#x8D56;&#x5305;&#x5230; vendor &#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>remove</td>
+<td>&#x4ECE; vendor &#x7BA1;&#x7406;&#x4E2D;&#x5220;&#x9664;&#x4F9D;&#x8D56;</td>
+</tr>
+<tr>
+<td>status</td>
+<td>&#x5217;&#x51FA;&#x6240;&#x6709;&#x7F3A;&#x5931;&#x3001;&#x8FC7;&#x671F;&#x548C;&#x4FEE;&#x6539;&#x8FC7;&#x7684;&#x5305;</td>
+</tr>
+<tr>
+<td>fetch</td>
+<td>&#x6DFB;&#x52A0;&#x6216;&#x66F4;&#x65B0;&#x5305;&#x5230;&#x672C;&#x5730; vendor &#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>sync</td>
+<td>&#x672C;&#x5730;&#x5B58;&#x5728; vendor.json &#x65F6;&#x5019;&#x62C9;&#x53BB;&#x4F9D;&#x8D56;&#x5305;&#xFF0C;&#x5339;&#x914D;&#x6240;&#x8BB0;&#x5F55;&#x7684;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>get</td>
+<td>&#x7C7B;&#x4F3C; go get &#x76EE;&#x5F55;&#xFF0C;&#x62C9;&#x53D6;&#x4F9D;&#x8D56;&#x5305;&#x5230; vendor &#x76EE;&#x5F55;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="installation.html" class="navigation navigation-prev " aria-label="Previous page: 环境搭建">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="the-go-programming-language.html" class="navigation navigation-next " aria-label="Next page: Go语言圣经">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Go外部依赖管理","level":"1.2.3","depth":2,"next":{"title":"Go语言圣经","level":"1.2.4","depth":2,"path":"notes/the-go-programming-language.md","ref":"notes/the-go-programming-language.md","articles":[]},"previous":{"title":"环境搭建","level":"1.2.2","depth":2,"path":"notes/installation.md","ref":"notes/installation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","anchor-navigation-ex","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":true},"search-plus":{},"expandable-chapters-small":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lbb","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"探索学习发现Go语言"},"file":{"path":"notes/govendor.md","mtime":"2018-04-27T06:50:08.364Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-27T07:22:49.675Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,529 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>编码规范指南 · Go语言编程笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lbb">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gocmd.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    编码规范指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gocmd.html">
+            
+                <a href="gocmd.html">
+            
+                    
+                    Go命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="govendor.html">
+            
+                <a href="govendor.html">
+            
+                    
+                    Go外部依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="the-go-programming-language.html">
+            
+                <a href="the-go-programming-language.html">
+            
+                    
+                    Go语言圣经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="groupcache.html">
+            
+                <a href="groupcache.html">
+            
+                    
+                    GroupCache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="synchronization.html">
+            
+                <a href="synchronization.html">
+            
+                    
+                    同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="gui.html">
+            
+                <a href="gui.html">
+            
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../blog/">
+            
+                <a href="../blog/">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../blog/goroutine.html">
+            
+                <a href="../blog/goroutine.html">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../blog/concurrent-programming.html">
+            
+                <a href="../blog/concurrent-programming.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../blog/loadbalancing.html">
+            
+                <a href="../blog/loadbalancing.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >编码规范指南</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#go-&#x7F16;&#x7801;&#x89C4;&#x8303;&#x6307;&#x5357;"><b> </b>Go &#x7F16;&#x7801;&#x89C4;&#x8303;&#x6307;&#x5357;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E8F;&#x8A00;"><b>1. </b>&#x5E8F;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#&#x683C;&#x5F0F;&#x5316;&#x89C4;&#x8303;"><b>2. </b>&#x683C;&#x5F0F;&#x5316;&#x89C4;&#x8303;</a></li><li><span class="title-icon "></span><a href="#&#x884C;&#x957F;&#x7EA6;&#x5B9A;"><b>3. </b>&#x884C;&#x957F;&#x7EA6;&#x5B9A;</a></li><li><span class="title-icon "></span><a href="#package&#x540D;&#x5B57;"><b>4. </b>package&#x540D;&#x5B57;</a></li><li><span class="title-icon "></span><a href="#import-&#x89C4;&#x8303;"><b>5. </b>import &#x89C4;&#x8303;</a></li><li><span class="title-icon "></span><a href="#&#x53D8;&#x91CF;&#x7533;&#x660E;"><b>6. </b>&#x53D8;&#x91CF;&#x7533;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x7684;string&#x5FAA;&#x73AF;&#x95EE;&#x9898;"><b>7. </b>&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x7684;string&#x5FAA;&#x73AF;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x907F;&#x514D;&#x8FD4;&#x56DE;&#x547D;&#x540D;&#x7684;&#x53C2;&#x6570;"><b>8. </b>&#x907F;&#x514D;&#x8FD4;&#x56DE;&#x547D;&#x540D;&#x7684;&#x53C2;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x9519;&#x8BEF;&#x5904;&#x7406;"><b>9. </b>&#x9519;&#x8BEF;&#x5904;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x957F;&#x53E5;&#x5B50;&#x6253;&#x5370;&#x6216;&#x8005;&#x8C03;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x5206;&#x884C;"><b>10. </b>&#x957F;&#x53E5;&#x5B50;&#x6253;&#x5370;&#x6216;&#x8005;&#x8C03;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x5206;&#x884C;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x610F;&#x95ED;&#x5305;&#x7684;&#x8C03;&#x7528;"><b>11. </b>&#x6CE8;&#x610F;&#x95ED;&#x5305;&#x7684;&#x8C03;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x5728;&#x903B;&#x8F91;&#x5904;&#x7406;&#x4E2D;&#x7981;&#x7528;panic"><b>12. </b>&#x5728;&#x903B;&#x8F91;&#x5904;&#x7406;&#x4E2D;&#x7981;&#x7528;panic</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x91CA;&#x89C4;&#x8303;"><b>13. </b>&#x6CE8;&#x91CA;&#x89C4;&#x8303;</a></li><ul><li><span class="title-icon "></span><a href="#bug&#x6CE8;&#x91CA;"><b>13.1. </b>bug&#x6CE8;&#x91CA;</a></li></ul><li><span class="title-icon "></span><a href="#struct&#x89C4;&#x8303;"><b>14. </b>struct&#x89C4;&#x8303;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x8D44;&#x6599;"><b>15. </b>&#x53C2;&#x8003;&#x8D44;&#x6599;</a></li></ul></ul></div><a href="#go-&#x7F16;&#x7801;&#x89C4;&#x8303;&#x6307;&#x5357;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="go-&#x7F16;&#x7801;&#x89C4;&#x8303;&#x6307;&#x5357;"><a name="go-&#x7F16;&#x7801;&#x89C4;&#x8303;&#x6307;&#x5357;" class="anchor-navigation-ex-anchor" href="#go-&#x7F16;&#x7801;&#x89C4;&#x8303;&#x6307;&#x5357;"><i class="fa fa-link" aria-hidden="true"></i></a> Go &#x7F16;&#x7801;&#x89C4;&#x8303;&#x6307;&#x5357;</h1>
+<h2 id="&#x5E8F;&#x8A00;"><a name="&#x5E8F;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x5E8F;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5E8F;&#x8A00;</h2>
+<p>&#x770B;&#x8FC7;&#x5F88;&#x591A;&#x65B9;&#x9762;&#x7684;&#x7F16;&#x7801;&#x89C4;&#x8303;&#xFF0C;&#x53EF;&#x80FD;&#x6BCF;&#x4E00;&#x5BB6;&#x516C;&#x53F8;&#x90FD;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x89C4;&#x8303;&#xFF0C;&#x8FD9;&#x4EFD;&#x7F16;&#x7801;&#x89C4;&#x8303;&#x662F;&#x5199;&#x7ED9;&#x6211;&#x81EA;&#x5DF1;&#x7684;&#xFF0C;&#x540C;&#x65F6;&#x5E0C;&#x671B;&#x6211;&#x4EEC;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x540C;&#x4E8B;&#x4E5F;&#x80FD;&#x9075;&#x5FAA;&#x8FD9;&#x4E2A;&#x89C4;&#x8303;&#x6765;&#x5199;<a href="http://lib.csdn.net/base/go" target="_blank">Go</a>&#x4EE3;&#x7801;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x627E;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x89C4;&#x8303;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x9075;&#x5FAA;&#x6807;&#x51C6;&#x5E93;&#x7684;&#x89C4;&#x8303;&#xFF0C;&#x591A;&#x9605;&#x8BFB;&#x6807;&#x51C6;&#x5E93;&#x7684;&#x6E90;&#x7801;&#xFF0C;&#x6807;&#x51C6;&#x5E93;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x6211;&#x4EEC;&#x5199;&#x4EE3;&#x7801;&#x53C2;&#x8003;&#x7684;&#x6807;&#x6746;&#x3002;</p>
+<h2 id="&#x683C;&#x5F0F;&#x5316;&#x89C4;&#x8303;"><a name="&#x683C;&#x5F0F;&#x5316;&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#&#x683C;&#x5F0F;&#x5316;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x683C;&#x5F0F;&#x5316;&#x89C4;&#x8303;</h2>
+<p>go&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;<code>gofmt</code>&#x5DE5;&#x5177;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;goimport&#x5DE5;&#x5177;&#xFF0C;&#x8FD9;&#x4E2A;&#x5728;gofmt&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x589E;&#x52A0;&#x4E86;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x548C;&#x5F15;&#x5165;&#x5305;. <code>go get golang.org/x/tools/cmd/goimports</code>&lt;/br&gt;
+&#x4E0D;&#x540C;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x914D;&#x7F6E;, <a href="http://lbb4511.cn/software/_book/tools/sublimetext/go.html" target="_blank">sublime&#x7684;&#x914D;&#x7F6E;&#x6559;&#x7A0B;</a>
+LiteIDE&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x652F;&#x6301;&#x4E86;goimports&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x4E0D;&#x652F;&#x6301;&#x8BF7;&#x70B9;&#x51FB;&#x5C5E;&#x6027;&#x914D;&#x7F6E;-&gt;golangfmt-&gt;&#x52FE;&#x9009;goimports
+&#x4FDD;&#x5B58;&#x4E4B;&#x524D;&#x81EA;&#x52A8;fmt&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<h2 id="&#x884C;&#x957F;&#x7EA6;&#x5B9A;"><a name="&#x884C;&#x957F;&#x7EA6;&#x5B9A;" class="anchor-navigation-ex-anchor" href="#&#x884C;&#x957F;&#x7EA6;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x884C;&#x957F;&#x7EA6;&#x5B9A;</h2>
+<p>&#x4E00;&#x884C;&#x6700;&#x957F;&#x4E0D;&#x8D85;&#x8FC7;80&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x8D85;&#x8FC7;&#x7684;&#x8BF7;&#x4F7F;&#x7528;&#x6362;&#x884C;&#x5C55;&#x793A;&#xFF0C;&#x5C3D;&#x91CF;&#x4FDD;&#x6301;&#x683C;&#x5F0F;&#x4F18;&#x96C5;&#x3002;<code>go vet</code>&lt;/br&gt;
+vet&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x5E2E;&#x6211;&#x4EEC;&#x9759;&#x6001;&#x5206;&#x6790;&#x6211;&#x4EEC;&#x7684;&#x6E90;&#x7801;&#x5B58;&#x5728;&#x7684;&#x5404;&#x79CD;&#x95EE;&#x9898;&#xFF0C;&#x4F8B;&#x5982;&#x591A;&#x4F59;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x63D0;&#x524D;return&#x7684;&#x903B;&#x8F91;&#xFF0C;struct&#x7684;tag&#x662F;&#x5426;&#x7B26;&#x5408;&#x6807;&#x51C6;&#x7B49;&#x3002;&lt;/br&gt;
+<code>go get golang.org/x/tools/cmd/vet</code> &#x4F7F;&#x7528;&#x5982;&#x4E0B;&#xFF1A;<code>go vet .</code></p>
+<h2 id="package&#x540D;&#x5B57;"><a name="package&#x540D;&#x5B57;" class="anchor-navigation-ex-anchor" href="#package&#x540D;&#x5B57;"><i class="fa fa-link" aria-hidden="true"></i></a>4. package&#x540D;&#x5B57;</h2>
+<p>&#x4FDD;&#x6301;package&#x7684;&#x540D;&#x5B57;&#x548C;&#x76EE;&#x5F55;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x5C3D;&#x91CF;&#x91C7;&#x53D6;&#x6709;&#x610F;&#x4E49;&#x7684;&#x5305;&#x540D;&#xFF0C;&#x7B80;&#x77ED;&#xFF0C;&#x6709;&#x610F;&#x4E49;&#xFF0C;&#x5C3D;&#x91CF;&#x548C;&#x6807;&#x51C6;&#x5E93;&#x4E0D;&#x8981;&#x51B2;&#x7A81;&#x3002;</p>
+<h2 id="import-&#x89C4;&#x8303;"><a name="import-&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#import-&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>5. import &#x89C4;&#x8303;</h2>
+<p>import&#x5728;&#x591A;&#x884C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;goimports&#x4F1A;&#x81EA;&#x52A8;&#x5E2E;&#x4F60;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x8FD8;&#x662F;&#x89C4;&#x8303;&#x4E00;&#x4E0B;import&#x7684;&#x4E00;&#x4E9B;&#x89C4;&#x8303;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x5F15;&#x5165;&#x4E86;&#x4E00;&#x4E2A;package&#xFF0C;&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x683C;&#x5F0F;&#xFF1A;
+<code>import   &quot;fmt&quot;</code>
+&#x5982;&#x679C;&#x4F60;&#x7684;&#x5305;&#x5F15;&#x5165;&#x4E86;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5305;&#xFF0C;&#x6807;&#x51C6;&#x5E93;&#x5305;&#xFF0C;&#x7A0B;&#x5E8F;&#x5185;&#x90E8;&#x5305;&#xFF0C;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#xFF0C;&#x5EFA;&#x8BAE;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x7EC4;&#x7EC7;&#x4F60;&#x7684;&#x5305;&#xFF1A;</p>
+<pre><code>import ( 
+    &quot;encoding/json&quot; 
+    &quot;strings&quot; &quot;myproject/models&quot;
+    &quot;myproject/controller&quot;
+    &quot;myproject/utils&quot;
+    &quot;github.com/astaxie/beego&quot;
+    &quot;github.com/go-sql-driver/mysql&quot;
+)
+</code></pre><blockquote>
+<p>&#x6709;&#x987A;&#x5E8F;&#x7684;&#x5F15;&#x5165;&#x5305;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#x91C7;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x79BB;&#xFF0C;&#x7B2C;&#x4E00;&#x79CD;&#x5B9E;&#x6807;&#x51C6;&#x5E93;&#xFF0C;&#x7B2C;&#x4E8C;&#x662F;&#x9879;&#x76EE;&#x5305;&#xFF0C;&#x7B2C;&#x4E09;&#x662F;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#x3002;</p>
+<h6 id="&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x5F15;&#x5165;&#x5305;&#xFF1A;"><a name="&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x5F15;&#x5165;&#x5305;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x5F15;&#x5165;&#x5305;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x5F15;&#x5165;&#x5305;&#xFF1A;</h6>
+<pre><code>// &#x8FD9;&#x662F;&#x4E0D;&#x597D;&#x7684;&#x5BFC;&#x5165;
+import &quot;../net&quot;
+// &#x8FD9;&#x662F;&#x6B63;&#x786E;&#x7684;&#x505A;&#x6CD5;
+import &quot;github.com/repo/proj/src/net&quot;
+</code></pre><h2 id="&#x53D8;&#x91CF;&#x7533;&#x660E;"><a name="&#x53D8;&#x91CF;&#x7533;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x91CF;&#x7533;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x53D8;&#x91CF;&#x7533;&#x660E;</h2>
+<h6 id="&#x53D8;&#x91CF;&#x540D;&#x91C7;&#x7528;&#x9A7C;&#x5CF0;&#x6807;&#x51C6;&#xFF0C;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x6765;&#x547D;&#x540D;&#x53D8;&#x91CF;&#x540D;&#xFF0C;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x7533;&#x660E;&#x653E;&#x5728;&#x4E00;&#x8D77;"><a name="&#x53D8;&#x91CF;&#x540D;&#x91C7;&#x7528;&#x9A7C;&#x5CF0;&#x6807;&#x51C6;&#xFF0C;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x6765;&#x547D;&#x540D;&#x53D8;&#x91CF;&#x540D;&#xFF0C;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x7533;&#x660E;&#x653E;&#x5728;&#x4E00;&#x8D77;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x91CF;&#x540D;&#x91C7;&#x7528;&#x9A7C;&#x5CF0;&#x6807;&#x51C6;&#xFF0C;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x6765;&#x547D;&#x540D;&#x53D8;&#x91CF;&#x540D;&#xFF0C;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x7533;&#x660E;&#x653E;&#x5728;&#x4E00;&#x8D77;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x91CF;&#x540D;&#x91C7;&#x7528;&#x9A7C;&#x5CF0;&#x6807;&#x51C6;&#xFF0C;&#x4E0D;&#x8981;&#x4F7F;&#x7528;_&#x6765;&#x547D;&#x540D;&#x53D8;&#x91CF;&#x540D;&#xFF0C;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x7533;&#x660E;&#x653E;&#x5728;&#x4E00;&#x8D77;</h6>
+<pre><code>var (
+    Found bool
+    count int
+)
+</code></pre><p>&#x5728;&#x51FD;&#x6570;&#x5916;&#x90E8;&#x7533;&#x660E;&#x5FC5;&#x987B;&#x4F7F;&#x7528;var,&#x4E0D;&#x8981;&#x91C7;&#x7528;:=&#xFF0C;&#x5BB9;&#x6613;&#x8E29;&#x5230;&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x7684;string&#x5FAA;&#x73AF;&#x95EE;&#x9898;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x7684;string&#x5FAA;&#x73AF;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x7684;string&#x5FAA;&#x73AF;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>7. &#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x7684;string&#x5FAA;&#x73AF;&#x95EE;&#x9898;</h2>
+<h6 id="&#x5982;&#x679C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x4E86;string&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x6253;&#x5370;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x4EA7;&#x751F;&#x9690;&#x85CF;&#x7684;&#x4E00;&#x4E9B;bug"><a name="&#x5982;&#x679C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x4E86;string&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x6253;&#x5370;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x4EA7;&#x751F;&#x9690;&#x85CF;&#x7684;&#x4E00;&#x4E9B;bug" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x679C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x4E86;string&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x6253;&#x5370;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x4EA7;&#x751F;&#x9690;&#x85CF;&#x7684;&#x4E00;&#x4E9B;bug"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x679C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x4E86;String&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x6253;&#x5370;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x4EA7;&#x751F;&#x9690;&#x85CF;&#x7684;&#x4E00;&#x4E9B;bug</h6>
+<pre><code>type MyInt
+ intfunc (m MyInt) String() string {
+    return fmt.Sprint(m)//BUG:&#x6B7B;&#x5FAA;&#x73AF;
+}
+ func(m MyInt) String() string {
+    return fmt.Sprint(int(m)) //&#x8FD9;&#x662F;&#x5B89;&#x5168;&#x7684;,&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5185;&#x90E8;&#x8FDB;&#x884C;&#x4E86;&#x7C7B;&#x578B;&#x8F6C;&#x6362;
+}
+</code></pre><h2 id="&#x907F;&#x514D;&#x8FD4;&#x56DE;&#x547D;&#x540D;&#x7684;&#x53C2;&#x6570;"><a name="&#x907F;&#x514D;&#x8FD4;&#x56DE;&#x547D;&#x540D;&#x7684;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x907F;&#x514D;&#x8FD4;&#x56DE;&#x547D;&#x540D;&#x7684;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>8. &#x907F;&#x514D;&#x8FD4;&#x56DE;&#x547D;&#x540D;&#x7684;&#x53C2;&#x6570;</h2>
+<h6 id="&#x5982;&#x679C;&#x4F60;&#x7684;&#x51FD;&#x6570;&#x5F88;&#x77ED;&#x5C0F;&#xFF0C;&#x5C11;&#x4E8E;10&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x7136;&#x8BF7;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x547D;&#x540D;&#x53D8;&#x91CF;&#x5F88;&#x5BB9;&#x6613;&#x5F15;&#x8D77;&#x9690;&#x85CF;&#x7684;bug"><a name="&#x5982;&#x679C;&#x4F60;&#x7684;&#x51FD;&#x6570;&#x5F88;&#x77ED;&#x5C0F;&#xFF0C;&#x5C11;&#x4E8E;10&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x7136;&#x8BF7;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x547D;&#x540D;&#x53D8;&#x91CF;&#x5F88;&#x5BB9;&#x6613;&#x5F15;&#x8D77;&#x9690;&#x85CF;&#x7684;bug" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x679C;&#x4F60;&#x7684;&#x51FD;&#x6570;&#x5F88;&#x77ED;&#x5C0F;&#xFF0C;&#x5C11;&#x4E8E;10&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x7136;&#x8BF7;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x547D;&#x540D;&#x53D8;&#x91CF;&#x5F88;&#x5BB9;&#x6613;&#x5F15;&#x8D77;&#x9690;&#x85CF;&#x7684;bug"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x679C;&#x4F60;&#x7684;&#x51FD;&#x6570;&#x5F88;&#x77ED;&#x5C0F;&#xFF0C;&#x5C11;&#x4E8E;10&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x7136;&#x8BF7;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x547D;&#x540D;&#x53D8;&#x91CF;&#x5F88;&#x5BB9;&#x6613;&#x5F15;&#x8D77;&#x9690;&#x85CF;&#x7684;bug</h6>
+<pre><code>func Foo(a int, b int) (string, ok){
+}
+</code></pre><h6 id="&#x5F53;&#x7136;&#x5982;&#x679C;&#x662F;&#x6709;&#x591A;&#x4E2A;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#x8FD4;&#x56DE;&#xFF0C;&#x90A3;&#x4E48;&#x547D;&#x540D;&#x53C2;&#x6570;&#x53EF;&#x80FD;&#x66F4;&#x6E05;&#x6670;&#xFF1A;"><a name="&#x5F53;&#x7136;&#x5982;&#x679C;&#x662F;&#x6709;&#x591A;&#x4E2A;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#x8FD4;&#x56DE;&#xFF0C;&#x90A3;&#x4E48;&#x547D;&#x540D;&#x53C2;&#x6570;&#x53EF;&#x80FD;&#x66F4;&#x6E05;&#x6670;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5F53;&#x7136;&#x5982;&#x679C;&#x662F;&#x6709;&#x591A;&#x4E2A;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#x8FD4;&#x56DE;&#xFF0C;&#x90A3;&#x4E48;&#x547D;&#x540D;&#x53C2;&#x6570;&#x53EF;&#x80FD;&#x66F4;&#x6E05;&#x6670;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F53;&#x7136;&#x5982;&#x679C;&#x662F;&#x6709;&#x591A;&#x4E2A;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#x8FD4;&#x56DE;&#xFF0C;&#x90A3;&#x4E48;&#x547D;&#x540D;&#x53C2;&#x6570;&#x53EF;&#x80FD;&#x66F4;&#x6E05;&#x6670;&#xFF1A;</h6>
+<pre><code>func (f *Foo) Location() (float64, float64, error)
+</code></pre><h6 id="&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x66F4;&#x6E05;&#x6670;&#x4E86;&#xFF1A;"><a name="&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x66F4;&#x6E05;&#x6670;&#x4E86;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x66F4;&#x6E05;&#x6670;&#x4E86;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x66F4;&#x6E05;&#x6670;&#x4E86;&#xFF1A;</h6>
+<pre><code>// Location returns f&apos;s latitude and longitude.
+// Negative values mean south and west, respectively.
+func (f *Foo) Location() (lat, long float64, err error)
+</code></pre><h2 id="&#x9519;&#x8BEF;&#x5904;&#x7406;"><a name="&#x9519;&#x8BEF;&#x5904;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x9519;&#x8BEF;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>9. &#x9519;&#x8BEF;&#x5904;&#x7406;</h2>
+<p>&#x9519;&#x8BEF;&#x5904;&#x7406;&#x7684;&#x539F;&#x5219;&#x5C31;&#x662F;&#x4E0D;&#x80FD;&#x4E22;&#x5F03;&#x4EFB;&#x4F55;&#x6709;&#x8FD4;&#x56DE;err&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x8981;&#x91C7;&#x7528;_&#x4E22;&#x5F03;&#xFF0C;&#x5FC5;&#x987B;&#x5168;&#x90E8;&#x5904;&#x7406;&#x3002;&#x63A5;&#x6536;&#x5230;&#x9519;&#x8BEF;&#xFF0C;&#x8981;&#x4E48;&#x8FD4;&#x56DE;err&#xFF0C;&#x8981;&#x4E48;&#x5B9E;&#x5728;&#x4E0D;&#x884C;&#x5C31;panic&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;log&#x8BB0;&#x5F55;&#x4E0B;&#x6765;</p>
+<h4 id="error-&#x4FE1;&#x606F;-error&#x7684;&#x4FE1;&#x606F;&#x4E0D;&#x8981;&#x91C7;&#x7528;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x5C3D;&#x91CF;&#x4FDD;&#x6301;&#x4F60;&#x7684;&#x9519;&#x8BEF;&#x7B80;&#x77ED;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x8DB3;&#x591F;&#x8868;&#x8FBE;&#x4F60;&#x7684;&#x9519;&#x8BEF;&#x7684;&#x610F;&#x601D;&#x3002;"><a name="error-&#x4FE1;&#x606F;-error&#x7684;&#x4FE1;&#x606F;&#x4E0D;&#x8981;&#x91C7;&#x7528;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x5C3D;&#x91CF;&#x4FDD;&#x6301;&#x4F60;&#x7684;&#x9519;&#x8BEF;&#x7B80;&#x77ED;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x8DB3;&#x591F;&#x8868;&#x8FBE;&#x4F60;&#x7684;&#x9519;&#x8BEF;&#x7684;&#x610F;&#x601D;&#x3002;" class="anchor-navigation-ex-anchor" href="#error-&#x4FE1;&#x606F;-error&#x7684;&#x4FE1;&#x606F;&#x4E0D;&#x8981;&#x91C7;&#x7528;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x5C3D;&#x91CF;&#x4FDD;&#x6301;&#x4F60;&#x7684;&#x9519;&#x8BEF;&#x7B80;&#x77ED;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x8DB3;&#x591F;&#x8868;&#x8FBE;&#x4F60;&#x7684;&#x9519;&#x8BEF;&#x7684;&#x610F;&#x601D;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a><em>error &#x4FE1;&#x606F;</em> error&#x7684;&#x4FE1;&#x606F;&#x4E0D;&#x8981;&#x91C7;&#x7528;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x5C3D;&#x91CF;&#x4FDD;&#x6301;&#x4F60;&#x7684;&#x9519;&#x8BEF;&#x7B80;&#x77ED;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x8DB3;&#x591F;&#x8868;&#x8FBE;&#x4F60;&#x7684;&#x9519;&#x8BEF;&#x7684;&#x610F;&#x601D;&#x3002;</h4>
+<h2 id="&#x957F;&#x53E5;&#x5B50;&#x6253;&#x5370;&#x6216;&#x8005;&#x8C03;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x5206;&#x884C;"><a name="&#x957F;&#x53E5;&#x5B50;&#x6253;&#x5370;&#x6216;&#x8005;&#x8C03;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x5206;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x957F;&#x53E5;&#x5B50;&#x6253;&#x5370;&#x6216;&#x8005;&#x8C03;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x5206;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>10. &#x957F;&#x53E5;&#x5B50;&#x6253;&#x5370;&#x6216;&#x8005;&#x8C03;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x5206;&#x884C;</h2>
+<p><strong><em>&#x6211;&#x4EEC;&#x5728;&#x8C03;&#x7528;fmt.Sprint&#x6216;&#x8005;log.Sprint&#x4E4B;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4F1A;&#x9047;&#x5230;&#x5F88;&#x957F;&#x7684;&#x53E5;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x53C2;&#x6570;&#x8C03;&#x7528;&#x5904;&#x8FDB;&#x884C;&#x591A;&#x884C;&#x5206;&#x5272;&#xFF1A;</em></strong></p>
+<h6 id="&#x4E0B;&#x9762;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;"><a name="&#x4E0B;&#x9762;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x9762;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0B;&#x9762;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</h6>
+<pre><code>log.Printf(&#x201C;A long format string: %s %d %d %s&#x201D;, myStringParameter, len(a),
+    expected.Size, defrobnicate(&#x201C;Anotherlongstringparameter&#x201D;,
+        expected.Growth.Nanoseconds() /1e6))`
+&#x5E94;&#x8BE5;&#x662F;&#x5982;&#x4E0B;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;
+`log.Printf( 
+    &#x201C;A long format string: %s %d %d %s&#x201D;, 
+    myStringParameter,
+    len(a),
+    expected.Size,
+    defrobnicate(
+        &#x201C;Anotherlongstringparameter&#x201D;,
+        expected.Growth.Nanoseconds()/1e6, 
+    ),
+)
+</code></pre><h2 id="&#x6CE8;&#x610F;&#x95ED;&#x5305;&#x7684;&#x8C03;&#x7528;"><a name="&#x6CE8;&#x610F;&#x95ED;&#x5305;&#x7684;&#x8C03;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x95ED;&#x5305;&#x7684;&#x8C03;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>11. &#x6CE8;&#x610F;&#x95ED;&#x5305;&#x7684;&#x8C03;&#x7528;</h2>
+<h6 id="&#x5728;&#x5FAA;&#x73AF;&#x4E2D;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x6216;&#x8005;goroutine&#x65B9;&#x6CD5;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x91C7;&#x7528;&#x663E;&#x793A;&#x7684;&#x53D8;&#x91CF;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x8981;&#x518D;&#x95ED;&#x5305;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x5FAA;&#x73AF;&#x7684;&#x53C2;&#x6570;"><a name="&#x5728;&#x5FAA;&#x73AF;&#x4E2D;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x6216;&#x8005;goroutine&#x65B9;&#x6CD5;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x91C7;&#x7528;&#x663E;&#x793A;&#x7684;&#x53D8;&#x91CF;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x8981;&#x518D;&#x95ED;&#x5305;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x5FAA;&#x73AF;&#x7684;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x5FAA;&#x73AF;&#x4E2D;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x6216;&#x8005;goroutine&#x65B9;&#x6CD5;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x91C7;&#x7528;&#x663E;&#x793A;&#x7684;&#x53D8;&#x91CF;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x8981;&#x518D;&#x95ED;&#x5305;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x5FAA;&#x73AF;&#x7684;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x5FAA;&#x73AF;&#x4E2D;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x6216;&#x8005;goroutine&#x65B9;&#x6CD5;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x91C7;&#x7528;&#x663E;&#x793A;&#x7684;&#x53D8;&#x91CF;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x8981;&#x518D;&#x95ED;&#x5305;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x5FAA;&#x73AF;&#x7684;&#x53C2;&#x6570;</h6>
+<pre><code>fori:=0;i&lt;limit;i++{
+    go func(){ DoSomething(i) }() //&#x9519;&#x8BEF;&#x7684;&#x505A;&#x6CD5;
+    go func(i int){ DoSomething(i) }(i)//&#x6B63;&#x786E;&#x7684;&#x505A;&#x6CD5;
+}
+</code></pre><p><a href="https://golang.google.cn/doc/articles/race_detector.html#Race_on_loop_counter" target="_blank">Race on loop counter</a></p>
+<h2 id="&#x5728;&#x903B;&#x8F91;&#x5904;&#x7406;&#x4E2D;&#x7981;&#x7528;panic"><a name="&#x5728;&#x903B;&#x8F91;&#x5904;&#x7406;&#x4E2D;&#x7981;&#x7528;panic" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x903B;&#x8F91;&#x5904;&#x7406;&#x4E2D;&#x7981;&#x7528;panic"><i class="fa fa-link" aria-hidden="true"></i></a>12. &#x5728;&#x903B;&#x8F91;&#x5904;&#x7406;&#x4E2D;&#x7981;&#x7528;panic</h2>
+<p>&#x5728;main&#x5305;&#x4E2D;&#x53EA;&#x6709;&#x5F53;&#x5B9E;&#x5728;&#x4E0D;&#x53EF;&#x8FD0;&#x884C;&#x7684;&#x60C5;&#x51B5;&#x91C7;&#x7528;panic&#xFF0C;&#x4F8B;&#x5982;&#x6587;&#x4EF6;&#x65E0;&#x6CD5;&#x6253;&#x5F00;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x7684;package&#x5BF9;&#x5916;&#x7684;&#x63A5;&#x53E3;&#x4E0D;&#x80FD;&#x6709;panic&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x5305;&#x5185;&#x91C7;&#x7528;&#x3002;&lt;/br&gt;
+&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x5728;main&#x5305;&#x4E2D;&#x4F7F;&#x7528;log.Fatal&#x6765;&#x8BB0;&#x5F55;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x7531;log&#x6765;&#x7ED3;&#x675F;&#x7A0B;&#x5E8F;&#x3002;</p>
+<h2 id="&#x6CE8;&#x91CA;&#x89C4;&#x8303;"><a name="&#x6CE8;&#x91CA;&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x91CA;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>13. &#x6CE8;&#x91CA;&#x89C4;&#x8303;</h2>
+<p>&#x6CE8;&#x91CA;&#x53EF;&#x4EE5;&#x5E2E;&#x6211;&#x4EEC;&#x5F88;&#x597D;&#x7684;&#x5B8C;&#x6210;&#x6587;&#x6863;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x5199;&#x5F97;&#x597D;&#x7684;&#x6CE8;&#x91CA;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x4EE5;&#x540E;&#x7684;&#x7EF4;&#x62A4;&#x3002;&#x8BE6;&#x7EC6;&#x7684;&#x5982;&#x4F55;&#x5199;&#x6CE8;&#x91CA;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#xFF1A;<a href="http://golang.google.cn/doc/effective_go.html#commentary" target="_blank">Commentary</a></p>
+<h3 id="bug&#x6CE8;&#x91CA;"><a name="bug&#x6CE8;&#x91CA;" class="anchor-navigation-ex-anchor" href="#bug&#x6CE8;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>13.1. bug&#x6CE8;&#x91CA;</h3>
+<h6 id="&#x9488;&#x5BF9;&#x4EE3;&#x7801;&#x4E2D;&#x51FA;&#x73B0;&#x7684;bug&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x6559;&#x7A0B;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6CE8;&#x91CA;&#xFF0C;&#x5728;godocs&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x6CE8;&#x91CA;&#x9AD8;&#x4EAE;&#xFF1A;"><a name="&#x9488;&#x5BF9;&#x4EE3;&#x7801;&#x4E2D;&#x51FA;&#x73B0;&#x7684;bug&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x6559;&#x7A0B;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6CE8;&#x91CA;&#xFF0C;&#x5728;godocs&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x6CE8;&#x91CA;&#x9AD8;&#x4EAE;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x9488;&#x5BF9;&#x4EE3;&#x7801;&#x4E2D;&#x51FA;&#x73B0;&#x7684;bug&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x6559;&#x7A0B;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6CE8;&#x91CA;&#xFF0C;&#x5728;godocs&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x6CE8;&#x91CA;&#x9AD8;&#x4EAE;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9488;&#x5BF9;&#x4EE3;&#x7801;&#x4E2D;&#x51FA;&#x73B0;&#x7684;bug&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x6559;&#x7A0B;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6CE8;&#x91CA;&#xFF0C;&#x5728;godocs&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x6CE8;&#x91CA;&#x9AD8;&#x4EAE;&#xFF1A;</h6>
+<pre><code>// BUG(astaxie):This divides by zero. var i float = 1/0
+</code></pre><h2 id="struct&#x89C4;&#x8303;"><a name="struct&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#struct&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>14. struct&#x89C4;&#x8303;</h2>
+<p><strong><em>struct&#x7533;&#x660E;&#x548C;&#x521D;&#x59CB;&#x5316;&#x683C;&#x5F0F;&#x91C7;&#x7528;&#x591A;&#x884C;&#xFF1A;</em></strong></p>
+<h6 id="&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;"><a name="&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</h6>
+<pre><code>type User struct{
+    Username  string
+    Email     string
+}
+</code></pre><h6 id="&#x521D;&#x59CB;&#x5316;&#x5982;&#x4E0B;&#xFF1A;"><a name="&#x521D;&#x59CB;&#x5316;&#x5982;&#x4E0B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x5982;&#x4E0B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521D;&#x59CB;&#x5316;&#x5982;&#x4E0B;&#xFF1A;</h6>
+<pre><code>u := User{
+    Username: &quot;astaxie&quot;,
+    Email:    &quot;astaxie@gmail.com&quot;,
+}
+</code></pre><p><strong><em>recieved&#x662F;&#x503C;&#x7C7B;&#x578B;&#x8FD8;&#x662F;&#x6307;&#x9488;&#x7C7B;&#x578B;</em></strong></p>
+<h6 id="&#x5230;&#x5E95;&#x662F;&#x91C7;&#x7528;&#x503C;&#x7C7B;&#x578B;&#x8FD8;&#x662F;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x4E3B;&#x8981;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x539F;&#x5219;&#xFF1A;"><a name="&#x5230;&#x5E95;&#x662F;&#x91C7;&#x7528;&#x503C;&#x7C7B;&#x578B;&#x8FD8;&#x662F;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x4E3B;&#x8981;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x539F;&#x5219;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5230;&#x5E95;&#x662F;&#x91C7;&#x7528;&#x503C;&#x7C7B;&#x578B;&#x8FD8;&#x662F;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x4E3B;&#x8981;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x539F;&#x5219;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5230;&#x5E95;&#x662F;&#x91C7;&#x7528;&#x503C;&#x7C7B;&#x578B;&#x8FD8;&#x662F;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x4E3B;&#x8981;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x539F;&#x5219;&#xFF1A;</h6>
+<pre><code>func(w Win) Tally(playerPlayer)int // w&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x6539;&#x53D8;
+func(w *Win) Tally(playerPlayer)int // w&#x4F1A;&#x6539;&#x53D8;&#x6570;&#x636E;
+</code></pre><p><strong><em>&#x5E26;mutex&#x7684;struct&#x5FC5;&#x987B;&#x662F;&#x6307;&#x9488;receivers</em></strong>&lt;/br&gt;
+&#x5982;&#x679C;&#x4F60;&#x5B9A;&#x4E49;&#x7684;struct&#x4E2D;&#x5E26;&#x6709;mutex,&#x90A3;&#x4E48;&#x4F60;&#x7684;receivers&#x5FC5;&#x987B;&#x662F;&#x6307;&#x9488;</p>
+<h2 id="&#x53C2;&#x8003;&#x8D44;&#x6599;"><a name="&#x53C2;&#x8003;&#x8D44;&#x6599;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x8D44;&#x6599;"><i class="fa fa-link" aria-hidden="true"></i></a>15. &#x53C2;&#x8003;&#x8D44;&#x6599;</h2>
+<ul>
+<li><a href="https://code.google.com/p/go-wiki/wiki/CodeReviewComments" target="_blank">&#x4EE3;&#x7801;&#x5BA1;&#x67E5;&#x6CE8;&#x91CA;</a></li>
+<li><a href="http://golang.org/doc/effective_go.html" target="_blank">Effective Go</a></li>
+</ul>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Go语言资料">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gocmd.html" class="navigation navigation-next " aria-label="Next page: Go命令">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"编码规范指南","level":"1.2","depth":1,"next":{"title":"Go命令","level":"1.2.1","depth":2,"path":"notes/gocmd.md","ref":"notes/gocmd.md","articles":[]},"previous":{"title":"Go语言资料","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","anchor-navigation-ex","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":true},"search-plus":{},"expandable-chapters-small":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lbb","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"探索学习发现Go语言"},"file":{"path":"notes/README.md","mtime":"2018-04-27T07:13:17.369Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-27T07:22:49.675Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

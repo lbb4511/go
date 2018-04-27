@@ -1,0 +1,1152 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Go语言圣经 · Go语言编程笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lbb">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="groupcache.html" />
+    
+    
+    <link rel="prev" href="govendor.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    编码规范指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gocmd.html">
+            
+                <a href="gocmd.html">
+            
+                    
+                    Go命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="govendor.html">
+            
+                <a href="govendor.html">
+            
+                    
+                    Go外部依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="the-go-programming-language.html">
+            
+                <a href="the-go-programming-language.html">
+            
+                    
+                    Go语言圣经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="groupcache.html">
+            
+                <a href="groupcache.html">
+            
+                    
+                    GroupCache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="synchronization.html">
+            
+                <a href="synchronization.html">
+            
+                    
+                    同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="gui.html">
+            
+                <a href="gui.html">
+            
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../blog/">
+            
+                <a href="../blog/">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../blog/goroutine.html">
+            
+                <a href="../blog/goroutine.html">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../blog/concurrent-programming.html">
+            
+                <a href="../blog/concurrent-programming.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../blog/loadbalancing.html">
+            
+                <a href="../blog/loadbalancing.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Go语言圣经</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x524D;&#x8A00;"><b> </b>&#x524D;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#&#x5165;&#x95E8;"><b> </b>&#x5165;&#x95E8;</a></li><li><span class="title-icon "></span><a href="#&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;"><b> </b>&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;</a></li><li><span class="title-icon "></span><a href="#&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;"><b> </b>&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;"><b> </b>&#x590D;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;"><b> </b>&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;"><b> </b>&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x63A5;&#x53E3;"><b> </b>&#x63A5;&#x53E3;</a></li><li><span class="title-icon "></span><a href="#goroutines&#x548C;channels"><b> </b>Goroutines&#x548C;Channels</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;_1"><b> </b>&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;_1"><b> </b>&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x63A5;&#x53E3;_1"><b> </b>&#x63A5;&#x53E3;</a></li><li><span class="title-icon "></span><a href="#goroutines&#x548C;channels_1"><b> </b>Goroutines&#x548C;Channels</a></li><li><span class="title-icon "></span><a href="#&#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x5E76;&#x53D1;"><b> </b>&#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x5E76;&#x53D1;</a></li><li><span class="title-icon "></span><a href="#&#x5305;&#x548C;&#x5DE5;&#x5177;"><b> </b>&#x5305;&#x548C;&#x5DE5;&#x5177;</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;"><b> </b>&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x53CD;&#x5C04;"><b> </b>&#x53CD;&#x5C04;</a></li></ul></div><a href="#&#x524D;&#x8A00;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x524D;&#x8A00;"><a name="&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x524D;&#x8A00;</h1>
+<h4 id="go-&#x8BED;&#x8A00;&#x8D77;&#x6E90;"><a name="go-&#x8BED;&#x8A00;&#x8D77;&#x6E90;" class="anchor-navigation-ex-anchor" href="#go-&#x8BED;&#x8A00;&#x8D77;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>Go &#x8BED;&#x8A00;&#x8D77;&#x6E90;</h4>
+<p><img src="../../../img/go.png" alt="Golang&#x53D1;&#x5C55;&#x5386;&#x7A0B;"></p>
+<h4 id="go&#x8BED;&#x8A00;&#x9879;&#x76EE;"><a name="go&#x8BED;&#x8A00;&#x9879;&#x76EE;" class="anchor-navigation-ex-anchor" href="#go&#x8BED;&#x8A00;&#x9879;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>Go&#x8BED;&#x8A00;&#x9879;&#x76EE;</h4>
+<ul>
+<li>&quot;&#x8F6F;&#x4EF6;&#x7684;&#x590D;&#x6742;&#x6027;&#x662F;&#x4E58;&#x6CD5;&#x7EA7;&#x76F8;&#x5173;&#x7684;-----<a href="http://genius.cat-v.org/rob-pike/" target="_blank">Rob Pike</a>&quot;</li>
+<li>&#x7B80;&#x6D01;&#x7684;&#x8BBE;&#x8BA1;&#x9700;&#x8981;&#x5728;&#x5DE5;&#x4F5C;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019;&#x820D;&#x5F03;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x60F3;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x8F6F;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x4E25;&#x683C;&#x533A;&#x522B;&#x597D;&#x7684;&#x6539;&#x53D8;&#x548C;&#x574F;&#x7684;&#x6539;&#x53D8;&#x3002;&#x901A;&#x8FC7;&#x8DB3;&#x591F;&#x7684;&#x52AA;&#x529B;&#xFF0C;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x6539;&#x53D8;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x7834;&#x574F;&#x539F;&#x6709;&#x5B8C;&#x6574;&#x6982;&#x5FF5;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#x4FDD;&#x6301;&#x81EA;&#x9002;&#x5E94;&#xFF0C;&#x6B63;&#x5982;<a href="http://www.cs.unc.edu/~brooks/" target="_blank">Fred Brooks</a>&#x6240;&#x8BF4;&#x7684;&#x201C;&#x6982;&#x5FF5;&#x5B8C;&#x6574;&#x6027;&#x201D;&#xFF1B;&#x800C;&#x4E00;&#x4E2A;&#x574F;&#x7684;&#x6539;&#x53D8;&#x5219;&#x4E0D;&#x80FD;&#x8FBE;&#x5230;&#x8FD9;&#x4E2A;&#x6548;&#x679C;&#xFF0C;&#x5B83;&#x4EEC;&#x4EC5;&#x4EC5;&#x662F;&#x901A;&#x8FC7;&#x80A4;&#x6D45;&#x7684;&#x548C;&#x7B80;&#x5355;&#x7684;&#x59A5;&#x534F;&#x6765;&#x7834;&#x574F;&#x539F;&#x6709;&#x8BBE;&#x8BA1;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;&#x53EA;&#x6709;&#x901A;&#x8FC7;&#x7B80;&#x6D01;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x624D;&#x80FD;&#x8BA9;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x4FDD;&#x6301;&#x7A33;&#x5B9A;&#x3001;&#x5B89;&#x5168;&#x548C;&#x6301;&#x7EED;&#x7684;&#x8FDB;&#x5316;&#x3002;</li>
+</ul>
+<h4 id="&#x672C;&#x4E66;&#x7684;&#x7EC4;&#x7EC7;"><a name="&#x672C;&#x4E66;&#x7684;&#x7EC4;&#x7EC7;" class="anchor-navigation-ex-anchor" href="#&#x672C;&#x4E66;&#x7684;&#x7EC4;&#x7EC7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x672C;&#x4E66;&#x7684;&#x7EC4;&#x7EC7;</h4>
+<p><strong><em>&#x57FA;&#x7840;</em></strong></p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x7AE0;&#x5305;&#x542B;&#x4E86;&#x672C;&#x6559;&#x7A0B;&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#xFF0C;&#x901A;&#x8FC7;&#x5341;&#x51E0;&#x4E2A;&#x7A0B;&#x5E8F;&#x4ECB;&#x7ECD;&#x4E86;&#x7528;Go&#x8BED;&#x8A00;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x7C7B;&#x4F3C;&#x8BFB;&#x5199;&#x6587;&#x4EF6;&#x3001;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x5316;&#x3001;&#x521B;&#x5EFA;&#x56FE;&#x50CF;&#x3001;&#x7F51;&#x7EDC;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x901A;&#x8BAF;&#x7B49;&#x65E5;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;</li>
+<li>&#x7B2C;&#x4E8C;&#x7AE0;&#x63CF;&#x8FF0;&#x4E86;Go&#x8BED;&#x8A00;&#x7A0B;&#x5E8F;&#x7684;&#x57FA;&#x672C;&#x5143;&#x7D20;&#x7ED3;&#x6784;&#x3001;&#x53D8;&#x91CF;&#x3001;&#x65B0;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x3001;&#x5305;&#x548C;&#x6587;&#x4EF6;&#x3001;&#x4EE5;&#x53CA;&#x4F5C;&#x7528;&#x57DF;&#x7B49;&#x6982;&#x5FF5;&#x3002;</li>
+<li>&#x7B2C;&#x4E09;&#x7AE0;&#x8BA8;&#x8BBA;&#x4E86;&#x6570;&#x5B57;&#x3001;&#x5E03;&#x5C14;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x5E38;&#x91CF;&#xFF0C;&#x5E76;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x663E;&#x793A;&#x548C;&#x5904;&#x7406;Unicode&#x5B57;&#x7B26;&#x3002;</li>
+<li>&#x7B2C;&#x56DB;&#x7AE0;&#x63CF;&#x8FF0;&#x4E86;&#x590D;&#x5408;&#x7C7B;&#x578B;&#xFF0C;&#x4ECE;&#x7B80;&#x5355;&#x7684;&#x6570;&#x7EC4;&#x3001;&#x5B57;&#x5178;&#x3001;&#x5207;&#x7247;&#x5230;&#x52A8;&#x6001;&#x5217;&#x8868;&#x3002;</li>
+<li>&#x7B2C;&#x4E94;&#x7AE0;&#x6DB5;&#x76D6;&#x4E86;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x8BA8;&#x8BBA;&#x4E86;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x3001;panic&#x548C;recover&#xFF0C;&#x8FD8;&#x6709;defer&#x8BED;&#x53E5;&#x3002;</li>
+</ul>
+<p><code>&#x7B2C;&#x4E00;&#x7AE0;&#x5230;&#x7B2C;&#x4E94;&#x7AE0;&#x662F;&#x57FA;&#x7840;&#x90E8;&#x5206;&#xFF0C;&#x4E3B;&#x6D41;&#x547D;&#x4EE4;&#x5F0F;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x8FD9;&#x90E8;&#x5206;&#x90FD;&#x7C7B;&#x4F3C;&#x3002;&#x4E2A;&#x522B;&#x4E4B;&#x5904;&#xFF0C;Go&#x8BED;&#x8A00;&#x6709;&#x81EA;&#x5DF1;&#x7279;&#x8272;&#x7684;&#x8BED;&#x6CD5;&#x548C;&#x98CE;&#x683C;&#xFF0C;&#x4F46;&#x662F;&#x5927;&#x591A;&#x6570;&#x7A0B;&#x5E8F;&#x5458;&#x80FD;&#x5F88;&#x5FEB;&#x9002;&#x5E94;&#x3002;&#x5176;&#x4F59;&#x7AE0;&#x8282;&#x662F;Go&#x8BED;&#x8A00;&#x7279;&#x6709;&#x7684;&#xFF1A;&#x65B9;&#x6CD5;&#x3001;&#x63A5;&#x53E3;&#x3001;&#x5E76;&#x53D1;&#x3001;&#x5305;&#x3001;&#x6D4B;&#x8BD5;&#x548C;&#x53CD;&#x5C04;&#x7B49;&#x8BED;&#x8A00;&#x7279;&#x6027;&#x3002;</code></p>
+<p><strong><em>&#x8FDB;&#x9636;</em></strong></p>
+<ul>
+<li>&#x7B2C;&#x516B;&#x7AE0;&#x8BA8;&#x8BBA;&#x4E86;&#x57FA;&#x4E8E;&#x987A;&#x5E8F;&#x901A;&#x4FE1;&#x8FDB;&#x7A0B;(CSP)&#x6982;&#x5FF5;&#x7684;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#xFF0C;&#x4F7F;&#x7528;goroutines&#x548C;channels&#x5904;&#x7406;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x3002;</li>
+<li>&#x7B2C;&#x4E5D;&#x7AE0;&#x5219;&#x8BA8;&#x8BBA;&#x4E86;&#x4F20;&#x7EDF;&#x7684;&#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x3002;</li>
+<li>&#x7B2C;&#x5341;&#x7AE0;&#x63CF;&#x8FF0;&#x4E86;&#x5305;&#x673A;&#x5236;&#x548C;&#x5305;&#x7684;&#x7EC4;&#x7EC7;&#x7ED3;&#x6784;&#x3002;&#x8FD9;&#x4E00;&#x7AE0;&#x8FD8;&#x5C55;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x6709;&#x6548;&#x5730;&#x5229;&#x7528;Go&#x81EA;&#x5E26;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x7528;&#x5355;&#x4E2A;&#x547D;&#x4EE4;&#x5B8C;&#x6210;&#x7F16;&#x8BD1;&#x3001;&#x6D4B;&#x8BD5;&#x3001;&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#x3001;&#x4EE3;&#x7801;&#x683C;&#x5F0F;&#x5316;&#x3001;&#x6587;&#x6863;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x8BF8;&#x591A;&#x4EFB;&#x52A1;&#x3002;</li>
+<li>&#x7B2C;&#x5341;&#x4E00;&#x7AE0;&#x8BA8;&#x8BBA;&#x4E86;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#xFF0C;Go&#x8BED;&#x8A00;&#x7684;&#x5DE5;&#x5177;&#x548C;&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x96C6;&#x6210;&#x4E86;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x6D4B;&#x8BD5;&#x529F;&#x80FD;&#xFF0C;&#x907F;&#x514D;&#x4E86;&#x5F3A;&#x5927;&#x4F46;&#x590D;&#x6742;&#x7684;&#x6D4B;&#x8BD5;&#x6846;&#x67B6;&#x3002;&#x6D4B;&#x8BD5;&#x5E93;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x6784;&#x4EF6;&#xFF0C;&#x5FC5;&#x8981;&#x65F6;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6784;&#x5EFA;&#x590D;&#x6742;&#x7684;&#x6D4B;&#x8BD5;&#x6784;&#x4EF6;&#x3002;</li>
+<li>&#x7B2C;&#x5341;&#x4E8C;&#x7AE0;&#x8BA8;&#x8BBA;&#x4E86;&#x53CD;&#x5C04;&#xFF0C;&#x4E00;&#x79CD;&#x7A0B;&#x5E8F;&#x5728;&#x8FD0;&#x884C;&#x671F;&#x95F4;&#x5BA1;&#x89C6;&#x81EA;&#x5DF1;&#x7684;&#x80FD;&#x529B;&#x3002;&#x53CD;&#x5C04;&#x662F;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x7F16;&#x7A0B;&#x5DE5;&#x5177;&#xFF0C;&#x4E0D;&#x8FC7;&#x8981;&#x8C28;&#x614E;&#x5730;&#x4F7F;&#x7528;&#xFF1B;&#x8FD9;&#x4E00;&#x7AE0;&#x5229;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x91CD;&#x8981;&#x7684;Go&#x8BED;&#x8A00;&#x5E93;&#x51FD;&#x6570;, &#x5C55;&#x793A;&#x4E86;&#x53CD;&#x5C04;&#x7684;&#x5F3A;&#x5927;&#x7528;&#x6CD5;&#x3002;&#x7B2C;&#x5341;&#x4E09;&#x7AE0;&#x89E3;&#x91CA;&#x4E86;&#x5E95;&#x5C42;&#x7F16;&#x7A0B;&#x7684;&#x7EC6;&#x8282;&#xFF0C;&#x5728;&#x5FC5;&#x8981;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;unsafe&#x5305;&#x7ED5;&#x8FC7;Go&#x8BED;&#x8A00;&#x5B89;&#x5168;&#x7684;&#x7C7B;&#x578B;&#x7CFB;&#x7EDF;&#x3002;</li>
+</ul>
+<hr>
+<h1 id="&#x5165;&#x95E8;"><a name="&#x5165;&#x95E8;" class="anchor-navigation-ex-anchor" href="#&#x5165;&#x95E8;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x5165;&#x95E8;</h1>
+<h4 id="hello-world"><a name="hello-world" class="anchor-navigation-ex-anchor" href="#hello-world"><i class="fa fa-link" aria-hidden="true"></i></a>Hello, World</h4>
+<p><strong><em><code>&#x5C1D;&#x8BD5;&#x7528;100&#x4E2D;&#x65B9;&#x6CD5;&#x6253;&#x5370;&#x51FA;Hello, World</code></em></strong>
+&#x54C8;&#x54C8;!</p>
+<pre><code>package main
+
+func main() {
+    print(&quot;Hello, &#x4E16;&#x754C;&quot;) //Go&#x8BED;&#x8A00;&#x539F;&#x751F;&#x652F;&#x6301;Unicode&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x5168;&#x4E16;&#x754C;&#x4EFB;&#x4F55;&#x8BED;&#x8A00;&#x7684;&#x6587;&#x672C;&#x3002;
+}
+</code></pre><h4 id="&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;"><a name="&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;</h4>
+<p>os&#x5305;&#x4EE5;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x4E0E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4EA4;&#x4E92;&#x7684;&#x51FD;&#x6570;&#x548C;&#x53D8;&#x91CF;&#x3002;&#x7A0B;&#x5E8F;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x53EF;&#x4ECE;os&#x5305;&#x7684;Args&#x53D8;&#x91CF;&#x83B7;&#x53D6;&#xFF1B;os&#x5305;&#x5916;&#x90E8;&#x4F7F;&#x7528;os.Args&#x8BBF;&#x95EE;&#x8BE5;&#x53D8;&#x91CF;&#x3002;</p>
+<h4 id="&#x67E5;&#x627E;&#x91CD;&#x590D;&#x7684;&#x884C;"><a name="&#x67E5;&#x627E;&#x91CD;&#x590D;&#x7684;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x627E;&#x91CD;&#x590D;&#x7684;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x627E;&#x91CD;&#x590D;&#x7684;&#x884C;</h4>
+<ul>
+<li><code>bufio</code>&#x5305;&#xFF0C;&#x5B83;&#x4F7F;&#x5904;&#x7406;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x65B9;&#x4FBF;&#x53C8;&#x9AD8;&#x6548;&#x3002;Scanner&#x7C7B;&#x578B;&#x662F;&#x8BE5;&#x5305;&#x6700;&#x6709;&#x7528;&#x7684;&#x7279;&#x6027;&#x4E4B;&#x4E00;&#xFF0C;&#x5B83;&#x8BFB;&#x53D6;&#x8F93;&#x5165;&#x5E76;&#x5C06;&#x5176;&#x62C6;&#x6210;&#x884C;&#x6216;&#x5355;&#x8BCD;&#xFF1B;&#x901A;&#x5E38;&#x662F;&#x5904;&#x7406;&#x884C;&#x5F62;&#x5F0F;&#x7684;&#x8F93;&#x5165;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x683C;&#x5F0F;&#x5316;<em>verb</em><pre><code>%d          &#x5341;&#x8FDB;&#x5236;&#x6574;&#x6570;
+%x, %o, %b  &#x5341;&#x516D;&#x8FDB;&#x5236;&#xFF0C;&#x516B;&#x8FDB;&#x5236;&#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x6574;&#x6570;&#x3002;
+%f, %g, %e  &#x6D6E;&#x70B9;&#x6570;&#xFF1A; 3.141593 3.141592653589793 3.141593e+00
+%t          &#x5E03;&#x5C14;&#xFF1A;true&#x6216;false
+%c          &#x5B57;&#x7B26;&#xFF08;rune&#xFF09; (Unicode&#x7801;&#x70B9;)
+%s          &#x5B57;&#x7B26;&#x4E32;
+%q          &#x5E26;&#x53CC;&#x5F15;&#x53F7;&#x7684;&#x5B57;&#x7B26;&#x4E32;&quot;abc&quot;&#x6216;&#x5E26;&#x5355;&#x5F15;&#x53F7;&#x7684;&#x5B57;&#x7B26;&apos;c&apos;
+%v          &#x53D8;&#x91CF;&#x7684;&#x81EA;&#x7136;&#x5F62;&#x5F0F;&#xFF08;natural format&#xFF09;
+%T          &#x53D8;&#x91CF;&#x7684;&#x7C7B;&#x578B;
+%%          &#x5B57;&#x9762;&#x4E0A;&#x7684;&#x767E;&#x5206;&#x53F7;&#x6807;&#x5FD7;&#xFF08;&#x65E0;&#x64CD;&#x4F5C;&#x6570;&#xFF09;
+</code></pre><code>ioutil.ReadFile(filename)</code>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x5207;&#x7247;&#xFF08;byte slice&#xFF09;</li>
+</ul>
+<h4 id="gif&#x52A8;&#x753B;"><a name="gif&#x52A8;&#x753B;" class="anchor-navigation-ex-anchor" href="#gif&#x52A8;&#x753B;"><i class="fa fa-link" aria-hidden="true"></i></a>GIF&#x52A8;&#x753B;</h4>
+<ul>
+<li>&#x751F;&#x6210;&#x7684;&#x56FE;&#x5F62;&#x540D;&#x5B57;&#x53EB;&#x5229;&#x8428;&#x5982;&#x56FE;&#x5F62;(Lissajous figures)</li>
+</ul>
+<h4 id="&#x83B7;&#x53D6;url"><a name="&#x83B7;&#x53D6;url" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;url"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;URL</h4>
+<p>http.Get(url)
+ioutil.ReadAll(resp.Body)</p>
+<h4 id="&#x5E76;&#x53D1;&#x83B7;&#x53D6;&#x591A;&#x4E2A;url"><a name="&#x5E76;&#x53D1;&#x83B7;&#x53D6;&#x591A;&#x4E2A;url" class="anchor-navigation-ex-anchor" href="#&#x5E76;&#x53D1;&#x83B7;&#x53D6;&#x591A;&#x4E2A;url"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E76;&#x53D1;&#x83B7;&#x53D6;&#x591A;&#x4E2A;URL</h4>
+<p>goroutine&#x548C;channel</p>
+<h4 id="web&#x670D;&#x52A1;"><a name="web&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#web&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>Web&#x670D;&#x52A1;</h4>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;log&quot;
+    &quot;net/http&quot;
+)
+
+func main() {
+    http.HandleFunc(&quot;/&quot;, handler) // each request calls handler
+    log.Fatal(http.ListenAndServe(&quot;localhost:8000&quot;, nil))
+}
+
+// handler echoes the Path component of the requested URL.
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, &quot;URL.Path = %q\n&quot;, r.URL.Path)
+}
+</code></pre><ul>
+<li>&#x5982;&#x679C;&#x4F60;&#x7684;&#x8BF7;&#x6C42;pattern&#x662F;&#x4EE5;/&#x7ED3;&#x5C3E;&#xFF0C;&#x90A3;&#x4E48;&#x6240;&#x6709;&#x4EE5;&#x8BE5;url&#x4E3A;&#x524D;&#x7F00;&#x7684;url&#x90FD;&#x4F1A;&#x88AB;&#x8FD9;&#x6761;&#x89C4;&#x5219;&#x5339;&#x914D;&#x3002;</li>
+</ul>
+<h4 id="&#x8981;&#x70B9;"><a name="&#x8981;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x8981;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8981;&#x70B9;</h4>
+<ul>
+<li><strong>&#x63A7;&#x5236;&#x6D41;</strong><pre><code>  switch coinflip() {
+  case &quot;heads&quot;:
+      heads++
+  case &quot;tails&quot;:
+      tails++
+  default:
+      fmt.Println(&quot;landed on edge!&quot;)
+</code></pre>Go&#x8BED;&#x8A00;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x5730;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;case&#x540E;&#x5199;break
+&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x76F8;&#x90BB;&#x7684;&#x51E0;&#x4E2A;case&#x90FD;&#x6267;&#x884C;&#x540C;&#x4E00;&#x903B;&#x8F91;&#x7684;&#x8BDD;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x663E;&#x5F0F;&#x5730;&#x5199;&#x4E0A;&#x4E00;&#x4E2A;fallthrough&#x8BED;&#x53E5;&#x6765;&#x8986;&#x76D6;&#x8FD9;&#x79CD;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x3002;</li>
+<li><strong>&#x547D;&#x540D;&#x7C7B;&#x578B;</strong></li>
+<li><strong>&#x6307;&#x9488;</strong>
+&#x6307;&#x9488;&#x662F;&#x4E00;&#x79CD;&#x76F4;&#x63A5;&#x5B58;&#x50A8;&#x4E86;&#x53D8;&#x91CF;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x6307;&#x9488;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&amp;&#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x5E76;&#x4E14;*&#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6307;&#x9488;&#x6307;&#x5411;&#x7684;&#x53D8;&#x91CF;&#x5185;&#x5BB9;&#xFF0C;&#x4F46;&#x662F;&#x5728;Go&#x8BED;&#x8A00;&#x91CC;&#x6CA1;&#x6709;&#x6307;&#x9488;&#x8FD0;&#x7B97;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x80FD;&#x50CF;c&#x8BED;&#x8A00;&#x91CC;&#x53EF;&#x4EE5;&#x5BF9;&#x6307;&#x9488;&#x8FDB;&#x884C;&#x52A0;&#x6216;&#x51CF;&#x64CD;&#x4F5C;&#x3002;</li>
+<li><strong>&#x65B9;&#x6CD5;&#x548C;&#x63A5;&#x53E3;</strong>
+Go&#x8BED;&#x8A00;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x88AB;&#x5173;&#x8054;&#x5230;&#x4EFB;&#x610F;&#x4E00;&#x79CD;&#x547D;&#x540D;&#x7C7B;&#x578B;&#x3002;</li>
+<li><strong>&#x5305;</strong></li>
+<li><strong>&#x6CE8;&#x91CA;</strong></li>
+</ul>
+<hr>
+<h1 id="&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;"><a name="&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x7A0B;&#x5E8F;&#x7ED3;&#x6784;</h1>
+<h4 id="&#x547D;&#x540D;"><a name="&#x547D;&#x540D;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x547D;&#x540D;</h4>
+<ul>
+<li>25&#x4E2A;&#x5173;&#x952E;&#x5B57;
+<code>break      default       func     interface   select
+case       defer         go       map         struct
+chan       else          goto     package     switch
+const      fallthrough   if       range       type
+continue   for           import   return      var</code></li>
+<li>30&#x591A;&#x4E2A;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x540D;&#x5B57;
+<code>&#x5185;&#x5EFA;&#x5E38;&#x91CF;: true false iota nil
+&#x5185;&#x5EFA;&#x7C7B;&#x578B;: int int8 int16 int32 int64
+uint uint8 uint16 uint32 uint64 uintptr
+float32 float64 complex128 complex64
+bool byte rune string error
+&#x5185;&#x5EFA;&#x51FD;&#x6570;: make len cap new append copy close delete
+complex real imag
+panic recover</code></li>
+<li>Go&#x8BED;&#x8A00;&#x7A0B;&#x5E8F;&#x5458;&#x63A8;&#x8350;&#x4F7F;&#x7528; <strong>&#x9A7C;&#x5CF0;&#x5F0F;</strong> &#x547D;&#x540D;</li>
+</ul>
+<h4 id="&#x58F0;&#x660E;"><a name="&#x58F0;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x58F0;&#x660E;</h4>
+<h4 id="&#x53D8;&#x91CF;"><a name="&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D8;&#x91CF;</h4>
+<ul>
+<li>&#x7B80;&#x77ED;&#x53D8;&#x91CF;&#x58F0;&#x660E;
+<code>i := 100</code></li>
+<li>&#x6307;&#x9488;
+<code>x := 1
+p := &amp;x // p, of type *int, points to x
+fmt.Println(*p) // &quot;1&quot;
+*p = 2 // equivalent to x = 2
+fmt.Println(x) // &quot;2&quot;</code></li>
+<li>new&#x51FD;&#x6570;
+<code>p := new(int) // p, *int &#x7C7B;&#x578B;, &#x6307;&#x5411;&#x533F;&#x540D;&#x7684; int &#x53D8;&#x91CF;</code></li>
+<li>&#x53D8;&#x91CF;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;
+Go&#x8BED;&#x8A00;&#x7684;&#x81EA;&#x52A8;&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x7F16;&#x5199;&#x6B63;&#x786E;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x4E00;&#x4E2A;&#x5DE8;&#x5927;&#x7684;&#x5E2E;&#x52A9;&#xFF0C;&#x4F46;&#x4E5F;&#x5E76;&#x4E0D;&#x662F;&#x8BF4;&#x4F60;&#x5B8C;&#x5168;&#x4E0D;&#x7528;&#x8003;&#x8651;&#x5185;&#x5B58;&#x4E86;&#x3002;&#x4F60;&#x867D;&#x7136;&#x4E0D;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x5730;&#x5206;&#x914D;&#x548C;&#x91CA;&#x653E;&#x5185;&#x5B58;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x7F16;&#x5199;&#x9AD8;&#x6548;&#x7684;&#x7A0B;&#x5E8F;&#x4F60;&#x4F9D;&#x7136;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x53D8;&#x91CF;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x5C06;&#x6307;&#x5411;&#x77ED;&#x751F;&#x547D;&#x5468;&#x671F;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#x4FDD;&#x5B58;&#x5230;&#x5177;&#x6709;&#x957F;&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x4FDD;&#x5B58;&#x5230;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x4F1A;&#x963B;&#x6B62;&#x5BF9;&#x77ED;&#x751F;&#x547D;&#x5468;&#x671F;&#x5BF9;&#x8C61;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#xFF08;&#x4ECE;&#x800C;&#x53EF;&#x80FD;&#x5F71;&#x54CD;&#x7A0B;&#x5E8F;&#x7684;&#x6027;&#x80FD;&#xFF09;&#x3002;</li>
+</ul>
+<h4 id="&#x8D4B;&#x503C;"><a name="&#x8D4B;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x8D4B;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D4B;&#x503C;</h4>
+<ul>
+<li>&#x5143;&#x7EC4;&#x8D4B;&#x503C;
+<code>x, y = y, x
+a[i], a[j] = a[j], a[i]</code></li>
+<li>&#x53EF;&#x8D4B;&#x503C;&#x6027;
+&#x53EF;&#x8D4B;&#x503C;&#x6027;&#x7684;&#x89C4;&#x5219;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x6709;&#x7740;&#x4E0D;&#x540C;&#x8981;&#x6C42;&#xFF0C;<em>&#x5BF9;&#x6BCF;&#x4E2A;&#x65B0;&#x7C7B;&#x578B;&#x7279;&#x6B8A;&#x7684;&#x5730;&#x65B9;&#x6211;&#x4EEC;&#x4F1A;&#x4E13;&#x95E8;&#x89E3;&#x91CA;&#x3002;</em>&#x5BF9;&#x4E8E;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8BA8;&#x8BBA;&#x8FC7;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x7684;&#x89C4;&#x5219;&#x662F;&#x7B80;&#x5355;&#x7684;&#xFF1A;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x5B8C;&#x5168;&#x5339;&#x914D;&#xFF0C;nil&#x53EF;&#x4EE5;&#x8D4B;&#x503C;&#x7ED9;&#x4EFB;&#x4F55;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x5E38;&#x91CF;&#xFF08;&#xA7;3.6&#xFF09;&#x5219;&#x6709;&#x66F4;&#x7075;&#x6D3B;&#x7684;&#x8D4B;&#x503C;&#x89C4;&#x5219;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x663E;&#x5F0F;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</li>
+</ul>
+<h4 id="&#x7C7B;&#x578B;"><a name="&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x578B;</h4>
+<h4 id="&#x5305;&#x548C;&#x6587;&#x4EF6;"><a name="&#x5305;&#x548C;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5305;&#x548C;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5305;&#x548C;&#x6587;&#x4EF6;</h4>
+<ul>
+<li>&#x5BFC;&#x5165;&#x5305;
+<code>&quot;fmt&quot;
+. &quot;fmt&quot; //&#x7701;&#x7565;&#x5305;&#x540D;
+_ &quot;fmt&quot; //&#x53EA;&#x5BFC;&#x5165;</code></li>
+<li>&#x5305;&#x7684;&#x521D;&#x59CB;&#x5316;
+<code>func init() { /* ... */ }</code></li>
+</ul>
+<h4 id="&#x4F5C;&#x7528;&#x57DF;"><a name="&#x4F5C;&#x7528;&#x57DF;" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;&#x57DF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F5C;&#x7528;&#x57DF;</h4>
+<ul>
+<li>&#x4E0D;&#x8981;&#x5C06;&#x4F5C;&#x7528;&#x57DF;&#x548C;&#x751F;&#x547D;&#x5468;&#x671F;&#x6DF7;&#x4E3A;&#x4E00;&#x8C08;&#x3002;&#x58F0;&#x660E;&#x8BED;&#x53E5;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x6587;&#x672C;&#x533A;&#x57DF;&#xFF1B;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7F16;&#x8BD1;&#x65F6;&#x7684;&#x5C5E;&#x6027;&#x3002;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x662F;&#x6307;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x53D8;&#x91CF;&#x5B58;&#x5728;&#x7684;&#x6709;&#x6548;&#x65F6;&#x95F4;&#x6BB5;&#xFF0C;&#x5728;&#x6B64;&#x65F6;&#x95F4;&#x533A;&#x57DF;&#x5185;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x7A0B;&#x5E8F;&#x7684;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x5F15;&#x7528;&#xFF1B;&#x662F;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x6982;&#x5FF5;&#x3002;</li>
+<li>&#x63A7;&#x5236;&#x6D41;&#x6807;&#x53F7;&#xFF0C;&#x5C31;&#x662F;break&#x3001;continue&#x6216;goto&#x8BED;&#x53E5;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x7684;&#x90A3;&#x79CD;&#x6807;&#x53F7;&#xFF0C;&#x5219;&#x662F;&#x51FD;&#x6570;&#x7EA7;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x3002;</li>
+</ul>
+<hr>
+<h1 id="&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;"><a name="&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;</h1>
+<h4 id="&#x6574;&#x578B;"><a name="&#x6574;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x6574;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6574;&#x578B;</h4>
+<p><code>8&#x3001;16&#x3001;32&#x3001;64bit</code></p>
+<ul>
+<li>&#x8FD0;&#x7B97;&#x7B26;<pre><code>*&#xFF08;&#x4E58;&#xFF09;      /&#xFF08;&#x9664;&#xFF09;      %&#xFF08;&#x4F59;&#xFF09;      &lt;&lt;&#xFF08;&#x5DE6;&#x79FB;&#xFF09;       &gt;&gt;&#xFF08;&#x53F3;&#x79FB;&#xFF09;     &amp;&#xFF08;&#x4F4D;&#x8FD0;&#x7B97; AND&#xFF09;       &amp;^&#xFF08;&#x4F4D;&#x6E05;&#x7A7A; (AND NOT)&#xFF09;
++&#xFF08;&#x52A0;&#xFF09;      -&#xFF08;&#x51CF;&#xFF09;      | &#xFF08;&#x4F4D;&#x8FD0;&#x7B97; OR&#xFF09;     ^&#xFF08;&#x4F4D;&#x8FD0;&#x7B97; XOR&#xFF09;
+==&#xFF08;&#x7B49;&#x4E8E;&#xFF09;     != &#xFF08;&#x4E0D;&#x7B49;&#x4E8E;&#xFF09;    &lt; &#xFF08;&#x5C0F;&#x4E8E;&#xFF09;     &lt;=&#xFF08;&#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&#xFF09;       &gt; &#xFF08;&#x5927;&#x4E8E;&#xFF09;     &gt;=&#xFF08;&#x5927;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&#xFF09;
+&amp;&amp;&#xFF08;AND&#xFF09;
+||&#xFF08;OR&#xFF09;
+</code></pre>&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x6709;&#x4E94;&#x79CD;&#x4F18;&#x5148;&#x7EA7;&#x3002;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x4F7F;&#x7528;&#x5DE6;&#x4F18;&#x5148;&#x7ED3;&#x5408;&#x89C4;&#x5219;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x62EC;&#x53F7;&#x53EF;&#x4EE5;&#x660E;&#x786E;&#x4F18;&#x5148;&#x987A;&#x5E8F;&#xFF0C;&#x4F7F;&#x7528;&#x62EC;&#x53F7;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x63D0;&#x5347;&#x4F18;&#x5148;&#x7EA7;</li>
+</ul>
+<h4 id="&#x6D6E;&#x70B9;&#x6570;"><a name="&#x6D6E;&#x70B9;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x6D6E;&#x70B9;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D6E;&#x70B9;&#x6570;</h4>
+<p><code>float32&#x548C;float64</code></p>
+<p><img src="../../../img/4.png" alt="&#x597D;&#x6F02;&#x4EAE;"></p>
+<pre><code>// Copyright &#xA9; 2016 Alan A. A. Donovan &amp; Brian W. Kernighan.
+// License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+// See page 58.
+//!+
+
+// Surface computes an SVG rendering of a 3-D surface function.
+package main
+
+import (
+    &quot;fmt&quot;
+    &quot;math&quot;
+)
+
+const (
+    width, height = 600, 320            // canvas size in pixels
+    cells         = 100                 // number of grid cells
+    xyrange       = 30.0                // axis ranges (-xyrange..+xyrange)
+    xyscale       = width / 2 / xyrange // pixels per x or y unit
+    zscale        = height * 0.4        // pixels per z unit
+    angle         = math.Pi / 6         // angle of x, y axes (=30&#xB0;)
+)
+
+var sin30, cos30 = math.Sin(angle), math.Cos(angle) // sin(30&#xB0;), cos(30&#xB0;)
+
+func main() {
+    fmt.Printf(&quot;&lt;svg xmlns=&apos;http://www.w3.org/2000/svg&apos; &quot;+
+        &quot;style=&apos;stroke: grey; fill: white; stroke-width: 0.7&apos; &quot;+
+        &quot;width=&apos;%d&apos; height=&apos;%d&apos;&gt;&quot;, width, height)
+    for i := 0; i &lt; cells; i++ {
+        for j := 0; j &lt; cells; j++ {
+            ax, ay := corner(i+1, j)
+            bx, by := corner(i, j)
+            cx, cy := corner(i, j+1)
+            dx, dy := corner(i+1, j+1)
+            fmt.Printf(&quot;&lt;polygon points=&apos;%g,%g %g,%g %g,%g %g,%g&apos;/&gt;\n&quot;,
+                ax, ay, bx, by, cx, cy, dx, dy)
+        }
+    }
+    fmt.Println(&quot;&lt;/svg&gt;&quot;)
+}
+
+func corner(i, j int) (float64, float64) {
+    // Find point (x,y) at corner of cell (i,j).
+    x := xyrange * (float64(i)/cells - 0.5)
+    y := xyrange * (float64(j)/cells - 0.5)
+
+    // Compute surface height z.
+    z := f(x, y)
+
+    // Project (x,y,z) isometrically onto 2-D SVG canvas (sx,sy).
+    sx := width/2 + (x-y)*cos30*xyscale
+    sy := height/2 + (x+y)*sin30*xyscale - z*zscale
+    return sx, sy
+}
+
+func f(x, y float64) float64 {
+    r := math.Hypot(x, y) // distance from (0,0)
+    return math.Sin(r) / r
+}
+
+//!-
+</code></pre><h4 id="&#x590D;&#x6570;"><a name="&#x590D;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6570;</h4>
+<p>Go&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x7CBE;&#x5EA6;&#x7684;&#x590D;&#x6570;&#x7C7B;&#x578B;&#xFF1A;complex64&#x548C;complex128&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5E94;float32&#x548C;float64&#x4E24;&#x79CD;&#x6D6E;&#x70B9;&#x6570;&#x7CBE;&#x5EA6;&#x3002;&#x5185;&#x7F6E;&#x7684;complex&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x590D;&#x6570;&#xFF0C;&#x5185;&#x5EFA;&#x7684;real&#x548C;imag&#x51FD;&#x6570;&#x5206;&#x522B;&#x8FD4;&#x56DE;&#x590D;&#x6570;&#x7684;&#x5B9E;&#x90E8;&#x548C;&#x865A;&#x90E8;&#xFF1A;</p>
+<h4 id="&#x5E03;&#x5C14;&#x578B;"><a name="&#x5E03;&#x5C14;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x5E03;&#x5C14;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E03;&#x5C14;&#x578B;</h4>
+<h4 id="&#x5B57;&#x7B26;&#x4E32;"><a name="&#x5B57;&#x7B26;&#x4E32;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x7B26;&#x4E32;</h4>
+<pre><code>\a      &#x54CD;&#x94C3;
+\b      &#x9000;&#x683C;
+\f      &#x6362;&#x9875;
+\n      &#x6362;&#x884C;
+\r      &#x56DE;&#x8F66;
+\t      &#x5236;&#x8868;&#x7B26;
+\v      &#x5782;&#x76F4;&#x5236;&#x8868;&#x7B26;
+\&apos;      &#x5355;&#x5F15;&#x53F7; (&#x53EA;&#x7528;&#x5728; &apos;\&apos;&apos; &#x5F62;&#x5F0F;&#x7684;rune&#x7B26;&#x53F7;&#x9762;&#x503C;&#x4E2D;)
+\&quot;      &#x53CC;&#x5F15;&#x53F7; (&#x53EA;&#x7528;&#x5728; &quot;...&quot; &#x5F62;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x9762;&#x503C;&#x4E2D;)
+\\      &#x53CD;&#x659C;&#x6760;
+</code></pre><ul>
+<li>&#x5F97;&#x76CA;&#x4E8E;UTF8&#x7F16;&#x7801;&#x4F18;&#x826F;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x8BF8;&#x591A;&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x89E3;&#x7801;&#x64CD;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x89E3;&#x7801;&#x76F4;&#x63A5;&#x6D4B;&#x8BD5;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x524D;&#x7F00;&#xFF1A;<pre><code>func HasPrefix(s, prefix string) bool {
+    return len(s) &gt;= len(prefix) &amp;&amp; s[:len(prefix)] == prefix
+}
+</code></pre>&#x6216;&#x8005;&#x662F;&#x540E;&#x7F00;&#x6D4B;&#x8BD5;&#xFF1A;<pre><code>func HasSuffix(s, suffix string) bool {
+    return len(s) &gt;= len(suffix) &amp;&amp; s[len(s)-len(suffix):] == suffix
+}
+</code></pre>&#x6216;&#x8005;&#x662F;&#x5305;&#x542B;&#x5B50;&#x4E32;&#x6D4B;&#x8BD5;&#xFF1A;<pre><code>func Contains(s, substr string) bool {
+  for i := 0; i &lt; len(s); i++ {
+      if HasPrefix(s[i:], substr) {
+          return true
+      }
+  }
+  return false
+}
+</code></pre></li>
+</ul>
+<pre><code>package main
+
+import &quot;fmt&quot;
+
+func main() {
+    s := &quot;Hello, &#x4E16;&#x754C;&quot;
+    fmt.Printf(&quot;%s\t%d\n&quot;, s, len(s))
+    for i := 0; i &lt; len(s); i++ {
+        fmt.Printf(&quot;%d\t%v\t%q\n&quot;, i, s[i], s[i])
+    }
+    fmt.Println(&quot;...&quot;)
+    for i, r := range s {
+        fmt.Printf(&quot;%d\t%d\t%q\n&quot;, i, r, r)
+    }
+}
+</code></pre><p>&#x7ED3;&#x679C;</p>
+<pre><code>Hello, &#x4E16;&#x754C;    13
+0    72    &apos;H&apos;
+1    101    &apos;e&apos;
+2    108    &apos;l&apos;
+3    108    &apos;l&apos;
+4    111    &apos;o&apos;
+5    44    &apos;,&apos;
+6    32    &apos; &apos;
+7    228    &apos;&#xE4;&apos;
+8    184    &apos;&#xB8;&apos;
+9    150    &apos;\u0096&apos;
+10    231    &apos;&#xE7;&apos;
+11    149    &apos;\u0095&apos;
+12    140    &apos;\u008c&apos;
+...
+0    72    &apos;H&apos;
+1    101    &apos;e&apos;
+2    108    &apos;l&apos;
+3    108    &apos;l&apos;
+4    111    &apos;o&apos;
+5    44    &apos;,&apos;
+6    32    &apos; &apos;
+7    19990    &apos;&#x4E16;&apos;
+10    30028    &apos;&#x754C;&apos;
+</code></pre><ul>
+<li>&#x5B57;&#x7B26;&#x4E32;&#x548C;Byte&#x5207;&#x7247;
+&#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x6709;&#x56DB;&#x4E2A;&#x5305;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;&#x5C24;&#x4E3A;&#x91CD;&#x8981;&#xFF1A;bytes&#x3001;strings&#x3001;strconv&#x548C;unicode&#x5305;&#x3002;<ul>
+<li>strings&#x5305;&#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x5982;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x67E5;&#x8BE2;&#x3001;&#x66FF;&#x6362;&#x3001;&#x6BD4;&#x8F83;&#x3001;&#x622A;&#x65AD;&#x3001;&#x62C6;&#x5206;&#x548C;&#x5408;&#x5E76;&#x7B49;&#x529F;&#x80FD;&#x3002;</li>
+<li>bytes&#x5305;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x7C7B;&#x4F3C;&#x529F;&#x80FD;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x9488;&#x5BF9;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x6709;&#x7740;&#x76F8;&#x540C;&#x7ED3;&#x6784;&#x7684;[]byte&#x7C7B;&#x578B;&#x3002;&#x56E0;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x53EA;&#x8BFB;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x9010;&#x6B65;&#x6784;&#x5EFA;&#x5B57;&#x7B26;&#x4E32;&#x4F1A;&#x5BFC;&#x81F4;&#x5F88;&#x591A;&#x5206;&#x914D;&#x548C;&#x590D;&#x5236;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;bytes.Buffer&#x7C7B;&#x578B;&#x5C06;&#x4F1A;&#x66F4;&#x6709;&#x6548;&#xFF0C;&#x7A0D;&#x540E;&#x6211;&#x4EEC;&#x5C06;&#x5C55;&#x793A;&#x3002;</li>
+<li>strconv&#x5305;&#x63D0;&#x4F9B;&#x4E86;&#x5E03;&#x5C14;&#x578B;&#x3001;&#x6574;&#x578B;&#x6570;&#x3001;&#x6D6E;&#x70B9;&#x6570;&#x548C;&#x5BF9;&#x5E94;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x76F8;&#x4E92;&#x8F6C;&#x6362;&#xFF0C;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x53CC;&#x5F15;&#x53F7;&#x8F6C;&#x4E49;&#x76F8;&#x5173;&#x7684;&#x8F6C;&#x6362;&#x3002;</li>
+<li>unicode&#x5305;&#x63D0;&#x4F9B;&#x4E86;IsDigit&#x3001;IsLetter&#x3001;IsUpper&#x548C;IsLower&#x7B49;&#x7C7B;&#x4F3C;&#x529F;&#x80FD;&#xFF0C;&#x5B83;&#x4EEC;&#x7528;&#x4E8E;&#x7ED9;&#x5B57;&#x7B26;&#x5206;&#x7C7B;&#x3002;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;rune&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#x3002;&#x800C;&#x50CF;ToUpper&#x548C;ToLower&#x4E4B;&#x7C7B;&#x7684;&#x8F6C;&#x6362;&#x51FD;&#x6570;&#x5C06;&#x7528;&#x4E8E;rune&#x5B57;&#x7B26;&#x7684;&#x5927;&#x5C0F;&#x5199;&#x8F6C;&#x6362;&#x3002;&#x6240;&#x6709;&#x7684;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x90FD;&#x662F;&#x9075;&#x5FAA;Unicode&#x6807;&#x51C6;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x7B49;&#x5206;&#x7C7B;&#x89C4;&#x8303;&#x3002;strings&#x5305;&#x4E5F;&#x6709;&#x7C7B;&#x4F3C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;ToUpper&#x548C;ToLower&#xFF0C;&#x5C06;&#x539F;&#x59CB;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x90FD;&#x505A;&#x76F8;&#x5E94;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x65B0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;&#x7684;&#x8F6C;&#x6362;</li>
+</ul>
+<h4 id="&#x5E38;&#x91CF;"><a name="&#x5E38;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x91CF;</h4>
+<ul>
+<li>iota &#x5E38;&#x91CF;&#x751F;&#x6210;&#x5668;<pre><code>const (
+ _   = 1 &lt;&lt; (10 * iota)
+ KiB // 1024
+ MiB // 1048576
+ GiB // 1073741824
+ TiB // 1099511627776             (exceeds 1 &lt;&lt; 32)
+ PiB // 1125899906842624
+ EiB // 1152921504606846976
+ ZiB // 1180591620717411303424    (exceeds 1 &lt;&lt; 64)
+ YiB // 1208925819614629174706176
+)
+</code></pre></li>
+</ul>
+<hr>
+<h1 id="&#x590D;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;"><a name="&#x590D;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x590D;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;</h1>
+<h4 id="&#x6570;&#x7EC4;"><a name="&#x6570;&#x7EC4;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x7EC4;</h4>
+<h4 id="slice"><a name="slice" class="anchor-navigation-ex-anchor" href="#slice"><i class="fa fa-link" aria-hidden="true"></i></a>Slice</h4>
+<p><img src="../../../img/5.png" alt=""></p>
+<ul>
+<li>Slice&#x5185;&#x5B58;&#x6280;&#x5DE7;</li>
+</ul>
+<h4 id="map"><a name="map" class="anchor-navigation-ex-anchor" href="#map"><i class="fa fa-link" aria-hidden="true"></i></a>Map</h4>
+<p>&#x5728;Go&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;map&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x8868;&#x7684;&#x5F15;&#x7528;&#xFF0C;map&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x5199;&#x4E3A;map[K]V&#xFF0C;&#x5176;&#x4E2D;K&#x548C;V&#x5206;&#x522B;&#x5BF9;&#x5E94;key&#x548C;value&#x3002;
+&#x5185;&#x7F6E;&#x7684;make&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;map&#xFF1A;</p>
+<pre><code>ages := make(map[string]int) // mapping from strings to ints
+</code></pre><p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;map&#x5B57;&#x9762;&#x503C;&#x7684;&#x8BED;&#x6CD5;&#x521B;&#x5EFA;map&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E9B;&#x6700;&#x521D;&#x7684;key/value&#xFF1A;</p>
+<pre><code>ages := map[string]int{ &quot;alice&quot;: 31, &quot;charlie&quot;: 34,}
+</code></pre><p>&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x7684;delete&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x5143;&#x7D20;&#xFF1A;</p>
+<pre><code>delete(ages, &quot;alice&quot;) // remove element ages[&quot;alice&quot;]
+</code></pre><h4 id="&#x7ED3;&#x6784;&#x4F53;"><a name="&#x7ED3;&#x6784;&#x4F53;" class="anchor-navigation-ex-anchor" href="#&#x7ED3;&#x6784;&#x4F53;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED3;&#x6784;&#x4F53;</h4>
+<ul>
+<li><p>&#x7ED3;&#x6784;&#x4F53;&#x6BD4;&#x8F83;
+&#x5982;&#x679C;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5168;&#x90E8;&#x6210;&#x5458;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x6BD4;&#x8F83;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x7ED3;&#x6784;&#x4F53;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x6BD4;&#x8F83;&#x7684;</p>
+</li>
+<li><p>&#x7ED3;&#x6784;&#x4F53;&#x5D4C;&#x5165;&#x548C;&#x533F;&#x540D;&#x6210;&#x5458;</p>
+<ul>
+<li>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;Printf&#x51FD;&#x6570;&#x4E2D;%v&#x53C2;&#x6570;&#x5305;&#x542B;&#x7684;#&#x526F;&#x8BCD;&#xFF0C;&#x5B83;&#x8868;&#x793A;&#x7528;&#x548C;Go&#x8BED;&#x8A00;&#x7C7B;&#x4F3C;&#x7684;&#x8BED;&#x6CD5;&#x6253;&#x5370;&#x503C;&#x3002;&#x5BF9;&#x4E8E;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x6765;&#x8BF4;&#xFF0C;&#x5C06;&#x5305;&#x542B;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x7684;&#x540D;&#x5B57;&#x3002;
+<code>fmt.Printf(&quot;%#v\n&quot;, w)</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="json"><a name="json" class="anchor-navigation-ex-anchor" href="#json"><i class="fa fa-link" aria-hidden="true"></i></a>JSON</h4>
+<p> <code>json.Marshal</code>&#x548C;<code>json.MarshalIndent</code></p>
+<ul>
+<li>json&#x5904;&#x7406;struct&#x672A;&#x5BFC;&#x51FA;&#x6210;&#x5458;
+golang&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x91CC;&#x7684;&#x6210;&#x5458;&#x7684;&#x540D;&#x5B57;&#x5982;&#x679C;&#x4EE5;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x5F00;&#x5934;&#xFF0C;&#x90A3;&#x4E48;&#x5176;&#x4ED6;&#x7684;&#x5305;&#x662F;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;json&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x6211;&#x4EEC;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x91CC;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x5F00;&#x5934;&#x7684;&#x6210;&#x5458;&#x3002;&#x4E24;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;<ol>
+<li>struct&#x7684;&#x6210;&#x5458;&#x7528;&#x5927;&#x5199;&#x5F00;&#x5934;&#xFF0C;&#x7136;&#x540E;&#x52A0;tag</li>
+</ol>
+</li>
+</ul>
+<pre><code>package main
+
+import (
+    &quot;encoding/json&quot;
+    &quot;fmt&quot;
+    &quot;log&quot;
+)
+
+type Movie struct {
+    Title  string
+    Year   int  `json:&quot;released&quot;`
+    Color  bool `json:&quot;color,omitempty&quot;`
+    Actors []string
+}
+
+func main() {
+
+    var movies = []Movie{
+        {Title: &quot;Casablanca&quot;, Year: 1942, Color: false,
+            Actors: []string{&quot;Humphrey Bogart&quot;, &quot;Ingrid Bergman&quot;}},
+        {Title: &quot;Cool Hand Luke&quot;, Year: 1967, Color: true,
+            Actors: []string{&quot;Paul Newman&quot;}},
+        {Title: &quot;Bullitt&quot;, Year: 1968, Color: true,
+            Actors: []string{&quot;Steve McQueen&quot;, &quot;Jacqueline Bisset&quot;}},
+        // ...
+    }
+
+    data, err := json.Marshal(movies) // json.MarshalIndent(struct, &quot;&quot;, &quot;    &quot;)
+    if err != nil {
+        log.Fatalf(&quot;JSON marshaling failed: %s&quot;, err)
+    }
+    fmt.Printf(&quot;%s\n&quot;, data)
+}
+</code></pre><pre><code>[{&quot;Title&quot;:&quot;Casablanca&quot;,&quot;released&quot;:1942,&quot;Actors&quot;:[&quot;Humphrey Bogart&quot;,&quot;Ingrid Bergman&quot;]},{&quot;Title&quot;:&quot;Cool Hand Luke&quot;,&quot;released&quot;:1967,&quot;color&quot;:true,&quot;Actors&quot;:[&quot;Paul Newman&quot;]},{&quot;Title&quot;:&quot;Bullitt&quot;,&quot;released&quot;:1968,&quot;color&quot;:true,&quot;Actors&quot;:[&quot;Steve McQueen&quot;,&quot;Jacqueline Bisset&quot;]}]
+</code></pre><ol>
+<li>&#x5B9E;&#x73B0;json.Marshaler&#x63A5;&#x53E3;
+```
+package main</li>
+</ol>
+<p>import (
+    &quot;encoding/json&quot;
+    &quot;fmt&quot;
+)</p>
+<p>func main() {
+    var s S
+    s.a = 5
+    s.b[0] = 3.123
+    s.b[1] = 111.11
+    s.b[2] = 1234.123
+    s.c = &quot;hello&quot;
+    s.d[0] = 0x55</p>
+<pre><code>j, _ := json.Marshal(s)
+fmt.Println(string(j))
+</code></pre><p>}</p>
+<p>type S struct {
+    a int
+    b [4]float32
+    c string
+    d [12]byte
+}</p>
+<p>func (this S) MarshalJSON() ([]byte, error) {
+    return json.MarshalIndent(map[string]interface{}{ // json.MarshalIndent(struct, &quot;&quot;, &quot;    &quot;)
+        &quot;a&quot;: this.a,
+        &quot;b&quot;: this.b,
+        &quot;c&quot;: this.c,
+        &quot;d&quot;: this.d,
+    }, &quot;&quot;, &quot;    &quot;)
+}</p>
+<pre><code>```
+{&quot;a&quot;:5,&quot;b&quot;:[3.123,111.11,1234.123,0],&quot;c&quot;:&quot;hello&quot;,&quot;d&quot;:[85,0,0,0,0,0,0,0,0,0,0,0]}
+</code></pre><h4 id="&#x6587;&#x672C;&#x548C;html&#x6A21;&#x677F;"><a name="&#x6587;&#x672C;&#x548C;html&#x6A21;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x672C;&#x548C;html&#x6A21;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x672C;&#x548C;HTML&#x6A21;&#x677F;</h4>
+<hr>
+<h1 id="&#x51FD;&#x6570;"><a name="&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x51FD;&#x6570;</h1>
+<h4 id="&#x51FD;&#x6570;&#x58F0;&#x660E;"><a name="&#x51FD;&#x6570;&#x58F0;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x58F0;&#x660E;</h4>
+<h4 id="&#x9012;&#x5F52;"><a name="&#x9012;&#x5F52;" class="anchor-navigation-ex-anchor" href="#&#x9012;&#x5F52;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9012;&#x5F52;</h4>
+<h4 id="&#x591A;&#x8FD4;&#x56DE;&#x503C;"><a name="&#x591A;&#x8FD4;&#x56DE;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x8FD4;&#x56DE;&#x503C;</h4>
+<h4 id="&#x9519;&#x8BEF;"><a name="&#x9519;&#x8BEF;" class="anchor-navigation-ex-anchor" href="#&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9519;&#x8BEF;</h4>
+<h4 id="&#x51FD;&#x6570;&#x503C;"><a name="&#x51FD;&#x6570;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x503C;</h4>
+<h4 id="&#x533F;&#x540D;&#x51FD;&#x6570;"><a name="&#x533F;&#x540D;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x533F;&#x540D;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x533F;&#x540D;&#x51FD;&#x6570;</h4>
+<h4 id="&#x53EF;&#x53D8;&#x53C2;&#x6570;"><a name="&#x53EF;&#x53D8;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x53D8;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53EF;&#x53D8;&#x53C2;&#x6570;</h4>
+<h4 id="deferred-&#x51FD;&#x6570;"><a name="deferred-&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#deferred-&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>Deferred &#x51FD;&#x6570;</h4>
+<h4 id="panic-&#x5F02;&#x5E38;"><a name="panic-&#x5F02;&#x5E38;" class="anchor-navigation-ex-anchor" href="#panic-&#x5F02;&#x5E38;"><i class="fa fa-link" aria-hidden="true"></i></a>Panic &#x5F02;&#x5E38;</h4>
+<ul>
+<li>&#x4E00;&#x822C;&#x800C;&#x8A00;&#xFF0C;&#x5F53;panic&#x5F02;&#x5E38;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x4E2D;&#x65AD;&#x8FD0;&#x884C;&#xFF0C;&#x5E76;&#x7ACB;&#x5373;&#x6267;&#x884C;&#x5728;&#x8BE5;goroutine&#xFF08;&#x53EF;&#x4EE5;&#x5148;&#x7406;&#x89E3;&#x6210;&#x7EBF;&#x7A0B;&#xFF0C;&#x5728;&#x7B2C;8&#x7AE0;&#x4F1A;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF09;&#x4E2D;&#x88AB;&#x5EF6;&#x8FDF;&#x7684;&#x51FD;&#x6570;&#xFF08;defer &#x673A;&#x5236;&#xFF09;</li>
+</ul>
+<h4 id="recover-&#x6355;&#x83B7;&#x5F02;&#x5E38;"><a name="recover-&#x6355;&#x83B7;&#x5F02;&#x5E38;" class="anchor-navigation-ex-anchor" href="#recover-&#x6355;&#x83B7;&#x5F02;&#x5E38;"><i class="fa fa-link" aria-hidden="true"></i></a>Recover &#x6355;&#x83B7;&#x5F02;&#x5E38;</h4>
+<hr>
+<h1 id="&#x65B9;&#x6CD5;"><a name="&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x65B9;&#x6CD5;</h1>
+<h4 id="&#x65B9;&#x6CD5;&#x58F0;&#x660E;"><a name="&#x65B9;&#x6CD5;&#x58F0;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#x58F0;&#x660E;</h4>
+<h4 id="&#x57FA;&#x4E8E;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;"><a name="&#x57FA;&#x4E8E;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x4E8E;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;</h4>
+<h4 id="&#x901A;&#x8FC7;&#x5D4C;&#x5165;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x6269;&#x5C55;&#x7C7B;&#x578B;"><a name="&#x901A;&#x8FC7;&#x5D4C;&#x5165;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x6269;&#x5C55;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;&#x5D4C;&#x5165;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x6269;&#x5C55;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;&#x5D4C;&#x5165;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x6269;&#x5C55;&#x7C7B;&#x578B;</h4>
+<h4 id="&#x65B9;&#x6CD5;&#x503C;&#x548C;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;"><a name="&#x65B9;&#x6CD5;&#x503C;&#x548C;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x503C;&#x548C;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#x503C;&#x548C;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;</h4>
+<h4 id="bit&#x6570;&#x7EC4;"><a name="bit&#x6570;&#x7EC4;" class="anchor-navigation-ex-anchor" href="#bit&#x6570;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>Bit&#x6570;&#x7EC4;</h4>
+<h4 id="&#x5C01;&#x88C5;"><a name="&#x5C01;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x5C01;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C01;&#x88C5;</h4>
+<hr>
+<h1 id="&#x63A5;&#x53E3;"><a name="&#x63A5;&#x53E3;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x63A5;&#x53E3;</h1>
+<p><em>&#x5F53;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5305;&#x65F6;&#xFF0C;&#x65B0;&#x7684;Go&#x7A0B;&#x5E8F;&#x5458;&#x603B;&#x662F;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x96C6;&#x5408;&#x5F00;&#x59CB;&#x548C;&#x540E;&#x9762;&#x5B9A;&#x4E49;&#x6EE1;&#x8DB3;&#x5B83;&#x4EEC;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x6709;&#x5F88;&#x591A;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5B83;&#x4EEC;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x4EC5;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x3002;&#x4E0D;&#x8981;&#x518D;&#x8FD9;&#x4E48;&#x505A;&#x4E86;&#x3002;&#x8FD9;&#x79CD;&#x63A5;&#x53E3;&#x662F;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x62BD;&#x8C61;&#xFF1B;&#x5B83;&#x4EEC;&#x4E5F;&#x6709;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x65F6;&#x635F;&#x8017;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5BFC;&#x51FA;&#x673A;&#x5236;(&#xA7;6.6)&#x6765;&#x9650;&#x5236;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#x6216;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5B57;&#x6BB5;&#x662F;&#x5426;&#x5728;&#x5305;&#x5916;&#x53EF;&#x89C1;&#x3002;&#x63A5;&#x53E3;&#x53EA;&#x6709;&#x5F53;&#x6709;&#x4E24;&#x4E2A;&#x6216;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x65F6;&#x624D;&#x9700;&#x8981;&#x3002;
+&#x5F53;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x53EA;&#x88AB;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x65F6;&#x6709;&#x4E00;&#x4E2A;&#x4F8B;&#x5916;&#xFF0C;&#x5C31;&#x662F;&#x7531;&#x4E8E;&#x5B83;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x8FD9;&#x4E2A;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x548C;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x5B58;&#x5728;&#x5728;&#x4E00;&#x4E2A;&#x76F8;&#x540C;&#x7684;&#x5305;&#x4E2D;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x662F;&#x89E3;&#x8026;&#x8FD9;&#x4E24;&#x4E2A;&#x5305;&#x7684;&#x4E00;&#x4E2A;&#x597D;&#x597D;&#x65B9;&#x5F0F;&#x3002;
+&#x56E0;&#x4E3A;&#x5728;Go&#x8BED;&#x8A00;&#x4E2D;&#x53EA;&#x6709;&#x5F53;&#x4E24;&#x4E2A;&#x6216;&#x66F4;&#x591A;&#x7684;&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x65F6;&#x624D;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#xFF0C;&#x5B83;&#x4EEC;&#x5FC5;&#x5B9A;&#x4F1A;&#x4ECE;&#x4EFB;&#x610F;&#x7279;&#x5B9A;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x4E2D;&#x62BD;&#x8C61;&#x51FA;&#x6765;&#x3002;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x6709;&#x66F4;&#x5C11;&#x548C;&#x66F4;&#x7B80;&#x5355;&#x65B9;&#x6CD5;&#xFF08;&#x7ECF;&#x5E38;&#x548C;io.Writer&#x6216; fmt.Stringer&#x4E00;&#x6837;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#xFF09;&#x7684;&#x66F4;&#x5C0F;&#x7684;&#x63A5;&#x53E3;&#x3002;&#x5F53;&#x65B0;&#x7684;&#x7C7B;&#x578B;&#x51FA;&#x73B0;&#x65F6;&#xFF0C;&#x5C0F;&#x7684;&#x63A5;&#x53E3;&#x66F4;&#x5BB9;&#x6613;&#x6EE1;&#x8DB3;&#x3002;&#x5BF9;&#x4E8E;&#x63A5;&#x53E3;&#x8BBE;&#x8BA1;&#x7684;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x6807;&#x51C6;&#x5C31;&#x662F; ask only for what you need&#xFF08;&#x53EA;&#x8003;&#x8651;&#x4F60;&#x9700;&#x8981;&#x7684;&#x4E1C;&#x897F;&#xFF09;</em></p>
+<hr>
+<h1 id="goroutines&#x548C;channels"><a name="goroutines&#x548C;channels" class="anchor-navigation-ex-anchor" href="#goroutines&#x548C;channels"><i class="fa fa-link" aria-hidden="true"></i></a> Goroutines&#x548C;Channels</h1>
+<hr>
+<h1 id="&#x51FD;&#x6570;_1"><a name="&#x51FD;&#x6570;_1" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;_1"><i class="fa fa-link" aria-hidden="true"></i></a> &#x51FD;&#x6570;</h1>
+<h4 id="&#x51FD;&#x6570;&#x58F0;&#x660E;_1"><a name="&#x51FD;&#x6570;&#x58F0;&#x660E;_1" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x58F0;&#x660E;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x58F0;&#x660E;</h4>
+<h4 id="&#x9012;&#x5F52;_1"><a name="&#x9012;&#x5F52;_1" class="anchor-navigation-ex-anchor" href="#&#x9012;&#x5F52;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9012;&#x5F52;</h4>
+<h4 id="&#x591A;&#x8FD4;&#x56DE;&#x503C;_1"><a name="&#x591A;&#x8FD4;&#x56DE;&#x503C;_1" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x8FD4;&#x56DE;&#x503C;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x8FD4;&#x56DE;&#x503C;</h4>
+<h4 id="&#x9519;&#x8BEF;_1"><a name="&#x9519;&#x8BEF;_1" class="anchor-navigation-ex-anchor" href="#&#x9519;&#x8BEF;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9519;&#x8BEF;</h4>
+<h4 id="&#x51FD;&#x6570;&#x503C;_1"><a name="&#x51FD;&#x6570;&#x503C;_1" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x503C;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x503C;</h4>
+<h4 id="&#x533F;&#x540D;&#x51FD;&#x6570;_1"><a name="&#x533F;&#x540D;&#x51FD;&#x6570;_1" class="anchor-navigation-ex-anchor" href="#&#x533F;&#x540D;&#x51FD;&#x6570;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x533F;&#x540D;&#x51FD;&#x6570;</h4>
+<h4 id="&#x53EF;&#x53D8;&#x53C2;&#x6570;_1"><a name="&#x53EF;&#x53D8;&#x53C2;&#x6570;_1" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x53D8;&#x53C2;&#x6570;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53EF;&#x53D8;&#x53C2;&#x6570;</h4>
+<h4 id="deferred-&#x51FD;&#x6570;_1"><a name="deferred-&#x51FD;&#x6570;_1" class="anchor-navigation-ex-anchor" href="#deferred-&#x51FD;&#x6570;_1"><i class="fa fa-link" aria-hidden="true"></i></a>Deferred &#x51FD;&#x6570;</h4>
+<h4 id="panic-&#x5F02;&#x5E38;_1"><a name="panic-&#x5F02;&#x5E38;_1" class="anchor-navigation-ex-anchor" href="#panic-&#x5F02;&#x5E38;_1"><i class="fa fa-link" aria-hidden="true"></i></a>Panic &#x5F02;&#x5E38;</h4>
+<ul>
+<li>&#x4E00;&#x822C;&#x800C;&#x8A00;&#xFF0C;&#x5F53;panic&#x5F02;&#x5E38;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x4E2D;&#x65AD;&#x8FD0;&#x884C;&#xFF0C;&#x5E76;&#x7ACB;&#x5373;&#x6267;&#x884C;&#x5728;&#x8BE5;goroutine&#xFF08;&#x53EF;&#x4EE5;&#x5148;&#x7406;&#x89E3;&#x6210;&#x7EBF;&#x7A0B;&#xFF0C;&#x5728;&#x7B2C;8&#x7AE0;&#x4F1A;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF09;&#x4E2D;&#x88AB;&#x5EF6;&#x8FDF;&#x7684;&#x51FD;&#x6570;&#xFF08;defer &#x673A;&#x5236;&#xFF09;</li>
+</ul>
+<h4 id="recover-&#x6355;&#x83B7;&#x5F02;&#x5E38;_1"><a name="recover-&#x6355;&#x83B7;&#x5F02;&#x5E38;_1" class="anchor-navigation-ex-anchor" href="#recover-&#x6355;&#x83B7;&#x5F02;&#x5E38;_1"><i class="fa fa-link" aria-hidden="true"></i></a>Recover &#x6355;&#x83B7;&#x5F02;&#x5E38;</h4>
+<hr>
+<h1 id="&#x65B9;&#x6CD5;_1"><a name="&#x65B9;&#x6CD5;_1" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;_1"><i class="fa fa-link" aria-hidden="true"></i></a> &#x65B9;&#x6CD5;</h1>
+<h4 id="&#x65B9;&#x6CD5;&#x58F0;&#x660E;_1"><a name="&#x65B9;&#x6CD5;&#x58F0;&#x660E;_1" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x58F0;&#x660E;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#x58F0;&#x660E;</h4>
+<h4 id="&#x57FA;&#x4E8E;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;_1"><a name="&#x57FA;&#x4E8E;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;_1" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x4E8E;&#x6307;&#x9488;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;</h4>
+<h4 id="&#x901A;&#x8FC7;&#x5D4C;&#x5165;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x6269;&#x5C55;&#x7C7B;&#x578B;_1"><a name="&#x901A;&#x8FC7;&#x5D4C;&#x5165;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x6269;&#x5C55;&#x7C7B;&#x578B;_1" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;&#x5D4C;&#x5165;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x6269;&#x5C55;&#x7C7B;&#x578B;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;&#x5D4C;&#x5165;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x6269;&#x5C55;&#x7C7B;&#x578B;</h4>
+<h4 id="&#x65B9;&#x6CD5;&#x503C;&#x548C;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;_1"><a name="&#x65B9;&#x6CD5;&#x503C;&#x548C;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;_1" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;&#x503C;&#x548C;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;&#x503C;&#x548C;&#x65B9;&#x6CD5;&#x8868;&#x8FBE;&#x5F0F;</h4>
+<h4 id="bit&#x6570;&#x7EC4;_1"><a name="bit&#x6570;&#x7EC4;_1" class="anchor-navigation-ex-anchor" href="#bit&#x6570;&#x7EC4;_1"><i class="fa fa-link" aria-hidden="true"></i></a>Bit&#x6570;&#x7EC4;</h4>
+<h4 id="&#x5C01;&#x88C5;_1"><a name="&#x5C01;&#x88C5;_1" class="anchor-navigation-ex-anchor" href="#&#x5C01;&#x88C5;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C01;&#x88C5;</h4>
+<h1 id="&#x63A5;&#x53E3;_1"><a name="&#x63A5;&#x53E3;_1" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x53E3;_1"><i class="fa fa-link" aria-hidden="true"></i></a> &#x63A5;&#x53E3;</h1>
+<p><em>&#x5F53;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5305;&#x65F6;&#xFF0C;&#x65B0;&#x7684;Go&#x7A0B;&#x5E8F;&#x5458;&#x603B;&#x662F;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x96C6;&#x5408;&#x5F00;&#x59CB;&#x548C;&#x540E;&#x9762;&#x5B9A;&#x4E49;&#x6EE1;&#x8DB3;&#x5B83;&#x4EEC;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x6709;&#x5F88;&#x591A;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5B83;&#x4EEC;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x4EC5;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x3002;&#x4E0D;&#x8981;&#x518D;&#x8FD9;&#x4E48;&#x505A;&#x4E86;&#x3002;&#x8FD9;&#x79CD;&#x63A5;&#x53E3;&#x662F;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x62BD;&#x8C61;&#xFF1B;&#x5B83;&#x4EEC;&#x4E5F;&#x6709;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x65F6;&#x635F;&#x8017;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5BFC;&#x51FA;&#x673A;&#x5236;(&#xA7;6.6)&#x6765;&#x9650;&#x5236;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#x6216;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5B57;&#x6BB5;&#x662F;&#x5426;&#x5728;&#x5305;&#x5916;&#x53EF;&#x89C1;&#x3002;&#x63A5;&#x53E3;&#x53EA;&#x6709;&#x5F53;&#x6709;&#x4E24;&#x4E2A;&#x6216;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x65F6;&#x624D;&#x9700;&#x8981;&#x3002;
+&#x5F53;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x53EA;&#x88AB;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x65F6;&#x6709;&#x4E00;&#x4E2A;&#x4F8B;&#x5916;&#xFF0C;&#x5C31;&#x662F;&#x7531;&#x4E8E;&#x5B83;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x8FD9;&#x4E2A;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x548C;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x5B58;&#x5728;&#x5728;&#x4E00;&#x4E2A;&#x76F8;&#x540C;&#x7684;&#x5305;&#x4E2D;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x662F;&#x89E3;&#x8026;&#x8FD9;&#x4E24;&#x4E2A;&#x5305;&#x7684;&#x4E00;&#x4E2A;&#x597D;&#x597D;&#x65B9;&#x5F0F;&#x3002;
+&#x56E0;&#x4E3A;&#x5728;Go&#x8BED;&#x8A00;&#x4E2D;&#x53EA;&#x6709;&#x5F53;&#x4E24;&#x4E2A;&#x6216;&#x66F4;&#x591A;&#x7684;&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x65F6;&#x624D;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#xFF0C;&#x5B83;&#x4EEC;&#x5FC5;&#x5B9A;&#x4F1A;&#x4ECE;&#x4EFB;&#x610F;&#x7279;&#x5B9A;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x4E2D;&#x62BD;&#x8C61;&#x51FA;&#x6765;&#x3002;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x6709;&#x66F4;&#x5C11;&#x548C;&#x66F4;&#x7B80;&#x5355;&#x65B9;&#x6CD5;&#xFF08;&#x7ECF;&#x5E38;&#x548C;io.Writer&#x6216; fmt.Stringer&#x4E00;&#x6837;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#xFF09;&#x7684;&#x66F4;&#x5C0F;&#x7684;&#x63A5;&#x53E3;&#x3002;&#x5F53;&#x65B0;&#x7684;&#x7C7B;&#x578B;&#x51FA;&#x73B0;&#x65F6;&#xFF0C;&#x5C0F;&#x7684;&#x63A5;&#x53E3;&#x66F4;&#x5BB9;&#x6613;&#x6EE1;&#x8DB3;&#x3002;&#x5BF9;&#x4E8E;&#x63A5;&#x53E3;&#x8BBE;&#x8BA1;&#x7684;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x6807;&#x51C6;&#x5C31;&#x662F; ask only for what you need&#xFF08;&#x53EA;&#x8003;&#x8651;&#x4F60;&#x9700;&#x8981;&#x7684;&#x4E1C;&#x897F;&#xFF09;</em></p>
+<p><a href="http://blog.csdn.net/justaipanda/article/details/43155949" target="_blank">&#x6DF1;&#x5165;&#x7406;&#x89E3;interface</a></p>
+<h6 id="go&#x8BED;&#x8A00;&#x7684;&#x4E3B;&#x8981;&#x8BBE;&#x8BA1;&#x8005;&#x4E4B;&#x4E00;&#x7F57;&#x5E03;&#xB7;&#x6D3E;&#x514B;&#xFF08;-rob-pike&#xFF09;&#x66FE;&#x7ECF;&#x8BF4;&#x8FC7;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x80FD;&#x9009;&#x62E9;&#x4E00;&#x4E2A;go&#x8BED;&#x8A00;&#x7684;&#x7279;-&#x6027;&#x79FB;&#x690D;&#x5230;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x4ED6;&#x4F1A;&#x9009;&#x62E9;&#x63A5;&#x53E3;&#x3002;&#x53EF;&#x89C1;&#x63A5;&#x53E3;&#x5728;golang&#x4E2D;&#x7684;&#x5730;&#x4F4D;&#xFF0C;&#x53CA;&#x5176;&#x5BF9;gloang&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x6240;&#x5E26;&#x6765;&#x7684;&#x6D3B;&#x529B;&#x3002;"><a name="go&#x8BED;&#x8A00;&#x7684;&#x4E3B;&#x8981;&#x8BBE;&#x8BA1;&#x8005;&#x4E4B;&#x4E00;&#x7F57;&#x5E03;&#xB7;&#x6D3E;&#x514B;&#xFF08;-rob-pike&#xFF09;&#x66FE;&#x7ECF;&#x8BF4;&#x8FC7;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x80FD;&#x9009;&#x62E9;&#x4E00;&#x4E2A;go&#x8BED;&#x8A00;&#x7684;&#x7279;-&#x6027;&#x79FB;&#x690D;&#x5230;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x4ED6;&#x4F1A;&#x9009;&#x62E9;&#x63A5;&#x53E3;&#x3002;&#x53EF;&#x89C1;&#x63A5;&#x53E3;&#x5728;golang&#x4E2D;&#x7684;&#x5730;&#x4F4D;&#xFF0C;&#x53CA;&#x5176;&#x5BF9;gloang&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x6240;&#x5E26;&#x6765;&#x7684;&#x6D3B;&#x529B;&#x3002;" class="anchor-navigation-ex-anchor" href="#go&#x8BED;&#x8A00;&#x7684;&#x4E3B;&#x8981;&#x8BBE;&#x8BA1;&#x8005;&#x4E4B;&#x4E00;&#x7F57;&#x5E03;&#xB7;&#x6D3E;&#x514B;&#xFF08;-rob-pike&#xFF09;&#x66FE;&#x7ECF;&#x8BF4;&#x8FC7;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x80FD;&#x9009;&#x62E9;&#x4E00;&#x4E2A;go&#x8BED;&#x8A00;&#x7684;&#x7279;-&#x6027;&#x79FB;&#x690D;&#x5230;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x4ED6;&#x4F1A;&#x9009;&#x62E9;&#x63A5;&#x53E3;&#x3002;&#x53EF;&#x89C1;&#x63A5;&#x53E3;&#x5728;golang&#x4E2D;&#x7684;&#x5730;&#x4F4D;&#xFF0C;&#x53CA;&#x5176;&#x5BF9;gloang&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x6240;&#x5E26;&#x6765;&#x7684;&#x6D3B;&#x529B;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>Go&#x8BED;&#x8A00;&#x7684;&#x4E3B;&#x8981;&#x8BBE;&#x8BA1;&#x8005;&#x4E4B;&#x4E00;&#x7F57;&#x5E03;&#xB7;&#x6D3E;&#x514B;&#xFF08; Rob Pike&#xFF09;&#x66FE;&#x7ECF;&#x8BF4;&#x8FC7;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x80FD;&#x9009;&#x62E9;&#x4E00;&#x4E2A;Go&#x8BED;&#x8A00;&#x7684;&#x7279; &#x6027;&#x79FB;&#x690D;&#x5230;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x4ED6;&#x4F1A;&#x9009;&#x62E9;&#x63A5;&#x53E3;&#x3002;&#x53EF;&#x89C1;&#x63A5;&#x53E3;&#x5728;golang&#x4E2D;&#x7684;&#x5730;&#x4F4D;&#xFF0C;&#x53CA;&#x5176;&#x5BF9;gloang&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x6240;&#x5E26;&#x6765;&#x7684;&#x6D3B;&#x529B;&#x3002;</h6>
+<blockquote>
+<ul>
+<li>Q: golang&#x4E2D;&#x7684;interface&#x662F;&#x4EC0;&#x4E48;?</li>
+<li>A: &#x63A5;&#x53E3;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x4E00;&#x4EFD;&#x5951;&#x7EA6;&#xFF0C;&#x5B83;&#x89C4;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6240;&#x80FD;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x7EC4;&#x64CD;&#x4F5C;&#x3002;&#x8981;&#x7406;&#x89E3;golang&#x4E2D;&#x63A5;&#x53E3;&#x7684;&#x6982;&#x5FF5;&#x6211;&#x4EEC;&#x6700;&#x597D;&#x8FD8;&#x662F;&#x5148;&#x6765;&#x770B;&#x770B;&#x522B;&#x7684;&#x73B0;&#x4EE3;&#x8BED;&#x8A00;&#x662F;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x7684;&#x3002;</li>
+</ul>
+</blockquote>
+<p>C++&#x6CA1;&#x6709;&#x63D0;&#x4F9B;interface&#x8FD9;&#x6837;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5B83;&#x901A;&#x8FC7;&#x7EAF;&#x865A;&#x57FA;&#x7C7B;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#xFF0C;&#x800C;java&#x5219;&#x901A;&#x8FC7;interface&#x5173;&#x952E;&#x5B57;&#x58F0;&#x660E;&#x63A5;&#x53E3;&#x3002;&#x5B83;&#x4EEC;&#x6709;&#x4E2A;&#x5171;&#x540C;&#x7279;&#x5F81;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x8981;&#x5B9E;&#x73B0;&#x8BE5;&#x63A5;&#x53E3;&#x5FC5;&#x987B;&#x8FDB;&#x884C;&#x663E;&#x793A;&#x7684;&#x58F0;&#x660E;&#xFF0C;&#x5982;&#x4E0B;&#x662F;java&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-golang"><span class="hljs-keyword">interface</span> IFoo {  
+    void Bar();  
+}  
+class Foo implements IFoo {
+    void Bar(){}  
+}
+</code></pre>
+<p>&#x8FD9;&#x79CD;&#x5FC5;&#x987B;&#x660E;&#x786E;&#x58F0;&#x660E;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x4E86; &#x67D0;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x65B9;&#x5F0F;&#x6211;&#x4EEC;&#x79F0;&#x4E3A;&#x4FB5;&#x5165;&#x5F0F;&#x63A5;&#x53E3;&#x3002;&#x5173;&#x4E8E;&#x4FB5;&#x5165;&#x5F0F;&#x63A5;&#x53E3;&#x7684;&#x574F;&#x5904;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x518D;&#x8BE6;&#x7EC6;&#x8BA8;&#x8BBA;&#xFF0C;&#x770B;java&#x5E9E;&#x5927;&#x7684;&#x7EE7;&#x627F;&#x4F53;&#x7CFB;&#x53CA;&#x5176;&#x7E41;&#x590D;&#x7684;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x7AA5;&#x4E4B;&#x4E00;&#x4E8C;&#x4E86;&#x3002;
+golang&#x5219;&#x91C7;&#x53D6;&#x4E86;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x8BA1;&#x7406;&#x5FF5;&#xFF0C;&#x5728;Go&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x7C7B;&#x53EA;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x4E86;&#x63A5;&#x53E3;&#x8981;&#x6C42;&#x7684;&#x6240;&#x6709;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x8BF4;&#x8FD9;&#x4E2A;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86;&#x8BE5;&#x63A5;&#x53E3;&#xFF0C; &#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-golang"><span class="hljs-keyword">type</span> IWriter <span class="hljs-keyword">interface</span> {  
+    Write(buf [] <span class="hljs-keyword">byte</span>) (n <span class="hljs-keyword">int</span>, err error)  
+}  
+<span class="hljs-keyword">type</span> File <span class="hljs-keyword">struct</span> {  
+    <span class="hljs-comment">// ...  </span>
+}  
+<span class="hljs-keyword">func</span> (f *File) Write(buf [] <span class="hljs-keyword">byte</span>) (n <span class="hljs-keyword">int</span>, err error) {  
+    <span class="hljs-comment">// ...  </span>
+}
+</code></pre>
+<p>&#x975E;&#x4FB5;&#x5165;&#x5F0F;&#x63A5;&#x53E3;&#x4E00;&#x4E2A;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x597D;&#x5904;&#x5C31;&#x662F;&#x53BB;&#x6389;&#x4E86;&#x7E41;&#x6742;&#x7684;&#x7EE7;&#x627F;&#x4F53;&#x7CFB;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x8BB8;&#x5927;&#x795E;&#x5728;&#x300A;go&#x8BED;&#x8A00;&#x7F16;&#x7A0B;&#x300B;&#x4E00;&#x4E66;&#x4E2D;&#x4F5C;&#x7684;&#x603B;&#x7ED3;&#xFF1A;
+&#x5176;&#x4E00;&#xFF0C; Go&#x8BED;&#x8A00;&#x7684;&#x6807;&#x51C6;&#x5E93;&#xFF0C;&#x518D;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x7ED8;&#x5236;&#x7C7B;&#x5E93;&#x7684;&#x7EE7;&#x627F;&#x6811;&#x56FE;&#x3002;&#x4F60;&#x4E00;&#x5B9A;&#x89C1;&#x8FC7;&#x4E0D;&#x5C11;C++&#x3001; Java&#x3001; C# &#x7C7B;&#x5E93;&#x7684;&#x7EE7;&#x627F;&#x6811;&#x56FE;&#x3002;&#x8FD9;&#x91CC;&#x7ED9;&#x4E2A;Java&#x7EE7;&#x627F;&#x6811;&#x56FE;&#xFF1A;  <a href="http://docs.oracle.com/javase/1.4.2/docs/api/overview-tree.html" target="_blank">http://docs.oracle.com/javase/1.4.2/docs/api/overview-tree.html</a>  &#x5728;Go&#x4E2D;&#xFF0C;&#x7C7B;&#x7684;&#x7EE7;&#x627F;&#x6811;&#x5E76;&#x65E0;&#x610F;&#x4E49;&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x77E5;&#x9053;&#x8FD9;&#x4E2A;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x6BCF;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x5565;&#x542B;&#x4E49;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002; 
+&#x5176;&#x4E8C;&#xFF0C;&#x5B9E;&#x73B0;&#x7C7B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x81EA;&#x5DF1;&#x5E94;&#x8BE5;&#x63D0;&#x4F9B;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x7528;&#x518D;&#x7EA0;&#x7ED3;&#x63A5;&#x53E3;&#x9700;&#x8981;&#x62C6;&#x5F97;&#x591A;&#x7EC6;&#x624D; &#x5408;&#x7406;&#x3002;&#x63A5;&#x53E3;&#x7531;&#x4F7F;&#x7528;&#x65B9;&#x6309;&#x9700;&#x5B9A;&#x4E49;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x4E8B;&#x524D;&#x89C4;&#x5212;&#x3002; 
+&#x5176;&#x4E09;&#xFF0C;&#x4E0D;&#x7528;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x800C;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x5305;&#xFF0C;&#x56E0;&#x4E3A;&#x591A;&#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x5305;&#xFF0C;&#x5C31;&#x610F;&#x5473;&#x7740;&#x66F4;&#x591A;&#x7684;&#x8026; &#x5408;&#x3002;&#x63A5;&#x53E3;&#x7531;&#x4F7F;&#x7528;&#x65B9;&#x6309;&#x81EA;&#x8EAB;&#x9700;&#x6C42;&#x6765;&#x5B9A;&#x4E49;&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x65E0;&#x9700;&#x5173;&#x5FC3;&#x662F;&#x5426;&#x6709;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x5B9A;&#x4E49;&#x8FC7;&#x7C7B;&#x4F3C;&#x7684;&#x63A5;&#x53E3;&#x3002;
+&#x5982;&#x679C;&#x4ED4;&#x7EC6;&#x7814;&#x7A76;golang&#x4E2D;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x5B66;C++&#x7684;&#x540C;&#x5B66;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;golang&#x4E2D;&#x5173;&#x4E8E;&#x63A5;&#x53E3;&#x7684;&#x6982;&#x5FF5;&#x5F88;&#x4F3C;&#x6709;&#x70B9;&#x50CF;C++&#x4E2D;&#x7684;Concept&#xFF0C;&#x4E0D;&#x77E5;&#x9053;concept&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x53C2;&#x770B;&#x5218;&#x672A;&#x9E4F;&#x7684;<a href="http://blog.csdn.net/pongba/article/details/1726031" target="_blank">&#x300A;C++0x&#x6F2B;&#x8C08;&#x300B;&#x7CFB;&#x5217;&#x4E4B;&#xFF1A;Concept, Concept!</a> &#x3002;c++&#x7528;&#x6A21;&#x677F;&#x6765;&#x8FBE;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x4E0D;&#x7BA1;&#x4F60;&#x4F7F;&#x7528;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x6765;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x53EA;&#x8981;&#x6EE1;&#x8DB3;&#x8BE5;&#x6A21;&#x677F;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x4E00;&#x7EC4;&#x64CD;&#x4F5C;&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x5426;&#x5219;&#x5219;&#x4F1A;&#x7F16;&#x8BD1;&#x4E0D;&#x901A;&#x8FC7;&#x3002;&#x4E0D;&#x540C;&#x4E8E;C++&#x7684;&#x6A21;&#x677F;&#x5728;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x68C0;&#x67E5;&#xFF0C;golang&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x53EA;&#x80FD;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x8FDB;&#x884C;&#x63A5;&#x53E3;&#x67E5;&#x8BE2;&#xFF0C;&#x5173;&#x4E8E;&#x63A5;&#x53E3;&#x67E5;&#x8BE2;&#x7684;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;&#x6211;&#x4EEC;&#x7A0D;&#x540E;&#x518D;&#x89E3;&#x91CA;&#x3002; 
+&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x540C;&#x5B66;&#x4E4B;&#x524D;&#x4E86;&#x89E3;&#x8FC7;Qt&#xFF0C;&#x5219;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x53D1;&#x73B0;&#x8FD9;&#x79CD;&#x975E;&#x4FB5;&#x5165;&#x5F0F;&#x63A5;&#x53E3;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x597D;&#x5904;&#xFF0C;Qt&#x91CC;&#x9762;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x7279;&#x6027;&#x5C31;&#x662F;&#x4FE1;&#x53F7;&#x4E0E;&#x69FD;&#xFF0C;&#x5B83;&#x5B9E;&#x73B0;&#x4E86;&#x76D1;&#x542C;&#x8005;&#x4E0E;&#x63A5;&#x6536;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x89E3;&#x8026;&#xFF0C;&#x5B83;&#x6240;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x9645;&#x4E0A;&#x662F;qt&#x7684;&#x9884;&#x5904;&#x7406;&#x751F;&#x6210;&#x9759;&#x6001;&#x7684;&#x8FDE;&#x63A5;&#x4EE3;&#x7801;&#x3002;&#x800C;&#x5982;&#x679C;&#x4F7F;&#x7528;golang&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x5957;&#x673A;&#x5236;&#x5C31;&#x7B80;&#x76F4;&#x5728;&#x65B9;&#x4FBF;&#x4E86;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x9884;&#x5148;&#x751F;&#x6210;&#x4EE3;&#x7801;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x76D1;&#x542C;&#x8005;&#x4E0E;&#x63A5;&#x6536;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x89E3;&#x8026;&#x672C;&#x8EAB;&#x5C31;&#x662F;golang&#x7684;&#x81EA;&#x7136;&#x8868;&#x73B0;&#x3002;
+golang&#x4E2D;&#x7684;interface&#x5728;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x601D;&#x60F3;&#x4E2D;&#x6240;&#x626E;&#x6F14;&#x7684;&#x89D2;&#x8272;</p>
+<p>golang&#x4E0D;&#x652F;&#x6301;&#x5B8C;&#x6574;&#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x601D;&#x60F3;&#xFF0C;&#x5B83;&#x6CA1;&#x6709;&#x7EE7;&#x627F;&#xFF0C;&#x591A;&#x6001;&#x5219;&#x5B8C;&#x5168;&#x4F9D;&#x8D56;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x3002;golang&#x53EA;&#x80FD;&#x6A21;&#x62DF;&#x7EE7;&#x627F;&#xFF0C;&#x5176;&#x672C;&#x8D28;&#x662F;&#x7EC4;&#x5408;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;golang&#x8BED;&#x8A00;&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x8BED;&#x6CD5;&#x7CD6;&#x4F7F;&#x5176;&#x770B;&#x8D77;&#x6765;&#x8FBE;&#x5230;&#x4E86;&#x7EE7;&#x627F;&#x7684;&#x6548;&#x679C;&#x3002;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x4E2D;&#x4E00;&#x4E2A;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x57FA;&#x672C;&#x539F;&#x5219;--&#x91CC;&#x6C0F;&#x4EE3;&#x6362;&#x539F;&#x5219;(Liskov Substitution Principle LSP)&#x5728;&#x8FD9;&#x91CC;&#x5C31;&#x884C;&#x4E0D;&#x901A;&#x4E86;&#xFF0C;&#x4E60;&#x60EF;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x4E9B;&#x4E0D;&#x9002;&#x5E94;&#xFF0C;&#x5F53;&#x4F60;&#x5C06;&#x4E00;&#x4E2A;&#x7236;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x6307;&#x5411;&#x5B50;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;golang&#x4F1A;&#x6BEB;&#x4E0D;&#x541D;&#x556C;&#x7684;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#x3002;
+golang&#x7684;&#x8BBE;&#x8BA1;&#x7406;&#x5FF5;&#x662F;&#x5927;&#x9053;&#x81F3;&#x7B80;&#xFF0C;&#x4F20;&#x7EDF;&#x7684;&#x7EE7;&#x627F;&#x6982;&#x5FF5;&#x5728;golang&#x4E2D;&#x5DF2;&#x7ECF;&#x663E;&#x5F97;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x5FC5;&#x8981;&#xFF0C;golang&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x53BB;&#x5B9E;&#x73B0;&#x591A;&#x6001;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x770B;&#x770B;golang&#x662F;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;&#x7684;&#xFF0C;&#x5148;&#x770B;C++&#x7684;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-golang"><span class="hljs-keyword">struct</span> IPizzaCooker {  
+    virtual void Prepare(Pizza*) = <span class="hljs-number">0</span>;  
+    virtual void Bake(Pizza*) = <span class="hljs-number">0</span>;  
+    virtual void Cut(Pizza*) = <span class="hljs-number">0</span>;  
+}  
+
+<span class="hljs-keyword">struct</span> PizzaDefaultCooker : public IPizzaCooker {  
+    Pizza* CookOnePizza() {  
+        Pizza* p = <span class="hljs-built_in">new</span> Pizza();  
+        Prepare(p);  
+        Bake(p);  
+        Cut(p);  
+        <span class="hljs-keyword">return</span> p;  
+    }  
+    virtual void Prepare(Pizza*) {  
+        <span class="hljs-comment">//....default prepare pizza  </span>
+    }  
+    virtual void Bake(Pizza*) {  
+        <span class="hljs-comment">//....default bake pizza  </span>
+    }  
+    virtual void Cut(Pizza*) {  
+        <span class="hljs-comment">//....default cut pizza  </span>
+    }  
+}  
+
+<span class="hljs-keyword">struct</span> MyPizzaCooker : public PizzaDefaultCooker {  
+    virtual void Bake(Pizza*) {  
+        <span class="hljs-comment">//....bake pizza use my style  </span>
+    }  
+}  
+
+<span class="hljs-keyword">int</span> main() {  
+    MyPizzaCooker cooker;  
+    Pizza* p = cooker.CookOnePizza();  
+    <span class="hljs-comment">//....  </span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;  
+}
+</code></pre>
+<p>&#x672C;&#x4F8B;&#x5B50;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x505A;pizza&#x7684;&#x7C7B;&#x70F9;&#x996A;&#x4E00;&#x4E2A;&#x65B0;pizza&#xFF0C;&#x70F9;&#x996A;&#x7684;&#x6D41;&#x7A0B;&#x5728;&#x7236;&#x7C7B;&#x4E2D;&#x5B9E;&#x73B0;CookOnePizza&#xFF0C;&#x5B50;&#x7C7B;&#x91CD;&#x5199;&#x4E86;Bake&#x65B9;&#x6CD5;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x770B;&#x770B;golang&#x4E2D;&#x662F;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-golang"><span class="hljs-keyword">type</span> IPizzaCooker <span class="hljs-keyword">interface</span> {  
+    Prepare(*Pizza)  
+    Bake(*Pizza)  
+    Cut(*Pizza)  
+}  
+
+<span class="hljs-keyword">func</span> cookOnePizza(ipc IPizzaCooker) *Pizza {  
+    p := <span class="hljs-built_in">new</span>(Pizza)  
+    ipc.Prepare(p)  
+    ipc.Bake(p)  
+    ipc.Cut(p)  
+    <span class="hljs-keyword">return</span> p  
+}  
+
+<span class="hljs-keyword">type</span> PizzaDefaultCooker <span class="hljs-keyword">struct</span> {  
+}  
+
+<span class="hljs-keyword">func</span> (this *PizzaDefaultCooker) CookOnePizza() *Pizza {  
+    <span class="hljs-keyword">return</span> cookOnePizza(this)  
+}  
+<span class="hljs-keyword">func</span> (this *PizzaDefaultCooker) Prepare(*Pizza) {  
+    <span class="hljs-comment">//....default prepare pizza  </span>
+}  
+<span class="hljs-keyword">func</span> (this *PizzaDefaultCooker) Bake(*Pizza) {  
+    <span class="hljs-comment">//....default bake pizza  </span>
+}  
+<span class="hljs-keyword">func</span> (this *PizzaDefaultCooker) Cut(*Pizza) {  
+    <span class="hljs-comment">//....default cut pizza  </span>
+}  
+
+<span class="hljs-keyword">type</span> MyPizzaCooker <span class="hljs-keyword">struct</span> {  
+    PizzaDefaultCooker  
+}  
+
+<span class="hljs-keyword">func</span> (this *MyPizzaCooker) CookOnePizza() *Pizza {  
+    <span class="hljs-keyword">return</span> cookOnePizza(this)  
+}  
+<span class="hljs-keyword">func</span> (this *MyPizzaCooker) Bake(*Pizza) {  
+    <span class="hljs-comment">//....bake pizza use my style  </span>
+}  
+
+<span class="hljs-keyword">func</span> main() {  
+    <span class="hljs-keyword">var</span> cooker MyPizzaCooker  
+    p := cooker.CookOnePizza()  
+    <span class="hljs-comment">//....  </span>
+}
+</code></pre>
+<p>&#x7531;&#x4E8E;golang&#x7684;&#x591A;&#x6001;&#x5FC5;&#x987B;&#x501F;&#x52A9;&#x63A5;&#x53E3;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x8FD9;&#x5B9E;&#x9645;&#x4E0A;&#x5DF2;&#x4E0D;&#x662F;&#x4E25;&#x683C;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x4E86;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;golang&#x663E;&#x5F97;&#x6709;&#x4E9B;&#x7B28;&#x62D9;&#xFF0C;&#x5B83;&#x5176;&#x5B9E;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x6709;&#x66F4;&#x4F18;&#x96C5;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x6848;&#xFF0C;&#x4E3E;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x7ED9;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x591A;&#x6001;&#x5728;golang&#x4E2D;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x6240;&#x8C13;&#x6A21;&#x62DF;&#x7EE7;&#x627F;&#x5E76;&#x4E0D;&#x7B49;&#x4EF7;&#x4E8E;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x3002;
+interface&#x7684;&#x5185;&#x5B58;&#x5E03;&#x5C40;
+&#x4E86;&#x89E3;interface&#x7684;&#x5185;&#x5B58;&#x7ED3;&#x6784;&#x662F;&#x975E;&#x5E38;&#x6709;&#x5FC5;&#x8981;&#x7684;&#xFF0C;&#x53EA;&#x6709;&#x4E86;&#x89E3;&#x4E86;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x624D;&#x80FD;&#x8FDB;&#x4E00;&#x6B65;&#x5206;&#x6790;&#x8BF8;&#x5982;&#x7C7B;&#x578B;&#x65AD;&#x8A00;&#x7B49;&#x60C5;&#x51B5;&#x7684;&#x6548;&#x7387;&#x95EE;&#x9898;&#x3002;&#x5148;&#x770B;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-golang"><span class="hljs-keyword">type</span> Stringer <span class="hljs-keyword">interface</span> {  
+    String() <span class="hljs-keyword">string</span>  
+}  
+
+<span class="hljs-keyword">type</span> Binary <span class="hljs-keyword">uint64</span>  
+
+<span class="hljs-keyword">func</span> (i Binary) String() <span class="hljs-keyword">string</span> {  
+    <span class="hljs-keyword">return</span> strconv.Uitob64(i.Get(), <span class="hljs-number">2</span>)  
+}  
+
+<span class="hljs-keyword">func</span> (i Binary) Get() <span class="hljs-keyword">uint64</span> {  
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">uint64</span>(i)  
+}  
+
+<span class="hljs-keyword">func</span> main() {  
+    b := Binary{}  
+    s := Stringer(b)  
+    fmt.Print(s.String())  
+}
+</code></pre>
+<p>interface&#x5728;&#x5185;&#x5B58;&#x4E0A;&#x5B9E;&#x9645;&#x7531;&#x4E24;&#x4E2A;&#x6210;&#x5458;&#x7EC4;&#x6210;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#xFF0C;tab&#x6307;&#x5411;&#x865A;&#x8868;&#xFF0C;data&#x5219;&#x6307;&#x5411;&#x5B9E;&#x9645;&#x5F15;&#x7528;&#x7684;&#x6570;&#x636E;&#x3002;&#x865A;&#x8868;&#x63CF;&#x7ED8;&#x4E86;&#x5B9E;&#x9645;&#x7684;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#x53CA;&#x8BE5;&#x63A5;&#x53E3;&#x6240;&#x9700;&#x8981;&#x7684;&#x65B9;&#x6CD5;&#x96C6;</p>
+<p><img src="../../../img/7.png" alt="Paste_Image.png"></p>
+<p>&#x89C2;&#x5BDF;itable&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x9996;&#x5148;&#x662F;&#x63CF;&#x8FF0;type&#x4FE1;&#x606F;&#x7684;&#x4E00;&#x4E9B;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x6EE1;&#x8DB3;Stringger&#x63A5;&#x53E3;&#x7684;&#x51FD;&#x6570;&#x6307;&#x9488;&#x5217;&#x8868;&#xFF08;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x662F;&#x5B9E;&#x9645;&#x7C7B;&#x578B;Binary&#x7684;&#x51FD;&#x6570;&#x6307;&#x9488;&#x96C6;&#x54E6;&#xFF09;&#x3002;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5982;&#x679C;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x5B9E;&#x9645;&#x7684;&#x64CD;&#x4F5C;&#x5176;&#x5B9E;&#x5C31;&#x662F;s.tab-&gt;fun<a href="s.data">0</a>&#x3002;&#x662F;&#x4E0D;&#x662F;&#x548C;C++&#x7684;&#x865A;&#x8868;&#x5F88;&#x50CF;&#xFF1F;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x8981;&#x770B;&#x770B;golang&#x7684;&#x865A;&#x8868;&#x548C;C++&#x7684;&#x865A;&#x8868;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;&#x3002;
+&#x5148;&#x770B;C++&#xFF0C;&#x5B83;&#x4E3A;&#x6BCF;&#x79CD;&#x7C7B;&#x578B;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x96C6;&#xFF0C;&#x800C;&#x5B83;&#x7684;&#x865A;&#x8868;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x96C6;&#x672C;&#x8EAB;&#x6216;&#x662F;&#x5B83;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x800C;&#x5DF2;&#xFF0C;&#x5F53;&#x9762;&#x4E34;&#x591A;&#x7EE7;&#x627F;&#x65F6;&#xFF08;&#x6216;&#x8005;&#x53EB;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;&#x63A5;&#x53E3;&#x65F6;&#xFF0C;&#x8FD9;&#x662F;&#x5F88;&#x5E38;&#x89C1;&#x7684;&#xFF09;&#xFF0C;C++&#x5BF9;&#x8C61;&#x7ED3;&#x6784;&#x91CC;&#x5C31;&#x4F1A;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x865A;&#x8868;&#x6307;&#x9488;&#xFF0C;&#x6BCF;&#x4E2A;&#x865A;&#x8868;&#x6307;&#x9488;&#x6307;&#x5411;&#x8BE5;&#x65B9;&#x6CD5;&#x96C6;&#x7684;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;C++&#x65B9;&#x6CD5;&#x96C6;&#x91CC;&#x9762;&#x51FD;&#x6570;&#x6307;&#x9488;&#x6709;&#x4E25;&#x683C;&#x7684;&#x987A;&#x5E8F;&#x3002;&#x8BB8;&#x591A;C++&#x65B0;&#x624B;&#x5728;&#x9762;&#x5BF9;&#x591A;&#x7EE7;&#x627F;&#x65F6;&#x5C31;&#x53D8;&#x5F97;&#x86CB;&#x75BC;&#x83CA;&#x7D27;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x7684;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x65B9;&#x5F0F;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x5176;&#x865A;&#x8868;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;C++&#x5F15;&#x5165;&#x4E86;&#x5F88;&#x591A;&#x6982;&#x5FF5;&#xFF0C;&#x4EC0;&#x4E48;&#x865A;&#x7EE7;&#x627F;&#x554A;&#xFF0C;&#x63A5;&#x53E3;&#x51FD;&#x6570;&#x540C;&#x540D;&#x95EE;&#x9898;&#x554A;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5C42;&#x6B21;&#x4E0A;&#x88AB;&#x7EE7;&#x627F;&#x591A;&#x6B21;&#x7684;&#x95EE;&#x9898;&#x554A;&#x7B49;&#x7B49;&#x2026;&#x2026;&#x5C31;&#x662F;&#x8001;&#x624B;&#x4E5F;&#x5F88;&#x5BB9;&#x6613;&#x56E0;&#x758F;&#x5FFD;&#x800C;&#x5199;&#x51FA;&#x95EE;&#x9898;&#x4EE3;&#x7801;&#x51FA;&#x6765;&#x3002;
+&#x6211;&#x4EEC;&#x518D;&#x6765;&#x770B;golang&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#xFF0C;&#x540C;C++&#x4E00;&#x6837;&#xFF0C;golang&#x4E5F;&#x4E3A;&#x6BCF;&#x79CD;&#x7C7B;&#x578B;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x96C6;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x63A5;&#x53E3;&#x7684;&#x865A;&#x8868;&#x662F;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4E13;&#x95E8;&#x751F;&#x6210;&#x7684;&#x3002;&#x53EF;&#x80FD;&#x7EC6;&#x5FC3;&#x7684;&#x540C;&#x5B66;&#x80FD;&#x591F;&#x53D1;&#x73B0;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x751F;&#x6210;&#x865A;&#x8868;&#x3002;&#x56E0;&#x4E3A;&#x592A;&#x591A;&#x4E86;&#xFF0C;&#x6BCF;&#x4E00;&#x79CD;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&#x548C;&#x6240;&#x6709;&#x6EE1;&#x8DB3;&#x5176;&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x578B;&#x7684;&#x7EC4;&#x5408;&#x5C31;&#x662F;&#x5176;&#x53EF;&#x80FD;&#x7684;&#x865A;&#x8868;&#x6570;&#x91CF;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5176;&#x4E2D;&#x7684;&#x5927;&#x90E8;&#x5206;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x7684;&#xFF0C;&#x56E0;&#x6B64;golang&#x9009;&#x62E9;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x751F;&#x6210;&#x5B83;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x4F8B;&#x5B50;&#x4E2D;&#x5F53;&#x9996;&#x6B21;&#x9047;&#x89C1;s 
+:= Stringer(b)&#x8FD9;&#x6837;&#x7684;&#x8BED;&#x53E5;&#x65F6;&#xFF0C;golang&#x4F1A;&#x751F;&#x6210;Stringer&#x63A5;&#x53E3;&#x5BF9;&#x5E94;&#x4E8E;Binary&#x7C7B;&#x578B;&#x7684;&#x865A;&#x8868;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x7F13;&#x5B58;&#x3002;
+&#x7406;&#x89E3;&#x4E86;golang&#x7684;&#x5185;&#x5B58;&#x7ED3;&#x6784;&#xFF0C;&#x518D;&#x6765;&#x5206;&#x6790;&#x8BF8;&#x5982;&#x7C7B;&#x578B;&#x65AD;&#x8A00;&#x7B49;&#x60C5;&#x51B5;&#x7684;&#x6548;&#x7387;&#x95EE;&#x9898;&#x5C31;&#x5F88;&#x5BB9;&#x6613;&#x4E86;&#xFF0C;&#x5F53;&#x5224;&#x5B9A;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x67D0;&#x4E2A;&#x63A5;&#x53E3;&#x65F6;&#xFF0C;golang&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#x96C6;&#x548C;&#x63A5;&#x53E3;&#x6240;&#x9700;&#x8981;&#x7684;&#x65B9;&#x6CD5;&#x96C6;&#x8FDB;&#x884C;&#x5339;&#x914D;&#xFF0C;&#x5982;&#x679C;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#x96C6;&#x5B8C;&#x5168;&#x5305;&#x542B;&#x63A5;&#x53E3;&#x7684;&#x65B9;&#x6CD5;&#x96C6;&#xFF0C;&#x5219;&#x53EF;&#x8BA4;&#x4E3A;&#x8BE5;&#x7C7B;&#x578B;&#x6EE1;&#x8DB3;&#x8BE5;&#x63A5;&#x53E3;&#x3002;&#x4F8B;&#x5982;&#x67D0;&#x7C7B;&#x578B;&#x6709;m&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x67D0;&#x63A5;&#x53E3;&#x6709;n&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x5F88;&#x5BB9;&#x6613;&#x77E5;&#x9053;&#x8FD9;&#x79CD;&#x5224;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;O(mXn)&#xFF0C;&#x4E0D;&#x8FC7;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9884;&#x5148;&#x6392;&#x5E8F;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF0C;&#x5B9E;&#x9645;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;O(m+n)&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x51E0;&#x4E4E;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#x90FD;&#x53EF;&#x52A0;&#x4EE5;&#x65B9;&#x6CD5;&#xFF0C;&#x51E0;&#x4E4E;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#x90FD;&#x53EF;&#x6EE1;&#x8DB3;&#x67D0;&#x754C;&#x9762;&#x3002;&#x4E00;&#x4E2A;&#x5C55;&#x793A;&#x7684;&#x4F8B;&#x5B50;&#x662F; http &#x5305;&#x5B9A;&#x4E49;&#x7684; Handler &#x754C;&#x9762;&#x3002;&#x4EFB;&#x4F55;&#x7269;&#x4EF6;&#x5B9E;&#x73B0;&#x4E86;Handler &#x90FD;&#x53EF;&#x670D;&#x52A1; HTTP &#x8BF7;&#x6C42;&#x3002;</p>
+<pre><code>  type Handler interface {
+      ServeHTTP(*Conn, *Request)
+  }
+</code></pre><p>ResponseWriter &#x672C;&#x8EAB;&#x662F;&#x4E2A;&#x754C;&#x9762;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x8FD4;&#x56DE;&#x5BA2;&#x6237;&#x7684;&#x8BF7;&#x6C42;&#x3002;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5305;&#x62EC;&#x6807;&#x51C6;&#x7684; Write &#x65B9;&#x6CD5;&#x3002;&#x56E0;&#x6B64; http.ResponseWriter &#x53EF;&#x7528;&#x5728; io.Writer &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#x5730;&#x65B9;&#x3002;Request &#x662F;&#x4E2A;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x542B;&#x5BA2;&#x6237;&#x8BF7;&#x6C42;&#x7684;&#x4E00;&#x4E2A;&#x89E3;&#x6790;&#x8FC7;&#x7684;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x4E3A;&#x6C42;&#x7B80;&#x77ED;&#xFF0C;&#x6211;&#x4EEC;&#x5FFD;&#x7565; POST &#x5E76;&#x5047;&#x5B9A;&#x6240;&#x6709; HTTP &#x8BF7;&#x6C42;&#x90FD;&#x662F; GET&#xFF1B;&#x6B64;&#x7B80;&#x5316;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x7ECF;&#x624B;&#x8005;&#x7684;&#x8BBE;&#x7F6E;&#x3002;&#x4E0B;&#x9762;&#x4E00;&#x4E2A;&#x5C0F;&#x800C;&#x5168;&#x7684;&#x7ECF;&#x624B;&#x8005;&#x5B9E;&#x73B0;&#x4E86;&#x7F51;&#x9875;&#x8BBF;&#x95EE;&#x6B21;&#x6570;&#x7684;&#x8BA1;&#x6570;&#x3002;</p>
+<pre><code>// Simple counter server.
+  type Counter struct {
+      n int
+  }
+
+  func (ctr *Counter) ServeHTTP(c *http.Conn, req *http.Request) {
+      ctr.n++
+      fmt.Fprintf(c, &quot;counter = %d\n&quot;, ctr.n)
+  }
+</code></pre><p>&#xFF08;&#x6CE8;&#x610F; Fprintf &#x600E;&#x6837;&#x6253;&#x5370;&#x5230; http.ResponseWriter&#xFF09;&#x3002;&#x4F5C;&#x4E3A;&#x53C2;&#x8003;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x600E;&#x6837;&#x628A;&#x670D;&#x52A1;&#x8005;&#x52A0;&#x5728;&#x4E00;&#x4E2A; URL &#x6811;&#x7684;&#x8282;&#x70B9;&#x4E0A;&#x3002;</p>
+<pre><code> import &quot;http&quot;
+  ...
+  ctr := new(Counter)
+  http.Handle(&quot;/counter&quot;, ctr)
+</code></pre><p>&#x53EF;&#x662F;&#x4E3A;&#x4F55;&#x628A; Counter &#x4F5C;&#x4E3A;&#x7ED3;&#x6784;&#x5462;&#xFF1F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x80FD;&#x591F;&#x4E86;&#x3002;&#xFF08;&#x63A5;&#x53D7;&#x8005;&#x9700;&#x662F;&#x6307;&#x9488;&#xFF0C;&#x4F7F;&#x589E;&#x91CF;&#x5E26;&#x56DE;&#x8C03;&#x7528;&#x8005;&#xFF09;&#x3002;</p>
+<pre><code>// Simpler counter server.
+  type Counter int
+
+  func (ctr *Counter) ServeHTTP(c *http.Conn, req *http.Request) {
+      *ctr++
+      fmt.Fprintf(c, &quot;counter = %d\n&quot;, *ctr)
+  }
+</code></pre><p>&#x5F53;&#x67D0;&#x9875;&#x88AB;&#x8BBF;&#x95EE;&#x65F6;&#x600E;&#x6837;&#x901A;&#x77E5;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x66F4;&#x65B0;&#x67D0;&#x4E9B;&#x5185;&#x90E8;&#x72B6;&#x6001;&#x5462;&#xFF1F;&#x7ED9;&#x7F51;&#x9875;&#x8D34;&#x4E2A;&#x4FE1;&#x9053;&#x3002;</p>
+<pre><code>// A channel that sends a notification on each visit.
+  // (Probably want the channel to be buffered.)
+  type Chan chan *http.Request
+
+  func (ch Chan) ServeHTTP(c *http.Conn, req *http.Request) {
+      ch &lt;- req
+      fmt.Fprint(c, &quot;notification sent&quot;)
+  }
+</code></pre><p>&#x6700;&#x540E;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5728; /args &#x663E;&#x793A;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x7684;&#x53C2;&#x91CF;&#x3002;&#x5199;&#x4E2A;&#x6253;&#x5370;&#x53C2;&#x91CF;&#x7684;&#x51FD;&#x6570;&#x5F88;&#x5BB9;&#x6613;&#xFF1A;</p>
+<pre><code>  func ArgServer() {
+      for i, s := range os.Args {
+          fmt.Println(s)
+      }
+  }
+</code></pre><p>&#x600E;&#x6837;&#x628A;&#x5B83;&#x53D8;&#x6210; HTTP &#x670D;&#x52A1;&#x5668;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A; ArgServer &#x4F5C;&#x4E3A;&#x67D0;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#x518D;&#x5FFD;&#x7565;&#x5176;&#x503C;&#xFF0C;&#x4E5F;&#x6709;&#x66F4;&#x5E72;&#x51C0;&#x7684;&#x505A;&#x6CD5;&#x3002;&#x65E2;&#x7136;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x4EFB;&#x610F;&#x975E;&#x6307;&#x9488;&#x548C;&#x754C;&#x9762;&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x51FD;&#x6570;&#x5199;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;http &#x5305;&#x91CC;&#x6709;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code> // The HandlerFunc type is an adapter to allow the use of
+  // ordinary functions as HTTP handlers.  If f is a function
+  // with the appropriate signature, HandlerFunc(f) is a
+  // Handler object that calls f.
+  type HandlerFunc func(*Conn, *Request)
+
+  // ServeHTTP calls f(c, req).
+  func (f HandlerFunc) ServeHTTP(c *Conn, req *Request) {
+      f(c, req)
+  }
+</code></pre><p>HandlerFunc &#x662F;&#x4E2A;&#x5E26; ServeHTTP &#x65B9;&#x6CD5;&#x7684;&#x7C7B;&#x578B;&#xFF0C; &#x6240;&#x4EE5;&#x6B64;&#x7C7B;&#x7684;&#x503C;&#x90FD;&#x53EF;&#x4EE5;&#x670D;&#x52A1; HTTP &#x8BF7;&#x6C42;&#x3002;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#xFF1A;&#x63A5;&#x53D7;&#x8005;&#x662F;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;f&#xFF0C;&#x65B9;&#x6CD5;&#x8C03;&#x7528; f &#x3002;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x602A;&#xFF0C;&#x4F46;&#x548C;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x63A5;&#x53D7;&#x8005;&#x662F;&#x4FE1;&#x9053;&#xFF0C;&#x800C;&#x65B9;&#x6CD5;&#x53D1;&#x9001;&#x5230; &#x6B64;&#x4FE1;&#x9053;&#xFF0C;&#x6CA1;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x8981;&#x628A; ArgServer &#x53D8;&#x4E3A; HTTP &#x670D;&#x52A1;&#x5668;&#xFF0C; &#x6211;&#x4EEC;&#x9996;&#x5148;&#x6539;&#x6210;&#x6B63;&#x786E;&#x7684;&#x7B7E;&#x540D;&#xFF1A;</p>
+<pre><code> // Argument server.
+  func ArgServer(c *http.Conn, req *http.Request) {
+      for i, s := range os.Args {
+          fmt.Fprintln(c, s)
+      }
+  }
+</code></pre><p>ArgServer &#x73B0;&#x5728;&#x548C; HandlerFunc &#x6709;&#x540C;&#x6837;&#x7684;&#x7B7E;&#x540D;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8F6C;&#x6210;&#x6B64;&#x7C7B;&#x4F7F;&#x7528;&#x5176;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x50CF;&#x6211;&#x4EEC;&#x628A; Sequence &#x8F6C;&#x4E3A; IntArray &#x6765;&#x4F7F;&#x7528; IntArray.Sort &#x4E00;&#x6837;&#x3002;&#x8BBE;&#x7F6E;&#x4EE3;&#x7801;&#x5F88;&#x7B80;&#x77ED;&#xFF1A;</p>
+<pre><code>http.Handle(&quot;/args&quot;, http.HandlerFunc(ArgServer))
+</code></pre><p>&#x5F53;&#x6709;&#x4EBA;&#x8BBF;&#x95EE; /args &#x9875;&#x65F6;&#xFF0C;&#x6B64;&#x9875;&#x7684;&#x7ECF;&#x624B;&#x8005;&#x6709;&#x503C; ArgServer &#x548C;&#x7C7B;&#x578B;HandlerFunc&#x3002;HTTP &#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;&#x6B64;&#x7C7B;&#x578B;&#x7684; ServeHTTP &#x65B9;&#x6CD5;&#xFF0C;&#x7528;ArgServer &#x4F5C;&#x4E3A;&#x63A5;&#x53D7;&#x8005;&#xFF0C;&#x53CD;&#x8FC7;&#x6765;&#x8C03;&#x7528; ArgServer &#xFF08;&#x901A;&#x8FC7;&#x542F;&#x52A8;handlerFunc.ServeHTTP &#x7684; f(w, req) &#x3002;&#xFF09;&#x53C2;&#x91CF;&#x88AB;&#x663E;&#x793A;&#x51FA;&#x6765;&#x3002;</p>
+<p>&#x6B64;&#x8282;&#x4E2D;&#x6211;&#x4EEC;&#x4ECE;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#xFF0C;&#x6574;&#x6570;&#xFF0C;&#x4FE1;&#x9053;&#x548C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5236;&#x9020;&#x51FA;&#x4E00;&#x4E2A; HTTP &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5168;&#x8D56;&#x4E8E;&#x754C;&#x9762;&#x5C31;&#x662F;&#x4E00;&#x5957;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x5B9A;&#x4E49;&#x5728;&#xFF08;&#x51E0;&#x4E4E;&#xFF09;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x4E0A;&#x3002;</p>
+<h1 id="goroutines&#x548C;channels_1"><a name="goroutines&#x548C;channels_1" class="anchor-navigation-ex-anchor" href="#goroutines&#x548C;channels_1"><i class="fa fa-link" aria-hidden="true"></i></a> Goroutines&#x548C;Channels</h1>
+<h1 id="&#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x5E76;&#x53D1;"><a name="&#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x5E76;&#x53D1;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x5E76;&#x53D1;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x5E76;&#x53D1;</h1>
+<hr>
+<h1 id="&#x5305;&#x548C;&#x5DE5;&#x5177;"><a name="&#x5305;&#x548C;&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#&#x5305;&#x548C;&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x5305;&#x548C;&#x5DE5;&#x5177;</h1>
+<h4 id="&#x5DE5;&#x5177;"><a name="&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a><a href="http://www.jianshu.com/p/24d3ec006009" target="_blank">&#x5DE5;&#x5177;</a></h4>
+<h1 id="&#x6D4B;&#x8BD5;"><a name="&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x6D4B;&#x8BD5;</h1>
+<h4 id="go-test"><a name="go-test" class="anchor-navigation-ex-anchor" href="#go-test"><i class="fa fa-link" aria-hidden="true"></i></a><a href="http://www.jianshu.com/p/899540c32ab0" target="_blank">go test</a></h4>
+<h1 id="&#x53CD;&#x5C04;"><a name="&#x53CD;&#x5C04;" class="anchor-navigation-ex-anchor" href="#&#x53CD;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x53CD;&#x5C04;</h1>
+<ol>
+<li>&#x4E3A;&#x4F55;&#x9700;&#x8981;&#x53CD;&#x5C04;?
+&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x80FD;&#x591F;&#x5904;&#x7406;&#x4E00;&#x7C7B;&#x5E76;&#x4E0D;&#x6EE1;&#x8DB3;&#x666E;&#x901A;&#x516C;&#x5171;&#x63A5;&#x53E3;&#x7684;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x5E76;&#x6CA1;&#x6709;&#x786E;&#x5B9A;&#x7684;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x5728;&#x6211;&#x4EEC;&#x8BBE;&#x8BA1;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x8FD8;&#x8FD9;&#x4E9B;&#x7C7B;&#x578B;&#x53EF;&#x80FD;&#x8FD8;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5404;&#x79CD;&#x60C5;&#x51B5;&#x90FD;&#x6709;&#x53EF;&#x80FD;&#x3002;</li>
+<li>reflect.Type&#x548C;reflect.Value
+&#x53CD;&#x5C04;&#x662F;&#x7531; reflect &#x5305;&#x63D0;&#x4F9B;&#x652F;&#x6301;. &#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x4E24;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x7C7B;&#x578B;, Type &#x548C; Value. &#x4E00;&#x4E2A; Type &#x8868;&#x793A;&#x4E00;&#x4E2A;Go&#x7C7B;&#x578B;. &#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;, &#x6709;&#x8BB8;&#x591A;&#x65B9;&#x6CD5;&#x6765;&#x533A;&#x5206;&#x7C7B;&#x578B;&#x548C;&#x68C0;&#x67E5;&#x5B83;&#x4EEC;&#x7684;&#x7EC4;&#x4EF6;, &#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x6210;&#x5458;&#x6216;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x7B49;. &#x552F;&#x4E00;&#x80FD;&#x53CD;&#x6620; reflect.Type &#x5B9E;&#x73B0;&#x7684;&#x662F;&#x63A5;&#x53E3;&#x7684;&#x7C7B;&#x578B;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;, &#x540C;&#x6837;&#x7684;&#x5B9E;&#x4F53;&#x6807;&#x8BC6;&#x4E86;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x7684;&#x63A5;&#x53E3;&#x503C;.
+&#x56E0;&#x4E3A; reflect.TypeOf &#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x7684;&#x63A5;&#x53E3;&#x503C;, &#x5B83;&#x603B;&#x662F;&#x8FD4;&#x56DE;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x578B;. &#x56E0;&#x6B64;, &#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C06;&#x6253;&#x5370; &quot;*os.File&quot; &#x800C;&#x4E0D;&#x662F; &quot;io.Writer&quot;. &#x7A0D;&#x540E;, &#x6211;&#x4EEC;&#x5C06;&#x770B;&#x5230; reflect.Type &#x662F;&#x5177;&#x6709;&#x8BC6;&#x522B;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&#x7684;&#x8868;&#x8FBE;&#x65B9;&#x5F0F;&#x529F;&#x80FD;&#x7684;.<pre><code>var w io.Writer = os.Stdout
+fmt.Println(reflect.TypeOf(w)) // &quot;*os.File&quot;
+</code></pre>&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F; reflect.Type &#x63A5;&#x53E3;&#x662F;&#x6EE1;&#x8DB3; fmt.Stringer &#x63A5;&#x53E3;&#x7684;. &#x56E0;&#x4E3A;&#x6253;&#x5370;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x503C;&#x5BF9;&#x4E8E;&#x8C03;&#x8BD5;&#x548C;&#x65E5;&#x5FD7;&#x662F;&#x6709;&#x5E2E;&#x52A9;&#x7684;, fmt.Printf &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x77ED;&#x7684; %T &#x6807;&#x5FD7;&#x53C2;&#x6570;, &#x5185;&#x90E8;&#x4F7F;&#x7528; reflect.TypeOf &#x7684;&#x7ED3;&#x679C;&#x8F93;&#x51FA;:<pre><code>fmt.Printf(&quot;%T\n&quot;, 3) // &quot;int&quot;
+</code></pre>&#x9006;&#x64CD;&#x4F5C;&#x662F;&#x8C03;&#x7528; reflect.ValueOf &#x5BF9;&#x5E94;&#x7684; reflect.Value.Interface &#x65B9;&#x6CD5;. &#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; interface{} &#x7C7B;&#x578B;&#x8868;&#x793A; reflect.Value &#x5BF9;&#x5E94;&#x7C7B;&#x578B;&#x7684;&#x5177;&#x4F53;&#x503C;:<pre><code>v := reflect.ValueOf(3) // a reflect.Value
+x := v.Interface() // an interface{}
+i := x.(int) // an int
+fmt.Printf(&quot;%d\n&quot;, i) // &quot;3&quot;
+</code></pre></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="govendor.html" class="navigation navigation-prev " aria-label="Previous page: Go外部依赖管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="groupcache.html" class="navigation navigation-next " aria-label="Next page: GroupCache">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Go语言圣经","level":"1.2.4","depth":2,"next":{"title":"GroupCache","level":"1.2.5","depth":2,"path":"notes/groupcache.md","ref":"notes/groupcache.md","articles":[]},"previous":{"title":"Go外部依赖管理","level":"1.2.3","depth":2,"path":"notes/govendor.md","ref":"notes/govendor.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","anchor-navigation-ex","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":true},"search-plus":{},"expandable-chapters-small":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lbb","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"探索学习发现Go语言"},"file":{"path":"notes/the-go-programming-language.md","mtime":"2018-04-27T06:50:35.023Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-27T07:22:49.675Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,450 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>环境搭建 · Go语言编程笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lbb">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="govendor.html" />
+    
+    
+    <link rel="prev" href="gocmd.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    编码规范指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gocmd.html">
+            
+                <a href="gocmd.html">
+            
+                    
+                    Go命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="govendor.html">
+            
+                <a href="govendor.html">
+            
+                    
+                    Go外部依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="the-go-programming-language.html">
+            
+                <a href="the-go-programming-language.html">
+            
+                    
+                    Go语言圣经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="groupcache.html">
+            
+                <a href="groupcache.html">
+            
+                    
+                    GroupCache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="synchronization.html">
+            
+                <a href="synchronization.html">
+            
+                    
+                    同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="gui.html">
+            
+                <a href="gui.html">
+            
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../blog/">
+            
+                <a href="../blog/">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../blog/goroutine.html">
+            
+                <a href="../blog/goroutine.html">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../blog/concurrent-programming.html">
+            
+                <a href="../blog/concurrent-programming.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../blog/loadbalancing.html">
+            
+                <a href="../blog/loadbalancing.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >环境搭建</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x73AF;&#x5883;&#x642D;&#x5EFA;"><b> </b>&#x73AF;&#x5883;&#x642D;&#x5EFA;</a></li></ul></div><a href="#&#x73AF;&#x5883;&#x642D;&#x5EFA;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x73AF;&#x5883;&#x642D;&#x5EFA;"><a name="&#x73AF;&#x5883;&#x642D;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#&#x73AF;&#x5883;&#x642D;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x73AF;&#x5883;&#x642D;&#x5EFA;</h1>
+<ul>
+<li>&#x5B89;&#x88C5; <code>sudo apt-get install golang</code></li>
+<li>&#x5230;<a href="https://golang.org/dl/" target="_blank">&#x5B98;&#x7F51;</a>&#x53BB;&#x4E0B;&#x9700;&#x8981;&#x7684;&#x5B89;&#x88C5;&#x5305;<pre><code class="lang-golang">wget https:<span class="hljs-comment">//storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz</span>
+tar -C /usr/local -zxf go1<span class="hljs-number">.6</span><span class="hljs-number">.2</span>.linux-amd64.tar.gz
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x4E0B;&#x8F7D;-&#x672C;&#x5730;&#x8DEF;&#x5F84;usrlocalgo&#x653E;&#x5728;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#x4E0B;&#x5C31;&#x4E0D;&#x7528;&#x8BBE;goroot&#x53D8;&#x91CF;&#x4E86;&#x3002;"><a name="&#x4E0B;&#x8F7D;-&#x672C;&#x5730;&#x8DEF;&#x5F84;usrlocalgo&#x653E;&#x5728;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#x4E0B;&#x5C31;&#x4E0D;&#x7528;&#x8BBE;goroot&#x53D8;&#x91CF;&#x4E86;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x8F7D;-&#x672C;&#x5730;&#x8DEF;&#x5F84;usrlocalgo&#x653E;&#x5728;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#x4E0B;&#x5C31;&#x4E0D;&#x7528;&#x8BBE;goroot&#x53D8;&#x91CF;&#x4E86;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a><a href="http://www.golangtc.com/download" target="_blank">&#x4E0B;&#x8F7D;</a> &#x672C;&#x5730;&#x8DEF;&#x5F84;(/usr/local/go)&#x653E;&#x5728;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#x4E0B;&#x5C31;&#x4E0D;&#x7528;&#x8BBE;GOROOT&#x53D8;&#x91CF;&#x4E86;&#x3002;</h3>
+<pre><code>- &#x5378;&#x8F7D;golang-go `sudo apt-get  remove golang-go`
+- &#x5378;&#x8F7D;golang-go&#x53CA;&#x5176;&#x4F9D;&#x8D56; `sudo apt-get remove --auto-remove golang-go`
+- &#x5378;&#x8F7D;golang-go&#x5E76;&#x5220;&#x9664;&#x5176;&#x672C;&#x5730;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6; `sudo apt-get purge golang-go`
+- &#x5378;&#x8F7D;golang-go&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x5E76;&#x5220;&#x9664;&#x5176;&#x672C;&#x5730;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6; `sudo apt-get purge --auto-remove golang-go`
+</code></pre><h3 id="&#x73AF;&#x5883;&#x53D8;&#x91CF;-etcprofile"><a name="&#x73AF;&#x5883;&#x53D8;&#x91CF;-etcprofile" class="anchor-navigation-ex-anchor" href="#&#x73AF;&#x5883;&#x53D8;&#x91CF;-etcprofile"><i class="fa fa-link" aria-hidden="true"></i></a>&#x73AF;&#x5883;&#x53D8;&#x91CF; /etc/profile</h3>
+<pre><code>export GOPATH=/home/lbb/work/gopackage
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+</code></pre><p><strong><em>Linux&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;&#x5230;/usr/local/&#x4E0D;&#x7528;&#x8BBE;&#x7F6E;$GOROOT,&#x5176;&#x4ED6;&#x8DEF;&#x5F84;&#x8981;&#x8BBE;&#x7F6E;</em></strong></p>
+<h5 id="sublime-text3"><a name="sublime-text3" class="anchor-navigation-ex-anchor" href="#sublime-text3"><i class="fa fa-link" aria-hidden="true"></i></a>Sublime Text3</h5>
+<blockquote>
+<ul>
+<li><a href="http://studygolang.com/articles/1785" target="_blank">Golang&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;-Vim&#x7BC7;</a></li>
+<li><a href="https://github.com/farazdagi/vim-go-ide" target="_blank">github&#x7684;vim-go-ide</a></li>
+</ul>
+</blockquote>
+<h5 id="vim"><a name="vim" class="anchor-navigation-ex-anchor" href="#vim"><i class="fa fa-link" aria-hidden="true"></i></a>VIM</h5>
+<blockquote>
+<ul>
+<li><a href="http://studygolang.com/articles/1785" target="_blank">Golang&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;-Vim&#x7BC7;</a></li>
+<li><a href="http://www.cnblogs.com/zhangqingping/p/5215071.html" target="_blank">&#x628A;vim&#x5F53;&#x505A;golang&#x7684;IDE</a></li>
+<li><a href="http://blog.csdn.net/chosen0ne/article/details/40782991" target="_blank">&#x57FA;&#x4E8E;vim&#x642D;&#x5EFA;Go&#x5F00;&#x53D1;&#x73AF;&#x5883;</a></li>
+<li><a href="http://studygolang.com/articles/2927" target="_blank">vim &#x5B89;&#x88C5;vim-go &#x6253;&#x9020;GOLANG &#x4E13;&#x7528;IDE</a></li>
+<li><a href="http://ju.outofmemory.cn/entry/89207" target="_blank">&#x4E3A;Vim&#x914D;&#x7F6E;Golang&#x5F00;&#x53D1;&#x73AF;&#x5883;</a></li>
+</ul>
+</blockquote>
+<h5 id="atom"><a name="atom" class="anchor-navigation-ex-anchor" href="#atom"><i class="fa fa-link" aria-hidden="true"></i></a>Atom</h5>
+<blockquote>
+<ul>
+<li><a href="http://blog.csdn.net/sweetvvck/article/details/50333327" target="_blank">&#x6253;&#x9020;atom&#x6210;&#x4E3A;golang&#x5F00;&#x53D1;&#x795E;&#x5668;</a></li>
+</ul>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="gocmd.html" class="navigation navigation-prev " aria-label="Previous page: Go命令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="govendor.html" class="navigation navigation-next " aria-label="Next page: Go外部依赖管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"环境搭建","level":"1.2.2","depth":2,"next":{"title":"Go外部依赖管理","level":"1.2.3","depth":2,"path":"notes/govendor.md","ref":"notes/govendor.md","articles":[]},"previous":{"title":"Go命令","level":"1.2.1","depth":2,"path":"notes/gocmd.md","ref":"notes/gocmd.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","anchor-navigation-ex","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":true},"search-plus":{},"expandable-chapters-small":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lbb","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"探索学习发现Go语言"},"file":{"path":"notes/installation.md","mtime":"2018-04-27T06:50:22.258Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-27T07:22:49.675Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1454 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Go语言资料 · Go语言编程笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lbb">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="notes/" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Go语言资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="notes/">
+            
+                <a href="notes/">
+            
+                    
+                    编码规范指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="notes/gocmd.html">
+            
+                <a href="notes/gocmd.html">
+            
+                    
+                    Go命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="notes/installation.html">
+            
+                <a href="notes/installation.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="notes/govendor.html">
+            
+                <a href="notes/govendor.html">
+            
+                    
+                    Go外部依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="notes/the-go-programming-language.html">
+            
+                <a href="notes/the-go-programming-language.html">
+            
+                    
+                    Go语言圣经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="notes/groupcache.html">
+            
+                <a href="notes/groupcache.html">
+            
+                    
+                    GroupCache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="notes/synchronization.html">
+            
+                <a href="notes/synchronization.html">
+            
+                    
+                    同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="notes/docker.html">
+            
+                <a href="notes/docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="notes/gui.html">
+            
+                <a href="notes/gui.html">
+            
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="blog/">
+            
+                <a href="blog/">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="blog/goroutine.html">
+            
+                <a href="blog/goroutine.html">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="blog/concurrent-programming.html">
+            
+                <a href="blog/concurrent-programming.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="blog/loadbalancing.html">
+            
+                <a href="blog/loadbalancing.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Go语言资料</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x89C6;&#x9891;"><a name="&#x89C6;&#x9891;" class="anchor-navigation-ex-anchor" href="#&#x89C6;&#x9891;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89C6;&#x9891;</h2>
+<ul>
+<li><p>&#x90DD;&#x6797;-<a href="http://www.imooc.com/learn/345" target="_blank">Go&#x8BED;&#x8A00;&#x7B2C;&#x4E00;&#x8BFE;</a></p>
+</li>
+<li><p><a href="https://github.com/Unknwon/go-fundamental-programming" target="_blank">Go&#x7F16;&#x7A0B;&#x57FA;&#x7840;</a></p>
+</li>
+<li><a href="https://github.com/Unknwon/go-web-foundation" target="_blank">Go Web &#x57FA;&#x7840;</a></li>
+<li><a href="https://github.com/Unknwon/go-rock-libraries-showcases" target="_blank">Go&#x540D;&#x5E93;&#x8BB2;&#x89E3;</a></li>
+</ul>
+<h2 id="&#x793E;&#x533A;"><a name="&#x793E;&#x533A;" class="anchor-navigation-ex-anchor" href="#&#x793E;&#x533A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793E;&#x533A;</h2>
+<ul>
+<li><a href="https://golang.org/" target="_blank">&#x5B98;&#x7F51;</a>&#x8981;&#x7FFB;&#x5899;<a href="https://golang.google.cn/" target="_blank">&#x5317;&#x4EAC;&#x670D;&#x52A1;&#x5668;</a></li>
+<li><a href="https://github.com/golang/" target="_blank">https://github.com/golang/</a></li>
+<li><a href="https://go-zh.org/" target="_blank">https://go-zh.org/</a><ul>
+<li><a href="https://github.com/Go-zh" target="_blank">Go&#x8BED;&#x8A00;&#x4E2D;&#x6587;&#x793E;&#x533A;</a></li>
+</ul>
+</li>
+<li><a href="http://blog.studygolang.com/" target="_blank">Go&#x8BED;&#x8A00;&#x4E2D;&#x6587;&#x7F51;&#x535A;&#x5BA2;</a></li>
+<li><a href="http://www.golangtc.com" target="_blank">Golang&#x4E2D;&#x56FD;</a></li>
+<li><a href="https://gocn.io/" target="_blank">Go &#x6280;&#x672F;&#x793E;&#x533A;</a></li>
+<li><a href="https://github.com/golang-china" target="_blank">Go&#x8BED;&#x8A00;&#x4E2D;&#x56FD;&#x793E;&#x533A;</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/golang-china" target="_blank">Google&#x7F51;&#x4E0A;&#x8BBA;&#x575B;Golang-China</a></li>
+<li><a href="https://github.com/golang/go/wiki/Projects" target="_blank">&#x8C37;&#x6B4C;&#x5B98;&#x65B9;&#x9879;&#x76EE;&#x5217;&#x8868;</a><h2 id="&#x535A;&#x5BA2;"><a name="&#x535A;&#x5BA2;" class="anchor-navigation-ex-anchor" href="#&#x535A;&#x5BA2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x535A;&#x5BA2;</h2>
+</li>
+<li><a href="http://fuxiaohei.me/" target="_blank">&#x5085;&#x5C0F;&#x9ED1;&#x7684;&#x81EA;&#x7559;&#x5730;</a></li>
+<li><strong><em><a href="https://www.tiege.me/?cat=30" target="_blank">&#x94C1;&#x54E5;&apos;s blog_&#x3010;golang&#x5468;&#x62A5;&#x3011;</a></em></strong></li>
+<li>&#x7CBE;&#x5F69;&#x535A;&#x6587;<ul>
+<li><a href="http://www.csdn.net/article/2014-07-21/2820743" target="_blank">&#x4E03;&#x725B;&#x9996;&#x5E2D;&#x5E03;&#x9053;&#x5E08;&#xFF1A;Go&#x4E0D;&#x662F;&#x5728;&#x98A0;&#x8986;&#xFF0C;&#x5C31;&#x662F;&#x5728;&#x9006;&#x88AD;</a></li>
+<li><strong><em><a href="https://zhuanlan.zhihu.com/p/25493806" target="_blank">GO&#x8BED;&#x8A00;&#x5B66;&#x4E60;&#x8D44;&#x6E90;&#x6574;&#x7406;</a></em></strong></li>
+<li><a href="http://www.oschina.net/translate/the-5-stages-of-learning-go-with-examples" target="_blank">GO &#x8BED;&#x8A00;&#x5B66;&#x4E60;&#x7684;&#x4E94;&#x4E2A;&#x9636;&#x6BB5;&#xFF08;&#x5E26;&#x4F8B;&#x5B50;&#xFF09;</a> <a href="http://studygolang.com/articles/2450" target="_blank">&#x82F1;&#x6587;&#x539F;&#x6587;</a></li>
+<li><a href="http://news.cnblogs.com/n/163075/" target="_blank">Go &#x8BED;&#x8A00;&#x7B80;&#x4ECB;&#xFF08;&#x4E0B;&#xFF09;&#x2014; &#x7279;&#x6027;</a></li>
+<li><a href="https://studygolang.com/articles/2917" target="_blank">Golang&#x6C47;&#x7F16;&#x5FEB;&#x901F;&#x6307;&#x5357;</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/astaxie/build-web-application-with-golang" target="_blank">Go Web &#x7F16;&#x7A0B;</a></li>
+<li><a href="https://github.com/Unknwon/the-way-to-go_ZH_CN" target="_blank">Go &#x5165;&#x95E8;&#x6307;&#x5357;</a> (&#x300A;The Way to Go&#x300B;&#x4E2D;&#x6587;&#x7248;)</li>
+<li><a href="https://github.com/golang-china/golangdoc.translations" target="_blank">Go &#x5B98;&#x65B9;&#x6587;&#x6863;&#x7FFB;&#x8BD1;</a></li>
+<li><a href="https://tour.go-zh.org/list" target="_blank">Go &#x6307;&#x5357;</a> (&#x300A;A Tour of Go&#x300B;&#x4E2D;&#x6587;&#x7248;)</li>
+<li><a href="https://github.com/songleo/the-little-go-book_ZH_CN" target="_blank">Go &#x7B80;&#x6613;&#x6559;&#x7A0B;</a> (&#x300A; <a href="https://github.com/karlseguin/the-little-go-book" target="_blank">The Little Go Book</a> &#x300B;&#x4E2D;&#x6587;&#x7248;)</li>
+<li><a href="https://github.com/Unknwon/go-fundamental-programming" target="_blank">Go &#x7F16;&#x7A0B;&#x57FA;&#x7840;</a></li>
+<li><a href="https://github.com/rujews/go-in-action-notes" target="_blank">Go &#x8BED;&#x8A00;&#x5B9E;&#x6218;&#x7B14;&#x8BB0;</a></li>
+<li><a href="https://github.com/polaris1119/The-Golang-Standard-Library-by-Example" target="_blank">Go &#x8BED;&#x8A00;&#x6807;&#x51C6;&#x5E93;</a></li>
+<li><a href="https://github.com/hyper-carrot/go_command_tutorial" target="_blank">Go&#x547D;&#x4EE4;&#x6559;&#x7A0B;</a></li>
+<li><a href="https://github.com/astaxie/Go-in-Action" target="_blank">Go&#x5B9E;&#x6218;&#x5F00;&#x53D1;</a></li>
+<li><a href="https://github.com/achun/Go-Blog-In-Action" target="_blank">Go&#x8BED;&#x8A00;&#x535A;&#x5BA2;&#x5B9E;&#x8DF5;</a></li>
+<li><a href="http://blog.csdn.net/dc_726/article/details/46565241" target="_blank">Java&#x7A0B;&#x5E8F;&#x5458;&#x7684;Golang&#x5165;&#x95E8;&#x6307;&#x5357;</a></li>
+<li><a href="https://github.com/astaxie/NPWG_zh" target="_blank">Network programming with Go &#x4E2D;&#x6587;&#x7FFB;&#x8BD1;&#x7248;&#x672C;</a></li>
+<li><a href="http://gorevel.cn/docs/manual/index.html" target="_blank">Revel &#x6846;&#x67B6;&#x624B;&#x518C;</a></li>
+<li><a href="http://mikespook.com/learning-go/" target="_blank">&#x5B66;&#x4E60;Go&#x8BED;&#x8A00;</a></li>
+<li><a href="http://go.ctolib.com/docs/read/magical-go-c-index.html" target="_blank">&#x795E;&#x5947;&#x7684; Go &#x8BED;&#x8A00;</a></li>
+</ul>
+<h2 id="&#x57FA;&#x7840;&#x6559;&#x7A0B;"><a name="&#x57FA;&#x7840;&#x6559;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x7840;&#x6559;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x7840;&#x6559;&#x7A0B;</h2>
+<ul>
+<li><a href="http://www.yiibai.com/go" target="_blank">&#x6613;&#x767E;</a></li>
+<li><a href="http://www.runoob.com/go" target="_blank">&#x83DC;&#x9E1F;&#x6559;&#x7A0B;</a></li>
+<li><a href="https://gobyexample.com/" target="_blank">Go by Example</a><h2 id="&#x56FE;&#x4E66;"><a name="&#x56FE;&#x4E66;" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x4E66;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56FE;&#x4E66;</h2>
+</li>
+<li>&#x8C22;&#x5B5F;&#x519B;&#x7684;<a href="https://www.gitbook.com/book/astaxie/build-web-application-with-golang/details/zh" target="_blank">&#x300A;Go Web &#x7F16;&#x7A0B;&#x300B;</a></li>
+<li>&#x90DD;&#x6797;&#x7684;<a href="https://github.com/hyper-carrot/go_command_tutorial" target="_blank">&#x300A;GO &#x547D;&#x4EE4;&#x6559;&#x7A0B;&#x300B;</a></li>
+<li>&#x90DD;&#x6797;&#x7684;<a href="http://www.ituring.com.cn/book/1525" target="_blank">&#x300A;Go&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x5B9E;&#x6218;&#x300B;</a></li>
+<li>&#x96E8;&#x75D5;&#x7684;<a href="http://wiki.jikexueyuan.com/project/the-go-study-notes-fourth-edition/" target="_blank">&#x300A;go &#x8BED;&#x8A00;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#x300B;</a></li>
+<li><a href="http://www.kancloud.cn/search?keyword=Golang" target="_blank">&#x770B;&#x4E91;Golang&#x56FE;&#x4E66;</a></li>
+<li><a href="https://www.gitbook.com/book/yar999/gopl-zh/details" target="_blank">&#x300A;Go&#x8BED;&#x8A00;&#x5723;&#x7ECF;&#xFF08;&#x4E2D;&#x6587;&#x7248;&#xFF09;&#x300B;</a></li>
+<li><a href="http://www.kancloud.cn/kancloud/effective" target="_blank">Effective Go&#x4E2D;&#x6587;&#x7248;</a></li>
+<li>&#x65E0;&#x95FB;Unknwon&#x7B49;&#x7FFB;&#x8BD1;<a href="https://github.com/Unknwon/the-way-to-go_ZH_CN" target="_blank">Go&#x5165;&#x95E8;&#x6307;&#x5357;</a></li>
+<li><a href="http://wiki.jikexueyuan.com/project/magical-go/" target="_blank">&#x795E;&#x5947;&#x7684; Go &#x8BED;&#x8A00;</a></li>
+<li><a href="http://wiki.jikexueyuan.com/project/learn-go-language/" target="_blank">&#x5B66;&#x4E60; GO &#x8BED;&#x8A00;</a></li>
+<li><a href="https://legacy.gitbook.com/book/astaxie/go-system-programming/details/zh" target="_blank">Go&#x7CFB;&#x7EDF;&#x7F16;&#x7A0B;</a></li>
+</ul>
+<h2 id="&#x5DE5;&#x5177;"><a name="&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5DE5;&#x5177;</h2>
+<ul>
+<li><a href="https://gowalker.org/" target="_blank">Go Walker - Go &#x8BED;&#x8A00;&#x5728;&#x7EBF; API &#x6587;&#x6863;</a></li>
+<li><a href="https://github.com/golang/go/wiki/Projects" target="_blank">Golang&#x9879;&#x76EE;&#x5217;&#x8868;</a><h3 id="&#x5728;&#x7EBF;ide"><a name="&#x5728;&#x7EBF;ide" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x7EBF;ide"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x7EBF;IDE</h3>
+</li>
+<li>Fenby&#x7684;<a href="http://www.fenby.com/courses/google-goyu-yan/" target="_blank">Google Go&#x8BED;&#x8A00;</a></li>
+<li><a href="https://tour.golang.org/welcome/1" target="_blank">A Tour of Go&#xFF08;Go&#x8BED;&#x8A00;&#x7F16;&#x7A0B;&#x6307;&#x5357;&#xFF09;</a>&#x6709;<a href="https://tour.go-zh.org/" target="_blank">&#x4E2D;&#x6587;&#x7248;</a>&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x5728;&#x7EBF;&#x7F16;&#x8BD1;</li>
+</ul>
+<h2 id="&#x9879;&#x76EE;&#x5217;&#x8868;"><a name="&#x9879;&#x76EE;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x9879;&#x76EE;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9879;&#x76EE;&#x5217;&#x8868;</h2>
+<p>&#x770B;&#x8FC7;awesome-go&#x9879;&#x76EE;&#xFF0C; &#x6C47;&#x603B;&#x4E86;&#x5F88;&#x591A;go&#x5F00;&#x6E90;&#x9879;&#x76EE;&#x3002; &#x4F46;&#x662F;awesome-go&#x6536;&#x96C6;&#x4E86;&#x592A;&#x5168;&#x4E86;&#xFF0C; &#x800C;&#x4E14;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x6CA1;&#x6709;&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;&#x3002; &#x56E0;&#x6B64;&#x6211;&#x81EA;&#x5DF1;&#x6839;&#x636E;go&#x8BED;&#x8A00;&#x4E2D;&#x6587;&#x793E;&#x533A;&#x63D0;&#x4F9B;&#x7684;&#x8D44;&#x6599;&#xFF0C;&#x8FD8;&#x6709;&#x4E92;&#x8054;&#x7F51;&#x4F01;&#x4E1A;&#x67B6;&#x6784;&#x8BBE;&#x8BA1;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x7EC4;&#x4EF6;&#x5206;&#x7C7B;&#xFF0C; &#x5171;&#x7CBE;&#x5FC3;&#x6311;&#x9009;&#x4E86;100&#x591A;&#x4E2A;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF08;&#x9879;&#x76EE;&#x4E0D;&#x9650;&#x4E8E;&#x5728;github&#x5F00;&#x6E90;&#x7684;&#x9879;&#x76EE;&#xFF09;&#xFF0C; &#x5206;&#x6210;&#x4EE5;&#x4E0B;&#x5341;&#x51E0;&#x4E2A;&#x5927;&#x7C7B;&#x3002; &#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x4E92;&#x8054;&#x7F51;IT&#x4EBA;&#x6253;&#x9020;&#x7684;&#x4E2D;&#x6587;&#x7248;awesome-go&#x3002;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x521D;&#x8877;&#x662F;&#x5E2E;&#x52A9;&#x5230;&#x90A3;&#x4E9B;&#x60F3;&#x5B66;&#x4E60;&#x548C;&#x501F;&#x9274;&#x4F18;&#x79C0;golang&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF0C; &#x548C;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x67B6;&#x6784;&#x8BBE;&#x8BA1;&#x65F6;&#x671F;&#x671B;&#x5FEB;&#x901F;&#x5BFB;&#x627E;&#x5408;&#x9002;&#x8F6E;&#x5B50;&#x7684;&#x4EBA;&#x3002;</p>
+<h3 id="&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;"><a name="&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;" class="anchor-navigation-ex-anchor" href="#&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/open-falcon/of-release" target="_blank"> OpenFalcon                      </a></td>
+<td>OpenFalcon&#x662F;&#x4E00;&#x6B3E;&#x5C0F;&#x7C73;&#x5F00;&#x6E90;&#x7684;&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;&#x3002;&#x529F;&#x80FD;&#xFF1A;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x514D;&#x914D;&#x7F6E;&#xFF1A;agent&#x81EA;&#x53D1;&#x73B0;&#x3001;&#x652F;&#x6301;Plugin&#x3001;&#x4E3B;&#x52A8;&#x63A8;&#x9001;&#x6A21;&#x5F0F;; &#x5BB9;&#x91CF;&#x6C34;&#x5E73;&#x6269;&#x5C55;&#xFF1A;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x6BCF;&#x79D2;50&#x4E07;&#x6B21;&#x6570;&#x636E;&#x6536;&#x96C6;&#x3001;&#x544A;&#x8B66;&#x3001;&#x5B58;&#x50A8;&#x3001;&#x7ED8;&#x56FE;&#xFF0C;&#x53EF;&#x6301;&#x7EED;&#x6C34;&#x5E73;&#x6269;&#x5C55;&#x3002;&#x544A;&#x8B66;&#x7B56;&#x7565;&#x81EA;&#x53D1;&#x73B0;&#xFF1A;Web&#x754C;&#x9762;&#x3001;&#x652F;&#x6301;&#x7B56;&#x7565;&#x6A21;&#x677F;&#x3001;&#x6A21;&#x677F;&#x7EE7;&#x627F;&#x548C;&#x8986;&#x76D6;&#x3001;&#x591A;&#x79CD;&#x544A;&#x8B66;&#x65B9;&#x5F0F;&#x3001;&#x652F;&#x6301;&#x56DE;&#x8C03;&#x52A8;&#x4F5C;&#x3002;&#x544A;&#x8B66;&#x8BBE;&#x7F6E;&#x4EBA;&#x6027;&#x5316;&#xFF1A;&#x652F;&#x6301;&#x6700;&#x5927;&#x544A;&#x8B66;&#x6B21;&#x6570;&#x3001;&#x544A;&#x8B66;&#x7EA7;&#x522B;&#x8BBE;&#x7F6E;&#x3001;&#x544A;&#x8B66;&#x6062;&#x590D;&#x901A;&#x77E5;&#x3001;&#x544A;&#x8B66;&#x6682;&#x505C;&#x3001;&#x4E0D;&#x540C;&#x65F6;&#x6BB5;&#x4E0D;&#x540C;&#x9608;&#x503C;&#x3001;&#x652F;&#x6301;&#x7EF4;&#x62A4;&#x5468;&#x671F;&#xFF0C;&#x652F;&#x6301;&#x544A;&#x8B66;&#x5408;&#x5E76;&#x3002;&#x5386;&#x53F2;&#x6570;&#x636E;&#x9AD8;&#x6548;&#x67E5;&#x8BE2;&#xFF1A;&#x79D2;&#x7EA7;&#x8FD4;&#x56DE;&#x4E0A;&#x767E;&#x4E2A;&#x6307;&#x6807;&#x4E00;&#x5E74;&#x7684;&#x5386;&#x53F2;&#x6570;&#x636E;&#x3002;Dashboard&#x4EBA;&#x6027;&#x5316;&#xFF1A;&#x591A;&#x7EF4;&#x5EA6;&#x7684;&#x6570;&#x636E;&#x5C55;&#x793A;&#xFF0C;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;Dashboard&#x7B49;&#x529F;&#x80FD;&#x3002;&#x67B6;&#x6784;&#x8BBE;&#x8BA1;&#x9AD8;&#x53EF;&#x7528;&#xFF1A;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x65E0;&#x6838;&#x5FC3;&#x5355;&#x70B9;&#xFF0C;&#x6613;&#x8FD0;&#x7EF4;&#xFF0C;&#x6613;&#x90E8;&#x7F72;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/eleme/banshee" target="_blank"> banshee                         </a></td>
+<td>&#x5468;&#x671F;&#x6027;&#x6307;&#x6807;&#x7684;&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/influxdata/kapacitor" target="_blank"> Kapacitor                       </a></td>
+<td>Kapacitor &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x6846;&#x67B6;&#xFF0C;&#x7528;&#x6765;&#x5904;&#x7406;&#x3001;&#x76D1;&#x63A7;&#x548C;&#x8B66;&#x544A;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/rach/pome" target="_blank"> Pome                            </a></td>
+<td>Pome &#x662F; Postgres Metrics &#x7684;&#x610F;&#x601D;&#x3002;Pome &#x662F;&#x4E00;&#x4E2A; PostgreSQL &#x7684;&#x6307;&#x6807;&#x4EEA;&#x8868;&#x5668;&#xFF0C;&#x7528;&#x6765;&#x8DDF;&#x8E2A;&#x4F60;&#x7684;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5065;&#x5EB7;&#x72B6;&#x51B5;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pinggg/pingd" target="_blank"> pingd                           </a></td>
+<td>pingd &#x662F;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x76D1;&#x63A7;&#x670D;&#x52A1;&#xFF0C;&#x4F7F;&#x7528; golang &#x7F16;&#x5199;&#x3002;&#x8F6F;&#x4EF6;&#x652F;&#x6301; IPv6&#xFF0C;&#x4F46;&#x662F;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x652F;&#x6301;. pingd &#x5141;&#x8BB8;&#x540C;&#x65F6; ping &#x4E0A;&#x5343;&#x4E2A; IPs&#xFF0C;&#x5728;&#x6B64;&#x671F;&#x95F4;&#x8FD8;&#x53EF;&#x4EE5;&#x7BA1;&#x7406;&#x76D1;&#x63A7;&#x7684;&#x4E3B;&#x673A;&#x3002;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E3B;&#x673A;&#x540D;&#x6216;&#x8005; IP&#xFF0C;&#x8FD8;&#x6709;&#x7528;&#x6237;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; 3 &#x4E2A;&#x751F;&#x6210; URLs &#x6765;&#x5F00;&#x542F;&#xFF0C;&#x505C;&#x6B62;&#x6216;&#x8005;&#x5220;&#x9664;&#x4F60;&#x7684;&#x8FFD;&#x8E2A;&#x3002;&#x6BCF;&#x5F53;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#x505C;&#x673A;&#x6216;&#x8005;&#x540E;&#x53F0;&#x5728;&#x7EBF;&#x90FD;&#x4F1A;&#x53D1;&#x9001;&#x901A;&#x77E5;&#xFF0C;&#x8FD8;&#x5305;&#x542B;&#x63A7;&#x5236; URLs&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/actiontech/actiontech_zabbix_mysql_monitor" target="_blank"> actiontech zabbix mysql monitor </a></td>
+<td>percona monitoring plugins zabbix &#x7684; Go &#x8BED;&#x8A00;&#x7248;&#x672C;&#xFF0C;&#x662F;&#x7531; &#x7231;&#x53EF;&#x751F; &#x516C;&#x53F8;&#x5F00;&#x6E90;&#x7684; MySQL &#x76D1;&#x63A7;&#x63D2;&#x4EF6;&#x548C;&#x6A21;&#x677F;&#xFF0C;&#x6574;&#x5408;&#x4E0A;&#x767E;&#x4E2A;&#x6027;&#x80FD;&#x76D1;&#x63A7;&#x6307;&#x6807;&#xFF0C;&#x652F;&#x6301;Low Level Discovery &#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x591A;&#x5B9E;&#x4F8B;&#x73AF;&#x5883;&#xFF0C;&#x652F;&#x6301;performance_schema</td>
+</tr>
+<tr>
+<td><a href="https://github.com/rapidloop/rtop" target="_blank"> rtop                            </a></td>
+<td>top &#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x65E0;&#x4EE3;&#x7406;&#x7684;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x76D1;&#x63A7;&#x5DE5;&#x5177;&#xFF0C;&#x57FA;&#x4E8E; SSH &#x8FDE;&#x63A5;&#x8FDB;&#x884C;&#x5DE5;&#x4F5C;&#x3002;&#x65E0;&#x9700;&#x5728;&#x88AB;&#x76D1;&#x63A7;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5B89;&#x88C5;&#x4EFB;&#x4F55;&#x8F6F;&#x4EF6;&#x3002;rtop &#x76F4;&#x63A5;&#x901A;&#x8FC7; SSH &#x8FDE;&#x63A5;&#x5230;&#x5F85;&#x76D1;&#x63A7;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x6765;&#x6536;&#x96C6;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x3002;rtop &#x6BCF;&#x51E0;&#x79D2;&#x949F;&#x5C31;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x76D1;&#x63A7;&#x6570;&#x636E;&#xFF0C;&#x7C7B;&#x4F3C;&#x5176;&#x4ED6; *top &#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/prometheus/prometheus" target="_blank"> Prometheus                      </a></td>
+<td>Prometheus &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x670D;&#x52A1;&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;&#x548C;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x6570;&#x636E;&#x5E93;&#xFF0C; &#x63D0;&#x4F9B;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x5B58;&#x50A8;&#xFF0C;&#x5C55;&#x793A;&#xFF0C;&#x544A;&#x8B66;&#x7B49;&#x529F;&#x80FD;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bosun-monitor/bosun" target="_blank"> bosun                           </a></td>
+<td>&#x4E13;&#x4E1A;&#x7684;&#x8DE8;&#x5E73;&#x53F0;&#x5F00;&#x6E90;&#x7CFB;&#x7EDF;&#x76D1;&#x63A7;&#x9879;&#x76EE;&#xFF0C;go&#x8BED;&#x8A00;&#x7F16;&#x5199;&#xFF0C;&#x7075;&#x6D3B;&#x7684;&#x6A21;&#x677F;&#x548C;&#x8868;&#x8FBE;&#x5F0F;&#x914D;&#x5408;&#x4E0A;&#x5404;&#x79CD;collector&#x53EF;&#x4EE5;&#x76D1;&#x63A7;&#x4EFB;&#x4F55;&#x5E94;&#x7528;&#x6216;&#x7CFB;&#x7EDF;&#x7EA7;&#x7684;&#x8FD0;&#x884C;&#x6570;&#x636E;&#xFF0C;&#x6BD4; zabbix&#x66F4;&#x8F7B;&#x91CF;&#x7EA7;&#x3001;&#x66F4;&#x6613;&#x5165;&#x624B;&#x548C;&#x66F4;&#x9002;&#x5408;&#x5B9A;&#x5236;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/urlooker" target="_blank"> urlooker                        </a></td>
+<td>&#x76D1;&#x63A7;web&#x670D;&#x52A1;&#x53EF;&#x7528;&#x6027;&#x53CA;&#x8BBF;&#x95EE;&#x8D28;&#x91CF;&#xFF0C;&#x91C7;&#x7528;go&#x8BED;&#x8A00;&#x7F16;&#x5199;&#xFF0C;&#x6613;&#x4E8E;&#x5B89;&#x88C5;&#x548C;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;. &#x652F;&#x6301;&#x4E00;&#x4E0B;&#x7279;&#x6027;&#xFF1A; &#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;&#x68C0;&#x6D4B;;   &#x9875;&#x9762;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x68C0;&#x6D4B;;  &#x9875;&#x9762;&#x5173;&#x952E;&#x8BCD;&#x5339;&#x914D;&#x68C0;&#x6D4B;;   &#x5E26;cookie&#x8BBF;&#x95EE;;  agent&#x591A;&#x673A;&#x623F;&#x90E8;&#x7F72;&#xFF0C;&#x6307;&#x5B9A;&#x673A;&#x623F;&#x8BBF;&#x95EE;;  &#x68C0;&#x6D4B;&#x7ED3;&#x679C;&#x652F;&#x6301;&#x5411;open-falcon&#x63A8;&#x9001;;  &#x652F;&#x6301;&#x77ED;&#x4FE1;&#x548C;&#x90AE;&#x4EF6;&#x544A;&#x8B66;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gravitational/satellite" target="_blank"> satellite                       </a></td>
+<td>&#x7528;&#x4E8E;&#x76D1;&#x6D4B;kubernetes&#x5065;&#x5EB7;&#x72B6;&#x6001;&#x7684;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#xFF0F;&#x5E93;&#x3002; &#x5176;&#x7279;&#x70B9;&#x662F;&#xFF1A;&#x8F7B;&#x91CF;&#x7EA7;&#x5B9A;&#x671F;&#x6D4B;&#x8BD5;&#xFF0C; &#x9AD8;&#x53EF;&#x7528;&#x6027;&#x548C;&#x5F39;&#x6027;&#x7F51;&#x7EDC;&#x5206;&#x533A;&#xFF0C; &#x65E0;&#x5355;&#x70B9;&#x6545;&#x969C;&#xFF0C; &#x4EE5;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x7684;&#x683C;&#x5F0F;&#x5B58;&#x50A8;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sourcegraph/checkup" target="_blank"> checkup                         </a></td>
+<td>&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x65E0;&#x9501;&#x7684;&#x7AD9;&#x70B9;&#x5065;&#x5EB7;&#x72B6;&#x6001;&#x68C0;&#x67E5;&#x5DE5;&#x5177;&#x3002; &#x652F;&#x6301;&#x68C0;&#x67E5;http&#xFF0C; tcp&#xFF0C; dns&#x7B49;&#x7684;&#x72B6;&#x6001; &#x5E76;&#x53EF;&#x5C06;&#x7ED3;&#x679C;&#x4FDD;&#x5B58;&#x5728;s3&#x3002; &#x81EA;&#x5E26;&#x4E86;&#x4E00;&#x4E2A;&#x7F8E;&#x89C2;&#x7684;&#x754C;&#x9762;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/kovetskiy/zabbixctl" target="_blank"> zabbixctl                       </a></td>
+<td>Zabbixctl &#x662F;&#x91C7;&#x7528;Zabbix&#x670D;&#x52A1;API&#x7684;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x6709;&#x6548;&#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x67E5;&#x8BE2;&#x548C;&#x5904;&#x7406;trigger &#x72B6;&#x6001;&#x3001;&#x4E3B;&#x673A;&#x6700;&#x65B0;&#x6570;&#x636E;&#x548C;&#x7528;&#x6237;&#x7EC4;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cloudinsight/cloudinsight-agent/" target="_blank"> cloudinsight-agent              </a></td>
+<td>&#x63D0;&#x4F9B;&#x53EF;&#x89C6;&#x5316;&#x76D1;&#x63A7;&#x7684;saas&#x5E73;&#x53F0;cloudinsight&#x5F00;&#x6E90;&#x7684;&#x4E00;&#x4E2A;&#x76D1;&#x63A7;&#x5BA2;&#x6237;&#x7AEF;&#x3002; Cloudinsight &#x63A2;&#x9488;&#x53EF;&#x4EE5;&#x6536;&#x96C6;&#x5B83;&#x6240;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x5404;&#x79CD;&#x6307;&#x6807;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x9001;&#x5230; Cloudinsight &#x540E;&#x7AEF;&#x670D;&#x52A1;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/TalkingData/owl" target="_blank"> owl                             </a></td>
+<td>OWL&#x662F;TalkingData&#x516C;&#x53F8;&#x63A8;&#x51FA;&#x7684;&#x4E00;&#x6B3E;&#x5F00;&#x6E90;&#x5206;&#x5E03;&#x5F0F;&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;, &#x6F14;&#x793A;&#x73AF;&#x5883;<a href="http://54.223.127.87/&#xFF0C;" target="_blank">http://54.223.127.87/&#xFF0C;</a> &#x767B;&#x5F55;&#x8D26;&#x53F7;&#x5BC6;&#x7801;demo/demo</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gy-games/smartping" target="_blank"> SmartPing                            </a></td>
+<td>SmartPing&#x4E3A;&#x4E00;&#x4E2A;&#x5404;&#x673A;&#x5668;(&#x70B9;)&#x95F4;&#x95F4;&#x4E92;PING&#x68C0;&#x6D4B;&#x5DE5;&#x5177;&#xFF0C;&#x652F;&#x6301;&#x4E92;PING&#xFF0C;&#x5355;&#x5411;PING&#xFF0C;&#x7ED8;&#x5236;&#x62D3;&#x6251;&#x53CA;&#x62A5;&#x8B66;&#x529F;&#x80FD;&#x3002; &#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x4E3A;&#x65E0;&#x4E2D;&#x5FC3;&#x5316;&#x539F;&#x5219;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x5747;&#x5B58;&#x50A8;&#x81EA;&#x8EAB;&#x70B9;&#x4E2D;&#xFF0C;&#x9ED8;&#x8BA4;&#x6570;&#x636E;&#x5FAA;&#x73AF;&#x4FDD;&#x7559;1&#x4E2A;&#x6708;&#x65F6;&#x95F4;&#xFF0C;&#x7531;&#x81EA;&#x8EAB;&#x70B9;&#x7684;&#x6570;&#x636E;&#x7ED8;&#x5236; &#x51FA;PING&#x5305; &#x7684;&#x72B6;&#x6001;&#xFF0C;&#x7531;&#x5404;&#x5176;&#x4ED6;&#x70B9;&#x7684;&#x6570;&#x636E;&#x7ED8;&#x5236; &#x8FDB;PING&#x5305; &#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5E76;API&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x5176;&#x4ED6;&#x70B9;&#x6570;&#x636E;&#x7ED8;&#x5236;&#x6574;&#x4F53;PING&#x62D3;&#x6251;&#x56FE;&#xFF0C;&#x62D3;&#x6251;&#x56FE;&#x4E2D;&#x5B58;&#x5728;&#x62A5;&#x8B66;&#x529F;&#x80FD;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5BB9;&#x5668;&#x6280;&#x672F;"><a name="&#x5BB9;&#x5668;&#x6280;&#x672F;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x5668;&#x6280;&#x672F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BB9;&#x5668;&#x6280;&#x672F;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/alibaba/pouch" target="_blank"> Pouch      </a></td>
+<td>Pouch &#x662F; Alibaba &#x516C;&#x53F8;&#x5F00;&#x6E90;&#x7684;&#x5BB9;&#x5668;&#x5F15;&#x64CE;&#x6280;&#x672F;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x5305;&#x62EC;&#x57FA;&#x672C;&#x7684;&#x5BB9;&#x5668;&#x7BA1;&#x7406;&#x80FD;&#x529B;&#xFF0C;&#x5B89;&#x5168;&#x7A33;&#x5B9A;&#x7684;&#x5F3A;&#x5BB9;&#x5668;&#x9694;&#x79BB;&#x80FD;&#x529B;&#xFF0C;&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7528;&#x65E0;&#x4FB5;&#x5165;&#x6027;&#x7684;&#x5BCC;&#x5BB9;&#x5668;&#x6280;&#x672F;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/docker/swarmkit" target="_blank"> SwarmKit   </a></td>
+<td>SwarmKit &#x662F;Docker&#x516C;&#x53F8;&#x5F00;&#x6E90;&#x7684;Docker&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x548C;&#x5BB9;&#x5668;&#x7F16;&#x6392;&#x5DE5;&#x5177;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x5305;&#x62EC;&#x8282;&#x70B9;&#x53D1;&#x73B0;&#x3001;&#x57FA;&#x4E8E;raft&#x7B97;&#x6CD5;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x548C;&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x7B49;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/daolinet/daolinet" target="_blank"> DaoliNet   </a></td>
+<td>DaoliNet&#x662F;&#x4E00;&#x4E2A;&#x8F6F;&#x4EF6;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;(SDN)&#x7CFB;&#x7EDF;&#xFF0C;&#x5176;&#x8BBE;&#x8BA1;&#x76EE;&#x7684;&#x662F;&#x4E3A;Docker&#x5BB9;&#x5668;&#x63D0;&#x4F9B;&#x52A8;&#x6001;&#x3001;&#x9AD8;&#x6548;&#x7684;&#x94FE;&#x63A5;&#x3002;&#x5728;Docker&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x5FAE;&#x670D;&#x52A1;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x5177;&#x6709;&#x8F7B;&#x91CF;&#x4E14;&#x77ED;&#x6682;&#x7684;&#x6027;&#x8D28;&#xFF0C;DaoliNet&#x6070;&#x597D;&#x9002;&#x7528;&#x4E8E;&#x8FD9;&#x79CD;&#x6027;&#x8D28;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/vmware/harbor" target="_blank"> Harbor     </a></td>
+<td>&#x5BB9;&#x5668;&#x5E94;&#x7528;&#x7684;&#x5F00;&#x53D1;&#x548C;&#x8FD0;&#x884C;&#x79BB;&#x4E0D;&#x5F00;&#x53EF;&#x9760;&#x7684;&#x955C;&#x50CF;&#x7BA1;&#x7406;&#x3002;&#x4ECE;&#x5B89;&#x5168;&#x548C;&#x6548;&#x7387;&#x7B49;&#x65B9;&#x9762;&#x8003;&#x8651;&#xFF0C;&#x90E8;&#x7F72;&#x5728;&#x79C1;&#x6709;&#x73AF;&#x5883;&#x5185;&#x7684;Registry&#x662F;&#x975E;&#x5E38;&#x5FC5;&#x8981;&#x7684;&#x3002;Project Harbor&#x662F;&#x7531;VMware&#x516C;&#x53F8;&#x4E2D;&#x56FD;&#x56E2;&#x961F;&#x4E3A;&#x4F01;&#x4E1A;&#x7528;&#x6237;&#x8BBE;&#x8BA1;&#x7684;Registry server&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF0C;&#x5305;&#x62EC;&#x4E86;&#x6743;&#x9650;&#x7BA1;&#x7406;(RBAC)&#x3001;LDAP&#x3001;&#x5BA1;&#x8BA1;&#x3001;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x3001;&#x81EA;&#x6211;&#x6CE8;&#x518C;&#x3001;HA&#x7B49;&#x4F01;&#x4E1A;&#x5FC5;&#x9700;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x540C;&#x65F6;&#x9488;&#x5BF9;&#x4E2D;&#x56FD;&#x7528;&#x6237;&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x8BBE;&#x8BA1;&#x955C;&#x50CF;&#x590D;&#x5236;&#x548C;&#x4E2D;&#x6587;&#x652F;&#x6301;&#x7B49;&#x529F;&#x80FD;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/emccode/rexray" target="_blank"> REX-Ray    </a></td>
+<td>REX-Ray &#x662F;&#x4E00;&#x4E2A; EMC {code} &#x56E2;&#x961F;&#x9886;&#x5BFC;&#x7684;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF0C;&#x4E3A; Docker&#x3001;Mesos &#x53CA;&#x5176;&#x4ED6;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x63D0;&#x4F9B;&#x6301;&#x7EED;&#x7684;&#x5B58;&#x50A8;&#x8BBF;&#x95EE;&#x3002;&#x5176;&#x8BBE;&#x8BA1;&#x65E8;&#x5728;&#x56CA;&#x62EC;&#x901A;&#x7528;&#x5B58;&#x50A8;&#x3001;&#x865A;&#x62DF;&#x5316;&#x548C;&#x4E91;&#x5E73;&#x53F0;&#xFF0C;&#x63D0;&#x4F9B;&#x9AD8;&#x7EA7;&#x7684;&#x5B58;&#x50A8;&#x529F;&#x80FD;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/coreos/clair" target="_blank"> Clair      </a></td>
+<td>Clair &#x662F;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x6F0F;&#x6D1E;&#x5206;&#x6790;&#x670D;&#x52A1;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x80FD;&#x5A01;&#x80C1;&#x5BB9;&#x5668;&#x6F0F;&#x6D1E;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x6709;&#x65B0;&#x7684;&#x5BB9;&#x5668;&#x6F0F;&#x6D1E;&#x53D1;&#x5E03;&#x51FA;&#x6765;&#x540E;&#x4F1A;&#x53D1;&#x9001;&#x901A;&#x77E5;&#x7ED9;&#x7528;&#x6237;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zettio/weave" target="_blank"> Weave      </a></td>
+<td>Weave &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x7F51;&#x7EDC;&#x5E76;&#x8FDE;&#x63A5;&#x5230;&#x90E8;&#x7F72;&#x5728;&#x591A;&#x4E2A;&#x4E3B;&#x673A;&#x4E0A;&#x7684; Docker &#x5BB9;&#x5668;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/coreos/rkt" target="_blank"> Rocket     </a></td>
+<td>Rocket &#xFF08;&#x4E5F;&#x53EB; rkt&#xFF09;&#x662F; CoreOS &#x63A8;&#x51FA;&#x7684;&#x4E00;&#x6B3E;&#x5BB9;&#x5668;&#x5F15;&#x64CE;&#xFF0C;&#x548C; Docker &#x7C7B;&#x4F3C;&#xFF0C;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x8005;&#x6253;&#x5305;&#x5E94;&#x7528;&#x548C;&#x4F9D;&#x8D56;&#x5305;&#x5230;&#x53EF;&#x79FB;&#x690D;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7B80;&#x5316;&#x642D;&#x73AF;&#x5883;&#x7B49;&#x90E8;&#x7F72;&#x5DE5;&#x4F5C;&#x3002;Rocket &#x548C; Docker &#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#x5728;&#x4E8E;&#xFF0C;Rocket &#x6CA1;&#x6709; Docker &#x90A3;&#x4E9B;&#x4E3A;&#x4F01;&#x4E1A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x201C;&#x53CB;&#x597D;&#x529F;&#x80FD;&#x201D;&#xFF0C;&#x6BD4;&#x5982;&#x4E91;&#x670D;&#x52A1;&#x52A0;&#x901F;&#x5DE5;&#x5177;&#x3001;&#x96C6;&#x7FA4;&#x7CFB;&#x7EDF;&#x7B49;&#x3002;&#x53CD;&#x8FC7;&#x6765;&#x8BF4;&#xFF0C;Rocket &#x60F3;&#x505A;&#x7684;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x7EAF;&#x7CB9;&#x7684;&#x4E1A;&#x754C;&#x6807;&#x51C6;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/docker/libnetwork" target="_blank"> libnetwork </a></td>
+<td>Libnetwork &#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x539F;&#x751F; Go &#x5B9E;&#x73B0;&#x7684;&#x5BB9;&#x5668;&#x8FDE;&#x63A5;&#xFF0C;&#x662F;&#x5BB9;&#x5668;&#x7684;&#x7F51;&#x7EDC;&#x3002;libnetwork &#x7684;&#x76EE;&#x6807;&#x662F;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5065;&#x58EE;&#x7684;&#x5BB9;&#x5668;&#x7F51;&#x7EDC;&#x6A21;&#x578B;&#xFF08;Container Network Model&#xFF09;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x4E00;&#x81F4;&#x7684;&#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#x548C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x7F51;&#x7EDC;&#x62BD;&#x8C61;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/vishvananda/wormhole" target="_blank"> Wormhole   </a></td>
+<td>WWormhole &#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x8BC6;&#x522B;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x7684;&#x7531; Socket &#x6FC0;&#x6D3B;&#x7684;&#x96A7;&#x9053;&#x4EE3;&#x7406;&#x3002;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x5B89;&#x5168;&#x7684;&#x8FDE;&#x63A5;&#x5728;&#x4E0D;&#x540C;&#x7269;&#x7406;&#x673A;&#x5668;&#x4E0A;&#x7684; Docker &#x5BB9;&#x5668;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5B8C;&#x6210;&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;&#x8FDE;&#x63A5;&#x8FD0;&#x884C;&#x5728;&#x5BB9;&#x5668;&#x672C;&#x673A;&#x7684;&#x670D;&#x52A1;&#x6216;&#x8005;&#x5728;&#x8FDE;&#x63A5;&#x540E;&#x521B;&#x5EFA;&#x6309;&#x9700;&#x7684;&#x670D;&#x52A1;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/shipyard/shipyard" target="_blank"> Shipyard   </a></td>
+<td>Shipyard &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; Web &#x7684; Docker &#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x652F;&#x6301;&#x591A; host&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x591A;&#x4E2A; Docker host &#x4E0A;&#x7684; containers &#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#xFF1B;&#x53EF;&#x4EE5;&#x67E5;&#x770B; images&#xFF0C;&#x751A;&#x81F3; build images&#xFF1B;&#x5E76;&#x63D0;&#x4F9B; RESTful API &#x7B49;&#x7B49;&#x3002; Shipyard &#x8981;&#x7BA1;&#x7406;&#x548C;&#x63A7;&#x5236; Docker host &#x7684;&#x8BDD;&#x9700;&#x8981;&#x5148;&#x4FEE;&#x6539; Docker host &#x4E0A;&#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x4F7F;&#x5176;&#x652F;&#x6301;&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/docker/docker" target="_blank"> Docker     </a></td>
+<td>Docker &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x5E94;&#x7528;&#x5BB9;&#x5668;&#x5F15;&#x64CE;&#xFF0C;&#x8BA9;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6253;&#x5305;&#x4ED6;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x4EE5;&#x53CA;&#x4F9D;&#x8D56;&#x5305;&#x5230;&#x4E00;&#x4E2A;&#x53EF;&#x79FB;&#x690D;&#x7684;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x5E03;&#x5230;&#x4EFB;&#x4F55;&#x6D41;&#x884C;&#x7684; Linux &#x673A;&#x5668;&#x4E0A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x5316;&#x3002;&#x5BB9;&#x5668;&#x662F;&#x5B8C;&#x5168;&#x4F7F;&#x7528;&#x6C99;&#x7BB1;&#x673A;&#x5236;&#xFF0C;&#x76F8;&#x4E92;&#x4E4B;&#x95F4;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x63A5;&#x53E3;&#xFF08;&#x7C7B;&#x4F3C; iPhone &#x7684; app&#xFF09;&#x3002;&#x51E0;&#x4E4E;&#x6CA1;&#x6709;&#x6027;&#x80FD;&#x5F00;&#x9500;,&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x5728;&#x673A;&#x5668;&#x548C;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x4E2D;&#x8FD0;&#x884C;&#x3002;&#x6700;&#x91CD;&#x8981;&#x7684;&#x662F;,&#x4ED6;&#x4EEC;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x4EFB;&#x4F55;&#x8BED;&#x8A00;&#x3001;&#x6846;&#x67B6;&#x6216;&#x5305;&#x88C5;&#x7CFB;&#x7EDF;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/weaveworks/scope" target="_blank"> scope      </a></td>
+<td>&#x4E00;&#x4E2A;docker&amp;kubernetes&#x7684;&#x7BA1;&#x7406;&#xFF0C;&#x76D1;&#x63A7;&#x53EF;&#x89C6;&#x5316;&#x5DE5;&#x5177;&#xFF0C; &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5BB9;&#x5668;&#x95F4;&#x7684;&#x62D3;&#x6251;&#x5173;&#x7CFB;&#x548C;tcp&#x901A;&#x4FE1;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cloud66/habitus" target="_blank"> habitus    </a></td>
+<td>&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x5B9E;&#x73B0;docker build &#x6D41;&#x7A0B;&#x7684;&#x5DE5;&#x5177;&#xFF0C; &#x652F;&#x6301;&#x590D;&#x6742;&#x7684;docker build&#x6D41;&#x7A0B;&#xFF0C;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;dockerfile&#x7684;build&#x6D41;&#x7A0B;&#xFF0C;&#x5178;&#x578B;&#x5E94;&#x7528;&#x5982;&#x5C06;&#x9700;&#x8981;&#x9759;&#x6001;&#x7F16;&#x8BD1;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x5982;go&#xFF0C; java&#x8FD9;&#x7C7B;&#x7A0B;&#x5E8F;&#x5728;&#x4E00;&#x4E2A;docker build&#x7F16;&#x8BD1;&#x597D;&#x4E4B;&#x540E;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x7528;&#x5230;&#x540E;&#x7EED;&#x7684;build&#x6D41;&#x7A0B;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/k8sp/sextant" target="_blank"> sextant    </a></td>
+<td>sextant &#x63D0;&#x4F9B;&#x4E86;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;PXE&#x5168;&#x81EA;&#x52A8;&#x5316;&#x5B89;&#x88C5;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;CoreOS+kubernetes&#x96C6;&#x7FA4;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="http://github.com/kubevirt/kubevirt" target="_blank"> KubeVirt    </a></td>
+<td>KubeVirt &#x662F;&#x4E00;&#x4E2A;&#x56F4;&#x7ED5; Kubernetes &#x6784;&#x5EFA;&#x7684;&#x865A;&#x62DF;&#x673A;&#x7BA1;&#x7406;&#x67B6;&#x6784;&#x3002;&#x4F7F;&#x7528; KubeVirt &#x53EF;&#x58F0;&#x660E;&#xFF1A;&#x521B;&#x5EFA;&#x9884;&#x5B9A;&#x4E49;&#x7684; VM&#xFF0C;&#x5728; Kubernetes &#x96C6;&#x7FA4;&#x4E0A;&#x8C03;&#x5EA6; VM&#xFF08;&#x542F;&#x52A8; VM&#xFF0C;&#x505C;&#x6B62; VM&#xFF0C;&#x5220;&#x9664; VM&#xFF09;&#xFF5C;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="paas&#x5DE5;&#x5177;"><a name="paas&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#paas&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>PaaS&#x5DE5;&#x5177;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/kelproject" target="_blank"> Kel                </a></td>
+<td>Kel &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x57FA;&#x4E8E; Kubernetes &#x6784;&#x5EFA;&#x7684; PaaS &#x7CFB;&#x7EDF;&#xFF0C;&#x91C7;&#x7528; Python &#x548C; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x3002;Kel &#x53EF;&#x7B80;&#x5316;&#x7BA1;&#x7406; Web &#x5E94;&#x7528;&#x53D1;&#x5E03;&#x548C;&#x6258;&#x7BA1;&#x6574;&#x4E2A;&#x8F6F;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;Kel &#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x548C;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x8F7B;&#x677E;&#x7BA1;&#x7406;&#x4ED6;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x67B6;&#x6784;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x7EC4;&#x5DE5;&#x5177;&#x548C;&#x7EC4;&#x4EF6;&#x8BA9; K8S &#x4F7F;&#x7528;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mesos/cloudfoundry-mesos" target="_blank"> CloudFoundry-Mesos </a></td>
+<td>Cloud Foundry-Mesos&#x6846;&#x67B6;&#x7531;&#x534E;&#x4E3A;&#x4E0E;Mesosphere&#x7684;&#x5DE5;&#x7A0B;&#x5E08;&#x5408;&#x4F5C;&#x5B8C;&#x6210;&#xFF0C;&#x80FD;&#x591F;&#x4E3A;&#x5E94;&#x7528;&#x63D0;&#x4F9B;&#x5B89;&#x5168;&#x53EF;&#x9760;&#x7684;&#x3001;&#x53EF;&#x4F38;&#x7F29;&#x3001;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x4E91;&#x7AEF;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#xFF0C;&#x5E76;&#x4E14;&#x5E94;&#x7528;&#x80FD;&#x591F; &#x4EAB;&#x7528;Cloud Foundry&#x751F;&#x6001;&#x5708;&#x5185;&#x5404;&#x7C7B;&#x4E30;&#x5BCC;&#x7684;&#x670D;&#x52A1;&#x8D44;&#x6E90;&#x3002;&#x4F01;&#x4E1A;&#x80FD;&#x591F;&#x901A;&#x8FC7;Cloud Foundry&#x5F00;&#x53D1;&#x4E91;&#x5E94;&#x7528;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;Cloud Foundry-Mesos&#x5C06;&#x5E94;&#x7528;&#x90E8;&#x7F72;&#x5230;DCOS&#x4E0A;&#xFF0C;&#x4F7F;&#x5E94;&#x7528;&#x80FD;&#x591F;&#x4E0E;DCOS&#x4E0A;&#x5B89;&#x88C5;&#x7684;&#x5176;&#x4ED6;&#x670D;&#x52A1;&#x53CA;&#x5E94;&#x7528;&#x6846;&#x67B6;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#xFF0C;&#x5B9E;&#x73B0;&#x8D44;&#x6E90;&#x5229;&#x7528;&#x7387;&#x6700;&#x5927;&#x5316;&#xFF0C;&#x80FD;&#x591F;&#x5927;&#x5E45;&#x964D;&#x4F4E;&#x4F01;&#x4E1A; &#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x8FD0;&#x8425;&#x6210;&#x672C;&#x3002;DCOS&#x80FD;&#x591F;&#x8FD0;&#x884C;&#x5728;&#x865A;&#x62DF;&#x548C;&#x7269;&#x7406;&#x73AF;&#x5883;&#x4E0A;&#xFF0C;&#x80FD;&#x591F;&#x652F;&#x6301;Linux&#xFF08;&#x4EE5;&#x53CA;&#x5F88;&#x5FEB;&#x652F;&#x6301;Windows&#xFF09;&#xFF0C;&#x5E76;&#x53EF;&#x9002;&#x7528;&#x4E8E;&#x79C1;&#x6709;&#x4E91;&#x3001;&#x516C;&#x6709;&#x4E91;&#x53CA;&#x6DF7;&#x5408;&#x4E91;&#x73AF;&#x5883;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/github/flynn" target="_blank"> Flynn              </a></td>
+<td>Flynn &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684; PaaS &#x7CFB;&#x7EDF;&#xFF0C;&#x7531; Docker &#x5F00;&#x53D1;&#x3002;&#x91C7;&#x7528; Go &#x8BED;&#x8A00;&#x7F16;&#x5199;&#x3002;&#x652F;&#x6301;&#x6570;&#x636E;&#x5E93;&#x5305;&#x62EC; Postgres&#x3001;Redis &#x548C; MongoDB. Flynn &#x4F7F;&#x7528;&#x5B8C;&#x5168;&#x7EC4;&#x4EF6;&#x5316;&#x6A21;&#x5757;&#x5316;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x548C;&#x6A21;&#x5757;&#x90FD;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x7684;&#x8FDB;&#x884C;&#x66FF;&#x6362;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://git.oschina.net/cnperl/dinp-server" target="_blank"> DINP               </a></td>
+<td>DINP&#x662F;&#x53C8;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Docker&#x5F00;&#x53D1;&#x7684;PaaS&#x5E73;&#x53F0;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/kubernetes/kubernetes" target="_blank"> Kubernetes         </a></td>
+<td>Kubernetes &#x662F;&#x6765;&#x81EA; Google &#x4E91;&#x5E73;&#x53F0;&#x7684;&#x5F00;&#x6E90;&#x5BB9;&#x5668;&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;&#x57FA;&#x4E8E; Docker &#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x7684;&#x8C03;&#x5EA6;&#x670D;&#x52A1;&#x3002;&#x8BE5;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5728;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x96C6;&#x7FA4;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x5BB9;&#x5668;&#x4F9B;&#x4F7F;&#x7528;&#x3002;&#x5176;&#x6838;&#x5FC3;&#x6982;&#x5FF5;&#x662F; Container Pod&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/tsuru/tsuru" target="_blank"> Tsuru              </a></td>
+<td>&#x5728; Tsuru &#x7684; PaaS &#x670D;&#x52A1;&#x4E0B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x81EA;&#x5DF1;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x9009;&#x62E9;&#x4F7F;&#x7528; SQL &#x6216;&#x8005; NoSQL &#x6570;&#x636E;&#x5E93;&#xFF0C;memcache&#x3001;redis&#x3001;&#x7B49;&#x7B49;&#x8BB8;&#x591A;&#x670D;&#x52A1;&#xFF0C;&#x751A;&#x81F3;&#x4E0E;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Git &#x7248;&#x672C;&#x63A7;&#x5236;&#x5DE5;&#x5177;&#x6765;&#x4E0A;&#x4F20;&#x4F60;&#x5E94;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ooyala/atlantis" target="_blank"> atlantis           </a></td>
+<td>Atlantis &#x662F;&#x4E00;&#x6B3E;&#x57FA;&#x4E8E; Docker&#xFF0C;&#x4F7F;&#x7528; Go &#x7F16;&#x5199;&#xFF0C;&#x4E3A; HTTP &#x5E94;&#x7528;&#x51C6;&#x5907;&#x7684;&#x5F00;&#x6E90; PaaS&#x3002;Atlantis &#x53EF;&#x4EE5;&#x5728;&#x8DEF;&#x7531;&#x8BF7;&#x6C42;&#x4E2D;&#x8F7B;&#x677E;&#x7684;&#x6784;&#x5EFA;&#x548C;&#x90E8;&#x7F72;&#x5E94;&#x7528;&#x5230;&#x5BB9;&#x5668;&#x3002;Atlantis &#x5728; Ooyala &#x7684;&#x65B0;&#x5E94;&#x7528;&#x4E2D;&#x5F97;&#x5230;&#x4E86;&#x5F88;&#x5E7F;&#x6CDB;&#x7684;&#x5E94;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/laincloud/lain" target="_blank">     lain   </a></td>
+<td>Lain &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; docker &#x7684; PaaS &#x7CFB;&#x7EDF;&#x3002;&#x5176;&#x9762;&#x5411;&#x6280;&#x672F;&#x6808;&#x591A;&#x6837;&#x5BFB;&#x6C42;&#x9AD8;&#x6548;&#x8FD0;&#x7EF4;&#x65B9;&#x6848;&#x7684;&#x9AD8;&#x901F;&#x53D1;&#x5C55;&#x4E2D;&#x7684;&#x7EC4;&#x7EC7;&#xFF0C;devops &#x4EBA;&#x529B;&#x7F3A;&#x4E4F;&#x7684; startup &#xFF0C;&#x4E2A;&#x4EBA;&#x5F00;&#x53D1;&#x8005;&#x3002;&#x7EDF;&#x4E00;&#x9AD8;&#x6548;&#x7684;&#x5F00;&#x53D1;&#x5DE5;&#x4F5C;&#x6D41;&#xFF0C;&#x964D;&#x4F4E;&#x5E94;&#x7528;&#x8FD0;&#x7EF4;&#x590D;&#x6742;&#x5EA6;&#xFF1B;&#x5728; IaaS / &#x79C1;&#x6709; IDC &#x88F8;&#x673A;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x76F4;&#x63A5;&#x63D0;&#x4F9B;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#xFF0C;&#x96C6;&#x6210;&#xFF0C;&#x90E8;&#x7F72;&#xFF0C;&#x8FD0;&#x7EF4;&#x7684;&#x4E00;&#x63FD;&#x5B50;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/weibocom/opendcp" target="_blank">     OpenDCP   </a></td>
+<td>OpenDCP&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Docker&#x7684;&#x4E91;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x4E0E;&#x8C03;&#x5EA6;&#x5E73;&#x53F0;&#xFF0C;&#x96C6;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x3001;&#x591A;&#x4E91;&#x652F;&#x6301;&#x3001;&#x670D;&#x52A1;&#x7F16;&#x6392;&#x3001;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#x7B49;&#x529F;&#x80FD;&#x4E0E;&#x4E00;&#x8EAB;&#xFF0C;&#x652F;&#x6301;&#x670D;&#x52A1;&#x6C60;&#x7684;&#x6269;&#x7F29;&#x5BB9;&#xFF0C;&#x5176;&#x6280;&#x672F;&#x4F53;&#x7CFB;&#x6E90;&#x4E8E;&#x5FAE;&#x535A;&#x7528;&#x4E8E;&#x652F;&#x6301;&#x8282;&#x5047;&#x65E5;&#x53CA;&#x70ED;&#x70B9;&#x5CF0;&#x503C;&#x6D41;&#x91CF;&#x7684;&#x5F39;&#x6027;&#x8C03;&#x5EA6;DCP&#x7CFB;&#x7EDF;&#x3002;OpenDCP&#x5141;&#x8BB8;&#x5229;&#x7528;&#x516C;&#x6709;&#x4E91;&#x670D;&#x52A1;&#x5668;&#x642D;&#x5EFA;&#x8D77;&#x9002;&#x5E94;&#x4E92;&#x8054;&#x7F51;&#x5E94;&#x7528;&#x7684;IT&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x8FD0;&#x7EF4;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;&#x964D;&#x5230;&#x6700;&#x4F4E;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="http://github.com/Dataman-Cloud/swan" target="_blank">     Swan  </a></td>
+<td>Swan &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; mesos &#x7684;&#x65B0; HTTP API&#xFF0C;&#x4F7F;&#x7528; golang &#x5F00;&#x53D1;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; swan &#x5728; mesos &#x96C6;&#x7FA4;&#x4E0A;&#x90E8;&#x7F72;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E76;&#x7BA1;&#x7406;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x6574;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x65B0;&#x7248;&#x672C;&#x8FDB;&#x884C;&#x6EDA;&#x52A8;&#x66F4;&#x65B0;&#xFF0C;&#x6269;&#x5C55;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6216;&#x670D;&#x52A1;&#x4E0D;&#x53EF;&#x7528;&#x65F6;&#x5BF9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x548C;&#x81EA;&#x52A8;&#x6545;&#x969C;&#x8F6C;&#x79FB;&#x8FDB;&#x884C;&#x8FD0;&#x884C;&#x72B6;&#x51B5;&#x68C0;&#x67E5;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/deis/deis" target="_blank">Deis</a></td>
+<td>Deis&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Docker&#x548C;CoreOS&#x7684;&#x5F00;&#x6E90;PaaS&#x5E73;&#x53F0;&#xFF0C;&#x65E8;&#x5728;&#x8BA9;&#x90E8;&#x5C5E;&#x548C;&#x7BA1;&#x7406;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x5E94;&#x7528;&#x53D8;&#x5F97;&#x8F7B;&#x677E;&#x5BB9;&#x6613;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x5728;AWS&#x3001;GCE&#x4EE5;&#x53CA;Openstack&#x5E73;&#x53F0;&#x4E0B;&#x3002;&#x8BE6;&#x60C5;&#xFF0C;&#x53EF;&#x4E86;&#x89E3; &#x300A;Deis v1.0&#x6B63;&#x5F0F;&#x53D1;&#x5E03;&#xFF01;&#x300B;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5927;&#x6570;&#x636E;ml"><a name="&#x5927;&#x6570;&#x636E;ml" class="anchor-navigation-ex-anchor" href="#&#x5927;&#x6570;&#x636E;ml"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5927;&#x6570;&#x636E;&amp;ML</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/huichen/mlf" target="_blank"> MLF      </a></td>
+<td>&#x5F25;&#x52D2;&#x4F5B;&#x9879;&#x76EE;&#x662F;&#x4E00;&#x4E2A;&#x5927;&#x6570;&#x636E;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x6846;&#x67B6;&#x3002;&#x5177;&#x6709;&#x4E3A;&#x5904;&#x7406;&#x5927;&#x6570;&#x636E;&#x4F18;&#x5316;&#xFF0C;&#x53EF;&#x968F;&#x4E1A;&#x52A1;&#x589E;&#x957F;scale up&#xFF0C;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x548C;&#x4F7F;&#x7528;&#x90FD;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;library&#x6216;&#x8005;service&#x6574;&#x5408;&#x5230;&#x5728;&#x751F;&#x4EA7;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5177;&#x6709;&#x4E30;&#x5BCC;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x9AD8;&#x5EA6;&#x53EF;&#x6269;&#x5C55;&#xFF0C;&#x9AD8;&#x5EA6;&#x53EF;&#x8BFB;&#x6027;&#xFF0C;&#x9002;&#x5408;&#x521D;&#x5B66;&#x8005;&#x8FDB;&#x884C;&#x5927;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x5B66;&#x4E60;&#x7B49;&#x7279;&#x70B9;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chrislusf/glow" target="_blank"> Glow     </a></td>
+<td>glow &#x662F;&#x4F7F;&#x7528; Go &#x7F16;&#x5199;&#x7684;&#x6613;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x7CFB;&#x7EDF;&#xFF0C;&#x662F; Hadoop Map Reduce&#xFF0C;Spark&#xFF0C;Flint&#xFF0C;Samza &#x7B49;&#x7B49;&#x7684;&#x66FF;&#x4EE3;&#x54C1;&#x3002;Glow &#x7684;&#x76EE;&#x6807;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x5E76;&#x884C;&#x7EBF;&#x7A0B;&#x6216;&#x8005;&#x5206;&#x5E03;&#x5F0F;&#x96C6;&#x7FA4;&#x673A;&#x5668;&#x4E2D;&#x8FDB;&#x884C;&#x66F4;&#x7B80;&#x5355;&#x8BA1;&#x7B97;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cdipaolo/goml" target="_blank"> goml     </a></td>
+<td>&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7684;&#x5E93;, &#x5305;&#x542B;&#x4E86;&#x8BB8;&#x591A;&#x5DE5;&#x5177;&#xFF0C;&#x80FD;&#x8BA9;&#x4F60;&#x4EE5;&#x5728;&#x7EBF;&#x65B9;&#x5F0F;&#x5B66;&#x4E60;&#x5176;&#x9891;&#x9053;&#x7684;&#x6570;&#x636E;&#x5185;&#x5BB9;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sjwhitworth/golearn" target="_blank"> Golearn  </a></td>
+<td>GoLearn&#x5B9E;&#x73B0;&#x4E86;&#x719F;&#x6089;&#x7684;Scikit-learn &#x9002;&#x5E94;/&#x9884;&#x6D4B;&#x754C;&#x9762;&#xFF0C;&#x53EF;&#x5B9E;&#x73B0;&#x5FEB;&#x901F;&#x9884;&#x4F30;&#x6D4B;&#x8BD5;&#x548C;&#x4EA4;&#x6362;&#x3002;GoLearn&#x662F;&#x4E00;&#x4E2A;&#x6210;&#x719F;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#x548C;&#x8BAD;&#x7EC3;/&#x6D4B;&#x8BD5;&#x7B49;&#x8F85;&#x52A9;&#x529F;&#x80FD;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chewxy/gorgonia" target="_blank"> Gorgonia </a></td>
+<td>&#x8FD9;&#x4E2A;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x8D44;&#x6599;&#x5E93;&#x5B8C;&#x5168;&#x662F;&#x7528;Go&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x800C;&#x6210;&#xFF0C;&#x636E;&#x5176;&#x5F00;&#x53D1;&#x8005;&#x201C;chewxy&#x201D;&#x79F0;&#x80FD;&#x201C; &#x63D0;&#x4F9B;&#x52A8;&#x6001;&#x5EFA;&#x7ACB;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x53CA;&#x76F8;&#x5173;&#x7B97;&#x6CD5;&#x5FC5;&#x9700;&#x6761;&#x4EF6; &#x3002;&#x201D;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Qihoo360/poseidon" target="_blank">     poseidon  </a></td>
+<td>Poseidon &#x7CFB;&#x7EDF;&#x662F;&#x4E00;&#x4E2A;&#x65E5;&#x5FD7;&#x641C;&#x7D22;&#x5E73;&#x53F0;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6570;&#x767E;&#x4E07;&#x4EBF;&#x6761;&#x3001;&#x6570;&#x767E;PB&#x5927;&#x5C0F;&#x7684;&#x65E5;&#x5FD7;&#x6570;&#x636E;&#x4E2D;&#x5FEB;&#x901F;&#x5206;&#x6790;&#x548C;&#x68C0;&#x7D22;&#x7279;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x8BE5;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x7ED3;&#x6784;&#x5316;&#x6216;&#x975E;&#x7ED3;&#x6784;&#x5316;&#x6D77;&#x91CF;(&#x4ECE;&#x4E07;&#x4EBF;&#x5230;&#x5343;&#x4E07;&#x4EBF;&#x89C4;&#x6A21;)&#x6570;&#x636E;&#x7684;&#x67E5;&#x8BE2;&#x68C0;&#x7D22;&#x9700;&#x6C42;)&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5FAE;&#x670D;&#x52A1;"><a name="&#x5FAE;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x5FAE;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FAE;&#x670D;&#x52A1;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/micro/micro" target="_blank"> micro </a></td>
+<td>Micro&#x662F;&#x4E00;&#x4E2A;&#x4E13;&#x6CE8;&#x4E8E;&#x7B80;&#x5316;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x5F00;&#x53D1;&#x7684;&#x5FAE;&#x670D;&#x52A1;&#x751F;&#x6001;&#x7CFB;&#x7EDF;&#x3002;&#x53EF;&#x63D2;&#x62D4;&#x7684;&#x63D2;&#x4EF6;&#x5316;&#x8BBE;&#x8BA1;&#xFF0C;&#x63D0;&#x4F9B;&#x5F3A;&#x5927;&#x7684;&#x53EF;&#x63D2;&#x62D4;&#x7684;&#x67B6;&#x6784;&#x6765;&#x4FDD;&#x8BC1;&#x57FA;&#x7840;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x88AB;&#x7075;&#x6D3B;&#x66FF;&#x6362;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/koding/kite" target="_blank"> kite       </a></td>
+<td>&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;go&#x8BED;&#x8A00;&#x7684;&#x5FAE;&#x670D;&#x52A1;&#x6846;&#x67B6;, Kite&#x662F;Koding&#x516C;&#x53F8;&#x5185;&#x90E8;&#x7684;&#x4E00;&#x4E2A;&#x6846;&#x67B6;, &#x8BE5;&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#xFF0C;&#x591A;&#x79CD;&#x8BA4;&#x8BC1;&#x529F;&#x80FD;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x901A;&#x8FC7;RPC&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;websocket&#x7684;js&#x5E93;&#xFF0C;&#x65B9;&#x4FBF;&#x6D4F;&#x89C8;&#x5668;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x95F4;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/goadesign/goa" target="_blank"> goa        </a></td>
+<td>Goa &#x662F;&#x4E00;&#x6B3E;&#x7528; Go &#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x91C7;&#x7528;&#x72EC;&#x7279;&#x7684;&#x8BBE;&#x8BA1;&#x4F18;&#x5148;&#x7684;&#x65B9;&#x6CD5;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/go-kit/kit" target="_blank"> Go-kit     </a></td>
+<td>Go-kit &#x662F;&#x4E00;&#x4E2A; Go &#x8BED;&#x8A00;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x5F00;&#x53D1;&#x5305;&#xFF0C;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x5FAE;&#x670D;&#x52A1;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/andot/hprose" target="_blank"> Hprose     </a></td>
+<td>Hprose &#x662F;&#x9AD8;&#x6027;&#x80FD;&#x8FDC;&#x7A0B;&#x5BF9;&#x8C61;&#x670D;&#x52A1;&#x5F15;&#x64CE;&#xFF08;High Performance Remote Object Service Engine&#xFF09;&#x7684;&#x7F29;&#x5199; &#x2014;&#x2014; &#x5FAE;&#x670D;&#x52A1;&#x9996;&#x9009;&#x5F15;&#x64CE;&#x3002;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5148;&#x8FDB;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x8DE8;&#x8BED;&#x8A00;&#x8DE8;&#x5E73;&#x53F0;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x9AD8;&#x6027;&#x80FD;&#x8FDC;&#x7A0B;&#x52A8;&#x6001;&#x901A;&#x8BAF;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;&#x5B83;&#x4E0D;&#x4EC5;&#x7B80;&#x5355;&#x6613;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#x3002;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x7A0D;&#x8BB8;&#x7684;&#x65F6;&#x95F4;&#x53BB;&#x5B66;&#x4E60;&#xFF0C;&#x5C31;&#x80FD;&#x7528;&#x5B83;&#x8F7B;&#x677E;&#x6784;&#x5EFA;&#x8DE8;&#x8BED;&#x8A00;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x5E94;&#x7528;&#x7CFB;&#x7EDF;&#x4E86;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/NYTimes/gizmo" target="_blank"> Gizmo      </a></td>
+<td>&#x7EBD;&#x7EA6;&#x65F6;&#x62A5;&#x5F00;&#x6E90;&#x7684;go&#x5FAE;&#x670D;&#x52A1;&#x5DE5;&#x5177;.&#x63D0;&#x4F9B;&#x5982;&#x4E0B;&#x7279;&#x6027;:&#x6807;&#x51C6;&#x5316;&#x914D;&#x7F6E;&#x548C;&#x65E5;&#x5FD7;;&#x53EF;&#x914D;&#x7F6E;&#x7B56;&#x7565;&#x7684;&#x72B6;&#x6001;&#x76D1;&#x6D4B;&#x7AEF;&#x70B9;;&#x7528;&#x4E8E;&#x7BA1;&#x7406; pprof &#x7AEF;&#x70B9;&#x548C;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x7684;&#x914D;&#x7F6E;;&#x7ED3;&#x6784;&#x5316;&#x65E5;&#x5FD7;&#xFF0C;&#x63D0;&#x4F9B;&#x57FA;&#x672C;&#x8BF7;&#x6C42;&#x4FE1;&#x606F;;&#x7AEF;&#x70B9;&#x7684;&#x6709;&#x7528;&#x5EA6;&#x91CF;;&#x4F18;&#x96C5;&#x7684;&#x505C;&#x6B62;&#x670D;&#x52A1;; &#x5B9A;&#x4E49;&#x671F;&#x5F85;&#x548C;&#x8BCD;&#x6C47;&#x7684;&#x57FA;&#x672C;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/afex/hystrix-go" target="_blank"> hystrix-go </a></td>
+<td>&#x7528;&#x6765;&#x9694;&#x79BB;&#x8FDC;&#x7A0B;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#xFF0C; &#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x8C03;&#x7528; &#xFF0C;&#x670D;&#x52A1;&#x8C03;&#x7528;&#xFF0C; &#x63D0;&#x4F9B;&#x7194;&#x65AD;&#x673A;&#x5236;&#xFF0C;&#x907F;&#x514D;&#x96EA;&#x5D29;&#x6548;&#x5E94;&#x7684;&#x5E93;&#xFF0C; Hystrix&#x7684;go &#x7248;&#x672C;&#x3002; &#x6CE8;Hystrixs&#x662F;Netflix&#x5F00;&#x6E90;&#x7684;&#x4E00;&#x4E2A;java&#x5E93;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/fagongzi/gateway" target="_blank"> gateway    </a></td>
+<td>Gateway&#x662F;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;go&#x5B9E;&#x73B0;&#x7684;&#x57FA;&#x4E8E;HTTP&#x7684;API &#x7F51;&#x5173;&#x3002;<strong>&#x7279;&#x6027;</strong> &#xFF1A;API &#x805A;&#x5408; ; &#x6D41;&#x63A7;;  &#x7194;&#x65AD;; &#x8D1F;&#x8F7D;&#x5747;&#x8861;; &#x5065;&#x5EB7;&#x68C0;&#x67E5;;  &#x76D1;&#x63A7;;  &#x6D88;&#x606F;&#x8DEF;&#x7531;;  &#x540E;&#x7AEF;&#x7BA1;&#x7406;WebUI .  <strong>&#x80FD;&#x505A;&#x4EC0;&#x4E48;</strong>&#xFF1A;&#x89C4;&#x5212;&#x66F4;&#x53CB;&#x597D;&#x7684;URL&#x7ED9;&#x8C03;&#x7528;&#x8005;&#x3002;&#x805A;&#x5408;&#x591A;&#x4E2A;API&#x7684;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x7ED9;API&#x8C03;&#x7528;&#x8005;&#xFF0C;&#x5229;&#x4E8E;&#x79FB;&#x52A8;&#x7AEF;&#xFF0C;&#x540E;&#x7AEF;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x539F;&#x5B50;&#x63A5;&#x53E3;&#x3002;&#x4FDD;&#x62A4;&#x540E;&#x7AEF;API&#x670D;&#x52A1;&#x4E0D;&#x4F1A;&#x88AB;&#x7A81;&#x53D1;&#x5F02;&#x5E38;&#x6D41;&#x91CF;&#x538B;&#x57AE;&#x3002;&#x63D0;&#x4F9B;&#x7194;&#x65AD;&#x673A;&#x5236;&#xFF0C;&#x4F7F;&#x5F97;&#x540E;&#x7AEF;API Server&#x5177;&#x5907;&#x81EA;&#x6211;&#x6062;&#x590D;&#x80FD;&#x529B;&#x3002;&#x501F;&#x52A9;&#x6D88;&#x606F;&#x8DEF;&#x7531;&#x80FD;&#x529B;&#xFF0C;&#x5B9E;&#x73B0;&#x7070;&#x5EA6;&#x53D1;&#x5E03;&#xFF0C;AB&#x6D4B;&#x8BD5;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/eBay/fabio" target="_blank"> fabio      </a></td>
+<td>fabio &#x662F; ebay &#x56E2;&#x961F;&#x7528; golang &#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x3001;&#x7B80;&#x5355;&#x96F6;&#x914D;&#x7F6E;&#x80FD;&#x591F;&#x8BA9; consul &#x90E8;&#x7F72;&#x7684;&#x5E94;&#x7528;&#x5FEB;&#x901F;&#x652F;&#x6301; http(s) &#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x8DEF;&#x7531;&#x5668;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x7BC7;&#x4E2D;&#x6587;&#x6587;&#x7AE0;<a href="http://dockone.io/article/1567&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x7528;fabio&#xFF0B;consul&#x5B9E;&#x73B0;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#xFF0C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF0C;&#x5E76;&#x9610;&#x8FF0;&#x4E86;&#x539F;&#x7406;&#xFF0C;" target="_blank">http://dockone.io/article/1567&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x7528;fabio&#xFF0B;consul&#x5B9E;&#x73B0;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#xFF0C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF0C;&#x5E76;&#x9610;&#x8FF0;&#x4E86;&#x539F;&#x7406;&#xFF0C;</a> &#x6700;&#x540E;&#x8FD8;&#x6709;demo&#x7A0B;&#x5E8F;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sourcegraph/appdash" target="_blank"> appdash    </a></td>
+<td>go&#x7248;&#x672C;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x5E94;&#x7528;&#x8DDF;&#x8E2A;&#x7CFB;&#x7EDF;&#xFF0C; &#x57FA;&#x4E8E;google dapper&#x7684;&#x539F;&#x7406;&#x6784;&#x5EFA;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/uber/jaeger" target="_blank"> Jaeger    </a></td>
+<td>Jaeger&#x662F;Uber&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x8DDF;&#x8E2A;&#x7CFB;&#x7EDF; &#xFF0C;&#x57FA;&#x4E8E;google dapper&#x7684;&#x539F;&#x7406;&#x6784;&#x5EFA;&#xFF0C; &#x4EE5;Cassandra&#x4F5C;&#x4E3A;&#x5B58;&#x50A8;&#x5C42;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cicd"><a name="cicd" class="anchor-navigation-ex-anchor" href="#cicd"><i class="fa fa-link" aria-hidden="true"></i></a>CI/CD</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/caicloud/cyclone" target="_blank"> Cyclone </a></td>
+<td>Cyclone &#x662F;&#x4E00;&#x4E2A;&#x6253;&#x9020;&#x5BB9;&#x5668;&#x5DE5;&#x4F5C;&#x6D41;&#x7684;&#x4E91;&#x539F;&#x751F;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x6301;&#x7EED;&#x53D1;&#x5E03;&#x5E73;&#x53F0;&#xFF0C;&#x7B80;&#x5355;&#x6613;&#x7528;&#xFF0C;&#x4F7F;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#xFF0C;&#x6709;&#x8BE6;&#x5C3D;&#x7684;&#x4E2D;&#x6587;&#x6587;&#x6863;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/drone/drone" target="_blank"> Drone   </a></td>
+<td>Drone &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; Docker &#x7684;&#x6301;&#x7EED;&#x53D1;&#x5E03;&#x5E73;&#x53F0;&#xFF0C;&#x4F7F;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x6570;&#x636E;&#x5E93;&#x6280;&#x672F;"><a name="&#x6570;&#x636E;&#x5E93;&#x6280;&#x672F;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;&#x6280;&#x672F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x5E93;&#x6280;&#x672F;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/siddontang/ledisdb" target="_blank"> LedisDB </a></td>
+<td>ledisdb&#x662F;&#x4E00;&#x4E2A;&#x53C2;&#x8003;ssdb&#xFF0C;&#x91C7;&#x7528;go&#x5B9E;&#x73B0;&#xFF0C;&#x5E95;&#x5C42;&#x57FA;&#x4E8E;leveldb&#xFF0C;&#x7C7B;&#x4F3C;redis&#x7684;&#x9AD8;&#x6027;&#x80FD;nosql&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;kv&#xFF0C;list&#xFF0C;hash&#x4EE5;&#x53CA;zset&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x652F;&#x6301;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="github.com/tidwall/buntdb"> BuntDB            </a></td>
+<td>&#x662F;&#x7EAF;Go&#x5F00;&#x53D1;&#x7684;&#x3001;&#x4F4E;&#x5C42;&#x7EA7;&#x7684;&#xFF08;low-level&#xFF09;&#x7684;&#x3001;&#x53EF;&#x5D4C;&#x5165;&#x7684;key/value&#x5185;&#x5B58;&#x6570;&#x636E;&#x5E93;&#xFF08;IMDB&#xFF09;&#xFF0C;&#x6570;&#x636E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#xFF0C;&#x9075;&#x4ECE;ACID&#xFF0C;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x7D22;&#x5F15;&#x548C;geospatial &#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cockroachdb/cockroach" target="_blank"> Cockroach         </a></td>
+<td>CockroachDB (&#x87D1;&#x8782;&#x6570;&#x636E;&#x5E93;&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4F38;&#x7F29;&#x7684;&#x3001;&#x652F;&#x6301;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x5904;&#x7406;&#x3001;&#x652F;&#x6301;&#x4E8B;&#x52A1;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#x3002;CockroachDB &#x63D0;&#x4F9B;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x7684;&#x4E8B;&#x52A1;&#x7279;&#x6027;&#xFF0C;&#x5305;&#x62EC;&#x5FEB;&#x7167;&#x9694;&#x79BB;&#xFF08;snapshot isolation&#xFF0C;&#x7B80;&#x79F0;SI&#xFF09;&#x548C;&#x987A;&#x5E8F;&#x7684;&#x5FEB;&#x7167;&#x9694;&#x79BB;&#xFF08;SSI&#xFF09;&#x8BED;&#x4E49;&#xFF0C;&#x540E;&#x8005;&#x662F;&#x9ED8;&#x8BA4;&#x7684;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/aacanakin" target="_blank"> qb-go             </a></td>
+<td>qb&#x662F;&#x7528;&#x6765;&#x8BA9;&#x4F7F;&#x66F4;&#x5BB9;&#x6613;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x7684;go&#x8BED;&#x8A00;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5DE5;&#x5177;&#x5305;&#x3002;&#x5B83;&#x53D7;Python&#x6700;&#x559C;&#x6B22;&#x7684;ORM SQLAlchemy&#x7684;&#x542F;&#x53D1;&#xFF0C;&#x65E2;&#x662F;&#x4E00;&#x4E2A;ORM&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x751F;&#x6210;&#x5668;&#x3002;&#x5B83;&#x5728;&#x8868;&#x8FBE;api&#x548C;&#x67E5;&#x8BE2;&#x6784;&#x5EFA;&#x4E1C;&#x897F;&#x7684;&#x60C5;&#x5F62;&#x4E0B;&#x662F;&#x76F8;&#x5F53;&#x6A21;&#x5757;&#x5316;&#x7684;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/goshawkdb" target="_blank"> GoshawkDB         </a></td>
+<td>GoshawkDB &#x662F;&#x4E00;&#x4E2A;&#x91C7;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x652F;&#x6301;&#x591A;&#x5E73;&#x53F0;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#xFF0C;&#x652F;&#x6301;&#x4E8B;&#x52A1;&#x4EE5;&#x53CA;&#x5BB9;&#x9519;&#x3002;GoshawkDB &#x7684;&#x4E8B;&#x52A1;&#x63A7;&#x5236;&#x662F;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x5B8C;&#x6210;&#x7684;&#x3002;GoshawkDB &#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4F7F;&#x7528; AGPL &#x8BB8;&#x53EF;&#xFF0C;&#x800C; Go &#x8BED;&#x8A00;&#x5BA2;&#x6237;&#x7AEF;&#x4F7F;&#x7528; Apache &#x8BB8;&#x53EF;&#x8BC1;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/wandoulabs/codis" target="_blank"> Codis             </a></td>
+<td>Codis &#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F; Redis &#x89E3;&#x51B3;&#x65B9;&#x6848;, &#x5BF9;&#x4E8E;&#x4E0A;&#x5C42;&#x7684;&#x5E94;&#x7528;&#x6765;&#x8BF4;, &#x8FDE;&#x63A5;&#x5230; Codis Proxy &#x548C;&#x8FDE;&#x63A5;&#x539F;&#x751F;&#x7684; Redis Server &#x6CA1;&#x6709;&#x660E;&#x663E;&#x7684;&#x533A;&#x522B; (&#x4E0D;&#x652F;&#x6301;&#x7684;&#x547D;&#x4EE4;&#x5217;&#x8868;), &#x4E0A;&#x5C42;&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x50CF;&#x4F7F;&#x7528;&#x5355;&#x673A;&#x7684; Redis &#x4E00;&#x6837;&#x4F7F;&#x7528;, Codis &#x5E95;&#x5C42;&#x4F1A;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x7684;&#x8F6C;&#x53D1;, &#x4E0D;&#x505C;&#x673A;&#x7684;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x7B49;&#x5DE5;&#x4F5C;, &#x6240;&#x6709;&#x540E;&#x8FB9;&#x7684;&#x4E00;&#x5207;&#x4E8B;&#x60C5;, &#x5BF9;&#x4E8E;&#x524D;&#x9762;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x6765;&#x8BF4;&#x662F;&#x900F;&#x660E;&#x7684;, &#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x8BA4;&#x4E3A;&#x540E;&#x8FB9;&#x8FDE;&#x63A5;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5185;&#x5B58;&#x65E0;&#x9650;&#x5927;&#x7684; Redis &#x670D;&#x52A1;.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/google/cayley" target="_blank"> Cayley            </a></td>
+<td>Cayley &#x662F; Google &#x7684;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x56FE;(Graph)&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5176;&#x7075;&#x611F;&#x6765;&#x81EA;&#x4E8E; Freebase &#x548C; Google &#x7684; Knowledge Graph &#x80CC;&#x540E;&#x7684;&#x56FE;&#x6570;&#x636E;&#x5E93;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/garyburd/redigo" target="_blank"> Redigo            </a></td>
+<td>Redigo &#x662F; Redis &#x6570;&#x636E;&#x5E93;&#x7684; Go &#x5BA2;&#x6237;&#x7AEF;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mediocregopher/radix.v2" target="_blank"> radix.v2          </a></td>
+<td>radix.v2&#x662F;redis&#x5B98;&#x65B9;&#x63A8;&#x8350;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x4E4B;&#x4E00;&#xFF0C;&#x76F8;&#x6BD4;&#x4E8E;redigo,radix.v2&#x7279;&#x70B9;&#x662F;&#x8F7B;&#x91CF;&#x3001;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x4F18;&#x96C5;&#x3001;API&#x53CB;&#x597D;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chasex/redis-go-cluster" target="_blank"> redis-go-cluster  </a></td>
+<td>redis-go-cluster &#x662F;&#x57FA;&#x4E8E; Redigo &#x5B9E;&#x73B0;&#x7684; Golang Redis &#x5BA2;&#x6237;&#x7AEF;&#x3002;redis-go-cluster &#x53EF;&#x4EE5;&#x5728;&#x672C;&#x5730;&#x7F13;&#x5B58; slot &#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x96C6;&#x7FA4;&#x4FEE;&#x6539;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x3002;&#x6B64;&#x5BA2;&#x6237;&#x7AEF;&#x7BA1;&#x7406;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x8FDE;&#x63A5;&#x6C60;&#xFF0C;&#x4F7F;&#x7528; goroutine &#x6765;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x5E76;&#x53D1;&#x6267;&#x884C;&#xFF0C;&#x8FBE;&#x5230;&#x4E86;&#x9AD8;&#x6548;&#xFF0C;&#x4F4E;&#x5EF6;&#x8FDF;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/olivere/elastic" target="_blank"> elastic           </a></td>
+<td>elastic&#x662F;&#x5F00;&#x6E90;&#x641C;&#x7D22;&#x5F15;&#x64CE;elasticsearch&#x7684;golang&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;API&#x53CB;&#x597D;&#xFF0C;&#x652F;&#x6301;&#x7EDD;&#x5927;&#x90E8;&#x5206;es&#x7684;&#x63A5;&#x53E3;,&#x652F;&#x6301;&#x7684;es&#x7248;&#x672C;&#x5168;&#x9762;&#xFF0C;&#x4ECE;1.x&#x5230;&#x6700;&#x65B0;&#x7684;6.x&#x5168;&#x8986;&#x76D6;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dgraph-io/dgraph" target="_blank"> Dgraph            </a></td>
+<td>dgraph &#x662F;&#x53EF;&#x6269;&#x5C55;&#x7684;&#xFF0C;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#xFF0C;&#x4F4E;&#x5EF6;&#x8FDF;&#x56FE;&#x5F62;&#x6570;&#x636E;&#x5E93;&#x3002;DGraph &#x7684;&#x76EE;&#x6807;&#x662F;&#x63D0;&#x4F9B; Google &#x751F;&#x4EA7;&#x6C34;&#x5E73;&#x7684;&#x89C4;&#x6A21;&#x548C;&#x541E;&#x5410;&#x91CF;&#xFF0C;&#x5728;&#x8D85;&#x8FC7;TB&#x7684;&#x7ED3;&#x6784;&#x6570;&#x636E;&#x91CC;&#xFF0C;&#x672A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x8DB3;&#x591F;&#x4F4E;&#x5EF6;&#x8FDF;&#x7684;&#x5B9E;&#x65F6;&#x67E5;&#x8BE2;&#x3002;DGraph &#x652F;&#x6301; GraphQL &#x4F5C;&#x4E3A;&#x67E5;&#x8BE2;&#x8BED;&#x8A00;&#xFF0C;&#x54CD;&#x5E94; JSON&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/degdb/degdb" target="_blank"> DegDB             </a></td>
+<td>DegDB &#x662F;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x7ECF;&#x6D4E;&#x56FE;&#x6570;&#x636E;&#x5E93;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/youtube/vitess" target="_blank"> Vitess            </a></td>
+<td>outube&#x51FA;&#x54C1;&#x7684;&#x5F00;&#x6E90;&#x5206;&#x5E03;&#x5F0F;MySQL&#x5DE5;&#x5177;&#x96C6;Vitess&#xFF0C;&#x81EA;&#x52A8;&#x5206;&#x7247;&#x5B58;&#x50A8;MySQL&#x6570;&#x636E;&#x8868;&#xFF0C;&#x5C06;&#x5355;&#x4E2A;SQL&#x67E5;&#x8BE2;&#x6539;&#x5199;&#x4E3A;&#x5206;&#x5E03;&#x5F0F;&#x53D1;&#x9001;&#x5230;&#x591A;&#x4E2A;MySQL Server&#x4E0A;&#xFF0C;&#x652F;&#x6301;&#x884C;&#x7F13;&#x5B58;&#xFF08;&#x6BD4;MySQL&#x672C;&#x8EAB;&#x7F13;&#x5B58;&#x6548;&#x7387;&#x9AD8;&#xFF09;&#xFF0C;&#x652F;&#x6301;&#x590D;&#x5236;&#x5BB9;&#x9519;&#xFF0C;&#x5DF2;&#x7528;&#x4E8E;Youtube&#x751F;&#x4EA7;&#x73AF;&#x5883;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sun8911879/xuncache" target="_blank"> xuncache          </a></td>
+<td>xuncache &#x662F;&#x514D;&#x8D39;&#x5F00;&#x6E90;&#x7684;NOSQL(&#x5185;&#x5B58;&#x6570;&#x636E;&#x5E93;) &#x91C7;&#x7528;golang&#x5F00;&#x53D1;,&#x7B80;&#x5355;&#x6613;&#x7528;&#x800C;&#x4E14; &#x529F;&#x80FD;&#x5F3A;&#x5927;(&#x5C31;&#x7B97;&#x65B0;&#x624B;&#x4E5F;&#x5B8C;&#x5168;&#x80DC;&#x4EFB;)&#x3001;&#x6027;&#x80FD;&#x5353;&#x8D8A;&#x80FD;&#x8F7B;&#x677E;&#x5904;&#x7406;&#x6D77;&#x91CF;&#x6570;&#x636E;,&#x53EF;&#x7528;&#x4E8E;&#x7F13;&#x5B58;&#x7CFB;&#x7EDF;.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sosedoff/pgweb" target="_blank"> pgweb             </a></td>
+<td>gweb &#x662F;&#x4E00;&#x4E2A;&#x91C7;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684;&#x57FA;&#x4E8E; Web &#x7684; PostgreSQL &#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/outbrain/orchestrator" target="_blank"> Orchestrator      </a></td>
+<td>MySQL &#x590D;&#x5236;&#x62D3;&#x6251;&#x53EF;&#x89C6;&#x5316;&#x5DE5;&#x5177;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hidu/mysql-schema-sync" target="_blank"> mysql-schema-sync </a></td>
+<td>mysql-schema-sync &#x662F;&#x4E00;&#x6B3E;&#x4F7F;&#x7528;go&#x5F00;&#x53D1;&#x7684;&#x3001;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x3001;&#x7EFF;&#x8272;&#x65E0;&#x4F9D;&#x8D56;&#x7684; MySQL &#x8868;&#x7ED3;&#x6784;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x5DE5;&#x5177;&#x3002;&#x7528;&#x4E8E;&#x5C06;&#x7EBF;&#x4E0A;(&#x5176;&#x4ED6;&#x73AF;&#x5883;)&#x6570;&#x636E;&#x5E93;&#x7ED3;&#x6784;&#x53D8;&#x5316;&#x540C;&#x6B65;&#x5230;&#x6D4B;&#x8BD5;&#xFF08;&#x672C;&#x5730;&#xFF09;&#x73AF;&#x5883;!</td>
+</tr>
+<tr>
+<td><a href="https://github.com/pingcap/tidb" target="_blank"> TiDB              </a></td>
+<td>TiDB &#x662F;&#x56FD;&#x5185; PingCAP &#x56E2;&#x961F;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F; SQL &#x6570;&#x636E;&#x5E93;&#x3002;&#x5176;&#x7075;&#x611F;&#x6765;&#x81EA;&#x4E8E; Google &#x7684; F1, TiDB &#x652F;&#x6301;&#x5305;&#x62EC;&#x4F20;&#x7EDF; RDBMS &#x548C; NoSQL &#x7684;&#x7279;&#x6027;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/flike/kingshard" target="_blank"> kingshard         </a></td>
+<td>&#x4E00;&#x4E2A;&#x9AD8;&#x6027;&#x80FD;&#x7684;mysql&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C; &#x652F;&#x6301;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#xFF0C; &#x6570;&#x636E;&#x5206;&#x7247;&#xFF0C; &#x5B89;&#x5168;&#x5BA1;&#x8BA1;&#x7B49;&#x529F;&#x80FD;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/influxdata/influxdb" target="_blank"> influxdb          </a></td>
+<td>&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x6C34;&#x5E73;&#x6269;&#x5C55;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x6570;&#x636E;&#x5E93;&#xFF0C; &#x5185;&#x5EFA;http api&#xFF0C; &#x652F;&#x6301;&#x5BF9;&#x6570;&#x636E;&#x6253;tag&#xFF0C;&#x7075;&#x6D3B;&#x7684;&#x67E5;&#x8BE2;&#x7B56;&#x7565;&#x548C;&#x6570;&#x636E;&#x7684;&#x5B9E;&#x65F6;&#x67E5;&#x8BE2;&#xFF0C;&#x652F;&#x6301;&#x7C7B;sql&#x8BED;&#x53E5;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;</td>
+</tr>
+<tr>
+<td><a href="http://github.com/nim4/DBShield" target="_blank"> DBShield          </a></td>
+<td>DBShield &#x662F;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684;&#x6570;&#x636E;&#x5E93;&#x9632;&#x706B;&#x5899;&#xFF0C;&#x7528;&#x6765;&#x4FDD;&#x62A4;&#x4F60;&#x7684;&#x6570;&#x636E;&#x514D;&#x53D7; SQL &#x6CE8;&#x5165;&#x7684;&#x4FB5;&#x6270;&#x3002;&#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5305;&#x62EC;&#xFF1A;DB2&#x3001;MySQL&#x3001;MariaDB&#x3001;Oracle&#x3001;PostgreSQL&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5B58;&#x50A8;&#x6280;&#x672F;"><a name="&#x5B58;&#x50A8;&#x6280;&#x672F;" class="anchor-navigation-ex-anchor" href="#&#x5B58;&#x50A8;&#x6280;&#x672F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B58;&#x50A8;&#x6280;&#x672F;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/coreos/torus" target="_blank"> Torus     </a></td>
+<td>Torus&#x662F;&#x4E00;&#x79CD;&#x9488;&#x5BF9;&#x5BB9;&#x5668;&#x96C6;&#x7FA4;&#x91CF;&#x8EAB;&#x6253;&#x9020;&#x7684;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x901A;&#x8FC7;Kubernetes&#x7F16;&#x6392;&#x548C;&#x7BA1;&#x7406;&#x7684;&#x5BB9;&#x5668;&#x96C6;&#x7FA4;&#x63D0;&#x4F9B;&#x53EF;&#x9760;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x5B58;&#x50A8;&#x3002;&#x8FD9;&#x662F;&#x7EE7;etcd&#x3001;rkt&#x3001;flannel&#xFF0C;&#x4EE5;&#x53CA;CoreOS Linux&#x4E4B;&#x540E;CoreOS&#x53D1;&#x5E03;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x4EA7;&#x54C1;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/spf13/afero" target="_blank"> Afero     </a></td>
+<td>Afero &#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6846;&#x67B6;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x3001;&#x7EDF;&#x4E00;&#x548C;&#x901A;&#x7528;&#x7684; API &#x548C;&#x4EFB;&#x4F55;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x4F5C;&#x4E3A;&#x62BD;&#x8C61;&#x5C42;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x754C;&#x9762;&#x3001;&#x7C7B;&#x578B;&#x548C;&#x65B9;&#x6CD5;&#x3002;Afero &#x7684;&#x754C;&#x9762;&#x5341;&#x5206;&#x7B80;&#x6D01;&#xFF0C;&#x8BBE;&#x8BA1;&#x7B80;&#x5355;&#xFF0C;&#x820D;&#x5F03;&#x4E86;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#x3002;Afero &#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5E93;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x7EC4;&#x53EF;&#x4EA4;&#x4E92;&#x64CD;&#x4F5C;&#x7684;&#x540E;&#x53F0;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x8FD9;&#x6837;&#x5728;&#x4E0E; Afero &#x534F;&#x4F5C;&#x65F6;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4FDD;&#x7559; os &#x548C; ioutil &#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x529F;&#x80FD;&#x548C;&#x597D;&#x5904;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/emccode/rexray" target="_blank"> REX-Ray   </a></td>
+<td>REX-Ray &#x662F;&#x4E00;&#x4E2A; EMC {code} &#x56E2;&#x961F;&#x9886;&#x5BFC;&#x7684;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF0C;&#x4E3A; Docker&#x3001;Mesos &#x53CA;&#x5176;&#x4ED6;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x63D0;&#x4F9B;&#x6301;&#x7EED;&#x7684;&#x5B58;&#x50A8;&#x8BBF;&#x95EE;&#x3002;&#x5176;&#x8BBE;&#x8BA1;&#x65E8;&#x5728;&#x56CA;&#x62EC;&#x901A;&#x7528;&#x5B58;&#x50A8;&#x3001;&#x865A;&#x62DF;&#x5316;&#x548C;&#x4E91;&#x5E73;&#x53F0;&#xFF0C;&#x63D0;&#x4F9B;&#x9AD8;&#x7EA7;&#x7684;&#x5B58;&#x50A8;&#x529F;&#x80FD;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chrislusf/seaweedfs" target="_blank"> SeaweedFS </a></td>
+<td>SeaweedFS &#x662F;&#x7B80;&#x5355;&#xFF0C;&#x9AD8;&#x4F38;&#x7F29;&#x6027;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x5305;&#x542B;&#x4E24;&#x90E8;&#x5206;&#xFF1A;&#x5B58;&#x50A8;&#x6570;&#x5341;&#x4EBF;&#x7684;&#x6587;&#x4EF6;&#xFF1B;&#x5FEB;&#x901F;&#x4E3A;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x3002;SeaweedFS &#x4F5C;&#x4E3A;&#x652F;&#x6301;&#x5168; POSIX &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8BED;&#x4E49;&#x66FF;&#x4EE3;&#xFF0C;Seaweed-FS &#x9009;&#x62E9;&#x4EC5;&#x5B9E;&#x73B0; key-file &#x7684;&#x6620;&#x5C04;&#xFF0C;&#x7C7B;&#x4F3C; &quot;NoSQL&quot;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8BF4;&#x662F; &quot;NoFS&quot;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Terry-Mao/bfs" target="_blank"> bfs       </a></td>
+<td>bfs &#x662F;&#x4F7F;&#x7528; Go &#x7F16;&#x5199;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;&#x5C0F;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ipfs/go-ipfs" target="_blank"> IPFS      </a></td>
+<td>IPFS &#x662F;&#x5206;&#x5E03;&#x5F0F;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x5BFB;&#x6C42;&#x8FDE;&#x63A5;&#x6240;&#x6709;&#x8BA1;&#x7B97;&#x673A;&#x8BBE;&#x5907;&#x7684;&#x76F8;&#x540C;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;&#x5728;&#x67D0;&#x4E9B;&#x65B9;&#x9762;&#xFF0C;&#x8FD9;&#x5F88;&#x7C7B;&#x4F3C;&#x4E8E;&#x539F;&#x59CB;&#x7684; Web &#x76EE;&#x6807;&#xFF0C;&#x4F46;&#x662F; IPFS &#x6700;&#x7EC8;&#x4F1A;&#x66F4;&#x50CF;&#x5355;&#x4E2A;&#x6BD4;&#x7279;&#x6D41;&#x7FA4;&#x4EA4;&#x6362;&#x7684; git &#x5BF9;&#x8C61;&#x3002;IPFS &#xFF1D; InterPlanetary File System</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gostor/gotgt" target="_blank">Gotgt</a></td>
+<td>Gotgt &#x662F;&#x4F7F;&#x7528; Go &#x7F16;&#x5199;&#x7684;&#x9AD8;&#x6027;&#x80FD;&#x3001;&#x53EF;&#x6269;&#x5C55;&#x7684; iSCSI target &#x670D;&#x52A1;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/coreos/etcd" target="_blank">Etcd</a> &amp; Fleet</td>
+<td>etcd&#x662F;&#x7531;CoreOS&#x5F00;&#x53D1;&#x5E76;&#x7EF4;&#x62A4;&#x952E;&#x503C;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;Go&#x8BED;&#x8A00;&#x7F16;&#x5199;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;Raft&#x4E00;&#x81F4;&#x6027;&#x7B97;&#x6CD5;&#x5904;&#x7406;&#x65E5;&#x5FD7;&#x590D;&#x5236;&#x4EE5;&#x4FDD;&#x8BC1;&#x5F3A;&#x4E00;&#x81F4;&#x6027;&#x3002;&#x76EE;&#x524D;&#xFF0C;Google&#x7684;&#x5BB9;&#x5668;&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;Kubernetes&#x3001;&#x5F00;&#x6E90;PaaS&#x5E73;&#x53F0;Cloud Foundry&#x548C;CoreOS&#x7684;Fleet&#x90FD;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#x4E86;etcd&#x3002;&#x8BE6;&#x60C5;&#xFF0C;&#x53EF;&#x4E86;&#x89E3; &#x300A;Etcd&#xFF1A;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#x7684;&#x952E;&#x503C;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#x300B;&#x3002; Fleet&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x521D;&#x59CB;&#x5316;&#x7CFB;&#x7EDF;&#x3002;&#x5B83;&#x4EEC;&#x4E4B;&#x6240;&#x4EE5;&#x9009;&#x62E9;&#x4F7F;&#x7528;Go&#x8BED;&#x8A00;&#xFF0C;&#x5219;&#x662F;&#x56E0;&#x4E3A;Go&#x8BED;&#x8A00;&#x5BF9;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x826F;&#x597D;&#x652F;&#x6301;&#xFF0C;&#x4EE5;&#x53CA;&#x5176;&#x80CC;&#x540E;&#x7684;&#x5F3A;&#x5927;&#x793E;&#x533A;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/syncthing/syncthing" target="_blank">Syncthing</a></td>
+<td>&#x4E00;&#x6B3E;&#x7528;Go&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x5F00;&#x6E90;&#x4E91;&#x5B58;&#x50A8;&#x548C;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5DE5;&#x5177;&#xFF0C;&#x7528;&#x6237;&#x7684;&#x6570;&#x636E;&#x5C06;&#x7531;&#x81EA;&#x5DF1;&#x5B8C;&#x5168;&#x63A7;&#x5236;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x901A;&#x4FE1;&#x5168;&#x90FD;&#x52A0;&#x5BC6;&#xFF0C;&#x6BCF;&#x4E2A;&#x8BBF;&#x95EE;&#x8282;&#x70B9;&#x90FD;&#x7528;&#x52A0;&#x5BC6;&#x8BC1;&#x4E66;&#x9A8C;&#x8BC1;&#x3002;&#x8BE5;&#x9879;&#x76EE;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;Dropbox&#x548C; BitTorrent Sync&#x7684;&#x5F00;&#x6E90;&#x66FF;&#x4EE3;&#xFF0C; &#x8BE6;&#x60C5;&#x3002;Syncthing&#x4E4B;&#x6240;&#x4EE5;&#x9009;&#x62E9;Go&#x8BED;&#x8A00;&#xFF0C;&#x4E5F;&#x662F;&#x51FA;&#x4E8E;&#x8DE8;&#x5E73;&#x53F0;&#x8003;&#x8651;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/muesli/cache2go" target="_blank">cache2go</a></td>
+<td>&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x4E2A;&#x7F13;&#x5B58;&#x5E93;&#xFF0C;&#x4EE3;&#x7801;&#x91CF;&#x5F88;&#x5C11;&#xFF0C;&#x9002;&#x5408;&#x65B0;&#x624B;&#x5B66;&#x4E60;&#xFF0C;&#x53EF;&#x4EE5;&#x5B66;&#x4E60;&#x5230;&#x9501;&#x3001;goroutines&#x7B49;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/golang/groupcache" target="_blank">groupcache</a></td>
+<td>&#x4E0E;memcached&#x540C;&#x4E00;&#x4F5C;&#x8005;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x662F;memcached&#x7684;go&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;"><a name="&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;" class="anchor-navigation-ex-anchor" href="#&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/kelseyhightower" target="_blank"> Confd     </a></td>
+<td>Confd&#x662F;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;&#x901A;&#x8FC7;&#x67E5;&#x8BE2;Etcd&#xFF0C;&#x7ED3;&#x5408;&#x914D;&#x7F6E;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF0C;&#x4FDD;&#x6301;&#x672C;&#x5730;&#x914D;&#x7F6E;&#x6700;&#x65B0;&#xFF0C;&#x540C;&#x65F6;&#x5177;&#x5907;&#x5B9A;&#x671F;&#x63A2;&#x6D4B;&#x673A;&#x5236;&#xFF0C;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x81EA;&#x52A8;reload&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/huichen/zerg" target="_blank"> zerg      </a></td>
+<td>&#x57FA;&#x4E8E;docker&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x722C;&#x866B;&#x670D;&#x52A1;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/youtube/doorman" target="_blank"> Doorman   </a></td>
+<td>Doorman &#x662F;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x901F;&#x7387;&#x9650;&#x5236;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x901A;&#x8BAF;&#xFF0C;&#x5305;&#x62EC;&#x6570;&#x636E;&#x5E93;&#x3001;gRPC &#x670D;&#x52A1;&#x3001;RESTful API &#x7B49;&#x7B49;&#x53EF;&#x4F7F;&#x7528; Doorman &#x6765;&#x9650;&#x5236;&#x5BF9;&#x8D44;&#x6E90;&#x7684;&#x8C03;&#x7528;&#x3002;Doorman &#x4F7F;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#xFF0C;&#x4F7F;&#x7528; gRPC &#x7684;&#x901A;&#x8BAF;&#x534F;&#x8BAE;&#x3002;&#x5176;&#x9AD8;&#x53EF;&#x7528;&#x7279;&#x6027;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x9501;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x5F53;&#x524D;&#x652F;&#x6301; etcd&#xFF0C;&#x4E5F;&#x53EF;&#x4F7F;&#x7528; Zookeeper &#x66FF;&#x4EE3;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/purpleidea/mgmt" target="_blank"> mgmt      </a></td>
+<td>mgmt &#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#xFF0C;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x7684;&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;&#x8BE5;&#x5DE5;&#x5177;&#x652F;&#x6301;&#x5E76;&#x884C;&#x6267;&#x884C;&#xFF0C;&#x5176; librarification &#x4F5C;&#x4E3A;&#x65B0;&#x7684;&#x53CA;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x8F6F;&#x4EF6;&#x7684;&#x57FA;&#x7840;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nanopack/yoke" target="_blank"> Yoke      </a></td>
+<td>Yoke &#x662F; Postgres &#x7684;&#x9AD8;&#x53EF;&#x7528;&#x96C6;&#x7FA4;&#xFF0C;&#x5177;&#x6709;&#x81EA;&#x52A8;&#x5207;&#x6362;&#x548C;&#x81EA;&#x52A8;&#x96C6;&#x7FA4;&#x6062;&#x590D;&#x3002;Postgres&#x5197;&#x4F59;/&#x81EA;&#x52A8;&#x6545;&#x969C;&#x8F6C;&#x79FB;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;PostgreSQL&#x96C6;&#x7FA4;&#x7684;&#x7B80;&#x5355;&#x7BA1;&#x7406;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chrislusf/seaweedfs" target="_blank"> SeaweedFS </a></td>
+<td>SeaweedFS &#x662F;&#x7B80;&#x5355;&#xFF0C;&#x9AD8;&#x4F38;&#x7F29;&#x6027;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x5305;&#x542B;&#x4E24;&#x90E8;&#x5206;&#xFF1A;&#x5B58;&#x50A8;&#x6570;&#x5341;&#x4EBF;&#x7684;&#x6587;&#x4EF6;&#xFF1B;&#x5FEB;&#x901F;&#x4E3A;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x3002;SeaweedFS &#x4F5C;&#x4E3A;&#x652F;&#x6301;&#x5168; POSIX &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8BED;&#x4E49;&#x66FF;&#x4EE3;&#xFF0C;Seaweed-FS &#x9009;&#x62E9;&#x4EC5;&#x5B9E;&#x73B0; key-file &#x7684;&#x6620;&#x5C04;&#xFF0C;&#x7C7B;&#x4F3C; &quot;NoSQL&quot;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8BF4;&#x662F; &quot;NoFS&quot;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chrislusf/glow" target="_blank"> Glow      </a></td>
+<td>Glow &#x662F;&#x4F7F;&#x7528; Go &#x7F16;&#x5199;&#x7684;&#x6613;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x7CFB;&#x7EDF;&#xFF0C;&#x662F; Hadoop Map Reduce&#xFF0C;Spark&#xFF0C;Flint&#xFF0C;Samza &#x7B49;&#x7B49;&#x7684;&#x66FF;&#x4EE3;&#x54C1;&#x3002;Glow &#x7684;&#x76EE;&#x6807;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x5E76;&#x884C;&#x7EBF;&#x7A0B;&#x6216;&#x8005;&#x5206;&#x5E03;&#x5F0F;&#x96C6;&#x7FA4;&#x673A;&#x5668;&#x4E2D;&#x8FDB;&#x884C;&#x66F4;&#x7B80;&#x5355;&#x8BA1;&#x7B97;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hashicorp/nomad" target="_blank"> Nomad     </a></td>
+<td>Nomad &#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x5668;&#x548C;&#x8C03;&#x5EA6;&#x5668;&#xFF0C;&#x4E13;&#x4E3A;&#x5FAE;&#x670D;&#x52A1;&#x548C;&#x6279;&#x91CF;&#x5904;&#x7406;&#x5DE5;&#x4F5C;&#x6D41;&#x8BBE;&#x8BA1;&#x3002;Nomad &#x662F;&#x5206;&#x5E03;&#x5F0F;&#xFF0C;&#x9AD8;&#x53EF;&#x7528;&#xFF0C;&#x53EF;&#x6269;&#x5C55;&#x5230;&#x8DE8;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x548C;&#x533A;&#x57DF;&#x7684;&#x6570;&#x5343;&#x4E2A;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/silenceper/dcmp" target="_blank"> dcmp      </a></td>
+<td>DCMP&#x662F;&#x5206;&#x5E03;&#x5F0F;&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x5E73;&#x53F0;&#x3002;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;etcd&#x7684;&#x7BA1;&#x7406;&#x754C;&#x9762;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x754C;&#x9762;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x501F;&#x52A9;confd&#x53EF;&#x5B9E;&#x73B0;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x540C;&#x6B65;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chrislusf/gleam" target="_blank"> gleam     </a></td>
+<td>&#x6B64;&#x5904;&#x662F;&#x4E00;&#x4E2A;&#x901A;&#x8FC7;Go&#x548C;LuaJIT&#x7F16;&#x5199;&#x7684;&#x5FEB;&#x901F;&#x548C;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x5206;&#x5E03;&#x5F0F;map/reduce&#x7CFB;&#x7EDF;&#xFF0C;&#x5F88;&#x597D;&#x7684;&#x5C06;Go&#x7684;&#x9AD8;&#x5E76;&#x53D1;&#x6027;&#x4E0E;Luajit&#x9AD8;&#x6027;&#x80FD;&#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x53EF;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x6216;&#x7528;&#x4E8E;&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x6D88;&#x606F;&#x7CFB;&#x7EDF;"><a name="&#x6D88;&#x606F;&#x7CFB;&#x7EDF;" class="anchor-navigation-ex-anchor" href="#&#x6D88;&#x606F;&#x7CFB;&#x7EDF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D88;&#x606F;&#x7CFB;&#x7EDF;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/blackbeans/kiteq" target="_blank"> KiteQ        </a></td>
+<td>KiteQ &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; go + protobuff &#x5B9E;&#x73B0;&#x7684;&#x591A;&#x79CD;&#x6301;&#x4E45;&#x5316;&#x65B9;&#x6848;&#x7684; mq &#x6846;&#x67B6;&#xFF08;&#x6D88;&#x606F;&#x961F;&#x5217;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bitly/nsq" target="_blank"> NSQ          </a></td>
+<td>NSQ &#x662F;&#x65E0;&#x4E2D;&#x5FC3;&#x8BBE;&#x8BA1;&#x3001;&#x8282;&#x70B9;&#x81EA;&#x52A8;&#x6CE8;&#x518C;&#x548C;&#x53D1;&#x73B0;&#x7684;&#x5F00;&#x6E90;&#x6D88;&#x606F;&#x7CFB;&#x7EDF;&#x3002;&#x53EF;&#x4F5C;&#x4E3A;&#x5185;&#x90E8;&#x901A;&#x8BAF;&#x6846;&#x67B6;&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x6613;&#x4E8E;&#x914D;&#x7F6E;&#x548C;&#x53D1;&#x5E03;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/kingsoft-wps/kingtask" target="_blank"> kingtask     </a></td>
+<td>kingtask&#x662F;&#x4E00;&#x4E2A;&#x7531;Go&#x5F00;&#x53D1;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x5F02;&#x6B65;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x7CFB;&#x7EDF;&#x3002;&#x652F;&#x6301;&#x5B9A;&#x65F6;&#x7684;&#x5F02;&#x6B65;&#x4EFB;&#x52A1;&#x3002; &#x652F;&#x6301;&#x5931;&#x8D25;&#x91CD;&#x8BD5;&#x673A;&#x5236;&#xFF0C;&#x91CD;&#x8BD5;&#x65F6;&#x523B;&#x548C;&#x6B21;&#x6570;&#x53EF;&#x81EA;&#x5B9A;&#x4E49;&#x3002; &#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x53EF;&#x67E5;&#x8BE2;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/RichardKnop/machinery" target="_blank"> Go Machinery </a></td>
+<td>Machinery &#x662F;&#x4E00;&#x4E2A; Go &#x8BED;&#x8A00;&#x7684;&#x5F02;&#x6B65;&#x4EFB;&#x52A1;&#x961F;&#x5217;&#x548C;&#x4F5C;&#x4E1A;&#x961F;&#x5217;&#xFF0C;&#x57FA;&#x4E8E;&#x5206;&#x5E03;&#x5F0F;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x3002;&#x7C7B;&#x4F3C; Python &#x7684; Celery &#x6846;&#x67B6;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/scottkiss/kaca" target="_blank"> kaca         </a></td>
+<td>kaca &#x662F;&#x7528; golang &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684;&#x57FA;&#x4E8E; websocket &#x534F;&#x8BAE;&#x7684;&#x6D88;&#x606F;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x7CFB;&#x7EDF;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x670D;&#x52A1;&#x5668;&#x7BA1;&#x7406;"><a name="&#x670D;&#x52A1;&#x5668;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;&#x5668;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;&#x5668;&#x7BA1;&#x7406;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/square/sharkey" target="_blank"> Sharkey   </a></td>
+<td>Sharkey &#x662F;OpenSSH&#x7BA1;&#x7406;&#x8BC1;&#x4E66;&#x4F7F;&#x7528;&#x7684;&#x670D;&#x52A1;&#x3002;Sharkey &#x5206;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x7EC4;&#x4EF6;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x7EC4;&#x4EF6;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x8D1F;&#x8D23;&#x53D1;&#x5E03;&#x5DF2;&#x7B7E;&#x7F72;&#x7684;&#x4E3B;&#x673A;&#x8BC1;&#x4E66;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x8D1F;&#x8D23;&#x5728;&#x673A;&#x5668;&#x4E0A;&#x5B89;&#x88C5;&#x4E3B;&#x673A;&#x8BC1;&#x4E66;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/idcos/osinstall" target="_blank"> OSinstall </a></td>
+<td>CloudBoot&#x201D;(OSinstall)&#x4E91;&#x88C5;&#x673A;&#x5E73;&#x53F0;&#xFF0C;&#x662F;&#x91D1;&#x878D;&#x4E91;&#x521D;&#x521B;&#x516C;&#x53F8;&#x676D;&#x5DDE;&#x4E91;&#x9701;&#x79D1;&#x6280;&#x63A8;&#x51FA;&#x7684;&#x4E00;&#x6B3E;X86&#x670D;&#x52A1;&#x5668;&#x5168;&#x81EA;&#x52A8;&#x88C5;&#x673A;&#x5DE5;&#x5177;&#xFF0C;&#x9075;&#x5FAA;Apache&#x534F;&#x8BAE;&#xFF0C;&#x5B8C;&#x5168;&#x5F00;&#x6E90;&#x514D;&#x8D39;&#x3002;&#x5168;&#x81EA;&#x52A8;&#x6784;&#x5EFA;&#x7269;&#x7406;&#x673A;&#x8D44;&#x6E90;&#x6C60;&#xFF0C;&#x50CF;&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x673A;&#x4E00;&#x6837;&#x65B9;&#x4FBF;&#x7684;&#x5B89;&#x88C5;&#x7269;&#x7406;&#x673A;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/karfield/ssh2go" target="_blank"> ssh2go    </a></td>
+<td>ssh2go &#x662F;&#x5BF9;libssh&#x7684;golang &#x5C01;&#x88C5;&#x3002;libssh&#x662F;SSH&#x7684;&#x4EE3;&#x7801;&#x5E93;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301;&#x670D;&#x52A1;&#x7AEF;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x65E5;&#x5E38;&#x6240;&#x89C1;&#x7684;ssh, sshd, scp, sftp&#x5747;&#x57FA;&#x4E8E;libssh&#x3002;ssh2go&#x662F;&#x5BF9;libssh&#x7684;Go&#x8BED;&#x8A00;&#x7ED1;&#x5B9A;&#xFF0C; 100%&#x7684;libssh&#x63A5;&#x53E3;&#x90FD;&#x53EF;&#x7528;&#xFF0C;&#x540C;&#x65F6;&#x96C6;&#x6210;&#x793A;&#x4F8B;&#xFF0C;&#x65B9;&#x4FBF;&#x53C2;&#x8003;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/scottkiss/gooverssh" target="_blank"> Gooverssh </a></td>
+<td>gooverssh &#x662F;&#x57FA;&#x4E8E;gosshtool&#x7684;&#x4E00;&#x4E2A;ssh&#x5F00;&#x53D1;&#x5305;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;ssh&#x672C;&#x5730;&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x670D;&#x52A1;&#x5C0F;&#x5E94;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7A81;&#x7834;&#x4E00;&#x4E9B;&#x7F51;&#x7EDC;&#x9650;&#x5236;&#xFF0C;&#x5982;&#x901A;&#x8FC7;ssh&#x4EE3;&#x7406;&#x8BBF;&#x95EE;&#x5185;&#x7F51;&#x6570;&#x636E;&#x5E93;&#x670D;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/scottkiss/gosshtool" target="_blank"> gosshtool </a></td>
+<td>gosshtool provide some useful functions for ssh client in golang.implemented using golang.org/x/crypto/ssh.go&#x8BED;&#x8A00;&#x4E2D;&#x63D0;&#x4F9B;ssh&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#xFF0C;&#x652F;&#x6301;ssh&#x672C;&#x5730;&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x670D;&#x52A1;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gravitational/teleport" target="_blank"> teleport  </a></td>
+<td>teleport &#x662F; &#x521D;&#x521B;&#x516C;&#x53F8;Gravitational &#x7684;&#x4E00;&#x6B3E;&#x57FA;&#x4E8E;ssh&#x548C;https&#x7684;&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;linux &#x96C6;&#x7FA4;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5DE5;&#x5177;&#xFF0C; &#x5176;&#x7279;&#x70B9;&#x662F;&#x652F;&#x6301;&#x53CC;&#x91CD;&#x6821;&#x9A8C;&#x767B;&#x9646;&#xFF1B;&#x64CD;&#x4F5C;&#x8BB0;&#x5F55;&#x56DE;&#x653E;&#xFF1B;session&#x5171;&#x4EAB;&#xFF0C;&#x4FBF;&#x4E8E;&#x534F;&#x4F5C;&#x6392;&#x969C;&#xFF1B;&#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x96C6;&#x7FA4;&#x7684;&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BB9;&#x5668;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5B89;&#x5168;&#x5DE5;&#x5177;"><a name="&#x5B89;&#x5168;&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x5168;&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x5168;&#x5DE5;&#x5177;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/sheepbao/gomitmproxy" target="_blank"> gomitmproxy </a></td>
+<td>GomitmProxy&#x662F;&#x60F3;&#x7528;golang&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x7684;mitmproxy&#xFF0C;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;http&#x4EE3;&#x7406;&#xFF0C;&#x76EE;&#x524D;&#x5B9E;&#x73B0;&#x4E86;http&#x4EE3;&#x7406;&#x548C;https&#x6293;&#x5305;&#x529F;&#x80FD;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/xiam/hyperfox" target="_blank"> Hyperfox    </a></td>
+<td>Hyperfox &#x662F;&#x4E00;&#x4E2A;&#x5B89;&#x5168;&#x7684;&#x5DE5;&#x5177;&#x7528;&#x6765;&#x4EE3;&#x7406;&#x548C;&#x8BB0;&#x5F55;&#x5C40;&#x57DF;&#x7F51;&#x4E2D;&#x7684; HTTP &#x548C; HTTPS &#x901A;&#x8BAF;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/yahoo/gryffin" target="_blank"> Gryffin     </a></td>
+<td>Gryffin &#x662F;&#x96C5;&#x864E;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x5927;&#x89C4;&#x6A21; Web &#x5B89;&#x5168;&#x626B;&#x63CF;&#x5E73;&#x53F0;&#x3002;&#x5B83;&#x4E0D;&#x662F;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x626B;&#x63CF;&#x5668;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x4E24;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x95EE;&#x9898; &#x2014;&#x2014; &#x8986;&#x76D6;&#x7387;&#x548C;&#x4F38;&#x7F29;&#x6027;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/inconshreveable/ngrok" target="_blank"> ngrok       </a></td>
+<td>ngrok &#x662F;&#x4E00;&#x4E2A;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#xFF0C;&#x901A;&#x8FC7;&#x5728;&#x516C;&#x5171;&#x7684;&#x7AEF;&#x70B9;&#x548C;&#x672C;&#x5730;&#x8FD0;&#x884C;&#x7684; Web &#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5B89;&#x5168;&#x7684;&#x901A;&#x9053;&#x3002;ngrok &#x53EF;&#x6355;&#x83B7;&#x548C;&#x5206;&#x6790;&#x6240;&#x6709;&#x901A;&#x9053;&#x4E0A;&#x7684;&#x6D41;&#x91CF;&#xFF0C;&#x4FBF;&#x4E8E;&#x540E;&#x671F;&#x5206;&#x6790;&#x548C;&#x91CD;&#x653E;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x7F51;&#x7EDC;&#x5DE5;&#x5177;"><a name="&#x7F51;&#x7EDC;&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#&#x7F51;&#x7EDC;&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F51;&#x7EDC;&#x5DE5;&#x5177;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/daolinet/daolinet" target="_blank"> DaoliNet     </a></td>
+<td>DaoliNet&#x662F;&#x4E00;&#x4E2A;&#x8F6F;&#x4EF6;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;(SDN)&#x7CFB;&#x7EDF;&#xFF0C;&#x5176;&#x8BBE;&#x8BA1;&#x76EE;&#x7684;&#x662F;&#x4E3A;Docker&#x5BB9;&#x5668;&#x63D0;&#x4F9B;&#x52A8;&#x6001;&#x3001;&#x9AD8;&#x6548;&#x7684;&#x94FE;&#x63A5;&#x3002;&#x5728;Docker&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x5FAE;&#x670D;&#x52A1;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x5177;&#x6709;&#x8F7B;&#x91CF;&#x4E14;&#x77ED;&#x6682;&#x7684;&#x6027;&#x8D28;&#xFF0C;DaoliNet&#x6070;&#x597D;&#x9002;&#x7528;&#x4E8E;&#x8FD9;&#x79CD;&#x6027;&#x8D28;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/google/seesaw" target="_blank"> Seesaw       </a></td>
+<td>Seesaw &#x662F; Google &#x5F00;&#x6E90;&#x7684;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; Linux &#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7CFB;&#x7EDF;&#x3002;Seesaw &#x5305;&#x542B;&#x57FA;&#x672C;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7279;&#x6027;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301;&#x4E00;&#x4E9B;&#x9AD8;&#x7EA7;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x8BF8;&#x5982;&#xFF1A;anycast, Direct Server Return (DSR), &#x652F;&#x6301;&#x591A;&#x4E2A; VLANs &#x548C;&#x96C6;&#x4E2D;&#x5F0F;&#x914D;&#x7F6E;&#x3002;&#x540C;&#x65F6;&#x5176;&#x8BBE;&#x8BA1;&#x7684;&#x5B97;&#x65E8;&#x662F;&#x6613;&#x4E8E;&#x7EF4;&#x62A4;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5C3D;&#x7BA1;&#x8BE5;&#x9879;&#x76EE;&#x6302;&#x9760;&#x5728; Google &#x540D;&#x4E0B;&#xFF0C;&#x4F46;&#x5E76;&#x975E; Google &#x5B98;&#x65B9;&#x4EA7;&#x54C1;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/GameXG/TcpRoute2" target="_blank"> TcpRoute2    </a></td>
+<td>TcpRoute, TCP &#x5C42;&#x7684;&#x8DEF;&#x7531;&#x5668;&#x3002;&#x5BF9;&#x4E8E; TCP &#x8FDE;&#x63A5;&#x81EA;&#x52A8;&#x4ECE;&#x591A;&#x4E2A;&#x7EBF;&#x8DEF;(&#x5141;&#x8BB8;&#x4EFB;&#x610F;&#x5D4C;&#x5957;)&#x3001;&#x591A;&#x4E2A;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x7ED3;&#x679C;&#x4E2D;&#x9009;&#x62E9;&#x6700;&#x4F18;&#x7EBF;&#x8DEF;&#x3002;TcpRoute2 &#x662F; golang &#x91CD;&#x5199;&#x7684;&#x7248;&#x672C;&#x3002;&#x901A;&#x8FC7; socks5 &#x4EE3;&#x7406;&#x534F;&#x8BAE;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;&#x4EE3;&#x7406;&#x529F;&#x80FD;&#x62C6;&#x5206;&#x6210;&#x4E86;&#x72EC;&#x7ACB;&#x7684;&#x5E93;&#xFF0C;&#x8BE6;&#x7EC6;&#x4EE3;&#x7406;url&#x683C;&#x5F0F;&#x7EA7;&#x9009;&#x9879;&#x8BF7;&#x53C2;&#x89C1; ProxyClient&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301;&#x76F4;&#x8FDE;&#x3001;socks4&#x3001;socks4a&#x3001;socks5&#x3001;http&#x3001;https&#x3001;ss &#x4EE3;&#x7406;&#x7EBF;&#x8DEF;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/buger/gor" target="_blank"> Gor          </a></td>
+<td>Gor &#x662F;&#x7528; Go &#x7F16;&#x5199;&#x7684;&#x7B80;&#x5355; HTTP &#x6D41;&#x91CF;&#x590D;&#x5236;&#x5DE5;&#x5177;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x4ECE;&#x751F;&#x4EA7;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x6D41;&#x91CF;&#x5230;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3002;&#x4F7F;&#x7528; Gor &#x53EF;&#x4EE5;&#x5728;&#x5B9E;&#x9645;&#x7684;&#x7528;&#x6237;&#x4F1A;&#x8BDD;&#x4E2D;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/containous/traefik" target="_blank"> Traefik      </a></td>
+<td>Tr&#xE6;f&#x26A;k &#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x578B;&#x7684;http&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x3001;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x8F6F;&#x4EF6;&#xFF0C;&#x80FD;&#x8F7B;&#x6613;&#x7684;&#x90E8;&#x7F72;&#x5FAE;&#x670D;&#x52A1;. &#x5B83;&#x652F;&#x6301;&#x591A;&#x79CD;&#x540E;&#x7AEF; (Docker, Swarm, Mesos/Marathon, Consul, Etcd, Zookeeper, BoltDB, Rest API, file...) ,&#x53EF;&#x4EE5;&#x5BF9;&#x914D;&#x7F6E;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x5316;&#x3001;&#x52A8;&#x6001;&#x7684;&#x7BA1;&#x7406;.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/uber/tchannel" target="_blank"> TChannel     </a></td>
+<td>TChannel &#x662F;&#x7528;&#x4E8E; RPC &#x7684;&#x7F51;&#x7EDC;&#x590D;&#x7528;&#x548C;&#x6210;&#x5E27;&#x534F;&#x8BAE;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jpillora/go-tcp-proxy" target="_blank"> go-tcp-proxy </a></td>
+<td>go-tcp-proxy&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;tcp&#x4EE3;&#x7406;&#xFF0C; &#x53EF;&#x4EE5;&#x7528;&#x4E8E;tcp&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#xFF0C; &#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x505A;http&#x4EE3;&#x7406;&#x4F7F;&#x7528;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mehrdadrad/mylg" target="_blank"> myLG         </a></td>
+<td>myLG&#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x7F51;&#x7EDC;&#x5DE5;&#x5177;&#x96C6;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x4E86;&#x5F88;&#x591A;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7F51;&#x7EDC;&#x8BCA;&#x65AD;&#x5DE5;&#x5177;, &#x529F;&#x80FD;&#x5305;&#x62EC;ping&#xFF0C;trace&#xFF0C; bgp&#xFF0C; dns lookup&#xFF0C; &#x7AEF;&#x53E3;&#x626B;&#x63CF;&#xFF0C; &#x5C40;&#x57DF;&#x7F51;&#x7F51;&#x7EDC;&#x53D1;&#x73B0;&#xFF0C;&#x63D0;&#x4F9B;web&#x754C;&#x9762;, tcpdump&#x7B49;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cyfdecyf/cow" target="_blank"> cow          </a></td>
+<td>COW &#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5316;&#x7A7F;&#x5899;&#x7684; HTTP &#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x3002;&#x5B83;&#x80FD;&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x88AB;&#x5899;&#x7F51;&#x7AD9;&#xFF0C;&#x4EC5;&#x5BF9;&#x8FD9;&#x4E9B;&#x7F51;&#x7AD9;&#x4F7F;&#x7528;&#x4E8C;&#x7EA7;&#x4EE3;&#x7406;&#xFF1B;&#x652F;&#x6301;&#x591A;&#x79CD;&#x534F;&#x8BAE;&#xFF1A;sock5&#x3001;http&#x3001;shadow&#x3001;cow</td>
+</tr>
+</tbody>
+</table>
+<h3 id="web&#x5DE5;&#x5177;"><a name="web&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#web&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>Web&#x5DE5;&#x5177;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/lonelycode/tyk" target="_blank"> Tyk          </a></td>
+<td>Tyk &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x3001;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x3001;&#x5FEB;&#x901F;&#x53EF;&#x4F38;&#x7F29;&#x7684; API &#x7F51;&#x5173;&#xFF0C;&#x652F;&#x6301;&#x914D;&#x989D;&#x548C;&#x901F;&#x5EA6;&#x9650;&#x5236;&#xFF0C;&#x652F;&#x6301;&#x8BA4;&#x8BC1;&#x548C;&#x6570;&#x636E;&#x5206;&#x6790;&#xFF0C;&#x652F;&#x6301;&#x591A;&#x7528;&#x6237;&#x591A;&#x7EC4;&#x7EC7;&#xFF0C;&#x63D0;&#x4F9B;&#x5168; RESTful API&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/andyxning/shortme" target="_blank"> Shortme      </a></td>
+<td>&#x7528;Golang&#x7F16;&#x5199;&#x7684;URL&#x77ED;&#x94FE;&#x63A5;&#x670D;&#x52A1;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/huichen/wukong" target="_blank"> WuKongSearch </a></td>
+<td>WuKong &#x662F;&#x4E00;&#x4E2A;&#x5168;&#x6587;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x3002;&#x529F;&#x80FD;&#x7279;&#x6027;&#x6709;&#xFF1A;&#x9AD8;&#x6548;&#x7D22;&#x5F15;&#x548C;&#x641C;&#x7D22;&#xFF08;1M&#x6761;&#x5FAE;&#x535A;500M&#x6570;&#x636E;28&#x79D2;&#x7D22;&#x5F15;&#x5B8C;&#xFF0C;1.65&#x6BEB;&#x79D2;&#x641C;&#x7D22;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#xFF0C;19K&#x641C;&#x7D22;QPS&#xFF09;&#xFF1B;&#x652F;&#x6301;&#x4E2D;&#x6587;&#x5206;&#x8BCD;&#xFF08;&#x4F7F;&#x7528;sego&#x5206;&#x8BCD;&#x5305;&#x5E76;&#x53D1;&#x5206;&#x8BCD;&#xFF0C;&#x901F;&#x5EA6;27MB/&#x79D2;&#xFF09;&#xFF1B;&#x652F;&#x6301;&#x8BA1;&#x7B97;&#x5173;&#x952E;&#x8BCD;&#x5728;&#x6587;&#x672C;&#x4E2D;&#x7684;&#x7D27;&#x90BB;&#x8DDD;&#x79BB;&#xFF08;token proximity&#xFF09;&#xFF1B;&#x652F;&#x6301;&#x8BA1;&#x7B97;BM25&#x76F8;&#x5173;&#x5EA6;&#xFF1B;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x8BC4;&#x5206;&#x5B57;&#x6BB5;&#x548C;&#x8BC4;&#x5206;&#x89C4;&#x5219;&#xFF1B;&#x652F;&#x6301;&#x5728;&#x7EBF;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x7D22;&#x5F15;&#xFF1B;&#x652F;&#x6301;&#x6301;&#x4E45;&#x5B58;&#x50A8;&#xFF1B;&#x53EF;&#x5B9E;&#x73B0;&#x5206;&#x5E03;&#x5F0F;&#x7D22;&#x5F15;&#x548C;&#x641C;&#x7D22;&#x7B49;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/henrylee2cn/pholcus" target="_blank"> Pholcus      </a></td>
+<td>Pholcus&#xFF08;&#x5E7D;&#x7075;&#x86DB;&#xFF09;&#x662F;&#x4E00;&#x6B3E;&#x7EAF;Go&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x9AD8;&#x5E76;&#x53D1;&#x3001;&#x5206;&#x5E03;&#x5F0F;&#x3001;&#x91CD;&#x91CF;&#x7EA7;&#x722C;&#x866B;&#x8F6F;&#x4EF6;&#xFF0C;&#x652F;&#x6301;&#x5355;&#x673A;&#x3001;&#x670D;&#x52A1;&#x7AEF;&#x3001;&#x5BA2;&#x6237;&#x7AEF;&#x4E09;&#x79CD;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;&#xFF0C;&#x62E5;&#x6709;Web&#x3001;GUI&#x3001;&#x547D;&#x4EE4;&#x884C;&#x4E09;&#x79CD;&#x64CD;&#x4F5C;&#x754C;&#x9762;&#xFF1B;&#x89C4;&#x5219;&#x7B80;&#x5355;&#x7075;&#x6D3B;&#x3001;&#x6279;&#x91CF;&#x4EFB;&#x52A1;&#x5E76;&#x53D1;&#x3001;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#x4E30;&#x5BCC;&#xFF08;mysql/mongodb/csv/excel&#x7B49;&#xFF09;&#x3001;&#x6709;&#x5927;&#x91CF;Demo&#x5171;&#x4EAB;&#xFF1B;&#x540C;&#x65F6;&#x5979;&#x8FD8;&#x652F;&#x6301;&#x6A2A;&#x7EB5;&#x5411;&#x4E24;&#x79CD;&#x6293;&#x53D6;&#x6A21;&#x5F0F;&#xFF0C;&#x652F;&#x6301;&#x6A21;&#x62DF;&#x767B;&#x5F55;&#x548C;&#x4EFB;&#x52A1;&#x6682;&#x505C;&#x3001;&#x53D6;&#x6D88;&#x7B49;&#x4E00;&#x7CFB;&#x5217;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/codetainerapp/codetainer" target="_blank"> Codetainer   </a></td>
+<td>Codetainer &#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x521B;&#x5EFA;&#x57FA;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x8FD0;&#x884C;&#x6C99;&#x7BB1;&#xFF0C;&#x53EF;&#x65B9;&#x4FBF;&#x7684;&#x5D4C;&#x5165;&#x5230;&#x4F60;&#x7684; Web &#x5E94;&#x7528;&#x4E2D;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x5F53;&#x6210;&#x662F; codepicnic.com &#x7684;&#x5F00;&#x6E90;&#x514B;&#x9686;) .</td>
+</tr>
+<tr>
+<td><a href="https://github.com/yudai/gotty" target="_blank"> GoTTY        </a></td>
+<td>GoTTY &#x662F;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x628A; CLI &#x5DE5;&#x5177;&#x5171;&#x4EAB;&#x6210; Web &#x5E94;&#x7528;&#x3002;GoTTY &#x53EF;&#x4EE5;&#x628A;&#x7EC8;&#x7AEF;&#x4F5C;&#x4E3A; Web &#x5E94;&#x7528;&#x5171;&#x4EAB;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gizak/termui" target="_blank"> TermUI       </a></td>
+<td>Go&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x7EC8;&#x7AEF;&#x4EEA;&#x8868;&#x76D8;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/etsy/hound" target="_blank"> Hound        </a></td>
+<td>&#x5FEB;&#x5982;&#x95EA;&#x7535;&#x7684;&#x4EE3;&#x7801;&#x641C;&#x7D22;&#x5F00;&#x6E90;&#x5DE5;&#x5177;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Terry-Mao/goim" target="_blank"> goim         </a></td>
+<td>goim &#x662F;&#x4E00;&#x4E2A;&#x652F;&#x6301;&#x96C6;&#x7FA4;&#x7684;im&#x53CA;&#x5B9E;&#x65F6;&#x63A8;&#x9001;&#x670D;&#x52A1;&#xFF08;&#x652F;&#x6301;websocket&#xFF0C;http&#x548C;tcp&#x534F;&#x8BAE;&#xFF09;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/valyala/fasthttp" target="_blank"> fasthttp     </a></td>
+<td>asthttp &#x662F; Go &#x7684;&#x5FEB;&#x901F; HTTP &#x5B9E;&#x73B0;&#xFF0C;&#x5F53;&#x524D;&#x5728; 1M &#x5E76;&#x53D1;&#x7684;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x6210;&#x529F;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x5355;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C; 100K qps &#x7684;&#x6301;&#x7EED;&#x8FDE;&#x63A5;&#x3002;HTTP &#x670D;&#x52A1;&#x5668;&#x6027;&#x80FD;&#x4E0E; net/http &#x6BD4;&#x8F83;&#xFF0C;fasthttp &#x6BD4; net/http &#x5FEB; 10 &#x500D;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ga0/netgraph" target="_blank"> netgraph     </a></td>
+<td>netgraph &#x662F;&#x4E00;&#x4E2A; Go &#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x8DE8;&#x5E73;&#x53F0;&#x7684; B/S &#x67B6;&#x6784;&#x7684; HTTP &#x6293;&#x5305;&#x5DE5;&#x5177;&#xFF0C;&#x65B9;&#x4FBF;&#x5728; Linux &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x76F4;&#x63A5;&#x67E5;&#x770B; HTTP &#x5305;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/codeskyblue/gohttp" target="_blank"> gohttp       </a></td>
+<td>gohttp&#x662F;&#x4E00;&#x4E2A;http&#x7684;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x529F;&#x80FD;&#x6709;&#xFF1A;&#x5404;&#x79CD;&#x6587;&#x4EF6;&#x7684;&#x9884;&#x89C8;&#x529F;&#x80FD;&#xFF0C;&#x5B9E;&#x65F6;&#x7684;&#x76EE;&#x5F55;zip&#x6253;&#x5305;&#x4E0B;&#x8F7D;&#xFF0C;&#x4E8C;&#x7EF4;&#x7801;&#x626B;&#x63CF;&#x4E0B;&#x8F7D;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x82F9;&#x679C;&#x5E94;&#x7528;&#x7684;&#x5728;&#x7EBF;&#x5B89;&#x88C5;&#xFF0C;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7B49;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hidu/api-front" target="_blank"> API-front    </a></td>
+<td>API front&#x662F; HTTP API &#x524D;&#x7AEF;&#xFF0C;&#x53EF;&#x8FDB;&#x884C;&#x8BF7;&#x6C42;&#x4EE3;&#x7406;&#x8F6C;&#x53D1;&#x3001;&#x534F;&#x8BAE;&#x6293;&#x5305;&#x5206;&#x6790;&#x3001;&#x6D41;&#x91CF;&#x590D;&#x5236;&#x3002;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;,&#x7528;&#x6765;&#x89E3;&#x51B3;&#x5F00;&#x53D1;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x591A;&#x53D8;&#x7B49;&#x95EE;&#x9898;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/tus" target="_blank">  esumable file uploads </a></td>
+<td>&#x5B9E;&#x73B0;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x7684;&#x65AD;&#x70B9;&#x7EED;&#x4F20;&#x529F;&#x80FD;&#xFF0C; &#x6574;&#x5957;&#x529F;&#x80FD;&#x5305;&#x542B;&#x4E86;&#x534F;&#x8BAE;&#x5B9E;&#x73B0;&#xFF0C;client&#xFF0C; server&#x3002; client&#x53CA;server&#x6709;&#x591A;&#x79CD;&#x8BED;&#x8A00;&#x7684;&#x5B9E;&#x73B0;&#x5305;&#x62EC;go&#xFF0C; python&#xFF0C; node&#x7B49;&#xFF5C;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hidu/pproxy" target="_blank">  pproxy </a></td>
+<td>http&#x6293;&#x5305;&#x4EE3;&#x7406;&#x7A0B;&#x5E8F;,http&#x534F;&#x8BAE;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/afex/hystrix-go" target="_blank">  hystrix-go </a></td>
+<td>&#x7528;&#x6765;&#x9694;&#x79BB;&#x8FDC;&#x7A0B;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#xFF0C; &#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x8C03;&#x7528; &#xFF0C;&#x670D;&#x52A1;&#x8C03;&#x7528;&#xFF0C; &#x63D0;&#x4F9B;&#x7194;&#x65AD;&#x673A;&#x5236;&#xFF0C;&#x907F;&#x514D;&#x96EA;&#x5D29;&#x6548;&#x5E94;&#x7684;&#x5E93;&#xFF0C; Hystrix&#x7684;go &#x7248;&#x672C;&#x3002; &#x6CE8;Hystrixs&#x662F;Netflix&#x5F00;&#x6E90;&#x7684;&#x4E00;&#x4E2A;java&#x5E93;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="web&#x6846;&#x67B6;"><a name="web&#x6846;&#x67B6;" class="anchor-navigation-ex-anchor" href="#web&#x6846;&#x67B6;"><i class="fa fa-link" aria-hidden="true"></i></a>Web&#x6846;&#x67B6;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/kataras/iris" target="_blank"> Iris-Go </a></td>
+<td>&#x901A;&#x8FC7;Iris-Go&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x5E2E;&#x52A9;&#x4F60;&#x6765;&#x5F00;&#x53D1;&#x57FA;&#x4E8E;web&#x7684;&#x5E94;&#x7528;&#x3002;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF1A;Iris-Go&#x4E0E;&#x56FD;&#x5185;&#x5927;&#x725B;&#x7684;BeeGo&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x4ECE;&#x5176;&#x5B98;&#x65B9;&#x4ECB;&#x7ECD;&#x7684;&#x8D44;&#x6599;&#x6765;&#x770B;&#xFF0C;Iris-Go&#x7684;&#x6027;&#x80FD;&#x66F4;&#x4F18;&#xFF01;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/go-baa/baa" target="_blank"> Baa     </a></td>
+<td>Baa &#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x9AD8;&#x6548;&#x7684;Go web&#x5F00;&#x53D1;&#x6846;&#x67B6;&#x3002;&#x4E3B;&#x8981;&#x6709;&#x8DEF;&#x7531;&#x3001;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x548C;HTTP&#x4E0A;&#x4E0B;&#x6587;&#x6784;&#x6210;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/orivil/orivil" target="_blank"> Orivil  </a></td>
+<td>Orivil &#x662F;&#x7531; golang &#x5F00;&#x53D1;&#x7684;&#x5168;&#x65B0; web &#x6846;&#x67B6;&#xFF0C;&#x7075;&#x611F;&#x6765;&#x6E90;&#x4E8E; Laravel &#x53CA; Symfony&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/tim1020/ecgo" target="_blank"> ecgo    </a></td>
+<td>ecgo &#x662F;&#x4E00;&#x4E2A;&#x6613;&#x5B66;&#x3001;&#x6613;&#x7528;&#x3001;&#x6613;&#x6269;&#x5C55;&#x7684;go web&#x5F00;&#x53D1;&#x6846;&#x67B6;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gin-gonic/gin" target="_blank"> Gin     </a></td>
+<td>Gin &#x662F;&#x4E00;&#x4E2A;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684; Web &#x6846;&#x67B6;&#xFF0C;&#x63D0;&#x4F9B;&#x7C7B; Martini &#x7684; API&#xFF0C;&#x4F46;&#x662F;&#x6027;&#x80FD;&#x66F4;&#x597D;&#x3002;&#x56E0;&#x4E3A;&#x6709;&#x4E86; httprouter &#x6027;&#x80FD;&#x63D0;&#x5347;&#x4E86; 40 &#x500D;&#x4E4B;&#x591A;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/olahol/melody" target="_blank"> Melody  </a></td>
+<td>Melody &#x662F;&#x4E00;&#x4E2A; Go &#x8BED;&#x8A00;&#x7684;&#x5FAE;&#x578B; WebSocket &#x6846;&#x67B6;&#xFF0C;&#x57FA;&#x4E8E; github.com/gorilla/websocket &#x5F00;&#x53D1;&#xFF0C;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gernest/utron" target="_blank"> utron   </a></td>
+<td>utron &#x662F;&#x4E00;&#x4E2A; Go &#x8BED;&#x8A00;&#x8F7B;&#x91CF;&#x7EA7;&#x7684; MVC &#x6846;&#x67B6;&#xFF0C;&#x7528;&#x4E8E;&#x5FEB;&#x901F;&#x6784;&#x5EFA;&#x53EF;&#x4F38;&#x7F29;&#x4EE5;&#x53CA;&#x53EF;&#x9760;&#x7684;&#x6570;&#x636E;&#x5E93;&#x9A71;&#x52A8;&#x7684; Web &#x5E94;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/lessgo/lessgo" target="_blank"> Lessgo  </a></td>
+<td>Lessgo &#x662F;&#x4E00;&#x6B3E; Go &#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x7B80;&#x5355;&#x3001;&#x7A33;&#x5B9A;&#x3001;&#x9AD8;&#x6548;&#x3001;&#x7075;&#x6D3B;&#x7684; web &#x5B8C;&#x5168;&#x5F00;&#x53D1;&#x6846;&#x67B6;&#x3002;&#x5B83;&#x7684;&#x9879;&#x76EE;&#x7EC4;&#x7EC7;&#x5F62;&#x5F0F;&#x7ECF;&#x8FC7;&#x7CBE;&#x5FC3;&#x8BBE;&#x8BA1;&#xFF0C;&#x5B9E;&#x73B0;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x3001;&#x7CFB;&#x7EDF;&#x4E0E;&#x4E1A;&#x52A1;&#x5206;&#x79BB;&#xFF0C;&#x5B8C;&#x7F8E;&#x517C;&#x5BB9;MVC&#x4E0E;MVVC&#x7B49;&#x591A;&#x79CD;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#xFF0C;&#x975E;&#x5E38;&#x5229;&#x4E8E;&#x4F01;&#x4E1A;&#x7EA7;&#x5E94;&#x7528;&#x4E0E;API&#x63A5;&#x53E3;&#x7684;&#x5F00;&#x53D1;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x6700;&#x503C;&#x5F97;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x5B83;&#x7A81;&#x7834;&#x6027;&#x5730;&#x652F;&#x6301;&#x4E86;&#x8FD0;&#x884C;&#x65F6;&#x8DEF;&#x7531;&#x91CD;&#x5EFA;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x5728;Admin&#x540E;&#x53F0;&#x8F7B;&#x677E;&#x5B9E;&#x73B0;&#x542F;&#x7528;/&#x7981;&#x7528;&#x6A21;&#x5757;&#x4E0E;&#x64CD;&#x4F5C;&#xFF0C;&#x6DFB;&#x52A0;/&#x79FB;&#x9664;&#x4E2D;&#x95F4;&#x4EF6;&#x7B49;&#x529F;&#x80FD;&#xFF01;&#x540C;&#x65F6;&#xFF0C;&#x5B83;&#x63A8;&#x8350;&#x4EE5;HandlerFunc&#x4E0E;MiddlewareFunc&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#xFF0C;&#x4E5F;&#x4EE4;&#x5F00;&#x53D1;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#x5BCC;&#x6709;&#x8DA3;&#x5473;&#x6027;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/who246/hopen" target="_blank"> Hopen   </a></td>
+<td>Golang web&#x6781;&#x901F;&#x5F00;&#x53D1;&#x6846;&#x67B6;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/henrylee2cn/faygo" target="_blank"> Faygo </a></td>
+<td>Faygo &#x662F;&#x4E00;&#x6B3E;&#x5FEB;&#x901F;&#x3001;&#x7B80;&#x6D01;&#x7684;Go Web&#x6846;&#x67B6;&#xFF0C;&#x53EF;&#x7528;&#x6781;&#x5C11;&#x7684;&#x4EE3;&#x7801;&#x5F00;&#x53D1;&#x51FA;&#x9AD8;&#x6027;&#x80FD;&#x7684;Web&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF08;&#x5C24;&#x5176;&#x662F;API&#x63A5;&#x53E3;&#xFF09;&#x3002;&#x53EA;&#x9700;&#x5B9A;&#x4E49; struct Handler&#xFF0C;Faygo &#x5C31;&#x80FD;&#x81EA;&#x52A8;&#x7ED1;&#x5B9A;&#x3001;&#x9A8C;&#x8BC1;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x5E76;&#x751F;&#x6210;&#x5728;&#x7EBF;API&#x6587;&#x6863;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/astaxie/beego" target="_blank"> beego   </a></td>
+<td>beego&#x662F;&#x4E00;&#x4E2A;&#x7528;Go&#x5F00;&#x53D1;&#x7684;&#x5E94;&#x7528;&#x6846;&#x67B6;&#xFF0C;&#x601D;&#x8DEF;&#x6765;&#x81EA;&#x4E8E;tornado&#xFF0C;&#x8DEF;&#x7531;&#x8BBE;&#x8BA1;&#x6765;&#x6E90;&#x4E8E;sinatra&#xFF0C;<a href="https://my.oschina.net/astaxie/blog/124040" target="_blank">beego&#x5165;&#x95E8;&#x6587;&#x6863;</a> <a href="https://my.oschina.net/fuxiaohei/blog/228999" target="_blank">Beego&#x6E90;&#x7801;&#x5206;&#x6790;</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/revel/revel" target="_blank"> Revel   </a></td>
+<td>Revel&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x751F;&#x4EA7;&#x529B;&#x7684;Go&#x8BED;&#x8A00;Web&#x6846;&#x67B6;&#x3002;Revel&#x6846;&#x67B6;&#x652F;&#x6301;&#x70ED;&#x7F16;&#x8BD1;&#xFF0C;&#x5F53;&#x7F16;&#x8F91;&#x3001;&#x4FDD;&#x5B58;&#x548C;&#x5237;&#x65B0;&#x6E90;&#x7801;&#x65F6;&#xFF0C;Revel&#x4F1A;&#x81EA;&#x52A8;&#x7F16;&#x8BD1;&#x4EE3;&#x7801;&#x548C;&#x6A21;&#x677F;&#xFF1B;&#x5168;&#x6808;&#x7279;&#x6027;&#xFF0C;&#x652F;&#x6301;&#x8DEF;&#x7531;&#x3001;&#x53C2;&#x6570;&#x89E3;&#x6790;&#x3001;&#x7F13;&#x5B58;&#x3001;&#x6D4B;&#x8BD5;&#x3001;&#x56FD;&#x9645;&#x5316;&#x7B49;&#x529F;&#x80FD;&#x3002;<a href="http://www.gorevel.cn" target="_blank">Revel&#x4E2D;&#x6587;&#x793E;&#x533A;</a> <a href="http://www.cnblogs.com/ztiandan/archive/2013/01/17/2864498.html" target="_blank">&#x4E00;&#x6B65;&#x4E00;&#x6B65;&#x5B66;&#x4E60;Revel Web&#x5F00;&#x6E90;&#x6846;&#x67B6;</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/codegangsta/martini" target="_blank"> Martini </a></td>
+<td>Martini &#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x65B0;&#x7684; Go &#x8BED;&#x8A00;&#x7684; Web &#x6846;&#x67B6;&#xFF0C;&#x4F7F;&#x7528; Go &#x7684; net/http &#x63A5;&#x53E3;&#x5F00;&#x53D1;&#xFF0C;&#x7C7B;&#x4F3C; Sinatra &#x6216;&#x8005; Flask &#x4E4B;&#x7C7B;&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x4F60;&#x53EF;&#x4F7F;&#x7528;&#x81EA;&#x5DF1;&#x7684; DB &#x5C42;&#x3001;&#x4F1A;&#x8BDD;&#x7BA1;&#x7406;&#x548C;&#x6A21;&#x677F;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/lunny/tango" target="_blank"> Tango   </a></td>
+<td>Tango&#xFF0C;&#x5FAE;&#x5185;&#x6838;&#x53EF;&#x6269;&#x5C55;&#x7684;Go&#x8BED;&#x8A00;Web&#x6846;&#x67B6;&#x3002;&#x540C;&#x65F6;&#x652F;&#x6301;&#x51FD;&#x6570;&#x548C;&#x7ED3;&#x6784;&#x4F53;&#x4F5C;&#x4E3A;&#x6267;&#x884C;&#x4F53;&#xFF0C;&#x63D2;&#x4EF6;&#x4E30;&#x5BCC;&#x3002;<a href="http://www.golangtc.com/t/54ae8b60421aa9396a000204" target="_blank">Tango&#xFF0C;&#x5FAE;&#x5185;&#x6838;&#x53EF;&#x6269;&#x5C55;&#x7684;Go&#x8BED;&#x8A00;Web&#x6846;&#x67B6;</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/go-macaron/macaron" target="_blank"> Macaron </a></td>
+<td>Macaron &#x662F;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x9AD8;&#x751F;&#x4EA7;&#x529B;&#x548C;&#x6A21;&#x5757;&#x5316;&#x8BBE;&#x8BA1;&#x7684; Go Web &#x6846;&#x67B6;&#x3002;&#x6846;&#x67B6;&#x79C9;&#x627F;&#x4E86; Martini &#x7684;&#x57FA;&#x672C;&#x601D;&#x60F3;&#xFF0C;&#x5E76;&#x5728;&#x6B64;&#x57FA;&#x7840;&#x4E0A;&#x505A;&#x51FA;&#x9AD8;&#x7EA7;&#x6269;&#x5C55;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hoisie/web" target="_blank"> Web.go  </a></td>
+<td>web.go &#x8DDF; web.py &#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x4F7F;&#x7528;&#x7684;&#x662F; Go &#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x7684; Web &#x5E94;&#x7528;&#x5F00;&#x53D1;&#x6846;&#x67B6;&#x3002;Go&#x53D1;&#x5E03;&#x6CA1;&#x591A;&#x4E45;&#x8BE5;&#x6846;&#x67B6;&#x5C31;&#x8BDE;&#x751F;&#x4E86;&#xFF0C;&#x5DEE;&#x4E0D;&#x591A;&#x662F;&#x6700;&#x65E9;&#x7684;Go&#x6846;&#x67B6;&#x3002;&#x76EE;&#x524D;&#x5DF2;&#x7ECF;&#x6709;&#x6BB5;&#x65F6;&#x95F4;&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#x4E86;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x8BE5;&#x6846;&#x67B6;&#x4EE3;&#x7801;&#x4E0D;&#x591A;&#xFF0C;&#x5176;&#x6E90;&#x7801;&#x53EF;&#x4EE5;&#x8BFB;&#x4E00;&#x8BFB;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/labstack/echo" target="_blank"> Echo    </a></td>
+<td>Echo &#x662F;&#x4E2A;&#x5FEB;&#x901F;&#x7684; HTTP &#x8DEF;&#x7531;&#x5668;&#xFF08;&#x96F6;&#x52A8;&#x6001;&#x5185;&#x5B58;&#x5206;&#x914D;&#xFF09;&#xFF0C;&#x4E5F;&#x662F; Go &#x7684;&#x5FAE;&#x578B; Web &#x6846;&#x67B6;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hoisie/web" target="_blank"> web     </a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/QLeelulu/goku" target="_blank"> goku    </a></td>
+<td><a href="http://qleelulu.github.io/goku" target="_blank">goku&#x5B98;&#x7F51;</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x533A;&#x5757;&#x94FE;&#x6280;&#x672F;"><a name="&#x533A;&#x5757;&#x94FE;&#x6280;&#x672F;" class="anchor-navigation-ex-anchor" href="#&#x533A;&#x5757;&#x94FE;&#x6280;&#x672F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x533A;&#x5757;&#x94FE;&#x6280;&#x672F;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/hyperledger/fabric" target="_blank"> fabric      </a></td>
+<td>Fabric&#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x533A;&#x5757;&#x94FE;&#x5B9E;&#x73B0;&#xFF0C;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x5EFA;&#x7ACB;&#x5728;VirtualBox&#x865A;&#x62DF;&#x673A;&#x4E0A;&#xFF0C;&#x90E8;&#x7F72;&#x73AF;&#x5883;&#x53EF;&#x4EE5;&#x81EA;&#x5EFA;&#x7F51;&#x7EDC;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x90E8;&#x7F72;&#x5728;BlueMix&#x4E0A;&#xFF0C;&#x90E8;&#x7F72;&#x65B9;&#x5F0F;&#x53EF;&#x4F20;&#x7EDF;&#x53EF;docker&#x5316;&#xFF0C;&#x5171;&#x8BC6;&#x8FBE;&#x6210;&#x7B97;&#x6CD5;&#x63D2;&#x4EF6;&#x5316;&#xFF0C;&#x652F;&#x6301;&#x7528;Go&#x548C;JavaScript&#x5F00;&#x53D1;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#xFF0C;&#x5C24;&#x4EE5;&#x4F01;&#x4E1A;&#x7EA7;&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;&#x548C;membership&#x673A;&#x5236;&#x4E3A;&#x7279;&#x8272;&#x3002;&#x4F60;&#x8981;&#x662F;&#x4E0D;&#x77E5;&#x9053;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF0C;&#x5C31;&#x8BB0;&#x4F4F;&#x4E00;&#x70B9;&#xFF0C;Fabric&#x4E4B;&#x4E8E;&#x533A;&#x5757;&#x94FE;&#xFF0C;&#x5F88;&#x53EF;&#x80FD;&#x6B63;&#x5982;Hadoop&#x4E4B;&#x4E8E;&#x5927;&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ethereum/go-ethereum" target="_blank"> go-ethereum </a></td>
+<td>go-ethereum&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;geth&#xFF0C;&#x5B83;&#x662F;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x754C;&#x9762;&#xFF0C;&#x6267;&#x884C;&#x5728;Go&#x4E0A;&#x5B9E;&#x73B0;&#x7684;&#x5B8C;&#x6574;&#x4EE5;&#x592A;&#x574A;&#x8282;&#x70B9;&#x3002;&#x901A;&#x8FC7;&#x5B89;&#x88C5;&#x548C;&#x8FD0;&#x884C;geth&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x4E0E;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x524D;&#x53F0;&#x5B9E;&#x65F6;&#x7F51;&#x7EDC;&#x5E76;&#x8FDB;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;a. &#x6316;&#x6398;&#x771F;&#x7684;&#x4EE5;&#x592A;&#x5E01;  b. &#x5728;&#x4E0D;&#x540C;&#x5730;&#x5740;&#x95F4;&#x8F6C;&#x79FB;&#x8D44;&#x91D1; c .&#x521B;&#x5EFA;&#x5408;&#x7EA6;&#xFF0C;&#x53D1;&#x9001;&#x4EA4;&#x6613;  d . &#x63A2;&#x7D22;&#x533A;&#x5757;&#x5386;&#x53F2; e.&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x529F;&#x80FD;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chain/chain" target="_blank"> chain       </a></td>
+<td><strong>&#x91D1;&#x878D;&#x9886;&#x57DF;&#x7684;&#x533A;&#x5757;&#x94FE;&#x9879;&#x76EE; </strong>. Chain&#x662F;&#x7531;&#x4E00;&#x5BB6;&#x521A;&#x6210;&#x7ACB;&#x4E24;&#x5E74;&#x7684;&#x7F8E;&#x56FD;&#x521B;&#x4E1A;&#x516C;&#x53F8;Chain&#x63A8;&#x51FA;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x4F01;&#x4E1A;&#x7EA7;&#x7684;&#x533A;&#x5757;&#x94FE;&#x5E73;&#x53F0;&#x67B6;&#x6784;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x673A;&#x6784;&#x6784;&#x9020;&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x66F4;&#x597D;&#x7684;&#x91D1;&#x878D;&#x670D;&#x52A1;&#x3002;Chain &#x5F00;&#x653E;&#x6807;&#x51C6;&#x5728;&#x4EE5;&#x4E0B;&#x65B9;&#x9762;&#x5B9E;&#x73B0;&#x7A81;&#x7834;&#xFF1A;&#x2022; &#x5168;&#x65B0;&#x7684;&#x5171;&#x8BC6;&#x6A21;&#x578B;&#x5728;&#x4E0D;&#x5230;&#x4E00;&#x79D2;&#x7684;&#x65F6;&#x95F4;&#x91CC;&#x5B9E;&#x73B0;&#x4EA4;&#x6613;&#x7684;&#x6700;&#x7EC8;&#x5B8C;&#x6210;&#xFF0C;&#x5373;&#x4FBF;&#x662F;&#x4EA4;&#x6613;&#x91CF;&#x975E;&#x5E38;&#x5927;&#x4E5F;&#x80FD;&#x652F;&#x6301;;&#x2022; &#x79C1;&#x5BC6;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5BF9;&#x533A;&#x5757;&#x94FE;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x5E76;&#x8BA9;&#x76F8;&#x5173;&#x5BF9;&#x624B;&#x65B9;&#x548C;&#x76D1;&#x7BA1;&#x8005;&#x8FDB;&#x884C;&#x6709;&#x9009;&#x62E9;&#x7684;&#x8BFB;&#x53D6;;&#x2022; &#x667A;&#x80FD;&#x5408;&#x7EA6;&#x6846;&#x67B6;&#x548C;&#x865A;&#x62DF;&#x673A;&#x652F;&#x6301;&#x7B80;&#x5355;&#x7684;&#x89C4;&#x5219;&#x6267;&#x884C;&#xFF0C;&#x4EE5;&#x53CA;&#x8FDB;&#x884C;&#x952E;&#x503C;&#x5B58;&#x50A8;&#x7684;&#x56FE;&#x7075;&#x5B8C;&#x6574;&#x7A0B;&#x5E8F;; &#x2022; &#x53EF;&#x4F38;&#x7F29;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x4E3A;&#x7F51;&#x7EDC;&#x53C2;&#x4E0E;&#x8005;&#x964D;&#x4F4E;&#x8FD0;&#x884C;&#x8D1F;&#x8377;; &#x2022; &#x4E30;&#x5BCC;&#x7684;&#x5143;&#x6570;&#x636E;&#x5C42;&#x53EF;&#x652F;&#x6301;&#x6EE1;&#x8DB3;KYC&#xFF08;&#x4E86;&#x89E3;&#x4F60;&#x7684;&#x5BA2;&#x6237;&#xFF09;&#x548C; AML&#xFF08;&#x53CD;&#x6D17;&#x94B1;&#xFF09;&#x8981;&#x6C42;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5176;&#x5B83;"><a name="&#x5176;&#x5B83;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x5B83;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5176;&#x5B83;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x9879;&#x76EE;</th>
+<th>&#x7B80;&#x4ECB;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/xjdrew/kone" target="_blank"> kone          </a></td>
+<td>&#x53EF;&#x7528;&#x4E8E;&#x5BB6;&#x5EAD;&#x6216;&#x8005;&#x4F01;&#x4E1A;&#x7F51;&#x7EDC;&#x7684;&#x900F;&#x660E;&#x4EE3;&#x7406;&#xFF0C;&#x53EF;&#x7528;&#x6765;&#x7FFB;&#x5899;&#x7B49;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jaxi/koderunr" target="_blank"> KodeRunr      </a></td>
+<td>KodeRunr (&#x8BFB;&#x4F5C; code runner) &#x662F;&#x6B3E;&#x6211;&#x5728;&#x95F2;&#x6687;&#x65F6;&#x95F4;&#x7528;Go&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x5E94;&#x7528;&#x3002;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#x3001;&#x547D;&#x4EE4;&#x884C;&#x91CC;&#x5199;&#x7A0B;&#x5E8F;&#xFF0C;&#x8D34;&#x4EE3;&#x7801;&#xFF0C;&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#x65E0;&#x9700;&#x5728;&#x672C;&#x5730;&#x5B89;&#x88C5;&#x4EFB;&#x4F55;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x3002;&#x652F;&#x6301;Ruby, Python, GO, Swift, C, Elixir&#x7B49;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/tim1020/godaemon" target="_blank"> godaemon      </a></td>
+<td>godaemon&#x662F;&#x7528;&#x6765;&#x4E3A;&#x5E94;&#x7528;&#x589E;&#x52A0;daemon&#x548C;graceful&#x7684;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/golang/mobile" target="_blank"> Gomobile      </a></td>
+<td>Gomobile&#x662F;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x4E8E;iOS&#x548C;Android&#x7684;&#x4F18;&#x79C0;&#x8DE8;&#x5E73;&#x53F0;&#x5F00;&#x53D1;&#x5E93;&#xFF0C;&#x4E3A;&#x5F00;&#x53D1;&#x8005;&#x63D0;&#x4F9B;&#x7528;&#x4E8E;&#x521B;&#x5EFA;Android&#x548C;iOS &#x79FB;&#x52A8;&#x5E73;&#x53F0;&#x4EE3;&#x7801;&#x7684;&#x5DE5;&#x5177;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/yanyiwu/gojieba" target="_blank"> gojieba       </a></td>
+<td>&quot;&#x7ED3;&#x5DF4;&quot;&#x4E2D;&#x6587;&#x5206;&#x8BCD;&#x7684;Golang&#x8BED;&#x8A00;&#x7248;&#x672C;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/rafael-santiago/cherry" target="_blank"> Cherry        </a></td>
+<td>Cherry &#x662F;&#x4E00;&#x4E2A;&#x4F7F;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684; Web &#x804A;&#x5929;&#x5F15;&#x64CE;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mailslurper/mailslurper" target="_blank"> MailSlurper   </a></td>
+<td>MailSlurper &#x662F;&#x4E00;&#x4E2A;&#x4FBF;&#x643A;&#x7684; SMTP &#x90AE;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5BF9;&#x672C;&#x5730;&#x548C;&#x56E2;&#x961F;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x6765;&#x8BF4;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;MailSlurper &#x4F53;&#x79EF;&#x5C0F;&#x8FD0;&#x884C;&#x5FEB;&#x901F;&#xFF0C;&#x652F;&#x6301; SQLite, MSSQL &#x548C; MySQL. &#x6570;&#x636E;&#x5E93;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/robustirc/robustirc" target="_blank"> RobustIRC     </a></td>
+<td>RobustIRC &#x662F;&#x4E0D;&#x4F1A;&#x6709;&#x7F51;&#x7EDC;&#x4E2D;&#x65AD;&#x60C5;&#x51B5;&#x7684; IRC&#x3002;RobustIRC &#x4E3B;&#x8981;&#x7279;&#x6027;&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x53EF;&#x7528;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x4F1A;&#x6709;&#x7F51;&#x7EDC;&#x4E2D;&#x65AD;&#xFF1B; &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6807;&#x51C6; IRC &#x5BA2;&#x6237;&#x7AEF;&#xFF1B; &#x5065;&#x58EE;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5904;&#x7406;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x7F51;&#x7EDC;&#x7684;&#x8FDE;&#x63A5;&#x95EE;&#x9898;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/qor/qor" target="_blank"> Qor           </a></td>
+<td>Qor &#x662F;&#x57FA;&#x4E8E; Golang &#x5F00;&#x53D1;&#x7684;&#x7684;CMS &#x4E00;&#x7CFB;&#x5217;&#x5DE5;&#x5177;&#x5E93;&#xFF0C;&#x57FA;&#x4E8E; Qor&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x642D;&#x5EFA;&#x7F51;&#x7AD9;&#x7684;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;Qor &#x7684;&#x5DE5;&#x4F5C;&#x5E93;&#x5305;&#x542B;&#xFF1A;1&#xFF0C;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#xFF1A;&#x53EF;&#x4EE5;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x53BB; CURD &#x7BA1;&#x7406;&#xFF0C;&#x652F;&#x6301;&#x4E00;&#x5BF9;&#x4E00;&#xFF0C;&#x4E00;&#x5BF9;&#x591A;&#xFF0C;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x7EF4;&#x62A4;&#x7B49;&#x7B49;&#xFF1B; 2&#xFF0C;&#x652F;&#x6301;&#x4E0A;&#x4F20;&#x56FE;&#x7247;&#x5230;&#x4E91;&#x4EE5;&#x53CA; filesystem&#xFF0C;resize&#x3001;crop &#x56FE;&#x7247;&#x7B49;&#x7B49; &#xFF1B;3&#xFF0C;Publish &#x53D1;&#x5E03;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x7ECF;&#x8FC7;&#x68C0;&#x67E5;&#x540E;&#xFF0C;&#x518D;&#x53D1;&#x5E03;&#x5230;&#x6B63;&#x5F0F;&#x73AF;&#x5883;&#x4E2D;&#xFF1B; 4&#xFF0C;&#x72B6;&#x6001;&#x673A;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x5DE5;&#x4F5C;&#x6D41;&#x7684;&#x7CFB;&#x7EDF;&#xFF1B; 5&#xFF0C;I18n&#xFF0C;&#x7FFB;&#x8BD1;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728; WEB &#x754C;&#x9762;&#x7FFB;&#x8BD1;&#xFF0C;&#x5E76;&#x5C06;&#x7FFB;&#x8BD1;&#x4FDD;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF1B; 6&#xFF0C;L10n&#xFF0C;&#x672C;&#x5730;&#x5316;&#xFF0C;&#x4E0D;&#x540C;&#x4E8E;&#x7FFB;&#x8BD1;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;&#x67D0;&#x4E2A;&#x5730;&#x533A;&#x6765;&#x5BF9;&#x5185;&#x5BB9;&#xFF0C;&#x6216;&#x8005;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x8FDB;&#x884C;&#x672C;&#x5730;&#x5316;&#x3002;7&#xFF0C;Roles&#xFF0C;&#x6743;&#x9650;&#x7BA1;&#x7406;&#xFF1B; 8&#xFF0C;Exchange&#xFF0C;&#x901A;&#x8FC7; Excel&#xFF0C;CSV &#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#xFF1B; 9&#xFF0C;Worker&#xFF0C;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x8DD1;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x7B49;&#x7B49;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/oikomi/FishChatServer" target="_blank"> FishChat      </a></td>
+<td>FishChat&#xFF08;&#x9C7C;&#x4F20;&#x2014;&#x2014;&#x9C7C;&#x4F20;&#x5C3A;&#x7D20;&#xFF09;&#x5206;&#x5E03;&#x5F0F;&#x53EF;&#x4F38;&#x7F29; IM &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x662F;&#x4E00;&#x6B3E;&#x7EAF; golang &#x7F16;&#x5199;&#x4F18;&#x79C0;&#x7684;&#x5373;&#x65F6;&#x901A;&#x8BAF;&#x8F6F;&#x4EF6;(IM), &#x5B83;&#x96C6;&#x5408;&#x4E86;&#x5E02;&#x9762;&#x4E0A;&#x5DF2;&#x6709;&#x4EA7;&#x54C1;&#x7684;&#x4F18;&#x70B9;, &#x5E76;&#x5177;&#x5907; &#x667A;&#x80FD;&#x786C;&#x4EF6;&#x7F51;&#x5173;&#x7BA1;&#x7406;(&#x5B66;&#x4E60;QQ&#x7269;&#x8054;&#x601D;&#x60F3;, &#x6784;&#x601D;&#x4E2D;)&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mikespook/gorbac" target="_blank"> goRBAC        </a></td>
+<td>goRBAC &#x4E3A; Go &#x8BED;&#x8A00;&#x5E94;&#x7528;&#x63D0;&#x4F9B;&#x4E86;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x57FA;&#x4E8E;&#x89D2;&#x8272;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/rakyll/hey" target="_blank"> hey           </a></td>
+<td>Boom &#x662F; google &#x4E00;&#x5973;&#x5DE5;&#x7A0B;&#x5E08;&#x4F7F;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684;&#x7C7B;&#x4F3C; apache ab &#x7684;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;&#x3002;&#x76F8;&#x6BD4; ab&#xFF0C;boom&#x8DE8;&#x5E73;&#x53F0;&#x6027;&#x66F4;&#x597D;&#xFF0C;&#x800C;&#x4E14;&#x66F4;&#x5BB9;&#x6613;&#x5B89;&#x88C5;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mattermost/platform" target="_blank"> Mattermost    </a></td>
+<td>mattermost &#x662F;&#x4E00;&#x4E2A; Slack &#x7684;&#x5F00;&#x6E90;&#x66FF;&#x4EE3;&#x54C1;&#x3002;Mattermost &#x91C7;&#x7528; Go &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x56E2;&#x961F;&#x901A;&#x8BAF;&#x670D;&#x52A1;&#x3002;&#x4E3A;&#x56E2;&#x961F;&#x5E26;&#x6765;&#x8DE8; PC &#x548C;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x7684;&#x6D88;&#x606F;&#x3001;&#x6587;&#x4EF6;&#x5206;&#x4EAB;&#xFF0C;&#x63D0;&#x4F9B;&#x5F52;&#x6863;&#x548C;&#x641C;&#x7D22;&#x529F;&#x80FD;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/prasmussen/glot" target="_blank"> glot          </a></td>
+<td>glot &#x662F;&#x53EF;&#x4EE5;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x8FD0;&#x884C;&#x5404;&#x79CD;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x9879;&#x76EE;&#x91C7;&#x7528; Haskell Script &#x3001;Go&#x3001;Erlang &#x548C; Shell &#x5F00;&#x53D1;&#xFF0C;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x57FA;&#x4E8E; Docker &#x5BB9;&#x5668;&#x8FDB;&#x884C;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/getlantern/lantern" target="_blank"> Lantern       </a></td>
+<td>Lantern&#x662F;&#x4E00;&#x4E2A;&#x70B9;&#x5BF9;&#x70B9;&#x79D1;&#x5B66;&#x4E0A;&#x7F51;&#x8F6F;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/vzex/dog-tunnel" target="_blank"> dog-tunnel    </a></td>
+<td>&#x72D7;&#x6D1E;&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x901F;&#x7684; P2P &#x7AEF;&#x53E3;&#x6620;&#x5C04;&#x5DE5;&#x5177;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301;Socks5&#x4EE3;&#x7406;&#x3002; 0.5&#x7248;&#x540E;&#x5F00;&#x59CB;&#x5F00;&#x6E90;&#xFF0C;UDP&#x5E95;&#x5C42;&#x57FA;&#x4E8E;&#x5F00;&#x6E90;&#x5E93;KCP&#x91CD;&#x5199;&#xFF0C;&#x6548;&#x7387;&#x5927;&#x5927;&#x63D0;&#x9AD8;&#xFF0C;&#x5728;&#x6076;&#x52A3;&#x73AF;&#x5883;&#x4E0B;&#x4F18;&#x52BF;&#x660E;&#x663E;&#x3002; &#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x975E;P2P&#x7248;&#x672C;&#xFF08;Lite&#x7248;&#x672C;&#xFF09;&#xFF0C;&#x4E24;&#x7AEF;&#x8FDE;&#x63A5;&#x8FC7;&#x7A0B;&#x5B8C;&#x5168;&#x4E0D;&#x4F9D;&#x8D56;&#x4E2D;&#x95F4;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x652F;&#x6301;&#x52A0;&#x5BC6;&#x548C;&#x767B;&#x9646;&#x8BA4;&#x8BC1;&#xFF0C;&#x81EA;&#x52A8;&#x91CD;&#x8FDE;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;&#x4EBA;&#x4E3A;&#x786E;&#x4FDD;&#x4E24;&#x7AEF;&#x80FD;&#x6B63;&#x5E38;&#x8FDE;&#x901A;&#xFF08;&#x5426;&#x5219;&#x8BF7;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;P2P&#x7248;&#x672C;&#xFF09;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/grpc" target="_blank"> GRPC          </a></td>
+<td>GRPC &#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6027;&#x80FD;&#x3001;&#x5F00;&#x6E90;&#x548C;&#x901A;&#x7528;&#x7684; RPC &#x6846;&#x67B6;&#xFF0C;&#x9762;&#x5411;&#x79FB;&#x52A8;&#x548C; HTTP/2 &#x8BBE;&#x8BA1;&#x3002;&#x76EE;&#x524D;&#x63D0;&#x4F9B; C&#x3001;Java &#x548C; Go &#x8BED;&#x8A00;&#x7248;&#x672C;&#xFF0C;&#x5206;&#x522B;&#x662F;&#xFF1A;grpc, grpc-java, grpc-go. &#x5176;&#x4E2D; C &#x7248;&#x672C;&#x652F;&#x6301; C, C++, Node.js, Python, Ruby, Objective-C, PHP &#x548C; C# &#x652F;&#x6301;.GRPC &#x57FA;&#x4E8E; HTTP/2 &#x6807;&#x51C6;&#x8BBE;&#x8BA1;&#xFF0C;&#x5E26;&#x6765;&#x8BF8;&#x5982;&#x53CC;&#x5411;&#x6D41;&#x3001;&#x6D41;&#x63A7;&#x3001;&#x5934;&#x90E8;&#x538B;&#x7F29;&#x3001;&#x5355; TCP &#x8FDE;&#x63A5;&#x4E0A;&#x7684;&#x591A;&#x590D;&#x7528;&#x8BF7;&#x6C42;&#x7B49;&#x7279;&#x3002;&#x8FD9;&#x4E9B;&#x7279;&#x6027;&#x4F7F;&#x5F97;&#x5176;&#x5728;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x4E0A;&#x8868;&#x73B0;&#x66F4;&#x597D;&#xFF0C;&#x66F4;&#x7701;&#x7535;&#x548C;&#x8282;&#x7701;&#x7A7A;&#x95F4;&#x5360;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/visualfc/liteide" target="_blank"> LiteIDE       </a></td>
+<td>LiteIDE&#x662F;&#x4E00;&#x6B3E;&#x5F00;&#x6E90;&#x3001;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;Go&#x8BED;&#x8A00;&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF08;IDE&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/yinghuocho/firefly-proxy" target="_blank"> firefly-proxy </a></td>
+<td>&#x7A7F;&#x5899;&#x5DE5;&#x5177;&#x3002; GFW&#x68AF;&#x5B50;&#x3002; &#x63D0;&#x4F9B;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x3002;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x5E73;&#x53F0;&#xFF0C; &#x5305;&#x62EC;linux&#xFF0C; macos&#xFF0C; windows &#xFF0C;android</td>
+</tr>
+<tr>
+<td><a href="https://github.com/shanzi/wu/" target="_blank"> wu            </a></td>
+<td>&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x6587;&#x4EF6;&#x53D8;&#x5316;&#x5E76;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;&#x7684;&#x5C0F;&#x5DE5;&#x5177; &#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x914D;&#x7F6E;&#x4FEE;&#x6539;&#x540E;&#x81EA;&#x52A8;&#x91CD;&#x542F;web server</td>
+</tr>
+<tr>
+<td><a href="https://github.com/apex/apex" target="_blank"> apex          </a></td>
+<td>&#x7BA1;&#x7406;&#xFF0C;&#x90E8;&#x7F72;aws lambda&#x51FD;&#x6570;&#x7684;&#x5DE5;&#x5177;&#xFF0C; &#x652F;&#x6301;&#x7528;go&#x8BED;&#x8A00;&#x7F16;&#x5199;lambda&#x51FD;&#x6570;&#xFF08;&#x6CE8;&#xFF1A;&#x76EE;&#x524D;aws&#x5B98;&#x65B9;&#x4E0D;&#x652F;&#x6301;&#x7528;go&#x8BED;&#x8A00;&#x7F16;&#x5199;lambda&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;apex&#x5374;&#x53EF;&#x4EE5;&#x53D8;&#x76F8;&#x652F;&#x6301;&#xFF09;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/codeskyblue/gosuv" target="_blank"> gosuv         </a></td>
+<td>&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;&#xFF0C; &#x7C7B;&#x4F3C;&#x4E8E;python&#x7684;supervisord &#xFF0C; &#x63D0;&#x4F9B;&#x4E86;web&#x7BA1;&#x7406;&#x754C;&#x9762;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Netflix/chaosmonkey" target="_blank">chaosmonkey </a></td>
+<td>Chaos Monkey&#x662F;netflix&#x516C;&#x53F8;&#x5F00;&#x6E90;&#x7684;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x53EF;&#x7528;&#x6027;&#x6D4B;&#x8BD5;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x901A;&#x8FC7;&#x6709;&#x8BA1;&#x5212;&#x7684;&#x5728;&#x751F;&#x4EA7;&#x7CFB;&#x7EDF;&#x5236;&#x9020;&#x771F;&#x5B9E;&#x7684;&#x6545;&#x969C;&#xFF08;&#x5982;cpu&#x8D1F;&#x8F7D;&#x9AD8;&#xFF0C; &#x5185;&#x5B58;&#x6EA2;&#x51FA;&#xFF0C;&#x78C1;&#x76D8;&#x5199;&#x6EE1;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5B95;&#x673A;&#x7B49;&#xFF09;&#x6765;&#x68C0;&#x6D4B;&#x7CFB;&#x7EDF;&#x7684;&#x53EF;&#x7528;&#x6027;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/shotdog/scheduler" target="_blank"> scheduler </a></td>
+<td>scheduler&#x4E13;&#x95E8;&#x8FDB;&#x884C;&#x4EFB;&#x52A1;&#x7684;&#x8C03;&#x5EA6;&#x5206;&#x53D1;&#x4EFB;&#x52A1;&#x5DE5;&#x4F5C;&#xFF0C;&#x5404;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#x5177;&#x4F53;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5206;&#x914D;&#x5230;&#x5404;&#x4E2A;&#x9879;&#x76EE;&#x4E2D;&#xFF0C; &#x4ECE;&#x800C;&#x8FBE;&#x5230;&#x5BF9;&#x4EFB;&#x52A1;&#x7684;&#x7EDF;&#x4E00;&#x914D;&#x7F6E;&#x548C;&#x7BA1;&#x7406;&#x3002; &#x8BE5;&#x5DE5;&#x5177;&#x63D0;&#x4F9B;&#x4E86;web&#x7BA1;&#x7406;&#x754C;&#x9762;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gohugoio/hugo" target="_blank"> hugo </a></td>
+<td>Hugo&#x662F;&#x7531;Go&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x7684;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x751F;&#x6210;&#x5668;&#xFF1B;&#x7B80;&#x5355;&#x3001;&#x6613;&#x7528;&#x3001;&#x9AD8;&#x6548;&#x3001;&#x6613;&#x6269;&#x5C55;&#x3001;&#x5FEB;&#x901F;&#x90E8;&#x7F72;&#xFF1B;&#x76F8;&#x6BD4;&#x4E8E;Hexo&#x3001;Jekyll&#xFF0C;hugo&#x7684;&#x4F18;&#x52BF;&#x662F;&#x751F;&#x6210;&#x901F;&#x5EA6;&#x6781;&#x5FEB;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/limetext/lime" target="_blank">Lime</a></td>
+<td>&#x76F8;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x51E0;&#x6B3E;Go&#x8BED;&#x8A00;&#x5728;&#x4E91;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4E4B;&#x5916;&#xFF0C;Lime&#x5219;&#x663E;&#x5F97;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#x3002;Lime&#xFF0C;&#x5219;&#x662F;&#x4E00;&#x6B3E;&#x7528;Go&#x8BED;&#x8A00;&#x5199;&#x7684;&#x684C;&#x9762;&#x7F16;&#x8F91;&#x5668;&#x7A0B;&#x5E8F;&#xFF0C;&#x88AB;&#x770B;&#x505A;&#x662F;&#x8457;&#x540D;&#x7F16;&#x8F91;&#x5668;Sublime Text&#x7684;&#x5F00;&#x6E90;&#x5B9E;&#x73B0;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gogits/gogs" target="_blank">Gogs</a></td>
+<td>Gogs&#x5219;&#x662F;&#x4E00;&#x6B3E;&#x7531;&#x56FD;&#x4EBA;&#x65E0;&#x95FB;&#xFF08;GitHub&#xFF09;&#x5F00;&#x53D1;&#x7684;&#x81EA;&#x52A9;Git&#x670D;&#x52A1;&#x9879;&#x76EE;&#x3002;Gogs&#x7684;&#x76EE;&#x6807;&#x662F;&#x6253;&#x9020;&#x4E00;&#x4E2A;&#x6700;&#x7B80;&#x5355;&#x3001;&#x6700;&#x5FEB;&#x901F;&#x548C;&#x6700;&#x8F7B;&#x677E;&#x7684;&#x65B9;&#x5F0F;&#x642D;&#x5EFA;&#x81EA;&#x52A9;Git&#x670D;&#x52A1;&#x3002;&#x636E;&#x4F5C;&#x8005;&#x79F0;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x9009;&#x62E9;&#x4F7F;&#x7528;Go&#x8BED;&#x8A00;&#x5F00;&#x53D1;&#xFF0C;&#x5C31;&#x662F;Go&#x5141;&#x8BB8;Gogs&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x72EC;&#x7ACB;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5206;&#x53D1;&#xFF0C;&#x4E14;&#x5BF9;&#x8DE8;&#x5E73;&#x53F0;&#x6709;&#x826F;&#x597D;&#x652F;&#x6301;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/leanote" target="_blank">&#x8682;&#x8681;&#x7B14;&#x8BB0;</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/lifei6671/mindoc" target="_blank">MinDoc</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="notes/" class="navigation navigation-next navigation-unique" aria-label="Next page: 编码规范指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Go语言资料","level":"1.1","depth":1,"next":{"title":"编码规范指南","level":"1.2","depth":1,"path":"notes/README.md","ref":"notes/README.md","articles":[{"title":"Go命令","level":"1.2.1","depth":2,"path":"notes/gocmd.md","ref":"notes/gocmd.md","articles":[]},{"title":"环境搭建","level":"1.2.2","depth":2,"path":"notes/installation.md","ref":"notes/installation.md","articles":[]},{"title":"Go外部依赖管理","level":"1.2.3","depth":2,"path":"notes/govendor.md","ref":"notes/govendor.md","articles":[]},{"title":"Go语言圣经","level":"1.2.4","depth":2,"path":"notes/the-go-programming-language.md","ref":"notes/the-go-programming-language.md","articles":[]},{"title":"GroupCache","level":"1.2.5","depth":2,"path":"notes/groupcache.md","ref":"notes/groupcache.md","articles":[]},{"title":"同步","level":"1.2.6","depth":2,"path":"notes/synchronization.md","ref":"notes/synchronization.md","articles":[]},{"title":"Docker","level":"1.2.7","depth":2,"path":"notes/docker.md","ref":"notes/docker.md","articles":[]},{"title":"GUI","level":"1.2.8","depth":2,"path":"notes/gui.md","ref":"notes/gui.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","anchor-navigation-ex","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":true},"search-plus":{},"expandable-chapters-small":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lbb","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"探索学习发现Go语言"},"file":{"path":"README.md","mtime":"2018-04-27T07:11:36.726Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-27T07:22:49.675Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

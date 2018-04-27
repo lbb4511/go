@@ -1,0 +1,582 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>同步 · Go语言编程笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lbb">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="docker.html" />
+    
+    
+    <link rel="prev" href="groupcache.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    编码规范指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gocmd.html">
+            
+                <a href="gocmd.html">
+            
+                    
+                    Go命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="govendor.html">
+            
+                <a href="govendor.html">
+            
+                    
+                    Go外部依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="the-go-programming-language.html">
+            
+                <a href="the-go-programming-language.html">
+            
+                    
+                    Go语言圣经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="groupcache.html">
+            
+                <a href="groupcache.html">
+            
+                    
+                    GroupCache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="synchronization.html">
+            
+                <a href="synchronization.html">
+            
+                    
+                    同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="gui.html">
+            
+                <a href="gui.html">
+            
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../blog/">
+            
+                <a href="../blog/">
+            
+                    
+                    博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../blog/goroutine.html">
+            
+                <a href="../blog/goroutine.html">
+            
+                    
+                    进程、线程和协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../blog/concurrent-programming.html">
+            
+                <a href="../blog/concurrent-programming.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../blog/loadbalancing.html">
+            
+                <a href="../blog/loadbalancing.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >同步</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x540C;&#x6B65;synchronization"><b> </b>&#x540C;&#x6B65;(Synchronization)</a></li></ul></div><a href="#&#x540C;&#x6B65;synchronization" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x540C;&#x6B65;synchronization"><a name="&#x540C;&#x6B65;synchronization" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x6B65;synchronization"><i class="fa fa-link" aria-hidden="true"></i></a> &#x540C;&#x6B65;(Synchronization)</h1>
+<h3 id="&#x521D;&#x59CB;&#x5316;"><a name="&#x521D;&#x59CB;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521D;&#x59CB;&#x5316;</h3>
+<p>&#x7A0B;&#x5E8F;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5728;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;goroutine&#x4E2D;&#x6267;&#x884C;&#x3002;&#x5728;&#x521D;&#x59CB;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#x521B;&#x5EFA;&#x7684;goroutine&#x5C06;&#x5728; &#x7B2C;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;goroutine&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x542F;&#x52A8;&#x3002;&lt;/br&gt;
+&#x5982;&#x679C;&#x5305;p&#x5BFC;&#x5165;&#x4E86;&#x5305;q&#xFF0C;&#x5305;q&#x7684;init&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x5C06;&#x5728;&#x5305;p&#x7684;&#x521D;&#x59CB;&#x5316;&#x4E4B;&#x524D;&#x6267;&#x884C;&#x3002;&lt;/br&gt;
+&#x7A0B;&#x5E8F;&#x7684;&#x5165;&#x53E3;&#x51FD;&#x6570; main.main &#x5219;&#x662F;&#x5728;&#x6240;&#x6709;&#x7684; init &#x51FD;&#x6570;&#x6267;&#x884C;&#x5B8C;&#x6210; &#x4E4B;&#x540E;&#x542F;&#x52A8;&#x3002;&lt;/br&gt;
+<em>&#x5728;&#x4EFB;&#x610F;init&#x51FD;&#x6570;&#x4E2D;&#x65B0;&#x521B;&#x5EFA;&#x7684;goroutines&#xFF0C;&#x5C06;&#x5728;&#x6240;&#x6709;&#x7684;init &#x51FD;&#x6570;&#x5B8C;&#x6210;&#x540E;&#x6267;&#x884C;&#x3002;</em></p>
+<h3 id="goroutine&#x7684;&#x521B;&#x5EFA;"><a name="goroutine&#x7684;&#x521B;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#goroutine&#x7684;&#x521B;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>goroutine&#x7684;&#x521B;&#x5EFA;</h3>
+<h6 id="&#x7528;&#x4E8E;&#x542F;&#x52A8;goroutine&#x7684;go&#x8BED;&#x53E5;&#x5728;goroutine&#x4E4B;&#x524D;&#x8FD0;&#x884C;&#x3002;"><a name="&#x7528;&#x4E8E;&#x542F;&#x52A8;goroutine&#x7684;go&#x8BED;&#x53E5;&#x5728;goroutine&#x4E4B;&#x524D;&#x8FD0;&#x884C;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x7528;&#x4E8E;&#x542F;&#x52A8;goroutine&#x7684;go&#x8BED;&#x53E5;&#x5728;goroutine&#x4E4B;&#x524D;&#x8FD0;&#x884C;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x4E8E;&#x542F;&#x52A8;goroutine&#x7684;go&#x8BED;&#x53E5;&#x5728;goroutine&#x4E4B;&#x524D;&#x8FD0;&#x884C;&#x3002;</h6>
+<pre><code>var a string
+
+func f() {
+    print(a)
+}
+
+func hello() {
+    a = &quot;hello, world&quot;
+    go f()
+}
+</code></pre><blockquote>
+<p>&#x8C03;&#x7528;hello&#x51FD;&#x6570;&#xFF0C;&#x4F1A;&#x5728;&#x67D0;&#x4E2A;&#x65F6;&#x523B;&#x6253;&#x5370;&#x201C;hello, world&#x201D;&#xFF08;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x5728;hello&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E4B;&#x540E;&#xFF09;&#x3002;</p>
+<h3 id="channel-communication-&#x7BA1;&#x9053;&#x901A;&#x4FE1;"><a name="channel-communication-&#x7BA1;&#x9053;&#x901A;&#x4FE1;" class="anchor-navigation-ex-anchor" href="#channel-communication-&#x7BA1;&#x9053;&#x901A;&#x4FE1;"><i class="fa fa-link" aria-hidden="true"></i></a>Channel communication &#x7BA1;&#x9053;&#x901A;&#x4FE1;</h3>
+<p>&#x7528;&#x7BA1;&#x9053;&#x901A;&#x4FE1;&#x662F;&#x4E24;&#x4E2A;goroutines&#x4E4B;&#x95F4;&#x540C;&#x6B65;&#x7684;&#x4E3B;&#x8981;&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x7BA1;&#x9053;&#x4E0A;&#x6267;&#x884C;&#x7684;&#x53D1;&#x9001;&#x64CD;&#x4F5C;&#x4F1A;&#x5173;&#x8054;&#x5230;&#x8BE5;&#x7BA1;&#x9053;&#x7684; &#x63A5;&#x6536;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x901A;&#x5E38;&#x5BF9;&#x5E94;goroutines&#x3002;&lt;/br&gt;
+&#x7BA1;&#x9053;&#x4E0A;&#x7684;&#x53D1;&#x9001;&#x64CD;&#x4F5C;&#x53D1;&#x751F;&#x5728;&#x7BA1;&#x9053;&#x7684;&#x63A5;&#x6536;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#xFF08;happens before&#xFF09;&#x3002;
+```
+var c = make(chan int, 10)
+var a string</p>
+</blockquote>
+<p>func f() {
+    a = &quot;hello, world&quot;
+    c &lt;- 0
+}</p>
+<p>func main() {
+    go f()
+    &lt;-c
+    print(a)
+}</p>
+<pre><code>&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x4F1A;&#x8F93;&#x51FA;&quot;hello, world&quot;&#x3002;&#x56E0;&#x4E3A;&#xFF0C;a&#x7684;&#x8D4B;&#x503C;&#x53D1;&#x751F;&#x5728;&#x5411;&#x7BA1;&#x9053; c&#x53D1;&#x9001;&#x6570;&#x636E;&#x4E4B;&#x524D;&#xFF0C;&#x800C;&#x7BA1;&#x9053;&#x7684;&#x53D1;&#x9001;&#x64CD;&#x4F5C;&#x5728;&#x7BA1;&#x9053;&#x63A5;&#x6536;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#x53D1;&#x751F;&#x3002; &#x56E0;&#x6B64;&#xFF0C;&#x5728;print &#x7684;&#x65F6;&#x5019;&#xFF0C;a&#x5DF2;&#x7ECF;&#x88AB;&#x8D4B;&#x503C;&#x3002;&lt;/br&gt;
+&#x4ECE;&#x4E00;&#x4E2A;unbuffered&#x7BA1;&#x9053;&#x63A5;&#x6536;&#x6570;&#x636E;&#x5728;&#x5411;&#x7BA1;&#x9053;&#x53D1;&#x9001;&#x6570;&#x636E;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#x53D1;&#x9001;&#x3002;
+</code></pre><p>package main</p>
+<p>var c = make(chan int)
+var a string</p>
+<p>func f() {
+    a = &quot;hello, world&quot;
+    &lt;-c
+}</p>
+<p>func main() {
+    go f()
+    c &lt;- 0
+    print(a)
+}</p>
+<pre><code>&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x8F93;&#x51FA;&#x201C;hello, world&#x201D;&#x3002;&#x56E0;&#x4E3A;&#xFF0C;a&#x7684;&#x8D4B;&#x503C;&#x5728;&#x4ECE;&#x7BA1;&#x9053;&#x63A5;&#x6536;&#x6570;&#x636E; &#x524D;&#x53D1;&#x751F;&#xFF0C;&#x800C;&#x4ECE;&#x7BA1;&#x9053;&#x63A5;&#x6536;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x5728;&#x5411;unbuffered &#x7BA1;&#x9053;&#x53D1;&#x9001;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#x53D1;&#x751F;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5728;print &#x7684;&#x65F6;&#x5019;&#xFF0C;a&#x5DF2;&#x7ECF;&#x88AB;&#x8D4B;&#x503C;&#x3002;&lt;/br&gt;
+&#x5982;&#x679C;&#x7528;&#x7684;&#x662F;&#x7F13;&#x51B2;&#x7BA1;&#x9053;&#xFF08;&#x5982; c = make(chan int, 1) &#xFF09;&#xFF0C;&#x5C06;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x8F93;&#x51FA; &#x201C;hello, world&#x201D;&#x7ED3;&#x679C;&#xFF08;&#x53EF;&#x80FD;&#x4F1A;&#x662F;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C; &#x4F46;&#x80AF;&#x5B9A;&#x4E0D;&#x4F1A;&#x662F;&#x4ED6;&#x672A;&#x77E5;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C; &#x6216;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x5D29;&#x6E83;&#xFF09;&#x3002;
+### &#x9501;
+&#x5305;sync&#x5B9E;&#x73B0;&#x4E86;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x9501;&#xFF1A; sync.Mutex &#x548C; sync.RWMutex&#x3002;&lt;/br&gt;
+&#x5BF9;&#x4E8E;&#x4EFB;&#x610F; sync.Mutex &#x6216; sync.RWMutex &#x53D8;&#x91CF;l&#x3002; &#x5982;&#x679C; n &lt; m &#xFF0C;&#x90A3;&#x4E48;&#x7B2C;n&#x6B21; l.Unlock() &#x8C03;&#x7528;&#x5728;&#x7B2C; m&#x6B21; l.Lock() &#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x524D;&#x53D1;&#x751F;&#x3002;
+</code></pre><p>var l sync.Mutex
+var a string</p>
+<p>func f() {
+    a = &quot;hello, world&quot;
+    l.Unlock()
+}</p>
+<p>func main() {
+    l.Lock()
+    go f()
+    l.Lock()
+    print(a)
+}</p>
+<pre><code>&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x8F93;&#x51FA;&#x201C;hello, world&#x201D;&#x7ED3;&#x679C;&#x3002;&#x56E0;&#x4E3A;&#xFF0C;&#x7B2C;&#x4E00;&#x6B21; l.Unlock() &#x8C03;&#x7528;&#xFF08;&#x5728;f&#x51FD;&#x6570;&#x4E2D;&#xFF09;&#x5728;&#x7B2C;&#x4E8C;&#x6B21; l.Lock() &#x8C03;&#x7528; &#xFF08;&#x5728;main &#x51FD;&#x6570;&#x4E2D;&#xFF09;&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x53D1;&#x751F;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5728; print &#x51FD;&#x6570;&#x8C03;&#x7528;&#x4E4B;&#x524D;&#x53D1;&#x751F;&#x3002;&lt;/br&gt;
+&#x5BF9;&#x4E8E;&#x4EFB;&#x4F55;&#x547C;&#x53EB;&#x5230;&#x4E00;&#x4E2A;sync.RWMutex&#x53D8;&#x6570;l l.RLock&#xFF0C;&#x6709;&#x4E00;&#x4E2A;n&#x4F7F;&#x5F97;l.RLock&#x7B2C;n&#x4E2A;&#x547C;&#x53EB;l.Unlock&#x540E;&#x53D1;&#x751F;&#xFF08;&#x8FD4;&#x56DE;&#xFF09;&#x548C;n +1&apos;th&#x4E4B;&#x524D;&#x7684;&#x5339;&#x914D;l.RUnlock&#x53D1;&#x751F;&#x8C03;&#x7528;l.Lock&#x3002;&lt;/br&gt;
+&#x5305;sync&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5728;&#x591A;&#x4E2A;goroutines&#x4E2D;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x591A;&#x4E2A;goroutines&#x53EF;&#x4EE5; &#x901A;&#x8FC7; once.Do(f) &#x65B9;&#x5F0F;&#x8C03;&#x7528;f&#x51FD;&#x6570;&#x3002; &#x4F46;&#x662F;&#xFF0C;f&#x51FD;&#x6570; &#x53EA;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x8C03;&#x7528;&#x5C06;&#x88AB;&#x963B;&#x585E;&#x76F4;&#x5230;&#x552F;&#x4E00;&#x6267;&#x884C;&#x7684;f()&#x8FD4;&#x56DE;&#x3002;
+once.Do(f) &#x4E2D;&#x552F;&#x4E00;&#x6267;&#x884C;&#x7684;f()&#x53D1;&#x751F;&#x5728;&#x6240;&#x6709;&#x7684; once.Do(f) &#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x3002;
+</code></pre><p>var once sync.Once
+var a string</p>
+<p>func setup() {
+    a = &quot;hello, world&quot;
+}</p>
+<p>func doprint() {
+    once.Do(setup)
+    print(a)
+}</p>
+<p>func twoprint() {
+    go doprint()
+    go doprint()
+}</p>
+<pre><code>&gt; &#x8C03;&#x7528;twoprint&#x4F1A;&#x8F93;&#x51FA;&#x201C;hello, world&#x201D;&#x4E24;&#x6B21;&#x3002;&#x7B2C;&#x4E00;&#x6B21;twoprint &#x51FD;&#x6570;&#x4F1A;&#x8FD0;&#x884C;setup&#x552F;&#x4E00;&#x4E00;&#x6B21;&#x3002;
+
+
+## ***&#x9519;&#x8BEF;&#x7684;&#x540C;&#x6B65;&#x65B9;&#x5F0F;***
+&#x6CE8;&#x610F;&#xFF1A;&#x53D8;&#x91CF;&#x8BFB;&#x64CD;&#x4F5C;&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x4FA6;&#x6D4B;&#x5230;&#x53D8;&#x91CF;&#x7684;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x5BF9;&#x53D8;&#x91CF;&#x7684;&#x8BFB;&#x64CD;&#x4F5C;&#x5C31;&#x4E00;&#x5B9A;&#x53D1;&#x751F;&#x5728;&#x5199;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#x3002;
+</code></pre><p>package main</p>
+<p>var a, b int</p>
+<p>func f() {
+    a = 1
+    b = 2
+}</p>
+<p>func g() {
+    print(b)
+    print(a)
+}</p>
+<p>func main() {
+    go f()
+    g()
+}</p>
+<pre><code>&#x51FD;&#x6570;g&#x53EF;&#x80FD;&#x8F93;&#x51FA;2&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x8F93;&#x51FA;0&#x3002;
+
+&#x8FD9;&#x79CD;&#x60C5;&#x5F62;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x56DE;&#x907F;&#x4E00;&#x4E9B;&#x770B;&#x4F3C;&#x5408;&#x7406;&#x7684;&#x7528;&#x6CD5;&#x3002;
+
+&#x8FD9;&#x91CC;&#x7528;&#x91CD;&#x590D;&#x68C0;&#x6D4B;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x4EE3;&#x66FF;&#x540C;&#x6B65;&#x3002;&#x5728;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;twoprint&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x5F97;&#x5230;&#x9519;&#x8BEF;&#x7684;&#x503C;&#xFF1A;
+</code></pre><p>package main</p>
+<p>import (
+    &quot;sync&quot;
+    &quot;time&quot;
+)</p>
+<p>var once sync.Once</p>
+<p>var a string
+var done bool</p>
+<p>func setup() {
+    a = &quot;hello, world&quot;
+    done = true
+}</p>
+<p>func doprint() {
+    if !done {
+        once.Do(setup)
+    }
+    print(a)
+}</p>
+<p>func twoprint() {
+    go doprint()
+    go doprint()
+}</p>
+<p>func main() {
+    twoprint()
+    time.Sleep(8000)
+}</p>
+<pre><code>&#x5728;doprint&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x5199;done&#x6697;&#x793A;&#x5DF2;&#x7ECF;&#x7ED9;a&#x8D4B;&#x503C;&#x4E86;&#x3002; &#x4F46;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x7ED9;&#x51FA;&#x4FDD;&#x8BC1;&#xFF0C;&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x8F93;&#x51FA;&#x7A7A;&#x7684;&#x503C;&#xFF08;&#x5728;2&#x4E2A;goroutines&#x4E2D;&#x540C;&#x65F6;&#x6267;&#x884C;&#x5230;&#x6D4B;&#x8BD5;&#x8BED;&#x53E5;&#xFF09;&#x3002;
+
+&#x53E6;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x9677;&#x9631;&#x662F;&#x5FD9;&#x7B49;&#x5F85;&#xFF1A;
+</code></pre><p>package main</p>
+<p>var a string
+var done bool</p>
+<p>func setup() {
+    a = &quot;hello, world&quot;
+    done = true
+}</p>
+<p>func main() {
+    go setup()
+    for !done {
+    }
+    print(a)
+}</p>
+<pre><code>&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x4FDD;&#x8BC1;&#x5728;main&#x4E2D;&#x770B;&#x5230;&#x4E86;done&#x503C;&#x88AB;&#x4FEE;&#x6539;&#x7684;&#x540C;&#x65F6;&#x4E5F; &#x80FD;&#x770B;&#x5230;a&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x56E0;&#x6B64;&#x7A0B;&#x5E8F;&#x53EF;&#x80FD;&#x8F93;&#x51FA;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x3002; &#x66F4;&#x574F;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF0C;main &#x51FD;&#x6570;&#x53EF;&#x80FD;&#x6C38;&#x8FDC;&#x4E0D;&#x77E5;&#x9053;done&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x540C;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x6837;main &#x51FD;&#x6570;&#x6C38;&#x8FDC;&#x4E0D;&#x80FD;&#x8FD4;&#x56DE;&#x3002;
+
+&#x4E0B;&#x9762;&#x7684;&#x7528;&#x6CD5;&#x672C;&#x8D28;&#x4E0A;&#x4E5F;&#x662F;&#x540C;&#x6837;&#x7684;&#x95EE;&#x9898;.
+</code></pre><p>package main</p>
+<p>type T struct {
+    msg string
+}</p>
+<p>var g *T</p>
+<p>func setup() {
+    t := new(T)
+    t.msg = &quot;hello, world&quot;
+    g = t
+}</p>
+<p>func main() {
+    go setup()
+    for g == nil {
+    }
+    print(g.msg)
+}
+```
+&#x5373;&#x4F7F;main&#x89C2;&#x5BDF;&#x5230;&#x4E86; g != nil &#x6761;&#x4EF6;&#x5E76;&#x4E14;&#x9000;&#x51FA;&#x4E86;&#x5FAA;&#x73AF;&#xFF0C;&#x4F46;&#x662F;&#x4EFB;&#x4F55;&#x7136; &#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x5B83;&#x770B;&#x5230;&#x4E86;g.msg&#x7684;&#x521D;&#x59CB;&#x5316;&#x4E4B;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E9B;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x7528;&#x663E;&#x793A;&#x7684;&#x540C;&#x6B65;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="groupcache.html" class="navigation navigation-prev " aria-label="Previous page: GroupCache">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="docker.html" class="navigation navigation-next " aria-label="Next page: Docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"同步","level":"1.2.6","depth":2,"next":{"title":"Docker","level":"1.2.7","depth":2,"path":"notes/docker.md","ref":"notes/docker.md","articles":[]},"previous":{"title":"GroupCache","level":"1.2.5","depth":2,"path":"notes/groupcache.md","ref":"notes/groupcache.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","anchor-navigation-ex","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":true},"search-plus":{},"expandable-chapters-small":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lbb","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Go语言编程笔记","language":"zh-hans","gitbook":"3.2.3","description":"探索学习发现Go语言"},"file":{"path":"notes/synchronization.md","mtime":"2018-04-27T06:50:29.628Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-27T07:22:49.675Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
