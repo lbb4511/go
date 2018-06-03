@@ -1,7 +1,7 @@
 # Summary
 
 * [Go语言资料](README.md)
-* [编码规范指南](notes/README.md)
+* [笔记](notes/README.md)
     * [Go命令](notes/gocmd.md)
     * [环境搭建](notes/installation.md)
     * [Go外部依赖管理](notes/govendor.md)
