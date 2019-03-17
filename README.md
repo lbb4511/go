@@ -23,10 +23,17 @@ go web server examples
 ## Tools
 go做的小工具
 
-1. [Copy dir](tools/cpdir/main.go) `go get github.com/lbb4511/go/tools/cpdir`
-2. [简体/繁体转换](tools/zh2tw/main.go) `go get github.com/lbb4511/go/tools/zh2tw`
-4. [fixlinks](tools/fixlinks/main.go) `go get github.com/lbb4511/go/tools/fixlinks`
-5. [lookpath](tools/lookpath/main.go) `go get github.com/lbb4511/go/tools/lookpath`
-6. [lsdir](tools/lsdir/main.go) `go get github.com/lbb4511/go/tools/lsdir`
-7. [md5](tools/md5/main.go) `go get github.com/lbb4511/go/tools/md5`
-7. [Gitbooks](tools/gitbooks/main.go) `go get github.com/lbb4511/go/tools/gitbooks`
+- [Copy dir](tools/cpdir) `go get github.com/lbb4511/go/tools/cpdir`
+- [简体/繁体转换](tools/zh2tw) `go get github.com/lbb4511/go/tools/zh2tw`
+- [fixlinks](tools/fixlinks) `go get github.com/lbb4511/go/tools/fixlinks`
+- [lookpath](tools/lookpath) `go get github.com/lbb4511/go/tools/lookpath`
+- [lsdir](tools/lsdir) `go get github.com/lbb4511/go/tools/lsdir`
+- [md5](tools/md5) `go get github.com/lbb4511/go/tools/md5`
+- [Gitbooks](tools/gitbooks) `go get github.com/lbb4511/go/tools/gitbooks`
+- [微信公众号本地模拟测试工具也](tools/wechatSimulator) `go get github.com/lbb4511/go/tools/wechatSimulator`
+- [二维码生成](tools/qrencode) `go get github.com/lbb4511/go/tools/qrencode`
+- [mktable](tools/mktable) `go get github.com/lbb4511/go/tools/mktable`
+- [excel操作](tools/excelize) `go get github.com/lbb4511/go/tools/excelize`
+- [网页解析](tools/goquery) `go get github.com/lbb4511/go/tools/goquery`
+- [树智能提示](tools/trie) `go get github.com/lbb4511/go/tools/trie`
+
