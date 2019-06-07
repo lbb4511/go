@@ -16,3 +16,6 @@ debug
 .glide/
 */*/web*
 basis/once/once
+wx/wx
+basis/trie/trie
+tools/cpdir/cpdir
