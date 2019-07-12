@@ -14,8 +14,3 @@ debug
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
-*/*/web*
-basis/once/once
-wx/wx
-basis/trie/trie
-tools/cpdir/cpdir

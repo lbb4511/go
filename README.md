@@ -1,15 +1,15 @@
-# go-study-mode
+# Go 语言学习
 
-go 语言基础
+![go](./docs/cover.jpg)
 
-### 基础
+## 语言基础
 
 1. [once](./once/main.go)
    只执行一次
 2. [树智能提示](./basis/trie/main.go) `go get github.com/lbb4511/basis/tools/trie`
 3. [Gitbooks](tools/gitbooks) `go get github.com/lbb4511/go/tools/gitbooks`
 
-### Web
+## Web
 
 go web server examples
 
@@ -22,7 +22,7 @@ go web server examples
 6. [webHtml](./web/webHtml/main.go)
    模板的用法
 
-### Tools
+## Tools
 
 go 做的小工具
 

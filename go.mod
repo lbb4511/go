@@ -1,4 +1,4 @@
-module github.com/lbb4511/go
+module go
 
 go 1.12
 
