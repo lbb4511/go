@@ -1,0 +1,1 @@
+extern void myPrint(/* const */ char *s);

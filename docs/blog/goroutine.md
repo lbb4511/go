@@ -21,11 +21,11 @@ goroutine 是非常轻量级的，它就是一段代码，一个函数入口，�
 那么 goroutine 究竟是如何被调度的呢?我们从 go 程序启动开始说起。在 go 程序启动时会首先创建一个特殊的内核线程 sysmon，从名字就可以看出来它的职责是负责监控的，goroutine 背后的调度可以说就是靠它来搞定。
 接下来，我们再看看它的调度模型，go 语言当前的实现是 N:M。即一定数量的用户线程映射到一定数量的 OS 线程上，这里的用户线程在 go 中指的就是 goroutine。go 语言的调度模型需要弄清楚三个概念：M、P 和 G，如下图表示：
 
-![M P G](../img/goroutine-mpg.png)
+![M P G](../_img/goroutine-mpg.png)
 
 M 代表 OS 线程，G 代表 goroutine，P 的概念比较重要，它表示执行的上下文，其数量由*\$GOMAXPROCS*决定，一般来说正好等于处理器的数量。M 必须和 P 绑定才能执行 G，调度器需要保证所有的 P 都有 G 执行，以保证并行度。如下图：
 
-![M P G](../img/goroutine-mpg2.png)
+![M P G](../_img/goroutine-mpg2.png)
 
 从图中我们可以看见，当前有两个 P，各自绑定了一个 M，并分别执行了一个 goroutine，我们还可以看见每个 P 上还挂了一个 G 的队列，这个队列是代表私有的任务队列，它们实际上都是 runnable 状态的 goroutine。当使用 go 关键字声明时,一个 goroutine 便被加入到运行队列的尾部。一旦一个 goroutine 运行到一个调度点,上下文便从运行队列中取出一个 goroutine, 设置好栈和指令指针,便开始运行新的 goroutine。
 
@@ -35,7 +35,7 @@ M 代表 OS 线程，G 代表 goroutine，P 的概念比较重要，它表示执
 - 调用 runtime·park 函数。goroutine 进入 waitting 状态，除非对其调用 runtime·ready 函数，否则该 goroutine 将永远不会得到执行。而 P 将继续执行下一个 goroutine。使用 runtime·park 函数一般是在某个条件如果得不到满足就不能继续运行下去时调用，当条件满足后需要使用 runtime·ready 以唤醒它（这里唤醒之后是否会加入全局等待队列还有待研究）。像 channel 操作，定时器中，网络 poll 等都有可能 park goroutine。
 - 慢系统调用。这样的系统调用会阻塞等待，为了使该 P 上挂着的其它 G 也能得到执行的机会，需要将这些 goroutine 转到另一个 OS 线程上去。具体的做法是：首先将该 P 设置为 syscall 状态，然后该线程进入系统调用阻塞等待。之前提到过的 sysmom 线程会定期扫描所有的 P，发现一个 P 处于了 syscall 的状态，就将 M 和 P 分离（实际上只有当 Syscall 执行时间超出某个阈值时，才会将 M 与 P 分离）。RUNTIME 会再分配一个 M 和这个 P 绑定，从而继续执行队列中的其它 G。而当之前阻塞的 M 从系统调用中返回后，会将该 goroutine 放入全局等待队列中，自己则 sleep 去。
 
-![M P G](../img/goroutine-mpg3.png)
+![M P G](../_img/goroutine-mpg3.png)
 
 该图描述了 M 和 P 的分离过程。
 调度点的情况说清楚了，但整个模型还并不完整。我们知道当使用 go 去调用一个函数，会生成一个新的 goroutine 放入当前 P 的队列中，那么什么时候生成别的 OS 线程，各个 OS 线程又是如何做负载均衡的呢？

@@ -1,6 +1,6 @@
 # Go 语言学习
 
-![go](./docs/cover.jpg)
+![go](./docs/_img/cover.jpg)
 
 ## 语言基础
 
