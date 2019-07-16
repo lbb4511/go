@@ -9,3 +9,4 @@
 [笔记](/notes/)
 [博客](/blog/)
 [信息](/Information/)
+<a href="https://lbb4511.top">首页</a>
