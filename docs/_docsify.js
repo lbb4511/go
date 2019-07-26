@@ -1,6 +1,6 @@
 window.$docsify = {
   name: "Golang 学习笔记",
-  repo: "lbb4511/go-study",
+  repo: "lbb4511/go",
   maxLevel: 2,
   subMaxLevel: 1,
   coverpage: true,
